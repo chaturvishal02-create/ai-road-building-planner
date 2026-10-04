@@ -1,0 +1,211 @@
+project_name,scheme_name,project_type,state,district,contractor_type,sanctioned_budget_lakh,duration_months,actual_cost_lakh,over_budget,overrun_lakh,overrun_pct
+"Belagavi Township 10 PMAY-Urban Housing, Karnataka (1,044 units) [Work KA-PMAY-2526-001]",PMAY (Housing),Housing,Karnataka,Belagavi,Govt,1656.0,42,1685.5,Yes,29.5,1.78
+"Gaya Nagar Palika 21 PMAY-Urban Housing, Bihar (911 units) [Work BR-PMAY-2526-001]",PMAY (Housing),Housing,Bihar,Gaya,Govt,646.9,25,673.8,Yes,26.9,4.16
+"Kolkata Ward 19 PMAY-Urban Housing, West Bengal (296 units) [Work WB-PMAY-2526-001]",PMAY (Housing),Housing,West Bengal,Kolkata,Private,1144.5,23,1057.7,No,-86.8,-7.58
+"Rajkot Ward 18 PMAY-Urban Housing, Gujarat (79 units) [Work GJ-PMAY-2526-001]",PMAY (Housing),Housing,Gujarat,Rajkot,Private,247.1,27,234.8,No,-12.3,-4.98
+"Ahmedabad Sector 11 PMAY-Urban Housing, Gujarat (660 units) [Work GJ-PMAY-2526-002]",PMAY (Housing),Housing,Gujarat,Ahmedabad,Private,154.4,46,141.3,No,-13.1,-8.48
+"Bengaluru Urban Sector 9 PMAY-Urban Housing, Karnataka (1,071 units) [Work KA-PMAY-2526-002]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Private,2252.8,12,2091.3,No,-161.5,-7.17
+"Amravati Nagar Palika 23 PMAY-Urban Housing, Maharashtra (1,168 units) [Work MH-PMAY-2526-001]",PMAY (Housing),Housing,Maharashtra,Amravati,Private,906.4,21,851.6,No,-54.8,-6.05
+"Varanasi Sector 3 PMAY-Urban Housing, Uttar Pradesh (291 units) [Work UP-PMAY-2526-001]",PMAY (Housing),Housing,Uttar Pradesh,Varanasi,Govt,1611.7,22,1591.3,No,-20.4,-1.27
+"Warangal Nagar Palika 20 PMAY-Urban Housing, Telangana (133 units) [Work TS-PMAY-2526-001]",PMAY (Housing),Housing,Telangana,Warangal,Govt,4621.0,15,4196.1,No,-424.9,-9.19
+"Madurai Ward 16 PMAY-Urban Housing, Tamil Nadu (774 units) [Work TN-PMAY-2526-001]",PMAY (Housing),Housing,Tamil Nadu,Madurai,Private,1052.2,13,993.2,No,-59.0,-5.61
+"Surat Sector 12 PMAY-Urban Housing, Gujarat (563 units) [Work GJ-PMAY-2526-003]",PMAY (Housing),Housing,Gujarat,Surat,Govt,313.1,27,346.7,Yes,33.6,10.73
+"Bhopal Township 6 PMAY-Urban Housing, Madhya Pradesh (348 units) [Work MP-PMAY-2526-001]",PMAY (Housing),Housing,Madhya Pradesh,Bhopal,Govt,515.0,40,598.5,Yes,83.5,16.21
+"Chhatrapati Sambhajinagar Township 2 PMAY-Urban Housing, Maharashtra (838 units) [Work MH-PMAY-2526-002]",PMAY (Housing),Housing,Maharashtra,Chhatrapati Sambhajinagar,Private,347.4,47,337.5,No,-9.9,-2.85
+"Rajkot Nagar Palika 22 PMAY-Urban Housing, Gujarat (297 units) [Work GJ-PMAY-2526-004]",PMAY (Housing),Housing,Gujarat,Rajkot,Private,669.5,39,656.1,No,-13.4,-2.0
+"Bengaluru Urban Ward 15 PMAY-Urban Housing, Karnataka (381 units) [Work KA-PMAY-2526-003]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Private,631.1,21,601.0,No,-30.1,-4.77
+"Belagavi Nagar Palika 17 PMAY-Urban Housing, Karnataka (203 units) [Work KA-PMAY-2526-004]",PMAY (Housing),Housing,Karnataka,Belagavi,Private,435.0,46,506.4,Yes,71.4,16.41
+"East Delhi Ward 3 PMAY-Urban Housing, Delhi (562 units) [Work DL-PMAY-2526-001]",PMAY (Housing),Housing,Delhi,East Delhi,Govt,425.9,39,488.9,Yes,63.0,14.79
+"Amravati Township 20 PMAY-Urban Housing, Maharashtra (903 units) [Work MH-PMAY-2526-003]",PMAY (Housing),Housing,Maharashtra,Amravati,Govt,476.2,42,507.5,Yes,31.3,6.57
+"Coimbatore Sector 15 PMAY-Urban Housing, Tamil Nadu (592 units) [Work TN-PMAY-2526-002]",PMAY (Housing),Housing,Tamil Nadu,Coimbatore,Private,1051.1,47,1050.0,No,-1.1,-0.1
+"Muzaffarpur Township 18 PMAY-Urban Housing, Bihar (657 units) [Work BR-PMAY-2526-002]",PMAY (Housing),Housing,Bihar,Muzaffarpur,Private,337.8,47,375.5,Yes,37.7,11.16
+"Pune Ward 12 PMAY-Urban Housing, Maharashtra (602 units) [Work MH-PMAY-2526-004]",PMAY (Housing),Housing,Maharashtra,Pune,Private,1071.0,36,1005.7,No,-65.3,-6.1
+"Warangal Ward 6 PMAY-Urban Housing, Telangana (567 units) [Work TS-PMAY-2526-002]",PMAY (Housing),Housing,Telangana,Warangal,Govt,2409.9,30,2382.4,No,-27.5,-1.14
+"Chennai Nagar Palika 18 PMAY-Urban Housing, Tamil Nadu (545 units) [Work TN-PMAY-2526-003]",PMAY (Housing),Housing,Tamil Nadu,Chennai,Private,986.0,35,935.6,No,-50.4,-5.11
+"Prayagraj Township 5 PMAY-Urban Housing, Uttar Pradesh (225 units) [Work UP-PMAY-2526-002]",PMAY (Housing),Housing,Uttar Pradesh,Prayagraj,Private,763.7,48,833.0,Yes,69.3,9.07
+"Nashik Ward 19 PMAY-Urban Housing, Maharashtra (787 units) [Work MH-PMAY-2526-005]",PMAY (Housing),Housing,Maharashtra,Nashik,Govt,1413.7,26,1379.3,No,-34.4,-2.43
+"Kanpur Nagar Ward 21 PMAY-Urban Housing, Uttar Pradesh (624 units) [Work UP-PMAY-2526-003]",PMAY (Housing),Housing,Uttar Pradesh,Kanpur Nagar,Private,1453.4,46,1406.8,No,-46.6,-3.21
+"Mysuru Nagar Palika 7 PMAY-Urban Housing, Karnataka (378 units) [Work KA-PMAY-2526-005]",PMAY (Housing),Housing,Karnataka,Mysuru,Govt,204.6,38,224.6,Yes,20.0,9.78
+"Jabalpur Ward 16 PMAY-Urban Housing, Madhya Pradesh (1,188 units) [Work MP-PMAY-2526-002]",PMAY (Housing),Housing,Madhya Pradesh,Jabalpur,Private,1688.3,12,1659.1,No,-29.2,-1.73
+"Vadodara Nagar Palika 20 PMAY-Urban Housing, Gujarat (282 units) [Work GJ-PMAY-2526-005]",PMAY (Housing),Housing,Gujarat,Vadodara,Private,1836.1,23,1771.5,No,-64.6,-3.52
+"Mumbai City Township 22 PMAY-Urban Housing, Maharashtra (1,183 units) [Work MH-PMAY-2526-006]",PMAY (Housing),Housing,Maharashtra,Mumbai City,Private,1975.2,20,1784.2,No,-191.0,-9.67
+"Jabalpur Sector 14 PMAY-Urban Housing, Madhya Pradesh (417 units) [Work MP-PMAY-2526-003]",PMAY (Housing),Housing,Madhya Pradesh,Jabalpur,Private,1038.9,13,954.2,No,-84.7,-8.15
+"Bengaluru Urban Township 9 PMAY-Urban Housing, Karnataka (518 units) [Work KA-PMAY-2526-006]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Private,1182.8,27,1122.9,No,-59.9,-5.06
+"Coimbatore Township 11 PMAY-Urban Housing, Tamil Nadu (265 units) [Work TN-PMAY-2526-004]",PMAY (Housing),Housing,Tamil Nadu,Coimbatore,Private,1001.0,27,961.7,No,-39.3,-3.93
+"Bengaluru Urban Township 8 PMAY-Urban Housing, Karnataka (686 units) [Work KA-PMAY-2526-007]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Govt,1018.6,48,1255.1,Yes,236.5,23.22
+"Bengaluru Urban Sector 2 PMAY-Urban Housing, Karnataka (364 units) [Work KA-PMAY-2526-008]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Govt,1194.0,44,1203.6,Yes,9.6,0.8
+"North-East Delhi Nagar Palika 15 PMAY-Urban Housing, Delhi (1,025 units) [Work DL-PMAY-2526-002]",PMAY (Housing),Housing,Delhi,North-East Delhi,Govt,867.0,12,810.4,No,-56.6,-6.53
+"Mumbai City Nagar Palika 22 PMAY-Urban Housing, Maharashtra (130 units) [Work MH-PMAY-2526-007]",PMAY (Housing),Housing,Maharashtra,Mumbai City,Private,416.7,26,385.9,No,-30.8,-7.39
+"Bengaluru Urban Nagar Palika 4 PMAY-Urban Housing, Karnataka (1,089 units) [Work KA-PMAY-2526-009]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Private,839.5,33,826.8,No,-12.7,-1.51
+"Gwalior Township 23 PMAY-Urban Housing, Madhya Pradesh (882 units) [Work MP-PMAY-2526-004]",PMAY (Housing),Housing,Madhya Pradesh,Gwalior,Private,633.1,17,609.2,No,-23.9,-3.78
+"Kalaburagi Nagar Palika 6 PMAY-Urban Housing, Karnataka (597 units) [Work KA-PMAY-2526-010]",PMAY (Housing),Housing,Karnataka,Kalaburagi,Govt,1779.1,46,1949.8,Yes,170.7,9.59
+"Nizamabad Ward 11 PMAY-Urban Housing, Telangana (867 units) [Work TS-PMAY-2526-003]",PMAY (Housing),Housing,Telangana,Nizamabad,Govt,3095.4,29,3092.3,No,-3.1,-0.1
+"Agra Sector 18 PMAY-Urban Housing, Uttar Pradesh (942 units) [Work UP-PMAY-2526-004]",PMAY (Housing),Housing,Uttar Pradesh,Agra,Private,423.8,35,501.2,Yes,77.4,18.26
+"Pune Sector 2 PMAY-Urban Housing, Maharashtra (743 units) [Work MH-PMAY-2526-008]",PMAY (Housing),Housing,Maharashtra,Pune,Govt,530.3,34,542.0,Yes,11.7,2.21
+"Kota Sector 20 PMAY-Urban Housing, Rajasthan (524 units) [Work RJ-PMAY-2526-001]",PMAY (Housing),Housing,Rajasthan,Kota,Govt,286.9,18,307.4,Yes,20.5,7.15
+"Agra Ward 23 PMAY-Urban Housing, Uttar Pradesh (1,118 units) [Work UP-PMAY-2526-005]",PMAY (Housing),Housing,Uttar Pradesh,Agra,Govt,2338.0,34,2521.0,Yes,183.0,7.83
+"Darjeeling Sector 22 PMAY-Urban Housing, West Bengal (926 units) [Work WB-PMAY-2526-002]",PMAY (Housing),Housing,West Bengal,Darjeeling,Private,1018.3,44,943.3,No,-75.0,-7.37
+"Ludhiana Sector 15 PMAY-Urban Housing, Punjab (138 units) [Work PB-PMAY-2526-001]",PMAY (Housing),Housing,Punjab,Ludhiana,Private,1492.0,41,1339.9,No,-152.1,-10.19
+"Ghaziabad Nagar Palika 18 PMAY-Urban Housing, Uttar Pradesh (706 units) [Work UP-PMAY-2526-006]",PMAY (Housing),Housing,Uttar Pradesh,Ghaziabad,Govt,606.2,35,664.8,Yes,58.6,9.67
+"Prayagraj Nagar Palika 13 PMAY-Urban Housing, Uttar Pradesh (1,026 units) [Work UP-PMAY-2526-007]",PMAY (Housing),Housing,Uttar Pradesh,Prayagraj,Private,2256.4,18,2160.7,No,-95.7,-4.24
+"Warangal Township 5 PMAY-Urban Housing, Telangana (892 units) [Work TS-PMAY-2526-004]",PMAY (Housing),Housing,Telangana,Warangal,Govt,622.4,16,631.3,Yes,8.9,1.43
+"Nashik Sector 6 PMAY-Urban Housing, Maharashtra (1,133 units) [Work MH-PMAY-2526-009]",PMAY (Housing),Housing,Maharashtra,Nashik,Private,718.5,33,717.8,No,-0.7,-0.1
+"Bhagalpur Nagar Palika 15 PMAY-Urban Housing, Bihar (1,029 units) [Work BR-PMAY-2526-003]",PMAY (Housing),Housing,Bihar,Bhagalpur,Govt,966.2,19,1107.0,Yes,140.8,14.57
+"Vijayawada Nagar Palika 4 PMAY-Urban Housing, Andhra Pradesh (846 units) [Work AP-PMAY-2526-001]",PMAY (Housing),Housing,Andhra Pradesh,Vijayawada,Private,1070.5,15,1008.1,No,-62.4,-5.83
+"Nagpur Ward 12 PMAY-Urban Housing, Maharashtra (439 units) [Work MH-PMAY-2526-010]",PMAY (Housing),Housing,Maharashtra,Nagpur,Govt,543.6,43,625.1,Yes,81.5,14.99
+"Chhatrapati Sambhajinagar Nagar Palika 13 PMAY-Urban Housing, Maharashtra (433 units) [Work MH-PMAY-2526-011]",PMAY (Housing),Housing,Maharashtra,Chhatrapati Sambhajinagar,Private,1207.5,30,1192.0,No,-15.5,-1.28
+"Indore Sector 3 PMAY-Urban Housing, Madhya Pradesh (1,145 units) [Work MP-PMAY-2526-005]",PMAY (Housing),Housing,Madhya Pradesh,Indore,Private,2051.8,41,2010.6,No,-41.2,-2.01
+"Nashik Sector 17 PMAY-Urban Housing, Maharashtra (211 units) [Work MH-PMAY-2526-012]",PMAY (Housing),Housing,Maharashtra,Nashik,Govt,594.4,22,559.5,No,-34.9,-5.87
+"Pune Nagar Palika 10 PMAY-Urban Housing, Maharashtra (209 units) [Work MH-PMAY-2526-013]",PMAY (Housing),Housing,Maharashtra,Pune,Govt,1200.8,28,1369.5,Yes,168.7,14.05
+"Agra Ward 9 PMAY-Urban Housing, Uttar Pradesh (84 units) [Work UP-PMAY-2526-008]",PMAY (Housing),Housing,Uttar Pradesh,Agra,Private,776.4,27,739.4,No,-37.0,-4.77
+"Gaya Ward 11 PMAY-Urban Housing, Bihar (63 units) [Work BR-PMAY-2526-004]",PMAY (Housing),Housing,Bihar,Gaya,Govt,218.2,27,230.8,Yes,12.6,5.77
+"Mysuru Sector 15 PMAY-Urban Housing, Karnataka (483 units) [Work KA-PMAY-2526-011]",PMAY (Housing),Housing,Karnataka,Mysuru,Private,633.7,12,617.6,No,-16.1,-2.54
+"Hyderabad Nagar Palika 3 PMAY-Urban Housing, Telangana (445 units) [Work TS-PMAY-2526-005]",PMAY (Housing),Housing,Telangana,Hyderabad,Govt,1162.9,39,1296.9,Yes,134.0,11.52
+"Lucknow Sector 19 PMAY-Urban Housing, Uttar Pradesh (73 units) [Work UP-PMAY-2526-009]",PMAY (Housing),Housing,Uttar Pradesh,Lucknow,Private,1535.0,24,1621.0,Yes,86.0,5.6
+"Paschim Medinipur Township 24 PMAY-Urban Housing, West Bengal (776 units) [Work WB-PMAY-2526-003]",PMAY (Housing),Housing,West Bengal,Paschim Medinipur,Private,1265.3,30,1239.3,No,-26.0,-2.05
+"Varanasi Township 9 PMAY-Urban Housing, Uttar Pradesh (678 units) [Work UP-PMAY-2526-010]",PMAY (Housing),Housing,Uttar Pradesh,Varanasi,Govt,582.5,47,635.0,Yes,52.5,9.01
+"Lucknow Nagar Palika 8 PMAY-Urban Housing, Uttar Pradesh (569 units) [Work UP-PMAY-2526-011]",PMAY (Housing),Housing,Uttar Pradesh,Lucknow,Private,920.2,14,879.9,No,-40.3,-4.38
+"Bengaluru Urban Sector 2 PMAY-Urban Housing, Karnataka (595 units) [Work KA-PMAY-2526-012]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Govt,4112.3,22,5096.0,Yes,983.7,23.92
+"Jabalpur Nagar Palika 11 PMAY-Urban Housing, Madhya Pradesh (628 units) [Work MP-PMAY-2526-006]",PMAY (Housing),Housing,Madhya Pradesh,Jabalpur,Govt,1127.1,41,1257.6,Yes,130.5,11.58
+"Bengaluru Urban Township 13 PMAY-Urban Housing, Karnataka (1,166 units) [Work KA-PMAY-2526-013]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Govt,1004.0,48,1042.9,Yes,38.9,3.87
+"Jalandhar Township 10 PMAY-Urban Housing, Punjab (369 units) [Work PB-PMAY-2526-002]",PMAY (Housing),Housing,Punjab,Jalandhar,Private,305.7,16,297.2,No,-8.5,-2.78
+"Gautam Buddh Nagar Sector 1 PMAY-Urban Housing, Uttar Pradesh (262 units) [Work UP-PMAY-2526-012]",PMAY (Housing),Housing,Uttar Pradesh,Gautam Buddh Nagar,Govt,2825.9,20,3167.3,Yes,341.4,12.08
+"Thiruvananthapuram Nagar Palika 17 PMAY-Urban Housing, Kerala (831 units) [Work KL-PMAY-2526-001]",PMAY (Housing),Housing,Kerala,Thiruvananthapuram,Govt,1789.1,38,1777.1,No,-12.0,-0.67
+"Nashik Ward 12 PMAY-Urban Housing, Maharashtra (449 units) [Work MH-PMAY-2526-014]",PMAY (Housing),Housing,Maharashtra,Nashik,Private,2075.8,26,2013.5,No,-62.3,-3.0
+"Dakshina Kannada Sector 22 PMAY-Urban Housing, Karnataka (706 units) [Work KA-PMAY-2526-014]",PMAY (Housing),Housing,Karnataka,Dakshina Kannada,Govt,447.9,14,460.8,Yes,12.9,2.88
+"Surat Township 6 PMAY-Urban Housing, Gujarat (617 units) [Work GJ-PMAY-2526-006]",PMAY (Housing),Housing,Gujarat,Surat,Govt,1832.6,32,1902.3,Yes,69.7,3.8
+"Vadodara Sector 15 PMAY-Urban Housing, Gujarat (977 units) [Work GJ-PMAY-2526-007]",PMAY (Housing),Housing,Gujarat,Vadodara,Private,1035.9,22,983.9,No,-52.0,-5.02
+"Patna Nagar Palika 4 PMAY-Urban Housing, Bihar (1,191 units) [Work BR-PMAY-2526-005]",PMAY (Housing),Housing,Bihar,Patna,Govt,413.9,37,433.6,Yes,19.7,4.76
+"Lucknow Ward 1 PMAY-Urban Housing, Uttar Pradesh (252 units) [Work UP-PMAY-2526-013]",PMAY (Housing),Housing,Uttar Pradesh,Lucknow,Private,774.9,40,748.0,No,-26.9,-3.47
+"Bhopal Township 6 PMAY-Urban Housing, Madhya Pradesh (93 units) [Work MP-PMAY-2526-007]",PMAY (Housing),Housing,Madhya Pradesh,Bhopal,Govt,848.3,21,919.0,Yes,70.7,8.33
+"Gautam Buddh Nagar Ward 10 PMAY-Urban Housing, Uttar Pradesh (270 units) [Work UP-PMAY-2526-014]",PMAY (Housing),Housing,Uttar Pradesh,Gautam Buddh Nagar,Govt,1038.2,22,1210.8,Yes,172.6,16.62
+"Kota Sector 5 PMAY-Urban Housing, Rajasthan (151 units) [Work RJ-PMAY-2526-002]",PMAY (Housing),Housing,Rajasthan,Kota,Govt,477.2,24,546.3,Yes,69.1,14.48
+"Surat Township 13 PMAY-Urban Housing, Gujarat (1,117 units) [Work GJ-PMAY-2526-008]",PMAY (Housing),Housing,Gujarat,Surat,Private,2248.3,24,2246.1,No,-2.2,-0.1
+"Rajkot Ward 22 PMAY-Urban Housing, Gujarat (928 units) [Work GJ-PMAY-2526-009]",PMAY (Housing),Housing,Gujarat,Rajkot,Private,1442.7,14,1342.2,No,-100.5,-6.97
+"Hyderabad Sector 23 PMAY-Urban Housing, Telangana (976 units) [Work TS-PMAY-2526-006]",PMAY (Housing),Housing,Telangana,Hyderabad,Govt,1070.3,38,1221.6,Yes,151.3,14.14
+"Belagavi Ward 16 PMAY-Urban Housing, Karnataka (935 units) [Work KA-PMAY-2526-015]",PMAY (Housing),Housing,Karnataka,Belagavi,Govt,3411.1,28,3407.7,No,-3.4,-0.1
+"Lucknow Nagar Palika 21 PMAY-Urban Housing, Uttar Pradesh (968 units) [Work UP-PMAY-2526-015]",PMAY (Housing),Housing,Uttar Pradesh,Lucknow,Private,793.3,39,828.3,Yes,35.0,4.41
+"Surat Nagar Palika 11 PMAY-Urban Housing, Gujarat (525 units) [Work GJ-PMAY-2526-010]",PMAY (Housing),Housing,Gujarat,Surat,Govt,1175.1,48,1266.2,Yes,91.1,7.75
+"Jodhpur Sector 7 PMAY-Urban Housing, Rajasthan (537 units) [Work RJ-PMAY-2526-003]",PMAY (Housing),Housing,Rajasthan,Jodhpur,Private,1467.8,43,1653.2,Yes,185.4,12.63
+"Ghaziabad Sector 11 PMAY-Urban Housing, Uttar Pradesh (425 units) [Work UP-PMAY-2526-016]",PMAY (Housing),Housing,Uttar Pradesh,Ghaziabad,Private,1840.9,40,1974.0,Yes,133.1,7.23
+"Belagavi Nagar Palika 14 PMAY-Urban Housing, Karnataka (222 units) [Work KA-PMAY-2526-016]",PMAY (Housing),Housing,Karnataka,Belagavi,Govt,970.3,13,1060.8,Yes,90.5,9.33
+"Belagavi Sector 19 PMAY-Urban Housing, Karnataka (343 units) [Work KA-PMAY-2526-017]",PMAY (Housing),Housing,Karnataka,Belagavi,Private,2332.7,47,2270.6,No,-62.1,-2.66
+"Howrah Nagar Palika 5 PMAY-Urban Housing, West Bengal (211 units) [Work WB-PMAY-2526-004]",PMAY (Housing),Housing,West Bengal,Howrah,Private,523.7,18,512.5,No,-11.2,-2.14
+"Mysuru Township 3 PMAY-Urban Housing, Karnataka (351 units) [Work KA-PMAY-2526-018]",PMAY (Housing),Housing,Karnataka,Mysuru,Private,2717.0,23,2596.2,No,-120.8,-4.45
+"Indore Sector 20 PMAY-Urban Housing, Madhya Pradesh (115 units) [Work MP-PMAY-2526-008]",PMAY (Housing),Housing,Madhya Pradesh,Indore,Private,558.0,21,526.3,No,-31.7,-5.68
+"Bhopal Ward 3 PMAY-Urban Housing, Madhya Pradesh (345 units) [Work MP-PMAY-2526-009]",PMAY (Housing),Housing,Madhya Pradesh,Bhopal,Private,1098.7,22,1017.6,No,-81.1,-7.38
+"Mysuru Sector 15 PMAY-Urban Housing, Karnataka (262 units) [Work KA-PMAY-2526-019]",PMAY (Housing),Housing,Karnataka,Mysuru,Govt,1187.3,21,1165.2,No,-22.1,-1.86
+"Warangal Nagar Palika 24 PMAY-Urban Housing, Telangana (228 units) [Work TS-PMAY-2526-007]",PMAY (Housing),Housing,Telangana,Warangal,Govt,547.3,29,622.0,Yes,74.7,13.65
+"Nizamabad Township 3 PMAY-Urban Housing, Telangana (603 units) [Work TS-PMAY-2526-008]",PMAY (Housing),Housing,Telangana,Nizamabad,Private,2810.0,21,2648.2,No,-161.8,-5.76
+"Gwalior Ward 9 PMAY-Urban Housing, Madhya Pradesh (1,139 units) [Work MP-PMAY-2526-010]",PMAY (Housing),Housing,Madhya Pradesh,Gwalior,Govt,252.8,36,275.3,Yes,22.5,8.9
+"Prayagraj Township 7 PMAY-Urban Housing, Uttar Pradesh (266 units) [Work UP-PMAY-2526-017]",PMAY (Housing),Housing,Uttar Pradesh,Prayagraj,Private,780.8,23,745.0,No,-35.8,-4.59
+"Surat Sector 9 PMAY-Urban Housing, Gujarat (92 units) [Work GJ-PMAY-2526-011]",PMAY (Housing),Housing,Gujarat,Surat,Private,1489.5,33,1488.0,No,-1.5,-0.1
+"Vijayawada Ward 22 PMAY-Urban Housing, Andhra Pradesh (1,142 units) [Work AP-PMAY-2526-002]",PMAY (Housing),Housing,Andhra Pradesh,Vijayawada,Private,223.6,41,201.9,No,-21.7,-9.7
+"Nagpur Ward 8 PMAY-Urban Housing, Maharashtra (472 units) [Work MH-PMAY-2526-015]",PMAY (Housing),Housing,Maharashtra,Nagpur,Private,682.2,46,681.5,No,-0.7,-0.1
+"Paschim Medinipur Sector 5 PMAY-Urban Housing, West Bengal (341 units) [Work WB-PMAY-2526-005]",PMAY (Housing),Housing,West Bengal,Paschim Medinipur,Govt,446.2,32,501.3,Yes,55.1,12.35
+"Tirupati Nagar Palika 13 PMAY-Urban Housing, Andhra Pradesh (495 units) [Work AP-PMAY-2526-003]",PMAY (Housing),Housing,Andhra Pradesh,Tirupati,Govt,1003.5,24,1209.8,Yes,206.3,20.56
+"Rajkot Ward 13 PMAY-Urban Housing, Gujarat (724 units) [Work GJ-PMAY-2526-012]",PMAY (Housing),Housing,Gujarat,Rajkot,Private,1067.0,22,1010.9,No,-56.1,-5.26
+"Pune Township 17 PMAY-Urban Housing, Maharashtra (115 units) [Work MH-PMAY-2526-016]",PMAY (Housing),Housing,Maharashtra,Pune,Govt,1408.3,25,1335.5,No,-72.8,-5.17
+"Warangal Sector 4 PMAY-Urban Housing, Telangana (154 units) [Work TS-PMAY-2526-009]",PMAY (Housing),Housing,Telangana,Warangal,Private,2788.8,12,2654.2,No,-134.6,-4.83
+"Muzaffarpur Nagar Palika 16 PMAY-Urban Housing, Bihar (881 units) [Work BR-PMAY-2526-006]",PMAY (Housing),Housing,Bihar,Muzaffarpur,Private,917.4,14,894.3,No,-23.1,-2.52
+"Gwalior Sector 1 PMAY-Urban Housing, Madhya Pradesh (1,018 units) [Work MP-PMAY-2526-011]",PMAY (Housing),Housing,Madhya Pradesh,Gwalior,Private,1062.9,33,994.0,No,-68.9,-6.48
+"Chennai Ward 11 PMAY-Urban Housing, Tamil Nadu (1,039 units) [Work TN-PMAY-2526-005]",PMAY (Housing),Housing,Tamil Nadu,Chennai,Private,1577.2,17,1575.6,No,-1.6,-0.1
+"Bhopal Nagar Palika 3 PMAY-Urban Housing, Madhya Pradesh (858 units) [Work MP-PMAY-2526-012]",PMAY (Housing),Housing,Madhya Pradesh,Bhopal,Govt,354.4,38,389.7,Yes,35.3,9.96
+"Surat Sector 24 PMAY-Urban Housing, Gujarat (278 units) [Work GJ-PMAY-2526-013]",PMAY (Housing),Housing,Gujarat,Surat,Govt,923.2,15,888.1,No,-35.1,-3.8
+"Ahmedabad Nagar Palika 1 PMAY-Urban Housing, Gujarat (402 units) [Work GJ-PMAY-2526-014]",PMAY (Housing),Housing,Gujarat,Ahmedabad,Govt,325.4,19,384.2,Yes,58.8,18.07
+"Bhopal Township 23 PMAY-Urban Housing, Madhya Pradesh (53 units) [Work MP-PMAY-2526-013]",PMAY (Housing),Housing,Madhya Pradesh,Bhopal,Private,546.9,45,534.3,No,-12.6,-2.3
+"Nashik Sector 8 PMAY-Urban Housing, Maharashtra (607 units) [Work MH-PMAY-2526-017]",PMAY (Housing),Housing,Maharashtra,Nashik,Govt,1702.9,20,1947.4,Yes,244.5,14.36
+"Varanasi Nagar Palika 24 PMAY-Urban Housing, Uttar Pradesh (737 units) [Work UP-PMAY-2526-018]",PMAY (Housing),Housing,Uttar Pradesh,Varanasi,Private,1208.8,22,1235.4,Yes,26.6,2.2
+"Kota Sector 7 PMAY-Urban Housing, Rajasthan (256 units) [Work RJ-PMAY-2526-004]",PMAY (Housing),Housing,Rajasthan,Kota,Govt,1108.3,12,1086.5,No,-21.8,-1.97
+"Jodhpur Township 1 PMAY-Urban Housing, Rajasthan (619 units) [Work RJ-PMAY-2526-005]",PMAY (Housing),Housing,Rajasthan,Jodhpur,Private,836.0,42,791.8,No,-44.2,-5.29
+"Paschim Medinipur Ward 24 PMAY-Urban Housing, West Bengal (140 units) [Work WB-PMAY-2526-006]",PMAY (Housing),Housing,West Bengal,Paschim Medinipur,Govt,1644.2,39,1716.3,Yes,72.1,4.39
+"Indore Township 14 PMAY-Urban Housing, Madhya Pradesh (708 units) [Work MP-PMAY-2526-014]",PMAY (Housing),Housing,Madhya Pradesh,Indore,Private,4487.1,16,4162.6,No,-324.5,-7.23
+"Bhopal Sector 17 PMAY-Urban Housing, Madhya Pradesh (207 units) [Work MP-PMAY-2526-015]",PMAY (Housing),Housing,Madhya Pradesh,Bhopal,Govt,2401.7,23,2545.8,Yes,144.1,6.0
+"Kanpur Nagar Ward 5 PMAY-Urban Housing, Uttar Pradesh (702 units) [Work UP-PMAY-2526-019]",PMAY (Housing),Housing,Uttar Pradesh,Kanpur Nagar,Govt,6136.1,32,6496.3,Yes,360.2,5.87
+"Dakshina Kannada Sector 2 PMAY-Urban Housing, Karnataka (379 units) [Work KA-PMAY-2526-020]",PMAY (Housing),Housing,Karnataka,Dakshina Kannada,Private,2597.1,47,2520.0,No,-77.1,-2.97
+"Salem Township 2 PMAY-Urban Housing, Tamil Nadu (150 units) [Work TN-PMAY-2526-006]",PMAY (Housing),Housing,Tamil Nadu,Salem,Govt,544.6,14,510.1,No,-34.5,-6.33
+"Madurai Ward 20 PMAY-Urban Housing, Tamil Nadu (679 units) [Work TN-PMAY-2526-007]",PMAY (Housing),Housing,Tamil Nadu,Madurai,Govt,108.8,29,120.2,Yes,11.4,10.48
+"Bhagalpur Nagar Palika 20 PMAY-Urban Housing, Bihar (1,187 units) [Work BR-PMAY-2526-007]",PMAY (Housing),Housing,Bihar,Bhagalpur,Govt,1002.9,44,1150.2,Yes,147.3,14.69
+"Amravati Township 17 PMAY-Urban Housing, Maharashtra (1,069 units) [Work MH-PMAY-2526-018]",PMAY (Housing),Housing,Maharashtra,Amravati,Private,2966.2,15,2843.1,No,-123.1,-4.15
+"Rajkot Ward 12 PMAY-Urban Housing, Gujarat (470 units) [Work GJ-PMAY-2526-015]",PMAY (Housing),Housing,Gujarat,Rajkot,Private,1371.9,14,1353.8,No,-18.1,-1.32
+"Surat Sector 4 PMAY-Urban Housing, Gujarat (336 units) [Work GJ-PMAY-2526-016]",PMAY (Housing),Housing,Gujarat,Surat,Govt,2470.6,40,2390.9,No,-79.7,-3.23
+"Chhatrapati Sambhajinagar Township 21 PMAY-Urban Housing, Maharashtra (202 units) [Work MH-PMAY-2526-019]",PMAY (Housing),Housing,Maharashtra,Chhatrapati Sambhajinagar,Private,3216.2,33,3116.4,No,-99.8,-3.1
+"Bengaluru Urban Ward 19 PMAY-Urban Housing, Karnataka (57 units) [Work KA-PMAY-2526-021]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Govt,1222.4,33,1448.9,Yes,226.5,18.53
+"Hyderabad Township 15 PMAY-Urban Housing, Telangana (909 units) [Work TS-PMAY-2526-010]",PMAY (Housing),Housing,Telangana,Hyderabad,Govt,1934.5,24,1897.6,No,-36.9,-1.91
+"Gautam Buddh Nagar Sector 24 PMAY-Urban Housing, Uttar Pradesh (60 units) [Work UP-PMAY-2526-020]",PMAY (Housing),Housing,Uttar Pradesh,Gautam Buddh Nagar,Private,191.7,32,216.3,Yes,24.6,12.83
+"Nizamabad Nagar Palika 15 PMAY-Urban Housing, Telangana (190 units) [Work TS-PMAY-2526-011]",PMAY (Housing),Housing,Telangana,Nizamabad,Private,570.5,30,540.3,No,-30.2,-5.29
+"Mysuru Sector 6 PMAY-Urban Housing, Karnataka (1,076 units) [Work KA-PMAY-2526-022]",PMAY (Housing),Housing,Karnataka,Mysuru,Private,963.1,29,917.8,No,-45.3,-4.7
+"Belagavi Nagar Palika 17 PMAY-Urban Housing, Karnataka (427 units) [Work KA-PMAY-2526-023]",PMAY (Housing),Housing,Karnataka,Belagavi,Private,1285.9,44,1284.6,No,-1.3,-0.1
+"Kalaburagi Ward 3 PMAY-Urban Housing, Karnataka (667 units) [Work KA-PMAY-2526-024]",PMAY (Housing),Housing,Karnataka,Kalaburagi,Private,748.6,19,747.9,No,-0.7,-0.09
+"Central Delhi Township 3 PMAY-Urban Housing, Delhi (125 units) [Work DL-PMAY-2526-003]",PMAY (Housing),Housing,Delhi,Central Delhi,Private,727.6,17,689.2,No,-38.4,-5.28
+"Lucknow Township 18 PMAY-Urban Housing, Uttar Pradesh (159 units) [Work UP-PMAY-2526-021]",PMAY (Housing),Housing,Uttar Pradesh,Lucknow,Private,905.2,43,891.1,No,-14.1,-1.56
+"Bhopal Sector 20 PMAY-Urban Housing, Madhya Pradesh (775 units) [Work MP-PMAY-2526-016]",PMAY (Housing),Housing,Madhya Pradesh,Bhopal,Private,567.2,43,614.4,Yes,47.2,8.32
+"Kalaburagi Sector 23 PMAY-Urban Housing, Karnataka (419 units) [Work KA-PMAY-2526-025]",PMAY (Housing),Housing,Karnataka,Kalaburagi,Private,291.1,29,276.8,No,-14.3,-4.91
+"Lucknow Ward 24 PMAY-Urban Housing, Uttar Pradesh (551 units) [Work UP-PMAY-2526-022]",PMAY (Housing),Housing,Uttar Pradesh,Lucknow,Private,1694.0,27,1586.6,No,-107.4,-6.34
+"Indore Township 14 PMAY-Urban Housing, Madhya Pradesh (669 units) [Work MP-PMAY-2526-017]",PMAY (Housing),Housing,Madhya Pradesh,Indore,Private,263.0,37,265.1,Yes,2.1,0.8
+"Visakhapatnam Ward 16 PMAY-Urban Housing, Andhra Pradesh (719 units) [Work AP-PMAY-2526-004]",PMAY (Housing),Housing,Andhra Pradesh,Visakhapatnam,Private,856.9,43,855.3,No,-1.6,-0.19
+"Vadodara Township 13 PMAY-Urban Housing, Gujarat (958 units) [Work GJ-PMAY-2526-017]",PMAY (Housing),Housing,Gujarat,Vadodara,Private,1242.6,22,1241.4,No,-1.2,-0.1
+"Jaipur Township 21 PMAY-Urban Housing, Rajasthan (362 units) [Work RJ-PMAY-2526-006]",PMAY (Housing),Housing,Rajasthan,Jaipur,Private,265.6,15,241.6,No,-24.0,-9.04
+"Warangal Sector 18 PMAY-Urban Housing, Telangana (730 units) [Work TS-PMAY-2526-012]",PMAY (Housing),Housing,Telangana,Warangal,Govt,482.6,26,537.7,Yes,55.1,11.42
+"Rajkot Nagar Palika 11 PMAY-Urban Housing, Gujarat (729 units) [Work GJ-PMAY-2526-018]",PMAY (Housing),Housing,Gujarat,Rajkot,Govt,2937.8,47,2789.3,No,-148.5,-5.05
+"Varanasi Ward 2 PMAY-Urban Housing, Uttar Pradesh (646 units) [Work UP-PMAY-2526-023]",PMAY (Housing),Housing,Uttar Pradesh,Varanasi,Govt,223.9,25,248.9,Yes,25.0,11.17
+"Varanasi Ward 13 PMAY-Urban Housing, Uttar Pradesh (478 units) [Work UP-PMAY-2526-024]",PMAY (Housing),Housing,Uttar Pradesh,Varanasi,Private,2457.8,17,2390.4,No,-67.4,-2.74
+"Ghaziabad Township 10 PMAY-Urban Housing, Uttar Pradesh (437 units) [Work UP-PMAY-2526-025]",PMAY (Housing),Housing,Uttar Pradesh,Ghaziabad,Private,293.6,20,329.1,Yes,35.5,12.09
+"Kalaburagi Township 24 PMAY-Urban Housing, Karnataka (175 units) [Work KA-PMAY-2526-026]",PMAY (Housing),Housing,Karnataka,Kalaburagi,Private,461.1,33,455.6,No,-5.5,-1.19
+"Patna Nagar Palika 13 PMAY-Urban Housing, Bihar (1,111 units) [Work BR-PMAY-2526-008]",PMAY (Housing),Housing,Bihar,Patna,Private,2200.5,47,2720.6,Yes,520.1,23.64
+"Ghaziabad Sector 1 PMAY-Urban Housing, Uttar Pradesh (992 units) [Work UP-PMAY-2526-026]",PMAY (Housing),Housing,Uttar Pradesh,Ghaziabad,Private,1793.2,39,1748.9,No,-44.3,-2.47
+"Dakshina Kannada Township 2 PMAY-Urban Housing, Karnataka (1,003 units) [Work KA-PMAY-2526-027]",PMAY (Housing),Housing,Karnataka,Dakshina Kannada,Govt,1835.7,30,1827.8,No,-7.9,-0.43
+"Udaipur Township 12 PMAY-Urban Housing, Rajasthan (661 units) [Work RJ-PMAY-2526-007]",PMAY (Housing),Housing,Rajasthan,Udaipur,Private,511.8,14,606.2,Yes,94.4,18.44
+"Nizamabad Ward 21 PMAY-Urban Housing, Telangana (159 units) [Work TS-PMAY-2526-013]",PMAY (Housing),Housing,Telangana,Nizamabad,Govt,227.3,21,263.0,Yes,35.7,15.71
+"Central Delhi Ward 4 PMAY-Urban Housing, Delhi (680 units) [Work DL-PMAY-2526-004]",PMAY (Housing),Housing,Delhi,Central Delhi,Govt,383.3,45,403.3,Yes,20.0,5.22
+"Warangal Ward 4 PMAY-Urban Housing, Telangana (769 units) [Work TS-PMAY-2526-014]",PMAY (Housing),Housing,Telangana,Warangal,Private,1685.1,40,1573.0,No,-112.1,-6.65
+"Ghaziabad Nagar Palika 15 PMAY-Urban Housing, Uttar Pradesh (1,003 units) [Work UP-PMAY-2526-027]",PMAY (Housing),Housing,Uttar Pradesh,Ghaziabad,Private,1583.4,47,1557.0,No,-26.4,-1.67
+"Madurai Township 15 PMAY-Urban Housing, Tamil Nadu (66 units) [Work TN-PMAY-2526-008]",PMAY (Housing),Housing,Tamil Nadu,Madurai,Private,1825.7,31,1692.8,No,-132.9,-7.28
+"Mumbai City Ward 13 PMAY-Urban Housing, Maharashtra (62 units) [Work MH-PMAY-2526-020]",PMAY (Housing),Housing,Maharashtra,Mumbai City,Private,964.2,24,937.2,No,-27.0,-2.8
+"Lucknow Township 10 PMAY-Urban Housing, Uttar Pradesh (335 units) [Work UP-PMAY-2526-028]",PMAY (Housing),Housing,Uttar Pradesh,Lucknow,Private,2987.5,42,2961.5,No,-26.0,-0.87
+"Pune Nagar Palika 14 PMAY-Urban Housing, Maharashtra (416 units) [Work MH-PMAY-2526-021]",PMAY (Housing),Housing,Maharashtra,Pune,Govt,566.0,34,610.8,Yes,44.8,7.92
+"Chennai Nagar Palika 17 PMAY-Urban Housing, Tamil Nadu (1,142 units) [Work TN-PMAY-2526-009]",PMAY (Housing),Housing,Tamil Nadu,Chennai,Govt,899.9,40,993.8,Yes,93.9,10.43
+"Ghaziabad Township 15 PMAY-Urban Housing, Uttar Pradesh (582 units) [Work UP-PMAY-2526-029]",PMAY (Housing),Housing,Uttar Pradesh,Ghaziabad,Govt,1210.9,21,1287.8,Yes,76.9,6.35
+"Madurai Ward 10 PMAY-Urban Housing, Tamil Nadu (643 units) [Work TN-PMAY-2526-010]",PMAY (Housing),Housing,Tamil Nadu,Madurai,Private,3352.2,21,3261.0,No,-91.2,-2.72
+"Belagavi Ward 1 PMAY-Urban Housing, Karnataka (802 units) [Work KA-PMAY-2526-028]",PMAY (Housing),Housing,Karnataka,Belagavi,Private,3887.1,28,3883.2,No,-3.9,-0.1
+"East Delhi Sector 15 PMAY-Urban Housing, Delhi (1,000 units) [Work DL-PMAY-2526-005]",PMAY (Housing),Housing,Delhi,East Delhi,Private,1001.0,29,964.6,No,-36.4,-3.64
+"Mysuru Ward 1 PMAY-Urban Housing, Karnataka (188 units) [Work KA-PMAY-2526-029]",PMAY (Housing),Housing,Karnataka,Mysuru,Private,4129.2,46,3985.1,No,-144.1,-3.49
+"Nashik Nagar Palika 11 PMAY-Urban Housing, Maharashtra (272 units) [Work MH-PMAY-2526-022]",PMAY (Housing),Housing,Maharashtra,Nashik,Govt,4511.7,38,5143.5,Yes,631.8,14.0
+"Amravati Township 19 PMAY-Urban Housing, Maharashtra (567 units) [Work MH-PMAY-2526-023]",PMAY (Housing),Housing,Maharashtra,Amravati,Govt,643.2,19,727.7,Yes,84.5,13.14
+"Thane Nagar Palika 22 PMAY-Urban Housing, Maharashtra (191 units) [Work MH-PMAY-2526-024]",PMAY (Housing),Housing,Maharashtra,Thane,Govt,862.7,43,901.3,Yes,38.6,4.47
+"Indore Ward 10 PMAY-Urban Housing, Madhya Pradesh (1,133 units) [Work MP-PMAY-2526-018]",PMAY (Housing),Housing,Madhya Pradesh,Indore,Private,1622.2,46,1917.1,Yes,294.9,18.18
+"Nizamabad Sector 4 PMAY-Urban Housing, Telangana (915 units) [Work TS-PMAY-2526-015]",PMAY (Housing),Housing,Telangana,Nizamabad,Govt,1863.1,38,1742.5,No,-120.6,-6.47
+"Agra Ward 22 PMAY-Urban Housing, Uttar Pradesh (815 units) [Work UP-PMAY-2526-030]",PMAY (Housing),Housing,Uttar Pradesh,Agra,Govt,247.7,41,276.5,Yes,28.8,11.63
+"Kalaburagi Sector 12 PMAY-Urban Housing, Karnataka (938 units) [Work KA-PMAY-2526-030]",PMAY (Housing),Housing,Karnataka,Kalaburagi,Govt,187.2,23,188.7,Yes,1.5,0.8
+"Coimbatore Ward 22 PMAY-Urban Housing, Tamil Nadu (996 units) [Work TN-PMAY-2526-011]",PMAY (Housing),Housing,Tamil Nadu,Coimbatore,Private,3127.5,32,3124.4,No,-3.1,-0.1
+"Kota Sector 11 PMAY-Urban Housing, Rajasthan (1,121 units) [Work RJ-PMAY-2526-008]",PMAY (Housing),Housing,Rajasthan,Kota,Private,3812.0,33,3526.6,No,-285.4,-7.49
+"Thane Township 2 PMAY-Urban Housing, Maharashtra (380 units) [Work MH-PMAY-2526-025]",PMAY (Housing),Housing,Maharashtra,Thane,Govt,233.3,14,218.2,No,-15.1,-6.47
+"Vadodara Sector 11 PMAY-Urban Housing, Gujarat (773 units) [Work GJ-PMAY-2526-019]",PMAY (Housing),Housing,Gujarat,Vadodara,Private,1148.6,32,1059.5,No,-89.1,-7.76
+"Hyderabad Nagar Palika 18 PMAY-Urban Housing, Telangana (996 units) [Work TS-PMAY-2526-016]",PMAY (Housing),Housing,Telangana,Hyderabad,Govt,2732.7,21,2627.7,No,-105.0,-3.84
+"Paschim Medinipur Township 22 PMAY-Urban Housing, West Bengal (1,042 units) [Work WB-PMAY-2526-007]",PMAY (Housing),Housing,West Bengal,Paschim Medinipur,Govt,1302.2,22,1441.4,Yes,139.2,10.69
+"Coimbatore Sector 24 PMAY-Urban Housing, Tamil Nadu (813 units) [Work TN-PMAY-2526-012]",PMAY (Housing),Housing,Tamil Nadu,Coimbatore,Private,1271.0,12,1181.5,No,-89.5,-7.04
+"Kanpur Nagar Township 23 PMAY-Urban Housing, Uttar Pradesh (905 units) [Work UP-PMAY-2526-031]",PMAY (Housing),Housing,Uttar Pradesh,Kanpur Nagar,Private,1755.3,26,1753.5,No,-1.8,-0.1
+"Kolkata Ward 21 PMAY-Urban Housing, West Bengal (170 units) [Work WB-PMAY-2526-008]",PMAY (Housing),Housing,West Bengal,Kolkata,Govt,214.6,31,241.8,Yes,27.2,12.67
+"Kozhikode Nagar Palika 20 PMAY-Urban Housing, Kerala (331 units) [Work KL-PMAY-2526-002]",PMAY (Housing),Housing,Kerala,Kozhikode,Private,1168.8,32,1097.0,No,-71.8,-6.14
+"Jodhpur Ward 15 PMAY-Urban Housing, Rajasthan (710 units) [Work RJ-PMAY-2526-009]",PMAY (Housing),Housing,Rajasthan,Jodhpur,Private,1923.2,39,2247.0,Yes,323.8,16.84
+"Nagpur Sector 13 PMAY-Urban Housing, Maharashtra (591 units) [Work MH-PMAY-2526-026]",PMAY (Housing),Housing,Maharashtra,Nagpur,Private,725.0,30,712.8,No,-12.2,-1.68
+"Kolkata Nagar Palika 20 PMAY-Urban Housing, West Bengal (906 units) [Work WB-PMAY-2526-009]",PMAY (Housing),Housing,West Bengal,Kolkata,Govt,535.4,37,583.5,Yes,48.1,8.98
+"Muzaffarpur Township 18 PMAY-Urban Housing, Bihar (719 units) [Work BR-PMAY-2526-009]",PMAY (Housing),Housing,Bihar,Muzaffarpur,Govt,1175.2,15,1362.9,Yes,187.7,15.97
+"Indore Sector 23 PMAY-Urban Housing, Madhya Pradesh (341 units) [Work MP-PMAY-2526-019]",PMAY (Housing),Housing,Madhya Pradesh,Indore,Private,516.2,18,515.7,No,-0.5,-0.1
+"Gautam Buddh Nagar Sector 4 PMAY-Urban Housing, Uttar Pradesh (1,184 units) [Work UP-PMAY-2526-032]",PMAY (Housing),Housing,Uttar Pradesh,Gautam Buddh Nagar,Private,996.5,20,990.2,No,-6.3,-0.63
+"Kalaburagi Township 17 PMAY-Urban Housing, Karnataka (501 units) [Work KA-PMAY-2526-031]",PMAY (Housing),Housing,Karnataka,Kalaburagi,Private,762.5,46,731.9,No,-30.6,-4.01
+"Nizamabad Sector 12 PMAY-Urban Housing, Telangana (983 units) [Work TS-PMAY-2526-017]",PMAY (Housing),Housing,Telangana,Nizamabad,Private,924.9,39,910.8,No,-14.1,-1.52
+"Jabalpur Township 24 PMAY-Urban Housing, Madhya Pradesh (244 units) [Work MP-PMAY-2526-020]",PMAY (Housing),Housing,Madhya Pradesh,Jabalpur,Private,3685.9,25,3496.9,No,-189.0,-5.13
+"Kolkata Ward 13 PMAY-Urban Housing, West Bengal (1,039 units) [Work WB-PMAY-2526-010]",PMAY (Housing),Housing,West Bengal,Kolkata,Govt,217.4,13,243.8,Yes,26.4,12.14
+"Agra Township 20 PMAY-Urban Housing, Uttar Pradesh (689 units) [Work UP-PMAY-2526-033]",PMAY (Housing),Housing,Uttar Pradesh,Agra,Private,1229.7,27,1228.5,No,-1.2,-0.1
+"Mysuru Township 19 PMAY-Urban Housing, Karnataka (241 units) [Work KA-PMAY-2526-032]",PMAY (Housing),Housing,Karnataka,Mysuru,Private,566.8,27,566.2,No,-0.6,-0.11
+"Hyderabad Nagar Palika 8 PMAY-Urban Housing, Telangana (1,076 units) [Work TS-PMAY-2526-018]",PMAY (Housing),Housing,Telangana,Hyderabad,Govt,720.8,31,743.2,Yes,22.4,3.11
+"Ernakulam Township 5 PMAY-Urban Housing, Kerala (361 units) [Work KL-PMAY-2526-003]",PMAY (Housing),Housing,Kerala,Ernakulam,Private,3130.0,32,2875.9,No,-254.1,-8.12
+"Ludhiana Ward 21 PMAY-Urban Housing, Punjab (710 units) [Work PB-PMAY-2526-003]",PMAY (Housing),Housing,Punjab,Ludhiana,Govt,3472.5,15,3239.4,No,-233.1,-6.71
+"Udaipur Sector 5 PMAY-Urban Housing, Rajasthan (463 units) [Work RJ-PMAY-2526-010]",PMAY (Housing),Housing,Rajasthan,Udaipur,Private,831.1,43,824.0,No,-7.1,-0.85
+"Varanasi Sector 18 PMAY-Urban Housing, Uttar Pradesh (85 units) [Work UP-PMAY-2526-034]",PMAY (Housing),Housing,Uttar Pradesh,Varanasi,Govt,243.4,48,249.5,Yes,6.1,2.51
+"Vijayawada Township 21 PMAY-Urban Housing, Andhra Pradesh (1,064 units) [Work AP-PMAY-2526-005]",PMAY (Housing),Housing,Andhra Pradesh,Vijayawada,Private,434.6,32,417.3,No,-17.3,-3.98
+"Belagavi Township 23 PMAY-Urban Housing, Karnataka (652 units) [Work KA-PMAY-2526-033]",PMAY (Housing),Housing,Karnataka,Belagavi,Private,1474.7,32,1370.6,No,-104.1,-7.06
+"Madurai Nagar Palika 11 PMAY-Urban Housing, Tamil Nadu (131 units) [Work TN-PMAY-2526-013]",PMAY (Housing),Housing,Tamil Nadu,Madurai,Private,407.6,12,386.2,No,-21.4,-5.25
+"Pune Ward 20 PMAY-Urban Housing, Maharashtra (1,189 units) [Work MH-PMAY-2526-027]",PMAY (Housing),Housing,Maharashtra,Pune,Govt,1366.8,42,1609.2,Yes,242.4,17.73
+"Mumbai City Nagar Palika 16 PMAY-Urban Housing, Maharashtra (916 units) [Work MH-PMAY-2526-028]",PMAY (Housing),Housing,Maharashtra,Mumbai City,Govt,1746.3,20,1668.7,No,-77.6,-4.44

@@ -1,0 +1,113 @@
+{
+  "chunk_size": 250,
+  "columns": [
+    "project_name",
+    "scheme_name",
+    "project_type",
+    "state",
+    "district",
+    "contractor_type",
+    "sanctioned_budget_lakh",
+    "duration_months",
+    "actual_cost_lakh",
+    "over_budget",
+    "overrun_lakh",
+    "overrun_pct"
+  ],
+  "elapsed_seconds": 0.034,
+  "engine": "pandas-chunked (Spark-shaped: map_partitions + partitioned output)",
+  "file_count": 5,
+  "format": "csv",
+  "format_note": "to_parquet() replaces to_csv() here once pyarrow is available",
+  "generated_at": "2026-10-04T07:59:30",
+  "partition_column": "scheme_name",
+  "partitions": {
+    "scheme_name=Jal_Jeevan_Mission": {
+      "files": 2,
+      "partition_value": "Jal Jeevan Mission",
+      "rows": 145,
+      "states": [
+        "Andhra Pradesh",
+        "Bihar",
+        "Delhi",
+        "Gujarat",
+        "Karnataka",
+        "Kerala",
+        "Madhya Pradesh",
+        "Maharashtra",
+        "Punjab",
+        "Rajasthan",
+        "Tamil Nadu",
+        "Telangana",
+        "Uttar Pradesh",
+        "West Bengal"
+      ]
+    },
+    "scheme_name=PMAY_Housing": {
+      "files": 1,
+      "partition_value": "PMAY (Housing)",
+      "rows": 210,
+      "states": [
+        "Andhra Pradesh",
+        "Bihar",
+        "Delhi",
+        "Gujarat",
+        "Karnataka",
+        "Kerala",
+        "Madhya Pradesh",
+        "Maharashtra",
+        "Punjab",
+        "Rajasthan",
+        "Tamil Nadu",
+        "Telangana",
+        "Uttar Pradesh",
+        "West Bengal"
+      ]
+    },
+    "scheme_name=PMGSY_Rural_Roads": {
+      "files": 1,
+      "partition_value": "PMGSY (Rural Roads)",
+      "rows": 250,
+      "states": [
+        "Andhra Pradesh",
+        "Bihar",
+        "Delhi",
+        "Gujarat",
+        "Karnataka",
+        "Kerala",
+        "Madhya Pradesh",
+        "Maharashtra",
+        "Punjab",
+        "Rajasthan",
+        "Tamil Nadu",
+        "Telangana",
+        "Uttar Pradesh",
+        "West Bengal"
+      ]
+    },
+    "scheme_name=Smart_Cities_Mission": {
+      "files": 1,
+      "partition_value": "Smart Cities Mission",
+      "rows": 95,
+      "states": [
+        "Andhra Pradesh",
+        "Bihar",
+        "Delhi",
+        "Gujarat",
+        "Karnataka",
+        "Kerala",
+        "Madhya Pradesh",
+        "Maharashtra",
+        "Punjab",
+        "Rajasthan",
+        "Tamil Nadu",
+        "Telangana",
+        "Uttar Pradesh",
+        "West Bengal"
+      ]
+    }
+  },
+  "row_count": 700,
+  "source": "C:\\Users\\VISHAL\\PYTHON\\constrution Qoo\\data\\india_projects_2025_26.csv",
+  "source_sha256": "474af515f64f3af331531b3e7afd9cc3da2a25feae40b1aa067de5c51bc255e5"
+}

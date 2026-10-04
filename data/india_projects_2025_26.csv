@@ -1,0 +1,701 @@
+project_name,scheme_name,project_type,state,district,contractor_type,sanctioned_budget_lakh,duration_months,actual_cost_lakh,over_budget
+"Hyderabad – Nizamabad Major District Road, Telangana [Work TS-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Telangana,Hyderabad,Govt,48.5,14,48.5,No
+"Amravati – Thane Link Road, Maharashtra [Work MH-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Maharashtra,Amravati,Govt,718.9,35,684.4,No
+"Gautam Buddh Nagar – Lucknow Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Gautam Buddh Nagar,Govt,662.8,15,766.7,Yes
+"Madurai – Chennai Link Road, Tamil Nadu [Work TN-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Madurai,Govt,136.7,23,128.3,No
+"Muzaffarpur – Patna Link Road, Bihar [Work BR-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Bihar,Muzaffarpur,Private,215.8,31,203.4,No
+"Paschim Medinipur – Howrah Rural Road Upgradation, West Bengal [Work WB-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,West Bengal,Paschim Medinipur,Private,236.0,36,264.2,Yes
+"Warangal – Hyderabad Link Road, Telangana [Work TS-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Private,168.5,13,159.6,No
+"Hyderabad – Warangal Bridge Causeway, Telangana [Work TS-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Telangana,Hyderabad,Govt,78.7,8,93.9,Yes
+"East Delhi – New Delhi Bridge Causeway, Delhi [Work DL-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Delhi,East Delhi,Private,363.4,30,352.7,No
+"Thane – Chhatrapati Sambhajinagar Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Govt,188.5,25,226.4,Yes
+"Indore – Jabalpur Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Govt,546.5,31,537.9,No
+"Kanpur Nagar – Gautam Buddh Nagar Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Govt,137.1,19,152.8,Yes
+"Jodhpur – Udaipur Major District Road, Rajasthan [Work RJ-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Rajasthan,Jodhpur,Govt,346.5,28,326.9,No
+"Kanpur Nagar – Gautam Buddh Nagar Bridge Causeway, Uttar Pradesh [Work UP-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Govt,480.6,26,559.0,Yes
+"Nagpur – Thane Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nagpur,Private,670.5,21,635.1,No
+"Dakshina Kannada – Belagavi Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Govt,107.4,11,104.9,No
+"Nagpur – Amravati Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nagpur,Govt,191.1,35,233.6,Yes
+"Muzaffarpur – Patna Link Road, Bihar [Work BR-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Bihar,Muzaffarpur,Private,55.8,28,51.7,No
+"Gautam Buddh Nagar – Prayagraj Bridge Causeway, Uttar Pradesh [Work UP-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Gautam Buddh Nagar,Private,292.4,36,372.0,Yes
+"Udaipur – Jodhpur Rural Road Upgradation, Rajasthan [Work RJ-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Govt,109.6,22,130.6,Yes
+"Chennai – Madurai Rural Road Upgradation, Tamil Nadu [Work TN-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Chennai,Private,32.5,27,32.1,No
+"Jabalpur – Indore Bridge Causeway, Madhya Pradesh [Work MP-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Jabalpur,Govt,38.6,10,44.1,Yes
+"Darjeeling – Kolkata Major District Road, West Bengal [Work WB-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,West Bengal,Darjeeling,Private,239.0,28,233.6,No
+"Varanasi – Gautam Buddh Nagar Bridge Causeway, Uttar Pradesh [Work UP-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Varanasi,Govt,215.9,31,245.3,Yes
+"Warangal – Hyderabad Link Road, Telangana [Work TS-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Private,161.7,35,147.3,No
+"Vadodara – Surat Rural Road Upgradation, Gujarat [Work GJ-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Gujarat,Vadodara,Private,550.6,11,514.2,No
+"Thane – Nashik Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Private,182.8,26,177.5,No
+"Vijayawada – Visakhapatnam Rural Road Upgradation, Andhra Pradesh [Work AP-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Vijayawada,Govt,1038.7,33,1224.6,Yes
+"Ahmedabad – Rajkot Major District Road, Gujarat [Work GJ-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Gujarat,Ahmedabad,Private,196.5,8,186.9,No
+"Kota – Jodhpur Major District Road, Rajasthan [Work RJ-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Rajasthan,Kota,Private,99.9,6,95.4,No
+"Madurai – Chennai Bridge Causeway, Tamil Nadu [Work TN-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Madurai,Govt,32.1,7,32.1,No
+"Kolkata – Howrah Link Road, West Bengal [Work WB-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,West Bengal,Kolkata,Private,201.1,25,198.5,No
+"Ernakulam – Thiruvananthapuram Bridge Causeway, Kerala [Work KL-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Kerala,Ernakulam,Govt,158.4,32,179.3,Yes
+"Indore – Jabalpur Link Road, Madhya Pradesh [Work MP-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Govt,148.5,6,171.3,Yes
+"Amravati – Thane Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Maharashtra,Amravati,Govt,59.6,14,63.5,Yes
+"Rajkot – Vadodara Rural Road Upgradation, Gujarat [Work GJ-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Gujarat,Rajkot,Private,210.3,32,202.2,No
+"Central Delhi – New Delhi Rural Road Upgradation, Delhi [Work DL-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Delhi,Central Delhi,Private,500.3,22,485.6,No
+"Chhatrapati Sambhajinagar – Thane Major District Road, Maharashtra [Work MH-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Maharashtra,Chhatrapati Sambhajinagar,Private,93.1,6,88.7,No
+"Dakshina Kannada – Belagavi Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Govt,243.4,8,225.4,No
+"Jodhpur – Kota Link Road, Rajasthan [Work RJ-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Rajasthan,Jodhpur,Govt,363.7,17,447.6,Yes
+"Jabalpur – Indore Rural Road Upgradation, Madhya Pradesh [Work MP-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Jabalpur,Private,249.9,13,242.3,No
+"Kanpur Nagar – Ghaziabad Rural Road Upgradation, Uttar Pradesh [Work UP-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Private,140.2,18,148.6,Yes
+"Coimbatore – Salem Rural Road Upgradation, Tamil Nadu [Work TN-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Coimbatore,Govt,241.7,20,268.2,Yes
+"Bengaluru Urban – Mysuru Major District Road, Karnataka [Work KA-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Karnataka,Bengaluru Urban,Govt,191.0,35,219.0,Yes
+"Varanasi – Agra Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Varanasi,Govt,177.8,36,227.5,Yes
+"Nizamabad – Warangal Link Road, Telangana [Work TS-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Telangana,Nizamabad,Govt,78.4,34,87.1,Yes
+"Bhopal – Indore Rural Road Upgradation, Madhya Pradesh [Work MP-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Bhopal,Private,88.1,16,87.4,No
+"Belagavi – Dakshina Kannada Bridge Causeway, Karnataka [Work KA-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Karnataka,Belagavi,Govt,288.4,13,315.3,Yes
+"Udaipur – Jodhpur Rural Road Upgradation, Rajasthan [Work RJ-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Private,1271.9,35,1208.6,No
+"Ahmedabad – Rajkot Rural Road Upgradation, Gujarat [Work GJ-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Gujarat,Ahmedabad,Private,173.7,28,168.5,No
+"Vadodara – Rajkot Bridge Causeway, Gujarat [Work GJ-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Gujarat,Vadodara,Govt,298.6,32,288.1,No
+"Vijayawada – Visakhapatnam Major District Road, Andhra Pradesh [Work AP-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Vijayawada,Private,143.8,28,139.3,No
+"Warangal – Nizamabad Major District Road, Telangana [Work TS-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Govt,59.1,18,65.1,Yes
+"Udaipur – Jaipur Bridge Causeway, Rajasthan [Work RJ-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Private,30.0,21,37.7,Yes
+"Coimbatore – Chennai Rural Road Upgradation, Tamil Nadu [Work TN-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Coimbatore,Govt,256.9,10,259.0,Yes
+"Warangal – Hyderabad Rural Road Upgradation, Telangana [Work TS-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Govt,328.0,29,292.8,No
+"Nashik – Amravati Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Private,615.0,35,614.4,No
+"Thane – Pune Major District Road, Maharashtra [Work MH-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Govt,519.5,32,555.8,Yes
+"Ahmedabad – Vadodara Link Road, Gujarat [Work GJ-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Gujarat,Ahmedabad,Govt,586.1,34,569.5,No
+"North-East Delhi – New Delhi Major District Road, Delhi [Work DL-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Delhi,North-East Delhi,Govt,56.0,11,74.5,Yes
+"Udaipur – Jodhpur Link Road, Rajasthan [Work RJ-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Private,100.5,14,96.5,No
+"Nagpur – Thane Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nagpur,Govt,149.9,30,177.1,Yes
+"Chhatrapati Sambhajinagar – Nagpur Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Maharashtra,Chhatrapati Sambhajinagar,Govt,298.0,34,316.6,Yes
+"Nizamabad – Warangal Bridge Causeway, Telangana [Work TS-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Telangana,Nizamabad,Private,169.8,19,167.0,No
+"Jodhpur – Udaipur Major District Road, Rajasthan [Work RJ-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Rajasthan,Jodhpur,Private,93.1,6,86.9,No
+"Nashik – Mumbai City Link Road, Maharashtra [Work MH-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Govt,356.1,15,404.9,Yes
+"Thane – Nashik Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Govt,208.7,10,195.3,No
+"Bengaluru Urban – Dakshina Kannada Bridge Causeway, Karnataka [Work KA-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Karnataka,Bengaluru Urban,Private,209.0,28,200.9,No
+"Tirupati – Vijayawada Rural Road Upgradation, Andhra Pradesh [Work AP-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Tirupati,Private,238.1,21,230.5,No
+"Indore – Gwalior Rural Road Upgradation, Madhya Pradesh [Work MP-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Govt,309.8,21,354.6,Yes
+"Kalaburagi – Belagavi Bridge Causeway, Karnataka [Work KA-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Karnataka,Kalaburagi,Govt,606.9,9,584.7,No
+"Gwalior – Jabalpur Link Road, Madhya Pradesh [Work MP-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Gwalior,Govt,131.9,6,158.2,Yes
+"Ghaziabad – Gautam Buddh Nagar Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Ghaziabad,Private,333.4,32,321.1,No
+"Bengaluru Urban – Kalaburagi Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Karnataka,Bengaluru Urban,Private,471.5,12,453.7,No
+"Gaya – Bhagalpur Major District Road, Bihar [Work BR-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Bihar,Gaya,Govt,253.7,7,321.9,Yes
+"Kalaburagi – Belagavi Bridge Causeway, Karnataka [Work KA-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Karnataka,Kalaburagi,Private,62.3,26,60.2,No
+"Mysuru – Kalaburagi Link Road, Karnataka [Work KA-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Karnataka,Mysuru,Private,217.3,34,207.0,No
+"Jodhpur – Jaipur Rural Road Upgradation, Rajasthan [Work RJ-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Rajasthan,Jodhpur,Govt,221.8,14,207.9,No
+"Thane – Amravati Link Road, Maharashtra [Work MH-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Private,503.7,13,502.1,No
+"Nizamabad – Warangal Rural Road Upgradation, Telangana [Work TS-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Telangana,Nizamabad,Govt,133.8,27,156.2,Yes
+"Udaipur – Kota Link Road, Rajasthan [Work RJ-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Govt,78.6,27,86.6,Yes
+"Indore – Gwalior Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Govt,845.1,25,1010.0,Yes
+"Lucknow – Prayagraj Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Lucknow,Private,49.5,7,49.1,No
+"Surat – Ahmedabad Link Road, Gujarat [Work GJ-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Gujarat,Surat,Govt,633.3,8,632.7,No
+"Visakhapatnam – Vijayawada Major District Road, Andhra Pradesh [Work AP-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Visakhapatnam,Govt,207.1,33,226.0,Yes
+"Bhagalpur – Muzaffarpur Major District Road, Bihar [Work BR-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Bihar,Bhagalpur,Private,92.1,36,98.3,Yes
+"Madurai – Chennai Rural Road Upgradation, Tamil Nadu [Work TN-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Madurai,Private,260.2,15,243.0,No
+"Thane – Nagpur Link Road, Maharashtra [Work MH-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Govt,106.1,32,107.9,Yes
+"Surat – Rajkot Rural Road Upgradation, Gujarat [Work GJ-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Gujarat,Surat,Private,242.0,7,230.5,No
+"Thane – Nashik Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Private,289.7,35,273.7,No
+"Vadodara – Rajkot Link Road, Gujarat [Work GJ-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Gujarat,Vadodara,Private,130.8,20,130.7,No
+"Coimbatore – Madurai Rural Road Upgradation, Tamil Nadu [Work TN-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Coimbatore,Govt,131.8,30,119.5,No
+"Amravati – Chhatrapati Sambhajinagar Link Road, Maharashtra [Work MH-PMGSY-2526-017]",PMGSY (Rural Roads),Road Construction,Maharashtra,Amravati,Govt,97.5,15,95.4,No
+"Gwalior – Indore Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Gwalior,Govt,155.9,30,160.6,Yes
+"Dakshina Kannada – Mysuru Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Govt,398.2,33,380.3,No
+"Jodhpur – Udaipur Link Road, Rajasthan [Work RJ-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Rajasthan,Jodhpur,Govt,294.6,10,317.4,Yes
+"Bhopal – Indore Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Bhopal,Govt,154.8,14,163.7,Yes
+"Muzaffarpur – Bhagalpur Major District Road, Bihar [Work BR-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Bihar,Muzaffarpur,Govt,84.2,22,97.8,Yes
+"North-East Delhi – Central Delhi Link Road, Delhi [Work DL-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Delhi,North-East Delhi,Govt,90.7,16,95.8,Yes
+"Howrah – Kolkata Rural Road Upgradation, West Bengal [Work WB-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,West Bengal,Howrah,Govt,78.3,32,78.9,Yes
+"Gautam Buddh Nagar – Lucknow Link Road, Uttar Pradesh [Work UP-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Gautam Buddh Nagar,Govt,223.3,8,238.2,Yes
+"Chennai – Coimbatore Link Road, Tamil Nadu [Work TN-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Chennai,Private,33.6,20,31.4,No
+"Dakshina Kannada – Kalaburagi Bridge Causeway, Karnataka [Work KA-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Private,195.2,14,193.2,No
+"Paschim Medinipur – Darjeeling Major District Road, West Bengal [Work WB-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,West Bengal,Paschim Medinipur,Private,92.8,15,90.6,No
+"Nizamabad – Warangal Major District Road, Telangana [Work TS-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Telangana,Nizamabad,Private,691.5,8,660.1,No
+"Madurai – Salem Link Road, Tamil Nadu [Work TN-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Madurai,Govt,252.6,15,222.3,No
+"Chhatrapati Sambhajinagar – Pune Major District Road, Maharashtra [Work MH-PMGSY-2526-018]",PMGSY (Rural Roads),Road Construction,Maharashtra,Chhatrapati Sambhajinagar,Govt,234.1,28,259.1,Yes
+"Dakshina Kannada – Belagavi Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Govt,639.9,15,608.5,No
+"Patna – Muzaffarpur Link Road, Bihar [Work BR-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Bihar,Patna,Private,182.9,30,200.8,Yes
+"Varanasi – Agra Link Road, Uttar Pradesh [Work UP-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Varanasi,Govt,68.2,14,85.0,Yes
+"Thane – Nagpur Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-019]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Private,182.8,23,166.7,No
+"Ahmedabad – Vadodara Link Road, Gujarat [Work GJ-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Gujarat,Ahmedabad,Private,161.9,28,177.6,Yes
+"Mysuru – Dakshina Kannada Link Road, Karnataka [Work KA-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Karnataka,Mysuru,Private,47.5,11,57.1,Yes
+"Chhatrapati Sambhajinagar – Amravati Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-020]",PMGSY (Rural Roads),Road Construction,Maharashtra,Chhatrapati Sambhajinagar,Private,186.6,25,172.4,No
+"Rajkot – Vadodara Rural Road Upgradation, Gujarat [Work GJ-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Gujarat,Rajkot,Private,476.0,29,451.7,No
+"Kanpur Nagar – Agra Link Road, Uttar Pradesh [Work UP-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Private,213.3,35,242.9,Yes
+"Warangal – Hyderabad Bridge Causeway, Telangana [Work TS-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Govt,113.2,29,128.7,Yes
+"Coimbatore – Chennai Link Road, Tamil Nadu [Work TN-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Coimbatore,Govt,77.1,14,83.4,Yes
+"Gwalior – Jabalpur Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Gwalior,Private,75.8,16,75.0,No
+"Udaipur – Jodhpur Rural Road Upgradation, Rajasthan [Work RJ-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Private,166.0,8,154.1,No
+"Amravati – Nagpur Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-021]",PMGSY (Rural Roads),Road Construction,Maharashtra,Amravati,Private,77.8,30,88.4,Yes
+"Udaipur – Jaipur Rural Road Upgradation, Rajasthan [Work RJ-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Govt,528.8,19,574.5,Yes
+"Bhagalpur – Gaya Bridge Causeway, Bihar [Work BR-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Bihar,Bhagalpur,Govt,675.4,34,778.0,Yes
+"Indore – Jabalpur Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Private,343.3,17,343.0,No
+"Vijayawada – Visakhapatnam Major District Road, Andhra Pradesh [Work AP-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Vijayawada,Govt,358.3,16,402.5,Yes
+"Nashik – Pune Major District Road, Maharashtra [Work MH-PMGSY-2526-022]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Private,249.3,7,227.4,No
+"Ernakulam – Thiruvananthapuram Bridge Causeway, Kerala [Work KL-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Kerala,Ernakulam,Govt,173.5,24,165.5,No
+"Rajkot – Ahmedabad Major District Road, Gujarat [Work GJ-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Gujarat,Rajkot,Govt,133.6,7,133.5,No
+"Patna – Muzaffarpur Rural Road Upgradation, Bihar [Work BR-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Bihar,Patna,Govt,312.1,13,335.2,Yes
+"Ludhiana – Amritsar Bridge Causeway, Punjab [Work PB-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Punjab,Ludhiana,Private,153.6,15,149.0,No
+"Ahmedabad – Rajkot Bridge Causeway, Gujarat [Work GJ-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Gujarat,Ahmedabad,Govt,78.8,17,74.1,No
+"Ghaziabad – Kanpur Nagar Link Road, Uttar Pradesh [Work UP-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Ghaziabad,Private,131.2,19,126.9,No
+"Nashik – Thane Major District Road, Maharashtra [Work MH-PMGSY-2526-023]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Govt,133.4,8,125.2,No
+"Thiruvananthapuram – Kozhikode Major District Road, Kerala [Work KL-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Kerala,Thiruvananthapuram,Govt,94.9,28,93.5,No
+"Ludhiana – Jalandhar Link Road, Punjab [Work PB-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Punjab,Ludhiana,Private,162.3,7,162.1,No
+"Visakhapatnam – Tirupati Major District Road, Andhra Pradesh [Work AP-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Visakhapatnam,Private,69.6,17,67.0,No
+"Darjeeling – Howrah Link Road, West Bengal [Work WB-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,West Bengal,Darjeeling,Private,275.0,11,263.7,No
+"Thane – Amravati Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-024]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Govt,88.0,22,106.4,Yes
+"Hyderabad – Warangal Bridge Causeway, Telangana [Work TS-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Telangana,Hyderabad,Private,94.6,8,91.8,No
+"Gaya – Muzaffarpur Rural Road Upgradation, Bihar [Work BR-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Bihar,Gaya,Govt,159.6,18,186.7,Yes
+"Nashik – Pune Major District Road, Maharashtra [Work MH-PMGSY-2526-025]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Private,253.7,8,234.2,No
+"Nashik – Thane Major District Road, Maharashtra [Work MH-PMGSY-2526-026]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Govt,76.5,11,84.8,Yes
+"Kanpur Nagar – Ghaziabad Rural Road Upgradation, Uttar Pradesh [Work UP-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Govt,352.4,34,405.3,Yes
+"Nagpur – Thane Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-027]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nagpur,Private,233.2,32,229.8,No
+"Nashik – Nagpur Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-028]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Govt,254.4,31,288.5,Yes
+"Kalaburagi – Mysuru Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Karnataka,Kalaburagi,Private,126.1,26,119.9,No
+"Kozhikode – Ernakulam Major District Road, Kerala [Work KL-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Kerala,Kozhikode,Private,200.0,22,191.6,No
+"Nagpur – Amravati Link Road, Maharashtra [Work MH-PMGSY-2526-029]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nagpur,Govt,149.6,33,161.5,Yes
+"Nagpur – Pune Major District Road, Maharashtra [Work MH-PMGSY-2526-030]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nagpur,Private,167.4,21,167.2,No
+"Vijayawada – Tirupati Rural Road Upgradation, Andhra Pradesh [Work AP-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Vijayawada,Private,415.1,15,414.7,No
+"Prayagraj – Ghaziabad Link Road, Uttar Pradesh [Work UP-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Prayagraj,Private,57.5,23,65.8,Yes
+"Prayagraj – Lucknow Bridge Causeway, Uttar Pradesh [Work UP-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Prayagraj,Private,63.2,14,60.6,No
+"Surat – Vadodara Major District Road, Gujarat [Work GJ-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Gujarat,Surat,Private,126.2,11,113.7,No
+"Chhatrapati Sambhajinagar – Thane Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-031]",PMGSY (Rural Roads),Road Construction,Maharashtra,Chhatrapati Sambhajinagar,Private,167.0,33,157.4,No
+"Muzaffarpur – Bhagalpur Rural Road Upgradation, Bihar [Work BR-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Bihar,Muzaffarpur,Govt,336.2,11,368.7,Yes
+"Jodhpur – Udaipur Link Road, Rajasthan [Work RJ-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Rajasthan,Jodhpur,Private,181.7,31,181.5,No
+"Dakshina Kannada – Belagavi Major District Road, Karnataka [Work KA-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Govt,240.8,33,258.6,Yes
+"Kota – Udaipur Rural Road Upgradation, Rajasthan [Work RJ-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Rajasthan,Kota,Govt,82.8,34,85.0,Yes
+"Salem – Chennai Rural Road Upgradation, Tamil Nadu [Work TN-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Salem,Private,288.5,14,288.2,No
+"Nizamabad – Warangal Bridge Causeway, Telangana [Work TS-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Telangana,Nizamabad,Private,37.3,29,35.0,No
+"Gaya – Muzaffarpur Bridge Causeway, Bihar [Work BR-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Bihar,Gaya,Govt,397.1,28,442.7,Yes
+"Agra – Lucknow Bridge Causeway, Uttar Pradesh [Work UP-PMGSY-2526-017]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Agra,Private,122.0,27,117.5,No
+"Bengaluru Urban – Kalaburagi Major District Road, Karnataka [Work KA-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Karnataka,Bengaluru Urban,Govt,301.3,16,355.4,Yes
+"Vijayawada – Tirupati Link Road, Andhra Pradesh [Work AP-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Vijayawada,Private,102.3,31,94.7,No
+"Nashik – Amravati Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-032]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Private,251.7,6,248.3,No
+"Bhopal – Jabalpur Link Road, Madhya Pradesh [Work MP-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Bhopal,Private,64.5,27,70.4,Yes
+"Gautam Buddh Nagar – Kanpur Nagar Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-018]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Gautam Buddh Nagar,Govt,253.0,17,333.1,Yes
+"Hyderabad – Nizamabad Link Road, Telangana [Work TS-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Telangana,Hyderabad,Govt,111.8,17,134.4,Yes
+"Ernakulam – Kozhikode Bridge Causeway, Kerala [Work KL-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Kerala,Ernakulam,Govt,171.1,27,210.7,Yes
+"Agra – Ghaziabad Link Road, Uttar Pradesh [Work UP-PMGSY-2526-019]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Agra,Govt,91.4,35,109.3,Yes
+"Kalaburagi – Dakshina Kannada Link Road, Karnataka [Work KA-PMGSY-2526-017]",PMGSY (Rural Roads),Road Construction,Karnataka,Kalaburagi,Govt,531.9,25,505.0,No
+"Mumbai City – Nashik Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-033]",PMGSY (Rural Roads),Road Construction,Maharashtra,Mumbai City,Govt,196.9,12,184.0,No
+"Belagavi – Bengaluru Urban Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-018]",PMGSY (Rural Roads),Road Construction,Karnataka,Belagavi,Govt,147.3,21,187.0,Yes
+"Varanasi – Agra Bridge Causeway, Uttar Pradesh [Work UP-PMGSY-2526-020]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Varanasi,Govt,110.8,6,120.2,Yes
+"Vadodara – Rajkot Major District Road, Gujarat [Work GJ-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Gujarat,Vadodara,Govt,376.2,15,366.2,No
+"Visakhapatnam – Vijayawada Major District Road, Andhra Pradesh [Work AP-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Visakhapatnam,Private,267.7,29,260.4,No
+"Gwalior – Jabalpur Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Gwalior,Private,481.9,18,462.3,No
+"Kolkata – Darjeeling Link Road, West Bengal [Work WB-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,West Bengal,Kolkata,Private,151.4,14,142.9,No
+"Gautam Buddh Nagar – Lucknow Link Road, Uttar Pradesh [Work UP-PMGSY-2526-021]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Gautam Buddh Nagar,Govt,236.0,14,237.9,Yes
+"Chennai – Madurai Link Road, Tamil Nadu [Work TN-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Chennai,Private,151.9,9,145.9,No
+"Gautam Buddh Nagar – Kanpur Nagar Bridge Causeway, Uttar Pradesh [Work UP-PMGSY-2526-022]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Gautam Buddh Nagar,Private,151.0,8,140.5,No
+"Agra – Varanasi Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-023]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Agra,Private,511.0,19,566.6,Yes
+"Nashik – Chhatrapati Sambhajinagar Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-034]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Govt,169.6,22,165.2,No
+"Belagavi – Bengaluru Urban Bridge Causeway, Karnataka [Work KA-PMGSY-2526-019]",PMGSY (Rural Roads),Road Construction,Karnataka,Belagavi,Govt,120.6,26,142.2,Yes
+"Warangal – Hyderabad Bridge Causeway, Telangana [Work TS-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Govt,389.3,7,388.9,No
+"Kota – Jaipur Major District Road, Rajasthan [Work RJ-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Rajasthan,Kota,Govt,119.0,11,136.9,Yes
+"Gwalior – Jabalpur Link Road, Madhya Pradesh [Work MP-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Gwalior,Govt,30.0,20,34.8,Yes
+"Bhagalpur – Patna Rural Road Upgradation, Bihar [Work BR-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Bihar,Bhagalpur,Private,58.5,6,52.7,No
+"Coimbatore – Salem Link Road, Tamil Nadu [Work TN-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Coimbatore,Private,133.1,22,130.2,No
+"Dakshina Kannada – Mysuru Bridge Causeway, Karnataka [Work KA-PMGSY-2526-020]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Private,85.8,14,83.8,No
+"Kanpur Nagar – Agra Rural Road Upgradation, Uttar Pradesh [Work UP-PMGSY-2526-024]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Govt,238.6,10,294.1,Yes
+"Dakshina Kannada – Belagavi Link Road, Karnataka [Work KA-PMGSY-2526-021]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Govt,291.4,17,280.3,No
+"North-East Delhi – Central Delhi Bridge Causeway, Delhi [Work DL-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Delhi,North-East Delhi,Govt,287.1,32,335.0,Yes
+"Varanasi – Ghaziabad Link Road, Uttar Pradesh [Work UP-PMGSY-2526-025]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Varanasi,Private,318.2,16,304.8,No
+"Surat – Rajkot Link Road, Gujarat [Work GJ-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Gujarat,Surat,Govt,552.1,33,536.4,No
+"Vadodara – Ahmedabad Bridge Causeway, Gujarat [Work GJ-PMGSY-2526-017]",PMGSY (Rural Roads),Road Construction,Gujarat,Vadodara,Govt,167.9,26,161.3,No
+"Ludhiana – Amritsar Major District Road, Punjab [Work PB-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Punjab,Ludhiana,Private,1003.5,16,964.6,No
+"Varanasi – Ghaziabad Link Road, Uttar Pradesh [Work UP-PMGSY-2526-026]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Varanasi,Govt,106.1,27,126.9,Yes
+"Surat – Vadodara Bridge Causeway, Gujarat [Work GJ-PMGSY-2526-018]",PMGSY (Rural Roads),Road Construction,Gujarat,Surat,Private,74.0,12,79.5,Yes
+"Dakshina Kannada – Belagavi Link Road, Karnataka [Work KA-PMGSY-2526-022]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Govt,326.0,19,346.6,Yes
+"Warangal – Nizamabad Bridge Causeway, Telangana [Work TS-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Govt,275.8,34,263.3,No
+"Howrah – Darjeeling Major District Road, West Bengal [Work WB-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,West Bengal,Howrah,Private,193.4,30,193.2,No
+"Thane – Mumbai City Link Road, Maharashtra [Work MH-PMGSY-2526-035]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Private,288.2,36,260.4,No
+"Vadodara – Surat Major District Road, Gujarat [Work GJ-PMGSY-2526-019]",PMGSY (Rural Roads),Road Construction,Gujarat,Vadodara,Private,121.7,19,117.4,No
+"Tirupati – Vijayawada Major District Road, Andhra Pradesh [Work AP-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Tirupati,Govt,159.4,29,199.7,Yes
+"Mysuru – Belagavi Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-023]",PMGSY (Rural Roads),Road Construction,Karnataka,Mysuru,Govt,227.3,16,260.7,Yes
+"New Delhi – East Delhi Link Road, Delhi [Work DL-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Delhi,New Delhi,Private,668.3,15,629.9,No
+"Kota – Jaipur Bridge Causeway, Rajasthan [Work RJ-PMGSY-2526-017]",PMGSY (Rural Roads),Road Construction,Rajasthan,Kota,Govt,129.6,29,142.1,Yes
+"North-East Delhi – East Delhi Rural Road Upgradation, Delhi [Work DL-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Delhi,North-East Delhi,Govt,295.2,9,294.9,No
+"Chhatrapati Sambhajinagar – Nashik Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-036]",PMGSY (Rural Roads),Road Construction,Maharashtra,Chhatrapati Sambhajinagar,Govt,239.8,34,262.9,Yes
+"Salem – Madurai Link Road, Tamil Nadu [Work TN-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Salem,Private,238.1,8,231.9,No
+"Mumbai City – Nagpur Link Road, Maharashtra [Work MH-PMGSY-2526-037]",PMGSY (Rural Roads),Road Construction,Maharashtra,Mumbai City,Private,329.3,20,360.4,Yes
+"Rajkot – Vadodara Rural Road Upgradation, Gujarat [Work GJ-PMGSY-2526-020]",PMGSY (Rural Roads),Road Construction,Gujarat,Rajkot,Govt,814.5,32,798.3,No
+"Warangal – Nizamabad Rural Road Upgradation, Telangana [Work TS-PMGSY-2526-017]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Private,36.7,12,33.6,No
+"Salem – Madurai Rural Road Upgradation, Tamil Nadu [Work TN-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Salem,Private,76.1,34,74.4,No
+"Chennai – Coimbatore Major District Road, Tamil Nadu [Work TN-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Chennai,Private,287.4,21,269.4,No
+"East Delhi – Central Delhi Major District Road, Delhi [Work DL-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Delhi,East Delhi,Govt,457.0,34,498.3,Yes
+"North-East Delhi – East Delhi Major District Road, Delhi [Work DL-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Delhi,North-East Delhi,Govt,109.3,8,107.1,No
+"Lucknow – Kanpur Nagar Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-027]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Lucknow,Private,240.3,21,252.4,Yes
+"Jabalpur – Gwalior Rural Road Upgradation, Madhya Pradesh [Work MP-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Jabalpur,Govt,178.3,30,184.5,Yes
+"Kalaburagi – Belagavi Link Road, Karnataka [Work KA-PMGSY-2526-024]",PMGSY (Rural Roads),Road Construction,Karnataka,Kalaburagi,Govt,55.1,19,62.1,Yes
+"Mumbai City – Pune Major District Road, Maharashtra [Work MH-PMGSY-2526-038]",PMGSY (Rural Roads),Road Construction,Maharashtra,Mumbai City,Private,349.8,12,340.6,No
+"Jaipur – Jodhpur Bridge Causeway, Rajasthan [Work RJ-PMGSY-2526-018]",PMGSY (Rural Roads),Road Construction,Rajasthan,Jaipur,Private,296.9,36,287.2,No
+"Kolkata – Darjeeling Rural Road Upgradation, West Bengal [Work WB-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,West Bengal,Kolkata,Private,252.0,12,232.2,No
+"Dakshina Kannada – Bengaluru Urban Major District Road, Karnataka [Work KA-PMGSY-2526-025]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Private,104.7,22,104.6,No
+"Gautam Buddh Nagar – Ghaziabad Link Road, Uttar Pradesh [Work UP-PMGSY-2526-028]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Gautam Buddh Nagar,Govt,68.8,34,75.6,Yes
+"Tirupati – Visakhapatnam Bridge Causeway, Andhra Pradesh [Work AP-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Tirupati,Private,136.7,8,136.6,No
+"Chhatrapati Sambhajinagar – Nashik Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-039]",PMGSY (Rural Roads),Road Construction,Maharashtra,Chhatrapati Sambhajinagar,Govt,360.4,11,360.0,No
+"Udaipur – Jaipur Link Road, Rajasthan [Work RJ-PMGSY-2526-019]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Private,77.8,12,77.2,No
+"Muzaffarpur – Bhagalpur Bridge Causeway, Bihar [Work BR-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Bihar,Muzaffarpur,Private,337.6,25,411.0,Yes
+"Rajkot – Vadodara Rural Road Upgradation, Gujarat [Work GJ-PMGSY-2526-021]",PMGSY (Rural Roads),Road Construction,Gujarat,Rajkot,Private,275.1,18,270.8,No
+"Indore – Gwalior Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-017]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Govt,30.0,20,34.8,Yes
+"Kolkata – Darjeeling Link Road, West Bengal [Work WB-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,West Bengal,Kolkata,Private,462.5,28,462.0,No
+"Ludhiana – Jalandhar Link Road, Punjab [Work PB-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Punjab,Ludhiana,Govt,549.0,8,539.1,No
+"Kanpur Nagar – Ghaziabad Rural Road Upgradation, Uttar Pradesh [Work UP-PMGSY-2526-029]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Private,284.9,17,330.1,Yes
+"Hyderabad – Warangal Link Road, Telangana [Work TS-PMGSY-2526-018]",PMGSY (Rural Roads),Road Construction,Telangana,Hyderabad,Govt,142.2,17,154.7,Yes
+"Mumbai City – Thane Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-040]",PMGSY (Rural Roads),Road Construction,Maharashtra,Mumbai City,Private,219.6,14,219.4,No
+"Warangal – Nizamabad Bridge Causeway, Telangana [Work TS-PMGSY-2526-019]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Private,965.2,26,956.1,No
+"Visakhapatnam – Vijayawada Major District Road, Andhra Pradesh [Work AP-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Visakhapatnam,Private,964.8,18,891.5,No
+"Gaya – Bhagalpur Link Road, Bihar [Work BR-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Bihar,Gaya,Govt,154.9,19,175.3,Yes
+"Kanpur Nagar – Varanasi Link Road, Uttar Pradesh [Work UP-PMGSY-2526-030]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Private,336.4,31,392.0,Yes
+"Nizamabad – Warangal Link Road, Telangana [Work TS-PMGSY-2526-020]",PMGSY (Rural Roads),Road Construction,Telangana,Nizamabad,Govt,90.3,31,107.5,Yes
+"Bengaluru Urban – Dakshina Kannada Bridge Causeway, Karnataka [Work KA-PMGSY-2526-026]",PMGSY (Rural Roads),Road Construction,Karnataka,Bengaluru Urban,Govt,130.3,14,123.5,No
+"Amravati – Nashik Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-041]",PMGSY (Rural Roads),Road Construction,Maharashtra,Amravati,Govt,237.6,28,269.3,Yes
+"Amritsar – Ludhiana Major District Road, Punjab [Work PB-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Punjab,Amritsar,Private,1037.3,6,990.0,No
+"Varanasi – Lucknow Rural Road Upgradation, Uttar Pradesh [Work UP-PMGSY-2526-031]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Varanasi,Private,265.7,28,323.0,Yes
+"Amritsar – Jalandhar Rural Road Upgradation, Punjab [Work PB-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Punjab,Amritsar,Govt,1017.1,29,1007.0,No
+"Gwalior – Jabalpur Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-018]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Gwalior,Govt,105.3,27,120.1,Yes
+"Indore – Jabalpur Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-019]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Govt,69.1,21,82.6,Yes
+"Indore – Bhopal Rural Road Upgradation, Madhya Pradesh [Work MP-PMGSY-2526-020]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Private,421.5,17,466.1,Yes
+"Belagavi Township 10 PMAY-Urban Housing, Karnataka (1,044 units) [Work KA-PMAY-2526-001]",PMAY (Housing),Housing,Karnataka,Belagavi,Govt,1656.0,42,1685.5,Yes
+"Gaya Nagar Palika 21 PMAY-Urban Housing, Bihar (911 units) [Work BR-PMAY-2526-001]",PMAY (Housing),Housing,Bihar,Gaya,Govt,646.9,25,673.8,Yes
+"Kolkata Ward 19 PMAY-Urban Housing, West Bengal (296 units) [Work WB-PMAY-2526-001]",PMAY (Housing),Housing,West Bengal,Kolkata,Private,1144.5,23,1057.7,No
+"Rajkot Ward 18 PMAY-Urban Housing, Gujarat (79 units) [Work GJ-PMAY-2526-001]",PMAY (Housing),Housing,Gujarat,Rajkot,Private,247.1,27,234.8,No
+"Ahmedabad Sector 11 PMAY-Urban Housing, Gujarat (660 units) [Work GJ-PMAY-2526-002]",PMAY (Housing),Housing,Gujarat,Ahmedabad,Private,154.4,46,141.3,No
+"Bengaluru Urban Sector 9 PMAY-Urban Housing, Karnataka (1,071 units) [Work KA-PMAY-2526-002]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Private,2252.8,12,2091.3,No
+"Amravati Nagar Palika 23 PMAY-Urban Housing, Maharashtra (1,168 units) [Work MH-PMAY-2526-001]",PMAY (Housing),Housing,Maharashtra,Amravati,Private,906.4,21,851.6,No
+"Varanasi Sector 3 PMAY-Urban Housing, Uttar Pradesh (291 units) [Work UP-PMAY-2526-001]",PMAY (Housing),Housing,Uttar Pradesh,Varanasi,Govt,1611.7,22,1591.3,No
+"Warangal Nagar Palika 20 PMAY-Urban Housing, Telangana (133 units) [Work TS-PMAY-2526-001]",PMAY (Housing),Housing,Telangana,Warangal,Govt,4621.0,15,4196.1,No
+"Madurai Ward 16 PMAY-Urban Housing, Tamil Nadu (774 units) [Work TN-PMAY-2526-001]",PMAY (Housing),Housing,Tamil Nadu,Madurai,Private,1052.2,13,993.2,No
+"Surat Sector 12 PMAY-Urban Housing, Gujarat (563 units) [Work GJ-PMAY-2526-003]",PMAY (Housing),Housing,Gujarat,Surat,Govt,313.1,27,346.7,Yes
+"Bhopal Township 6 PMAY-Urban Housing, Madhya Pradesh (348 units) [Work MP-PMAY-2526-001]",PMAY (Housing),Housing,Madhya Pradesh,Bhopal,Govt,515.0,40,598.5,Yes
+"Chhatrapati Sambhajinagar Township 2 PMAY-Urban Housing, Maharashtra (838 units) [Work MH-PMAY-2526-002]",PMAY (Housing),Housing,Maharashtra,Chhatrapati Sambhajinagar,Private,347.4,47,337.5,No
+"Rajkot Nagar Palika 22 PMAY-Urban Housing, Gujarat (297 units) [Work GJ-PMAY-2526-004]",PMAY (Housing),Housing,Gujarat,Rajkot,Private,669.5,39,656.1,No
+"Bengaluru Urban Ward 15 PMAY-Urban Housing, Karnataka (381 units) [Work KA-PMAY-2526-003]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Private,631.1,21,601.0,No
+"Belagavi Nagar Palika 17 PMAY-Urban Housing, Karnataka (203 units) [Work KA-PMAY-2526-004]",PMAY (Housing),Housing,Karnataka,Belagavi,Private,435.0,46,506.4,Yes
+"East Delhi Ward 3 PMAY-Urban Housing, Delhi (562 units) [Work DL-PMAY-2526-001]",PMAY (Housing),Housing,Delhi,East Delhi,Govt,425.9,39,488.9,Yes
+"Amravati Township 20 PMAY-Urban Housing, Maharashtra (903 units) [Work MH-PMAY-2526-003]",PMAY (Housing),Housing,Maharashtra,Amravati,Govt,476.2,42,507.5,Yes
+"Coimbatore Sector 15 PMAY-Urban Housing, Tamil Nadu (592 units) [Work TN-PMAY-2526-002]",PMAY (Housing),Housing,Tamil Nadu,Coimbatore,Private,1051.1,47,1050.0,No
+"Muzaffarpur Township 18 PMAY-Urban Housing, Bihar (657 units) [Work BR-PMAY-2526-002]",PMAY (Housing),Housing,Bihar,Muzaffarpur,Private,337.8,47,375.5,Yes
+"Pune Ward 12 PMAY-Urban Housing, Maharashtra (602 units) [Work MH-PMAY-2526-004]",PMAY (Housing),Housing,Maharashtra,Pune,Private,1071.0,36,1005.7,No
+"Warangal Ward 6 PMAY-Urban Housing, Telangana (567 units) [Work TS-PMAY-2526-002]",PMAY (Housing),Housing,Telangana,Warangal,Govt,2409.9,30,2382.4,No
+"Chennai Nagar Palika 18 PMAY-Urban Housing, Tamil Nadu (545 units) [Work TN-PMAY-2526-003]",PMAY (Housing),Housing,Tamil Nadu,Chennai,Private,986.0,35,935.6,No
+"Prayagraj Township 5 PMAY-Urban Housing, Uttar Pradesh (225 units) [Work UP-PMAY-2526-002]",PMAY (Housing),Housing,Uttar Pradesh,Prayagraj,Private,763.7,48,833.0,Yes
+"Nashik Ward 19 PMAY-Urban Housing, Maharashtra (787 units) [Work MH-PMAY-2526-005]",PMAY (Housing),Housing,Maharashtra,Nashik,Govt,1413.7,26,1379.3,No
+"Kanpur Nagar Ward 21 PMAY-Urban Housing, Uttar Pradesh (624 units) [Work UP-PMAY-2526-003]",PMAY (Housing),Housing,Uttar Pradesh,Kanpur Nagar,Private,1453.4,46,1406.8,No
+"Mysuru Nagar Palika 7 PMAY-Urban Housing, Karnataka (378 units) [Work KA-PMAY-2526-005]",PMAY (Housing),Housing,Karnataka,Mysuru,Govt,204.6,38,224.6,Yes
+"Jabalpur Ward 16 PMAY-Urban Housing, Madhya Pradesh (1,188 units) [Work MP-PMAY-2526-002]",PMAY (Housing),Housing,Madhya Pradesh,Jabalpur,Private,1688.3,12,1659.1,No
+"Vadodara Nagar Palika 20 PMAY-Urban Housing, Gujarat (282 units) [Work GJ-PMAY-2526-005]",PMAY (Housing),Housing,Gujarat,Vadodara,Private,1836.1,23,1771.5,No
+"Mumbai City Township 22 PMAY-Urban Housing, Maharashtra (1,183 units) [Work MH-PMAY-2526-006]",PMAY (Housing),Housing,Maharashtra,Mumbai City,Private,1975.2,20,1784.2,No
+"Jabalpur Sector 14 PMAY-Urban Housing, Madhya Pradesh (417 units) [Work MP-PMAY-2526-003]",PMAY (Housing),Housing,Madhya Pradesh,Jabalpur,Private,1038.9,13,954.2,No
+"Bengaluru Urban Township 9 PMAY-Urban Housing, Karnataka (518 units) [Work KA-PMAY-2526-006]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Private,1182.8,27,1122.9,No
+"Coimbatore Township 11 PMAY-Urban Housing, Tamil Nadu (265 units) [Work TN-PMAY-2526-004]",PMAY (Housing),Housing,Tamil Nadu,Coimbatore,Private,1001.0,27,961.7,No
+"Bengaluru Urban Township 8 PMAY-Urban Housing, Karnataka (686 units) [Work KA-PMAY-2526-007]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Govt,1018.6,48,1255.1,Yes
+"Bengaluru Urban Sector 2 PMAY-Urban Housing, Karnataka (364 units) [Work KA-PMAY-2526-008]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Govt,1194.0,44,1203.6,Yes
+"North-East Delhi Nagar Palika 15 PMAY-Urban Housing, Delhi (1,025 units) [Work DL-PMAY-2526-002]",PMAY (Housing),Housing,Delhi,North-East Delhi,Govt,867.0,12,810.4,No
+"Mumbai City Nagar Palika 22 PMAY-Urban Housing, Maharashtra (130 units) [Work MH-PMAY-2526-007]",PMAY (Housing),Housing,Maharashtra,Mumbai City,Private,416.7,26,385.9,No
+"Bengaluru Urban Nagar Palika 4 PMAY-Urban Housing, Karnataka (1,089 units) [Work KA-PMAY-2526-009]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Private,839.5,33,826.8,No
+"Gwalior Township 23 PMAY-Urban Housing, Madhya Pradesh (882 units) [Work MP-PMAY-2526-004]",PMAY (Housing),Housing,Madhya Pradesh,Gwalior,Private,633.1,17,609.2,No
+"Kalaburagi Nagar Palika 6 PMAY-Urban Housing, Karnataka (597 units) [Work KA-PMAY-2526-010]",PMAY (Housing),Housing,Karnataka,Kalaburagi,Govt,1779.1,46,1949.8,Yes
+"Nizamabad Ward 11 PMAY-Urban Housing, Telangana (867 units) [Work TS-PMAY-2526-003]",PMAY (Housing),Housing,Telangana,Nizamabad,Govt,3095.4,29,3092.3,No
+"Agra Sector 18 PMAY-Urban Housing, Uttar Pradesh (942 units) [Work UP-PMAY-2526-004]",PMAY (Housing),Housing,Uttar Pradesh,Agra,Private,423.8,35,501.2,Yes
+"Pune Sector 2 PMAY-Urban Housing, Maharashtra (743 units) [Work MH-PMAY-2526-008]",PMAY (Housing),Housing,Maharashtra,Pune,Govt,530.3,34,542.0,Yes
+"Kota Sector 20 PMAY-Urban Housing, Rajasthan (524 units) [Work RJ-PMAY-2526-001]",PMAY (Housing),Housing,Rajasthan,Kota,Govt,286.9,18,307.4,Yes
+"Agra Ward 23 PMAY-Urban Housing, Uttar Pradesh (1,118 units) [Work UP-PMAY-2526-005]",PMAY (Housing),Housing,Uttar Pradesh,Agra,Govt,2338.0,34,2521.0,Yes
+"Darjeeling Sector 22 PMAY-Urban Housing, West Bengal (926 units) [Work WB-PMAY-2526-002]",PMAY (Housing),Housing,West Bengal,Darjeeling,Private,1018.3,44,943.3,No
+"Ludhiana Sector 15 PMAY-Urban Housing, Punjab (138 units) [Work PB-PMAY-2526-001]",PMAY (Housing),Housing,Punjab,Ludhiana,Private,1492.0,41,1339.9,No
+"Ghaziabad Nagar Palika 18 PMAY-Urban Housing, Uttar Pradesh (706 units) [Work UP-PMAY-2526-006]",PMAY (Housing),Housing,Uttar Pradesh,Ghaziabad,Govt,606.2,35,664.8,Yes
+"Prayagraj Nagar Palika 13 PMAY-Urban Housing, Uttar Pradesh (1,026 units) [Work UP-PMAY-2526-007]",PMAY (Housing),Housing,Uttar Pradesh,Prayagraj,Private,2256.4,18,2160.7,No
+"Warangal Township 5 PMAY-Urban Housing, Telangana (892 units) [Work TS-PMAY-2526-004]",PMAY (Housing),Housing,Telangana,Warangal,Govt,622.4,16,631.3,Yes
+"Nashik Sector 6 PMAY-Urban Housing, Maharashtra (1,133 units) [Work MH-PMAY-2526-009]",PMAY (Housing),Housing,Maharashtra,Nashik,Private,718.5,33,717.8,No
+"Bhagalpur Nagar Palika 15 PMAY-Urban Housing, Bihar (1,029 units) [Work BR-PMAY-2526-003]",PMAY (Housing),Housing,Bihar,Bhagalpur,Govt,966.2,19,1107.0,Yes
+"Vijayawada Nagar Palika 4 PMAY-Urban Housing, Andhra Pradesh (846 units) [Work AP-PMAY-2526-001]",PMAY (Housing),Housing,Andhra Pradesh,Vijayawada,Private,1070.5,15,1008.1,No
+"Nagpur Ward 12 PMAY-Urban Housing, Maharashtra (439 units) [Work MH-PMAY-2526-010]",PMAY (Housing),Housing,Maharashtra,Nagpur,Govt,543.6,43,625.1,Yes
+"Chhatrapati Sambhajinagar Nagar Palika 13 PMAY-Urban Housing, Maharashtra (433 units) [Work MH-PMAY-2526-011]",PMAY (Housing),Housing,Maharashtra,Chhatrapati Sambhajinagar,Private,1207.5,30,1192.0,No
+"Indore Sector 3 PMAY-Urban Housing, Madhya Pradesh (1,145 units) [Work MP-PMAY-2526-005]",PMAY (Housing),Housing,Madhya Pradesh,Indore,Private,2051.8,41,2010.6,No
+"Nashik Sector 17 PMAY-Urban Housing, Maharashtra (211 units) [Work MH-PMAY-2526-012]",PMAY (Housing),Housing,Maharashtra,Nashik,Govt,594.4,22,559.5,No
+"Pune Nagar Palika 10 PMAY-Urban Housing, Maharashtra (209 units) [Work MH-PMAY-2526-013]",PMAY (Housing),Housing,Maharashtra,Pune,Govt,1200.8,28,1369.5,Yes
+"Agra Ward 9 PMAY-Urban Housing, Uttar Pradesh (84 units) [Work UP-PMAY-2526-008]",PMAY (Housing),Housing,Uttar Pradesh,Agra,Private,776.4,27,739.4,No
+"Gaya Ward 11 PMAY-Urban Housing, Bihar (63 units) [Work BR-PMAY-2526-004]",PMAY (Housing),Housing,Bihar,Gaya,Govt,218.2,27,230.8,Yes
+"Mysuru Sector 15 PMAY-Urban Housing, Karnataka (483 units) [Work KA-PMAY-2526-011]",PMAY (Housing),Housing,Karnataka,Mysuru,Private,633.7,12,617.6,No
+"Hyderabad Nagar Palika 3 PMAY-Urban Housing, Telangana (445 units) [Work TS-PMAY-2526-005]",PMAY (Housing),Housing,Telangana,Hyderabad,Govt,1162.9,39,1296.9,Yes
+"Lucknow Sector 19 PMAY-Urban Housing, Uttar Pradesh (73 units) [Work UP-PMAY-2526-009]",PMAY (Housing),Housing,Uttar Pradesh,Lucknow,Private,1535.0,24,1621.0,Yes
+"Paschim Medinipur Township 24 PMAY-Urban Housing, West Bengal (776 units) [Work WB-PMAY-2526-003]",PMAY (Housing),Housing,West Bengal,Paschim Medinipur,Private,1265.3,30,1239.3,No
+"Varanasi Township 9 PMAY-Urban Housing, Uttar Pradesh (678 units) [Work UP-PMAY-2526-010]",PMAY (Housing),Housing,Uttar Pradesh,Varanasi,Govt,582.5,47,635.0,Yes
+"Lucknow Nagar Palika 8 PMAY-Urban Housing, Uttar Pradesh (569 units) [Work UP-PMAY-2526-011]",PMAY (Housing),Housing,Uttar Pradesh,Lucknow,Private,920.2,14,879.9,No
+"Bengaluru Urban Sector 2 PMAY-Urban Housing, Karnataka (595 units) [Work KA-PMAY-2526-012]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Govt,4112.3,22,5096.0,Yes
+"Jabalpur Nagar Palika 11 PMAY-Urban Housing, Madhya Pradesh (628 units) [Work MP-PMAY-2526-006]",PMAY (Housing),Housing,Madhya Pradesh,Jabalpur,Govt,1127.1,41,1257.6,Yes
+"Bengaluru Urban Township 13 PMAY-Urban Housing, Karnataka (1,166 units) [Work KA-PMAY-2526-013]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Govt,1004.0,48,1042.9,Yes
+"Jalandhar Township 10 PMAY-Urban Housing, Punjab (369 units) [Work PB-PMAY-2526-002]",PMAY (Housing),Housing,Punjab,Jalandhar,Private,305.7,16,297.2,No
+"Gautam Buddh Nagar Sector 1 PMAY-Urban Housing, Uttar Pradesh (262 units) [Work UP-PMAY-2526-012]",PMAY (Housing),Housing,Uttar Pradesh,Gautam Buddh Nagar,Govt,2825.9,20,3167.3,Yes
+"Thiruvananthapuram Nagar Palika 17 PMAY-Urban Housing, Kerala (831 units) [Work KL-PMAY-2526-001]",PMAY (Housing),Housing,Kerala,Thiruvananthapuram,Govt,1789.1,38,1777.1,No
+"Nashik Ward 12 PMAY-Urban Housing, Maharashtra (449 units) [Work MH-PMAY-2526-014]",PMAY (Housing),Housing,Maharashtra,Nashik,Private,2075.8,26,2013.5,No
+"Dakshina Kannada Sector 22 PMAY-Urban Housing, Karnataka (706 units) [Work KA-PMAY-2526-014]",PMAY (Housing),Housing,Karnataka,Dakshina Kannada,Govt,447.9,14,460.8,Yes
+"Surat Township 6 PMAY-Urban Housing, Gujarat (617 units) [Work GJ-PMAY-2526-006]",PMAY (Housing),Housing,Gujarat,Surat,Govt,1832.6,32,1902.3,Yes
+"Vadodara Sector 15 PMAY-Urban Housing, Gujarat (977 units) [Work GJ-PMAY-2526-007]",PMAY (Housing),Housing,Gujarat,Vadodara,Private,1035.9,22,983.9,No
+"Patna Nagar Palika 4 PMAY-Urban Housing, Bihar (1,191 units) [Work BR-PMAY-2526-005]",PMAY (Housing),Housing,Bihar,Patna,Govt,413.9,37,433.6,Yes
+"Lucknow Ward 1 PMAY-Urban Housing, Uttar Pradesh (252 units) [Work UP-PMAY-2526-013]",PMAY (Housing),Housing,Uttar Pradesh,Lucknow,Private,774.9,40,748.0,No
+"Bhopal Township 6 PMAY-Urban Housing, Madhya Pradesh (93 units) [Work MP-PMAY-2526-007]",PMAY (Housing),Housing,Madhya Pradesh,Bhopal,Govt,848.3,21,919.0,Yes
+"Gautam Buddh Nagar Ward 10 PMAY-Urban Housing, Uttar Pradesh (270 units) [Work UP-PMAY-2526-014]",PMAY (Housing),Housing,Uttar Pradesh,Gautam Buddh Nagar,Govt,1038.2,22,1210.8,Yes
+"Kota Sector 5 PMAY-Urban Housing, Rajasthan (151 units) [Work RJ-PMAY-2526-002]",PMAY (Housing),Housing,Rajasthan,Kota,Govt,477.2,24,546.3,Yes
+"Surat Township 13 PMAY-Urban Housing, Gujarat (1,117 units) [Work GJ-PMAY-2526-008]",PMAY (Housing),Housing,Gujarat,Surat,Private,2248.3,24,2246.1,No
+"Rajkot Ward 22 PMAY-Urban Housing, Gujarat (928 units) [Work GJ-PMAY-2526-009]",PMAY (Housing),Housing,Gujarat,Rajkot,Private,1442.7,14,1342.2,No
+"Hyderabad Sector 23 PMAY-Urban Housing, Telangana (976 units) [Work TS-PMAY-2526-006]",PMAY (Housing),Housing,Telangana,Hyderabad,Govt,1070.3,38,1221.6,Yes
+"Belagavi Ward 16 PMAY-Urban Housing, Karnataka (935 units) [Work KA-PMAY-2526-015]",PMAY (Housing),Housing,Karnataka,Belagavi,Govt,3411.1,28,3407.7,No
+"Lucknow Nagar Palika 21 PMAY-Urban Housing, Uttar Pradesh (968 units) [Work UP-PMAY-2526-015]",PMAY (Housing),Housing,Uttar Pradesh,Lucknow,Private,793.3,39,828.3,Yes
+"Surat Nagar Palika 11 PMAY-Urban Housing, Gujarat (525 units) [Work GJ-PMAY-2526-010]",PMAY (Housing),Housing,Gujarat,Surat,Govt,1175.1,48,1266.2,Yes
+"Jodhpur Sector 7 PMAY-Urban Housing, Rajasthan (537 units) [Work RJ-PMAY-2526-003]",PMAY (Housing),Housing,Rajasthan,Jodhpur,Private,1467.8,43,1653.2,Yes
+"Ghaziabad Sector 11 PMAY-Urban Housing, Uttar Pradesh (425 units) [Work UP-PMAY-2526-016]",PMAY (Housing),Housing,Uttar Pradesh,Ghaziabad,Private,1840.9,40,1974.0,Yes
+"Belagavi Nagar Palika 14 PMAY-Urban Housing, Karnataka (222 units) [Work KA-PMAY-2526-016]",PMAY (Housing),Housing,Karnataka,Belagavi,Govt,970.3,13,1060.8,Yes
+"Belagavi Sector 19 PMAY-Urban Housing, Karnataka (343 units) [Work KA-PMAY-2526-017]",PMAY (Housing),Housing,Karnataka,Belagavi,Private,2332.7,47,2270.6,No
+"Howrah Nagar Palika 5 PMAY-Urban Housing, West Bengal (211 units) [Work WB-PMAY-2526-004]",PMAY (Housing),Housing,West Bengal,Howrah,Private,523.7,18,512.5,No
+"Mysuru Township 3 PMAY-Urban Housing, Karnataka (351 units) [Work KA-PMAY-2526-018]",PMAY (Housing),Housing,Karnataka,Mysuru,Private,2717.0,23,2596.2,No
+"Indore Sector 20 PMAY-Urban Housing, Madhya Pradesh (115 units) [Work MP-PMAY-2526-008]",PMAY (Housing),Housing,Madhya Pradesh,Indore,Private,558.0,21,526.3,No
+"Bhopal Ward 3 PMAY-Urban Housing, Madhya Pradesh (345 units) [Work MP-PMAY-2526-009]",PMAY (Housing),Housing,Madhya Pradesh,Bhopal,Private,1098.7,22,1017.6,No
+"Mysuru Sector 15 PMAY-Urban Housing, Karnataka (262 units) [Work KA-PMAY-2526-019]",PMAY (Housing),Housing,Karnataka,Mysuru,Govt,1187.3,21,1165.2,No
+"Warangal Nagar Palika 24 PMAY-Urban Housing, Telangana (228 units) [Work TS-PMAY-2526-007]",PMAY (Housing),Housing,Telangana,Warangal,Govt,547.3,29,622.0,Yes
+"Nizamabad Township 3 PMAY-Urban Housing, Telangana (603 units) [Work TS-PMAY-2526-008]",PMAY (Housing),Housing,Telangana,Nizamabad,Private,2810.0,21,2648.2,No
+"Gwalior Ward 9 PMAY-Urban Housing, Madhya Pradesh (1,139 units) [Work MP-PMAY-2526-010]",PMAY (Housing),Housing,Madhya Pradesh,Gwalior,Govt,252.8,36,275.3,Yes
+"Prayagraj Township 7 PMAY-Urban Housing, Uttar Pradesh (266 units) [Work UP-PMAY-2526-017]",PMAY (Housing),Housing,Uttar Pradesh,Prayagraj,Private,780.8,23,745.0,No
+"Surat Sector 9 PMAY-Urban Housing, Gujarat (92 units) [Work GJ-PMAY-2526-011]",PMAY (Housing),Housing,Gujarat,Surat,Private,1489.5,33,1488.0,No
+"Vijayawada Ward 22 PMAY-Urban Housing, Andhra Pradesh (1,142 units) [Work AP-PMAY-2526-002]",PMAY (Housing),Housing,Andhra Pradesh,Vijayawada,Private,223.6,41,201.9,No
+"Nagpur Ward 8 PMAY-Urban Housing, Maharashtra (472 units) [Work MH-PMAY-2526-015]",PMAY (Housing),Housing,Maharashtra,Nagpur,Private,682.2,46,681.5,No
+"Paschim Medinipur Sector 5 PMAY-Urban Housing, West Bengal (341 units) [Work WB-PMAY-2526-005]",PMAY (Housing),Housing,West Bengal,Paschim Medinipur,Govt,446.2,32,501.3,Yes
+"Tirupati Nagar Palika 13 PMAY-Urban Housing, Andhra Pradesh (495 units) [Work AP-PMAY-2526-003]",PMAY (Housing),Housing,Andhra Pradesh,Tirupati,Govt,1003.5,24,1209.8,Yes
+"Rajkot Ward 13 PMAY-Urban Housing, Gujarat (724 units) [Work GJ-PMAY-2526-012]",PMAY (Housing),Housing,Gujarat,Rajkot,Private,1067.0,22,1010.9,No
+"Pune Township 17 PMAY-Urban Housing, Maharashtra (115 units) [Work MH-PMAY-2526-016]",PMAY (Housing),Housing,Maharashtra,Pune,Govt,1408.3,25,1335.5,No
+"Warangal Sector 4 PMAY-Urban Housing, Telangana (154 units) [Work TS-PMAY-2526-009]",PMAY (Housing),Housing,Telangana,Warangal,Private,2788.8,12,2654.2,No
+"Muzaffarpur Nagar Palika 16 PMAY-Urban Housing, Bihar (881 units) [Work BR-PMAY-2526-006]",PMAY (Housing),Housing,Bihar,Muzaffarpur,Private,917.4,14,894.3,No
+"Gwalior Sector 1 PMAY-Urban Housing, Madhya Pradesh (1,018 units) [Work MP-PMAY-2526-011]",PMAY (Housing),Housing,Madhya Pradesh,Gwalior,Private,1062.9,33,994.0,No
+"Chennai Ward 11 PMAY-Urban Housing, Tamil Nadu (1,039 units) [Work TN-PMAY-2526-005]",PMAY (Housing),Housing,Tamil Nadu,Chennai,Private,1577.2,17,1575.6,No
+"Bhopal Nagar Palika 3 PMAY-Urban Housing, Madhya Pradesh (858 units) [Work MP-PMAY-2526-012]",PMAY (Housing),Housing,Madhya Pradesh,Bhopal,Govt,354.4,38,389.7,Yes
+"Surat Sector 24 PMAY-Urban Housing, Gujarat (278 units) [Work GJ-PMAY-2526-013]",PMAY (Housing),Housing,Gujarat,Surat,Govt,923.2,15,888.1,No
+"Ahmedabad Nagar Palika 1 PMAY-Urban Housing, Gujarat (402 units) [Work GJ-PMAY-2526-014]",PMAY (Housing),Housing,Gujarat,Ahmedabad,Govt,325.4,19,384.2,Yes
+"Bhopal Township 23 PMAY-Urban Housing, Madhya Pradesh (53 units) [Work MP-PMAY-2526-013]",PMAY (Housing),Housing,Madhya Pradesh,Bhopal,Private,546.9,45,534.3,No
+"Nashik Sector 8 PMAY-Urban Housing, Maharashtra (607 units) [Work MH-PMAY-2526-017]",PMAY (Housing),Housing,Maharashtra,Nashik,Govt,1702.9,20,1947.4,Yes
+"Varanasi Nagar Palika 24 PMAY-Urban Housing, Uttar Pradesh (737 units) [Work UP-PMAY-2526-018]",PMAY (Housing),Housing,Uttar Pradesh,Varanasi,Private,1208.8,22,1235.4,Yes
+"Kota Sector 7 PMAY-Urban Housing, Rajasthan (256 units) [Work RJ-PMAY-2526-004]",PMAY (Housing),Housing,Rajasthan,Kota,Govt,1108.3,12,1086.5,No
+"Jodhpur Township 1 PMAY-Urban Housing, Rajasthan (619 units) [Work RJ-PMAY-2526-005]",PMAY (Housing),Housing,Rajasthan,Jodhpur,Private,836.0,42,791.8,No
+"Paschim Medinipur Ward 24 PMAY-Urban Housing, West Bengal (140 units) [Work WB-PMAY-2526-006]",PMAY (Housing),Housing,West Bengal,Paschim Medinipur,Govt,1644.2,39,1716.3,Yes
+"Indore Township 14 PMAY-Urban Housing, Madhya Pradesh (708 units) [Work MP-PMAY-2526-014]",PMAY (Housing),Housing,Madhya Pradesh,Indore,Private,4487.1,16,4162.6,No
+"Bhopal Sector 17 PMAY-Urban Housing, Madhya Pradesh (207 units) [Work MP-PMAY-2526-015]",PMAY (Housing),Housing,Madhya Pradesh,Bhopal,Govt,2401.7,23,2545.8,Yes
+"Kanpur Nagar Ward 5 PMAY-Urban Housing, Uttar Pradesh (702 units) [Work UP-PMAY-2526-019]",PMAY (Housing),Housing,Uttar Pradesh,Kanpur Nagar,Govt,6136.1,32,6496.3,Yes
+"Dakshina Kannada Sector 2 PMAY-Urban Housing, Karnataka (379 units) [Work KA-PMAY-2526-020]",PMAY (Housing),Housing,Karnataka,Dakshina Kannada,Private,2597.1,47,2520.0,No
+"Salem Township 2 PMAY-Urban Housing, Tamil Nadu (150 units) [Work TN-PMAY-2526-006]",PMAY (Housing),Housing,Tamil Nadu,Salem,Govt,544.6,14,510.1,No
+"Madurai Ward 20 PMAY-Urban Housing, Tamil Nadu (679 units) [Work TN-PMAY-2526-007]",PMAY (Housing),Housing,Tamil Nadu,Madurai,Govt,108.8,29,120.2,Yes
+"Bhagalpur Nagar Palika 20 PMAY-Urban Housing, Bihar (1,187 units) [Work BR-PMAY-2526-007]",PMAY (Housing),Housing,Bihar,Bhagalpur,Govt,1002.9,44,1150.2,Yes
+"Amravati Township 17 PMAY-Urban Housing, Maharashtra (1,069 units) [Work MH-PMAY-2526-018]",PMAY (Housing),Housing,Maharashtra,Amravati,Private,2966.2,15,2843.1,No
+"Rajkot Ward 12 PMAY-Urban Housing, Gujarat (470 units) [Work GJ-PMAY-2526-015]",PMAY (Housing),Housing,Gujarat,Rajkot,Private,1371.9,14,1353.8,No
+"Surat Sector 4 PMAY-Urban Housing, Gujarat (336 units) [Work GJ-PMAY-2526-016]",PMAY (Housing),Housing,Gujarat,Surat,Govt,2470.6,40,2390.9,No
+"Chhatrapati Sambhajinagar Township 21 PMAY-Urban Housing, Maharashtra (202 units) [Work MH-PMAY-2526-019]",PMAY (Housing),Housing,Maharashtra,Chhatrapati Sambhajinagar,Private,3216.2,33,3116.4,No
+"Bengaluru Urban Ward 19 PMAY-Urban Housing, Karnataka (57 units) [Work KA-PMAY-2526-021]",PMAY (Housing),Housing,Karnataka,Bengaluru Urban,Govt,1222.4,33,1448.9,Yes
+"Hyderabad Township 15 PMAY-Urban Housing, Telangana (909 units) [Work TS-PMAY-2526-010]",PMAY (Housing),Housing,Telangana,Hyderabad,Govt,1934.5,24,1897.6,No
+"Gautam Buddh Nagar Sector 24 PMAY-Urban Housing, Uttar Pradesh (60 units) [Work UP-PMAY-2526-020]",PMAY (Housing),Housing,Uttar Pradesh,Gautam Buddh Nagar,Private,191.7,32,216.3,Yes
+"Nizamabad Nagar Palika 15 PMAY-Urban Housing, Telangana (190 units) [Work TS-PMAY-2526-011]",PMAY (Housing),Housing,Telangana,Nizamabad,Private,570.5,30,540.3,No
+"Mysuru Sector 6 PMAY-Urban Housing, Karnataka (1,076 units) [Work KA-PMAY-2526-022]",PMAY (Housing),Housing,Karnataka,Mysuru,Private,963.1,29,917.8,No
+"Belagavi Nagar Palika 17 PMAY-Urban Housing, Karnataka (427 units) [Work KA-PMAY-2526-023]",PMAY (Housing),Housing,Karnataka,Belagavi,Private,1285.9,44,1284.6,No
+"Kalaburagi Ward 3 PMAY-Urban Housing, Karnataka (667 units) [Work KA-PMAY-2526-024]",PMAY (Housing),Housing,Karnataka,Kalaburagi,Private,748.6,19,747.9,No
+"Central Delhi Township 3 PMAY-Urban Housing, Delhi (125 units) [Work DL-PMAY-2526-003]",PMAY (Housing),Housing,Delhi,Central Delhi,Private,727.6,17,689.2,No
+"Lucknow Township 18 PMAY-Urban Housing, Uttar Pradesh (159 units) [Work UP-PMAY-2526-021]",PMAY (Housing),Housing,Uttar Pradesh,Lucknow,Private,905.2,43,891.1,No
+"Bhopal Sector 20 PMAY-Urban Housing, Madhya Pradesh (775 units) [Work MP-PMAY-2526-016]",PMAY (Housing),Housing,Madhya Pradesh,Bhopal,Private,567.2,43,614.4,Yes
+"Kalaburagi Sector 23 PMAY-Urban Housing, Karnataka (419 units) [Work KA-PMAY-2526-025]",PMAY (Housing),Housing,Karnataka,Kalaburagi,Private,291.1,29,276.8,No
+"Lucknow Ward 24 PMAY-Urban Housing, Uttar Pradesh (551 units) [Work UP-PMAY-2526-022]",PMAY (Housing),Housing,Uttar Pradesh,Lucknow,Private,1694.0,27,1586.6,No
+"Indore Township 14 PMAY-Urban Housing, Madhya Pradesh (669 units) [Work MP-PMAY-2526-017]",PMAY (Housing),Housing,Madhya Pradesh,Indore,Private,263.0,37,265.1,Yes
+"Visakhapatnam Ward 16 PMAY-Urban Housing, Andhra Pradesh (719 units) [Work AP-PMAY-2526-004]",PMAY (Housing),Housing,Andhra Pradesh,Visakhapatnam,Private,856.9,43,855.3,No
+"Vadodara Township 13 PMAY-Urban Housing, Gujarat (958 units) [Work GJ-PMAY-2526-017]",PMAY (Housing),Housing,Gujarat,Vadodara,Private,1242.6,22,1241.4,No
+"Jaipur Township 21 PMAY-Urban Housing, Rajasthan (362 units) [Work RJ-PMAY-2526-006]",PMAY (Housing),Housing,Rajasthan,Jaipur,Private,265.6,15,241.6,No
+"Warangal Sector 18 PMAY-Urban Housing, Telangana (730 units) [Work TS-PMAY-2526-012]",PMAY (Housing),Housing,Telangana,Warangal,Govt,482.6,26,537.7,Yes
+"Rajkot Nagar Palika 11 PMAY-Urban Housing, Gujarat (729 units) [Work GJ-PMAY-2526-018]",PMAY (Housing),Housing,Gujarat,Rajkot,Govt,2937.8,47,2789.3,No
+"Varanasi Ward 2 PMAY-Urban Housing, Uttar Pradesh (646 units) [Work UP-PMAY-2526-023]",PMAY (Housing),Housing,Uttar Pradesh,Varanasi,Govt,223.9,25,248.9,Yes
+"Varanasi Ward 13 PMAY-Urban Housing, Uttar Pradesh (478 units) [Work UP-PMAY-2526-024]",PMAY (Housing),Housing,Uttar Pradesh,Varanasi,Private,2457.8,17,2390.4,No
+"Ghaziabad Township 10 PMAY-Urban Housing, Uttar Pradesh (437 units) [Work UP-PMAY-2526-025]",PMAY (Housing),Housing,Uttar Pradesh,Ghaziabad,Private,293.6,20,329.1,Yes
+"Kalaburagi Township 24 PMAY-Urban Housing, Karnataka (175 units) [Work KA-PMAY-2526-026]",PMAY (Housing),Housing,Karnataka,Kalaburagi,Private,461.1,33,455.6,No
+"Patna Nagar Palika 13 PMAY-Urban Housing, Bihar (1,111 units) [Work BR-PMAY-2526-008]",PMAY (Housing),Housing,Bihar,Patna,Private,2200.5,47,2720.6,Yes
+"Ghaziabad Sector 1 PMAY-Urban Housing, Uttar Pradesh (992 units) [Work UP-PMAY-2526-026]",PMAY (Housing),Housing,Uttar Pradesh,Ghaziabad,Private,1793.2,39,1748.9,No
+"Dakshina Kannada Township 2 PMAY-Urban Housing, Karnataka (1,003 units) [Work KA-PMAY-2526-027]",PMAY (Housing),Housing,Karnataka,Dakshina Kannada,Govt,1835.7,30,1827.8,No
+"Udaipur Township 12 PMAY-Urban Housing, Rajasthan (661 units) [Work RJ-PMAY-2526-007]",PMAY (Housing),Housing,Rajasthan,Udaipur,Private,511.8,14,606.2,Yes
+"Nizamabad Ward 21 PMAY-Urban Housing, Telangana (159 units) [Work TS-PMAY-2526-013]",PMAY (Housing),Housing,Telangana,Nizamabad,Govt,227.3,21,263.0,Yes
+"Central Delhi Ward 4 PMAY-Urban Housing, Delhi (680 units) [Work DL-PMAY-2526-004]",PMAY (Housing),Housing,Delhi,Central Delhi,Govt,383.3,45,403.3,Yes
+"Warangal Ward 4 PMAY-Urban Housing, Telangana (769 units) [Work TS-PMAY-2526-014]",PMAY (Housing),Housing,Telangana,Warangal,Private,1685.1,40,1573.0,No
+"Ghaziabad Nagar Palika 15 PMAY-Urban Housing, Uttar Pradesh (1,003 units) [Work UP-PMAY-2526-027]",PMAY (Housing),Housing,Uttar Pradesh,Ghaziabad,Private,1583.4,47,1557.0,No
+"Madurai Township 15 PMAY-Urban Housing, Tamil Nadu (66 units) [Work TN-PMAY-2526-008]",PMAY (Housing),Housing,Tamil Nadu,Madurai,Private,1825.7,31,1692.8,No
+"Mumbai City Ward 13 PMAY-Urban Housing, Maharashtra (62 units) [Work MH-PMAY-2526-020]",PMAY (Housing),Housing,Maharashtra,Mumbai City,Private,964.2,24,937.2,No
+"Lucknow Township 10 PMAY-Urban Housing, Uttar Pradesh (335 units) [Work UP-PMAY-2526-028]",PMAY (Housing),Housing,Uttar Pradesh,Lucknow,Private,2987.5,42,2961.5,No
+"Pune Nagar Palika 14 PMAY-Urban Housing, Maharashtra (416 units) [Work MH-PMAY-2526-021]",PMAY (Housing),Housing,Maharashtra,Pune,Govt,566.0,34,610.8,Yes
+"Chennai Nagar Palika 17 PMAY-Urban Housing, Tamil Nadu (1,142 units) [Work TN-PMAY-2526-009]",PMAY (Housing),Housing,Tamil Nadu,Chennai,Govt,899.9,40,993.8,Yes
+"Ghaziabad Township 15 PMAY-Urban Housing, Uttar Pradesh (582 units) [Work UP-PMAY-2526-029]",PMAY (Housing),Housing,Uttar Pradesh,Ghaziabad,Govt,1210.9,21,1287.8,Yes
+"Madurai Ward 10 PMAY-Urban Housing, Tamil Nadu (643 units) [Work TN-PMAY-2526-010]",PMAY (Housing),Housing,Tamil Nadu,Madurai,Private,3352.2,21,3261.0,No
+"Belagavi Ward 1 PMAY-Urban Housing, Karnataka (802 units) [Work KA-PMAY-2526-028]",PMAY (Housing),Housing,Karnataka,Belagavi,Private,3887.1,28,3883.2,No
+"East Delhi Sector 15 PMAY-Urban Housing, Delhi (1,000 units) [Work DL-PMAY-2526-005]",PMAY (Housing),Housing,Delhi,East Delhi,Private,1001.0,29,964.6,No
+"Mysuru Ward 1 PMAY-Urban Housing, Karnataka (188 units) [Work KA-PMAY-2526-029]",PMAY (Housing),Housing,Karnataka,Mysuru,Private,4129.2,46,3985.1,No
+"Nashik Nagar Palika 11 PMAY-Urban Housing, Maharashtra (272 units) [Work MH-PMAY-2526-022]",PMAY (Housing),Housing,Maharashtra,Nashik,Govt,4511.7,38,5143.5,Yes
+"Amravati Township 19 PMAY-Urban Housing, Maharashtra (567 units) [Work MH-PMAY-2526-023]",PMAY (Housing),Housing,Maharashtra,Amravati,Govt,643.2,19,727.7,Yes
+"Thane Nagar Palika 22 PMAY-Urban Housing, Maharashtra (191 units) [Work MH-PMAY-2526-024]",PMAY (Housing),Housing,Maharashtra,Thane,Govt,862.7,43,901.3,Yes
+"Indore Ward 10 PMAY-Urban Housing, Madhya Pradesh (1,133 units) [Work MP-PMAY-2526-018]",PMAY (Housing),Housing,Madhya Pradesh,Indore,Private,1622.2,46,1917.1,Yes
+"Nizamabad Sector 4 PMAY-Urban Housing, Telangana (915 units) [Work TS-PMAY-2526-015]",PMAY (Housing),Housing,Telangana,Nizamabad,Govt,1863.1,38,1742.5,No
+"Agra Ward 22 PMAY-Urban Housing, Uttar Pradesh (815 units) [Work UP-PMAY-2526-030]",PMAY (Housing),Housing,Uttar Pradesh,Agra,Govt,247.7,41,276.5,Yes
+"Kalaburagi Sector 12 PMAY-Urban Housing, Karnataka (938 units) [Work KA-PMAY-2526-030]",PMAY (Housing),Housing,Karnataka,Kalaburagi,Govt,187.2,23,188.7,Yes
+"Coimbatore Ward 22 PMAY-Urban Housing, Tamil Nadu (996 units) [Work TN-PMAY-2526-011]",PMAY (Housing),Housing,Tamil Nadu,Coimbatore,Private,3127.5,32,3124.4,No
+"Kota Sector 11 PMAY-Urban Housing, Rajasthan (1,121 units) [Work RJ-PMAY-2526-008]",PMAY (Housing),Housing,Rajasthan,Kota,Private,3812.0,33,3526.6,No
+"Thane Township 2 PMAY-Urban Housing, Maharashtra (380 units) [Work MH-PMAY-2526-025]",PMAY (Housing),Housing,Maharashtra,Thane,Govt,233.3,14,218.2,No
+"Vadodara Sector 11 PMAY-Urban Housing, Gujarat (773 units) [Work GJ-PMAY-2526-019]",PMAY (Housing),Housing,Gujarat,Vadodara,Private,1148.6,32,1059.5,No
+"Hyderabad Nagar Palika 18 PMAY-Urban Housing, Telangana (996 units) [Work TS-PMAY-2526-016]",PMAY (Housing),Housing,Telangana,Hyderabad,Govt,2732.7,21,2627.7,No
+"Paschim Medinipur Township 22 PMAY-Urban Housing, West Bengal (1,042 units) [Work WB-PMAY-2526-007]",PMAY (Housing),Housing,West Bengal,Paschim Medinipur,Govt,1302.2,22,1441.4,Yes
+"Coimbatore Sector 24 PMAY-Urban Housing, Tamil Nadu (813 units) [Work TN-PMAY-2526-012]",PMAY (Housing),Housing,Tamil Nadu,Coimbatore,Private,1271.0,12,1181.5,No
+"Kanpur Nagar Township 23 PMAY-Urban Housing, Uttar Pradesh (905 units) [Work UP-PMAY-2526-031]",PMAY (Housing),Housing,Uttar Pradesh,Kanpur Nagar,Private,1755.3,26,1753.5,No
+"Kolkata Ward 21 PMAY-Urban Housing, West Bengal (170 units) [Work WB-PMAY-2526-008]",PMAY (Housing),Housing,West Bengal,Kolkata,Govt,214.6,31,241.8,Yes
+"Kozhikode Nagar Palika 20 PMAY-Urban Housing, Kerala (331 units) [Work KL-PMAY-2526-002]",PMAY (Housing),Housing,Kerala,Kozhikode,Private,1168.8,32,1097.0,No
+"Jodhpur Ward 15 PMAY-Urban Housing, Rajasthan (710 units) [Work RJ-PMAY-2526-009]",PMAY (Housing),Housing,Rajasthan,Jodhpur,Private,1923.2,39,2247.0,Yes
+"Nagpur Sector 13 PMAY-Urban Housing, Maharashtra (591 units) [Work MH-PMAY-2526-026]",PMAY (Housing),Housing,Maharashtra,Nagpur,Private,725.0,30,712.8,No
+"Kolkata Nagar Palika 20 PMAY-Urban Housing, West Bengal (906 units) [Work WB-PMAY-2526-009]",PMAY (Housing),Housing,West Bengal,Kolkata,Govt,535.4,37,583.5,Yes
+"Muzaffarpur Township 18 PMAY-Urban Housing, Bihar (719 units) [Work BR-PMAY-2526-009]",PMAY (Housing),Housing,Bihar,Muzaffarpur,Govt,1175.2,15,1362.9,Yes
+"Indore Sector 23 PMAY-Urban Housing, Madhya Pradesh (341 units) [Work MP-PMAY-2526-019]",PMAY (Housing),Housing,Madhya Pradesh,Indore,Private,516.2,18,515.7,No
+"Gautam Buddh Nagar Sector 4 PMAY-Urban Housing, Uttar Pradesh (1,184 units) [Work UP-PMAY-2526-032]",PMAY (Housing),Housing,Uttar Pradesh,Gautam Buddh Nagar,Private,996.5,20,990.2,No
+"Kalaburagi Township 17 PMAY-Urban Housing, Karnataka (501 units) [Work KA-PMAY-2526-031]",PMAY (Housing),Housing,Karnataka,Kalaburagi,Private,762.5,46,731.9,No
+"Nizamabad Sector 12 PMAY-Urban Housing, Telangana (983 units) [Work TS-PMAY-2526-017]",PMAY (Housing),Housing,Telangana,Nizamabad,Private,924.9,39,910.8,No
+"Jabalpur Township 24 PMAY-Urban Housing, Madhya Pradesh (244 units) [Work MP-PMAY-2526-020]",PMAY (Housing),Housing,Madhya Pradesh,Jabalpur,Private,3685.9,25,3496.9,No
+"Kolkata Ward 13 PMAY-Urban Housing, West Bengal (1,039 units) [Work WB-PMAY-2526-010]",PMAY (Housing),Housing,West Bengal,Kolkata,Govt,217.4,13,243.8,Yes
+"Agra Township 20 PMAY-Urban Housing, Uttar Pradesh (689 units) [Work UP-PMAY-2526-033]",PMAY (Housing),Housing,Uttar Pradesh,Agra,Private,1229.7,27,1228.5,No
+"Mysuru Township 19 PMAY-Urban Housing, Karnataka (241 units) [Work KA-PMAY-2526-032]",PMAY (Housing),Housing,Karnataka,Mysuru,Private,566.8,27,566.2,No
+"Hyderabad Nagar Palika 8 PMAY-Urban Housing, Telangana (1,076 units) [Work TS-PMAY-2526-018]",PMAY (Housing),Housing,Telangana,Hyderabad,Govt,720.8,31,743.2,Yes
+"Ernakulam Township 5 PMAY-Urban Housing, Kerala (361 units) [Work KL-PMAY-2526-003]",PMAY (Housing),Housing,Kerala,Ernakulam,Private,3130.0,32,2875.9,No
+"Ludhiana Ward 21 PMAY-Urban Housing, Punjab (710 units) [Work PB-PMAY-2526-003]",PMAY (Housing),Housing,Punjab,Ludhiana,Govt,3472.5,15,3239.4,No
+"Udaipur Sector 5 PMAY-Urban Housing, Rajasthan (463 units) [Work RJ-PMAY-2526-010]",PMAY (Housing),Housing,Rajasthan,Udaipur,Private,831.1,43,824.0,No
+"Varanasi Sector 18 PMAY-Urban Housing, Uttar Pradesh (85 units) [Work UP-PMAY-2526-034]",PMAY (Housing),Housing,Uttar Pradesh,Varanasi,Govt,243.4,48,249.5,Yes
+"Vijayawada Township 21 PMAY-Urban Housing, Andhra Pradesh (1,064 units) [Work AP-PMAY-2526-005]",PMAY (Housing),Housing,Andhra Pradesh,Vijayawada,Private,434.6,32,417.3,No
+"Belagavi Township 23 PMAY-Urban Housing, Karnataka (652 units) [Work KA-PMAY-2526-033]",PMAY (Housing),Housing,Karnataka,Belagavi,Private,1474.7,32,1370.6,No
+"Madurai Nagar Palika 11 PMAY-Urban Housing, Tamil Nadu (131 units) [Work TN-PMAY-2526-013]",PMAY (Housing),Housing,Tamil Nadu,Madurai,Private,407.6,12,386.2,No
+"Pune Ward 20 PMAY-Urban Housing, Maharashtra (1,189 units) [Work MH-PMAY-2526-027]",PMAY (Housing),Housing,Maharashtra,Pune,Govt,1366.8,42,1609.2,Yes
+"Mumbai City Nagar Palika 16 PMAY-Urban Housing, Maharashtra (916 units) [Work MH-PMAY-2526-028]",PMAY (Housing),Housing,Maharashtra,Mumbai City,Govt,1746.3,20,1668.7,No
+"Amravati Gram Panchayat Jal Jeevan Water Supply Scheme (14 GPs), Maharashtra [Work MH-JJM-2526-001]",Jal Jeevan Mission,Water Supply,Maharashtra,Amravati,Govt,369.2,41,468.0,Yes
+"Mysuru Gram Panchayat Jal Jeevan Water Supply Scheme (54 GPs), Karnataka [Work KA-JJM-2526-001]",Jal Jeevan Mission,Water Supply,Karnataka,Mysuru,Govt,253.2,35,248.4,No
+"East Delhi Gram Panchayat Jal Jeevan Water Supply Scheme (81 GPs), Delhi [Work DL-JJM-2526-001]",Jal Jeevan Mission,Water Supply,Delhi,East Delhi,Private,760.2,56,714.9,No
+"North-East Delhi Gram Panchayat Jal Jeevan Water Supply Scheme (49 GPs), Delhi [Work DL-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Delhi,North-East Delhi,Govt,102.8,48,98.2,No
+"Bhagalpur Gram Panchayat Jal Jeevan Water Supply Scheme (138 GPs), Bihar [Work BR-JJM-2526-001]",Jal Jeevan Mission,Water Supply,Bihar,Bhagalpur,Govt,544.3,19,610.5,Yes
+"Jaipur Gram Panchayat Jal Jeevan Water Supply Scheme (44 GPs), Rajasthan [Work RJ-JJM-2526-001]",Jal Jeevan Mission,Water Supply,Rajasthan,Jaipur,Govt,243.1,44,287.5,Yes
+"Ernakulam Gram Panchayat Jal Jeevan Water Supply Scheme (134 GPs), Kerala [Work KL-JJM-2526-001]",Jal Jeevan Mission,Water Supply,Kerala,Ernakulam,Private,934.0,13,933.1,No
+"Kalaburagi Gram Panchayat Jal Jeevan Water Supply Scheme (25 GPs), Karnataka [Work KA-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Karnataka,Kalaburagi,Private,761.1,21,738.1,No
+"Kota Gram Panchayat Jal Jeevan Water Supply Scheme (27 GPs), Rajasthan [Work RJ-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Rajasthan,Kota,Govt,245.9,45,289.8,Yes
+"Jodhpur Gram Panchayat Jal Jeevan Water Supply Scheme (112 GPs), Rajasthan [Work RJ-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Rajasthan,Jodhpur,Private,286.4,19,275.7,No
+"Amravati Gram Panchayat Jal Jeevan Water Supply Scheme (40 GPs), Maharashtra [Work MH-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Maharashtra,Amravati,Govt,1132.3,17,1104.3,No
+"Gautam Buddh Nagar Gram Panchayat Jal Jeevan Water Supply Scheme (82 GPs), Uttar Pradesh [Work UP-JJM-2526-001]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Gautam Buddh Nagar,Govt,306.0,19,354.4,Yes
+"Indore Gram Panchayat Jal Jeevan Water Supply Scheme (23 GPs), Madhya Pradesh [Work MP-JJM-2526-001]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Indore,Private,348.1,24,318.7,No
+"Ghaziabad Gram Panchayat Jal Jeevan Water Supply Scheme (93 GPs), Uttar Pradesh [Work UP-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Ghaziabad,Private,177.8,21,204.3,Yes
+"Patna Gram Panchayat Jal Jeevan Water Supply Scheme (88 GPs), Bihar [Work BR-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Bihar,Patna,Govt,492.3,20,583.8,Yes
+"Madurai Gram Panchayat Jal Jeevan Water Supply Scheme (14 GPs), Tamil Nadu [Work TN-JJM-2526-001]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Madurai,Govt,1880.9,21,1778.6,No
+"Howrah Gram Panchayat Jal Jeevan Water Supply Scheme (27 GPs), West Bengal [Work WB-JJM-2526-001]",Jal Jeevan Mission,Water Supply,West Bengal,Howrah,Govt,266.7,57,315.4,Yes
+"Prayagraj Gram Panchayat Jal Jeevan Water Supply Scheme (47 GPs), Uttar Pradesh [Work UP-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Prayagraj,Govt,277.3,18,304.0,Yes
+"Amravati Gram Panchayat Jal Jeevan Water Supply Scheme (93 GPs), Maharashtra [Work MH-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Maharashtra,Amravati,Govt,156.4,52,143.7,No
+"Kota Gram Panchayat Jal Jeevan Water Supply Scheme (117 GPs), Rajasthan [Work RJ-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Rajasthan,Kota,Govt,1341.4,42,1277.1,No
+"Thiruvananthapuram Gram Panchayat Jal Jeevan Water Supply Scheme (17 GPs), Kerala [Work KL-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Kerala,Thiruvananthapuram,Private,109.7,15,105.0,No
+"Udaipur Gram Panchayat Jal Jeevan Water Supply Scheme (16 GPs), Rajasthan [Work RJ-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Rajasthan,Udaipur,Private,1990.7,28,1967.0,No
+"Hyderabad Gram Panchayat Jal Jeevan Water Supply Scheme (108 GPs), Telangana [Work TS-JJM-2526-001]",Jal Jeevan Mission,Water Supply,Telangana,Hyderabad,Govt,440.4,35,547.9,Yes
+"Darjeeling Gram Panchayat Jal Jeevan Water Supply Scheme (133 GPs), West Bengal [Work WB-JJM-2526-002]",Jal Jeevan Mission,Water Supply,West Bengal,Darjeeling,Govt,913.4,49,876.5,No
+"Thane Gram Panchayat Jal Jeevan Water Supply Scheme (105 GPs), Maharashtra [Work MH-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Maharashtra,Thane,Govt,383.6,29,368.1,No
+"Patna Gram Panchayat Jal Jeevan Water Supply Scheme (24 GPs), Bihar [Work BR-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Bihar,Patna,Govt,774.0,32,852.9,Yes
+"Jalandhar Gram Panchayat Jal Jeevan Water Supply Scheme (56 GPs), Punjab [Work PB-JJM-2526-001]",Jal Jeevan Mission,Water Supply,Punjab,Jalandhar,Private,167.5,43,167.3,No
+"Central Delhi Gram Panchayat Jal Jeevan Water Supply Scheme (36 GPs), Delhi [Work DL-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Delhi,Central Delhi,Private,504.8,30,492.8,No
+"Bengaluru Urban Gram Panchayat Jal Jeevan Water Supply Scheme (6 GPs), Karnataka [Work KA-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Karnataka,Bengaluru Urban,Govt,2770.2,56,3220.5,Yes
+"Thiruvananthapuram Gram Panchayat Jal Jeevan Water Supply Scheme (129 GPs), Kerala [Work KL-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Kerala,Thiruvananthapuram,Private,480.0,23,465.5,No
+"Coimbatore Gram Panchayat Jal Jeevan Water Supply Scheme (92 GPs), Tamil Nadu [Work TN-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Coimbatore,Private,253.0,27,239.7,No
+"Rajkot Gram Panchayat Jal Jeevan Water Supply Scheme (19 GPs), Gujarat [Work GJ-JJM-2526-001]",Jal Jeevan Mission,Water Supply,Gujarat,Rajkot,Govt,456.6,35,432.0,No
+"Ahmedabad Gram Panchayat Jal Jeevan Water Supply Scheme (72 GPs), Gujarat [Work GJ-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Gujarat,Ahmedabad,Govt,160.3,54,185.4,Yes
+"Visakhapatnam Gram Panchayat Jal Jeevan Water Supply Scheme (42 GPs), Andhra Pradesh [Work AP-JJM-2526-001]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Visakhapatnam,Govt,1897.1,36,1854.3,No
+"Varanasi Gram Panchayat Jal Jeevan Water Supply Scheme (124 GPs), Uttar Pradesh [Work UP-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Varanasi,Govt,1965.1,20,1858.9,No
+"Chennai Gram Panchayat Jal Jeevan Water Supply Scheme (30 GPs), Tamil Nadu [Work TN-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Chennai,Private,256.9,43,248.0,No
+"Visakhapatnam Gram Panchayat Jal Jeevan Water Supply Scheme (135 GPs), Andhra Pradesh [Work AP-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Visakhapatnam,Private,370.9,38,370.5,No
+"Vijayawada Gram Panchayat Jal Jeevan Water Supply Scheme (127 GPs), Andhra Pradesh [Work AP-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Vijayawada,Govt,132.2,12,159.8,Yes
+"Pune Gram Panchayat Jal Jeevan Water Supply Scheme (41 GPs), Maharashtra [Work MH-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Maharashtra,Pune,Govt,1213.5,49,1226.2,Yes
+"Mysuru Gram Panchayat Jal Jeevan Water Supply Scheme (110 GPs), Karnataka [Work KA-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Karnataka,Mysuru,Private,364.9,26,355.6,No
+"Amritsar Gram Panchayat Jal Jeevan Water Supply Scheme (66 GPs), Punjab [Work PB-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Punjab,Amritsar,Govt,304.4,34,282.4,No
+"Gwalior Gram Panchayat Jal Jeevan Water Supply Scheme (135 GPs), Madhya Pradesh [Work MP-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Gwalior,Govt,86.7,31,108.5,Yes
+"Ghaziabad Gram Panchayat Jal Jeevan Water Supply Scheme (58 GPs), Uttar Pradesh [Work UP-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Ghaziabad,Govt,257.8,27,290.2,Yes
+"Bengaluru Urban Gram Panchayat Jal Jeevan Water Supply Scheme (32 GPs), Karnataka [Work KA-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Karnataka,Bengaluru Urban,Private,920.9,22,920.0,No
+"Udaipur Gram Panchayat Jal Jeevan Water Supply Scheme (96 GPs), Rajasthan [Work RJ-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Rajasthan,Udaipur,Govt,452.7,14,433.1,No
+"Muzaffarpur Gram Panchayat Jal Jeevan Water Supply Scheme (131 GPs), Bihar [Work BR-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Bihar,Muzaffarpur,Govt,1246.2,13,1137.1,No
+"Darjeeling Gram Panchayat Jal Jeevan Water Supply Scheme (93 GPs), West Bengal [Work WB-JJM-2526-003]",Jal Jeevan Mission,Water Supply,West Bengal,Darjeeling,Govt,242.3,41,309.6,Yes
+"Howrah Gram Panchayat Jal Jeevan Water Supply Scheme (96 GPs), West Bengal [Work WB-JJM-2526-004]",Jal Jeevan Mission,Water Supply,West Bengal,Howrah,Govt,231.3,49,264.1,Yes
+"Salem Gram Panchayat Jal Jeevan Water Supply Scheme (50 GPs), Tamil Nadu [Work TN-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Salem,Govt,744.3,57,875.4,Yes
+"Chhatrapati Sambhajinagar Gram Panchayat Jal Jeevan Water Supply Scheme (31 GPs), Maharashtra [Work MH-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Maharashtra,Chhatrapati Sambhajinagar,Govt,1148.8,45,1129.1,No
+"Mysuru Gram Panchayat Jal Jeevan Water Supply Scheme (132 GPs), Karnataka [Work KA-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Karnataka,Mysuru,Govt,335.8,47,322.3,No
+"Hyderabad Gram Panchayat Jal Jeevan Water Supply Scheme (11 GPs), Telangana [Work TS-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Telangana,Hyderabad,Private,278.4,45,278.1,No
+"Madurai Gram Panchayat Jal Jeevan Water Supply Scheme (13 GPs), Tamil Nadu [Work TN-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Madurai,Private,4028.1,39,3670.3,No
+"Bengaluru Urban Gram Panchayat Jal Jeevan Water Supply Scheme (29 GPs), Karnataka [Work KA-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Karnataka,Bengaluru Urban,Private,612.8,41,589.8,No
+"Pune Gram Panchayat Jal Jeevan Water Supply Scheme (91 GPs), Maharashtra [Work MH-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Maharashtra,Pune,Private,1022.7,31,980.4,No
+"Pune Gram Panchayat Jal Jeevan Water Supply Scheme (30 GPs), Maharashtra [Work MH-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Maharashtra,Pune,Govt,1447.3,26,1330.6,No
+"Kanpur Nagar Gram Panchayat Jal Jeevan Water Supply Scheme (22 GPs), Uttar Pradesh [Work UP-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Kanpur Nagar,Govt,169.0,51,225.3,Yes
+"Jodhpur Gram Panchayat Jal Jeevan Water Supply Scheme (13 GPs), Rajasthan [Work RJ-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Rajasthan,Jodhpur,Private,598.9,53,563.1,No
+"Jodhpur Gram Panchayat Jal Jeevan Water Supply Scheme (135 GPs), Rajasthan [Work RJ-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Rajasthan,Jodhpur,Govt,183.6,17,212.6,Yes
+"Jaipur Gram Panchayat Jal Jeevan Water Supply Scheme (98 GPs), Rajasthan [Work RJ-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Rajasthan,Jaipur,Govt,1411.5,15,1392.1,No
+"Bengaluru Urban Gram Panchayat Jal Jeevan Water Supply Scheme (86 GPs), Karnataka [Work KA-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Karnataka,Bengaluru Urban,Private,2326.9,51,2279.0,No
+"Jabalpur Gram Panchayat Jal Jeevan Water Supply Scheme (137 GPs), Madhya Pradesh [Work MP-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Jabalpur,Govt,2727.8,39,2578.2,No
+"Vijayawada Gram Panchayat Jal Jeevan Water Supply Scheme (54 GPs), Andhra Pradesh [Work AP-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Vijayawada,Govt,957.2,48,1224.4,Yes
+"Hyderabad Gram Panchayat Jal Jeevan Water Supply Scheme (40 GPs), Telangana [Work TS-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Telangana,Hyderabad,Govt,938.8,49,918.8,No
+"Gwalior Gram Panchayat Jal Jeevan Water Supply Scheme (16 GPs), Madhya Pradesh [Work MP-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Gwalior,Private,601.8,60,712.0,Yes
+"Mumbai City Gram Panchayat Jal Jeevan Water Supply Scheme (44 GPs), Maharashtra [Work MH-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Maharashtra,Mumbai City,Govt,629.0,40,763.1,Yes
+"Dakshina Kannada Gram Panchayat Jal Jeevan Water Supply Scheme (99 GPs), Karnataka [Work KA-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Karnataka,Dakshina Kannada,Govt,244.6,35,290.0,Yes
+"Rajkot Gram Panchayat Jal Jeevan Water Supply Scheme (18 GPs), Gujarat [Work GJ-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Gujarat,Rajkot,Govt,884.0,40,1103.1,Yes
+"Amritsar Gram Panchayat Jal Jeevan Water Supply Scheme (129 GPs), Punjab [Work PB-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Punjab,Amritsar,Private,475.2,27,474.7,No
+"Dakshina Kannada Gram Panchayat Jal Jeevan Water Supply Scheme (61 GPs), Karnataka [Work KA-JJM-2526-010]",Jal Jeevan Mission,Water Supply,Karnataka,Dakshina Kannada,Govt,869.7,53,978.5,Yes
+"Patna Gram Panchayat Jal Jeevan Water Supply Scheme (18 GPs), Bihar [Work BR-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Bihar,Patna,Govt,315.0,60,346.9,Yes
+"Hyderabad Gram Panchayat Jal Jeevan Water Supply Scheme (85 GPs), Telangana [Work TS-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Telangana,Hyderabad,Govt,778.1,59,748.2,No
+"Gwalior Gram Panchayat Jal Jeevan Water Supply Scheme (7 GPs), Madhya Pradesh [Work MP-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Gwalior,Govt,251.3,41,283.7,Yes
+"Bhopal Gram Panchayat Jal Jeevan Water Supply Scheme (114 GPs), Madhya Pradesh [Work MP-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Bhopal,Private,676.2,38,675.5,No
+"Indore Gram Panchayat Jal Jeevan Water Supply Scheme (114 GPs), Madhya Pradesh [Work MP-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Indore,Govt,603.8,50,717.3,Yes
+"Agra Gram Panchayat Jal Jeevan Water Supply Scheme (70 GPs), Uttar Pradesh [Work UP-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Agra,Govt,439.7,28,400.8,No
+"Ernakulam Gram Panchayat Jal Jeevan Water Supply Scheme (19 GPs), Kerala [Work KL-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Kerala,Ernakulam,Govt,393.9,29,376.1,No
+"Chennai Gram Panchayat Jal Jeevan Water Supply Scheme (44 GPs), Tamil Nadu [Work TN-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Chennai,Govt,784.2,23,774.1,No
+"Varanasi Gram Panchayat Jal Jeevan Water Supply Scheme (81 GPs), Uttar Pradesh [Work UP-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Varanasi,Private,658.1,58,764.9,Yes
+"Kota Gram Panchayat Jal Jeevan Water Supply Scheme (80 GPs), Rajasthan [Work RJ-JJM-2526-010]",Jal Jeevan Mission,Water Supply,Rajasthan,Kota,Govt,179.4,55,221.9,Yes
+"Indore Gram Panchayat Jal Jeevan Water Supply Scheme (69 GPs), Madhya Pradesh [Work MP-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Indore,Private,509.5,26,499.8,No
+"Madurai Gram Panchayat Jal Jeevan Water Supply Scheme (71 GPs), Tamil Nadu [Work TN-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Madurai,Govt,572.8,58,735.7,Yes
+"Mumbai City Gram Panchayat Jal Jeevan Water Supply Scheme (47 GPs), Maharashtra [Work MH-JJM-2526-010]",Jal Jeevan Mission,Water Supply,Maharashtra,Mumbai City,Govt,137.9,51,152.0,Yes
+"Bhopal Gram Panchayat Jal Jeevan Water Supply Scheme (99 GPs), Madhya Pradesh [Work MP-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Bhopal,Govt,154.0,19,172.7,Yes
+"Pune Gram Panchayat Jal Jeevan Water Supply Scheme (36 GPs), Maharashtra [Work MH-JJM-2526-011]",Jal Jeevan Mission,Water Supply,Maharashtra,Pune,Govt,154.8,15,154.6,No
+"Kozhikode Gram Panchayat Jal Jeevan Water Supply Scheme (24 GPs), Kerala [Work KL-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Kerala,Kozhikode,Private,180.6,27,179.3,No
+"Gaya Gram Panchayat Jal Jeevan Water Supply Scheme (101 GPs), Bihar [Work BR-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Bihar,Gaya,Private,413.4,45,384.3,No
+"Jabalpur Gram Panchayat Jal Jeevan Water Supply Scheme (77 GPs), Madhya Pradesh [Work MP-JJM-2526-010]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Jabalpur,Govt,1324.7,32,1183.0,No
+"North-East Delhi Gram Panchayat Jal Jeevan Water Supply Scheme (10 GPs), Delhi [Work DL-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Delhi,North-East Delhi,Govt,368.2,35,345.4,No
+"Bhopal Gram Panchayat Jal Jeevan Water Supply Scheme (91 GPs), Madhya Pradesh [Work MP-JJM-2526-011]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Bhopal,Govt,309.2,53,297.7,No
+"Pune Gram Panchayat Jal Jeevan Water Supply Scheme (64 GPs), Maharashtra [Work MH-JJM-2526-012]",Jal Jeevan Mission,Water Supply,Maharashtra,Pune,Govt,206.1,18,200.5,No
+"Prayagraj Gram Panchayat Jal Jeevan Water Supply Scheme (71 GPs), Uttar Pradesh [Work UP-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Prayagraj,Govt,1376.1,38,1465.7,Yes
+"Visakhapatnam Gram Panchayat Jal Jeevan Water Supply Scheme (72 GPs), Andhra Pradesh [Work AP-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Visakhapatnam,Govt,529.8,58,711.2,Yes
+"Jaipur Gram Panchayat Jal Jeevan Water Supply Scheme (48 GPs), Rajasthan [Work RJ-JJM-2526-011]",Jal Jeevan Mission,Water Supply,Rajasthan,Jaipur,Govt,297.9,35,294.5,No
+"Amravati Gram Panchayat Jal Jeevan Water Supply Scheme (12 GPs), Maharashtra [Work MH-JJM-2526-013]",Jal Jeevan Mission,Water Supply,Maharashtra,Amravati,Govt,163.5,28,196.9,Yes
+"Visakhapatnam Gram Panchayat Jal Jeevan Water Supply Scheme (15 GPs), Andhra Pradesh [Work AP-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Visakhapatnam,Private,1778.3,27,1597.3,No
+"Kalaburagi Gram Panchayat Jal Jeevan Water Supply Scheme (88 GPs), Karnataka [Work KA-JJM-2526-011]",Jal Jeevan Mission,Water Supply,Karnataka,Kalaburagi,Govt,783.6,50,954.7,Yes
+"Central Delhi Gram Panchayat Jal Jeevan Water Supply Scheme (19 GPs), Delhi [Work DL-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Delhi,Central Delhi,Govt,185.1,54,198.6,Yes
+"Dakshina Kannada Gram Panchayat Jal Jeevan Water Supply Scheme (64 GPs), Karnataka [Work KA-JJM-2526-012]",Jal Jeevan Mission,Water Supply,Karnataka,Dakshina Kannada,Private,613.7,59,592.6,No
+"Bengaluru Urban Gram Panchayat Jal Jeevan Water Supply Scheme (119 GPs), Karnataka [Work KA-JJM-2526-013]",Jal Jeevan Mission,Water Supply,Karnataka,Bengaluru Urban,Govt,156.4,21,140.2,No
+"Bhopal Gram Panchayat Jal Jeevan Water Supply Scheme (35 GPs), Madhya Pradesh [Work MP-JJM-2526-012]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Bhopal,Private,474.4,40,435.6,No
+"Nagpur Gram Panchayat Jal Jeevan Water Supply Scheme (38 GPs), Maharashtra [Work MH-JJM-2526-014]",Jal Jeevan Mission,Water Supply,Maharashtra,Nagpur,Govt,659.0,15,658.3,No
+"Visakhapatnam Gram Panchayat Jal Jeevan Water Supply Scheme (124 GPs), Andhra Pradesh [Work AP-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Visakhapatnam,Govt,369.9,39,436.4,Yes
+"Rajkot Gram Panchayat Jal Jeevan Water Supply Scheme (116 GPs), Gujarat [Work GJ-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Gujarat,Rajkot,Govt,1939.4,48,2367.5,Yes
+"Patna Gram Panchayat Jal Jeevan Water Supply Scheme (96 GPs), Bihar [Work BR-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Bihar,Patna,Private,476.7,34,467.2,No
+"Pune Gram Panchayat Jal Jeevan Water Supply Scheme (58 GPs), Maharashtra [Work MH-JJM-2526-015]",Jal Jeevan Mission,Water Supply,Maharashtra,Pune,Govt,373.4,28,366.0,No
+"Thiruvananthapuram Gram Panchayat Jal Jeevan Water Supply Scheme (50 GPs), Kerala [Work KL-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Kerala,Thiruvananthapuram,Govt,188.3,13,181.2,No
+"Nashik Gram Panchayat Jal Jeevan Water Supply Scheme (70 GPs), Maharashtra [Work MH-JJM-2526-016]",Jal Jeevan Mission,Water Supply,Maharashtra,Nashik,Govt,350.8,57,406.9,Yes
+"Bengaluru Urban Gram Panchayat Jal Jeevan Water Supply Scheme (52 GPs), Karnataka [Work KA-JJM-2526-014]",Jal Jeevan Mission,Water Supply,Karnataka,Bengaluru Urban,Govt,1493.4,20,1436.4,No
+"Tirupati Gram Panchayat Jal Jeevan Water Supply Scheme (50 GPs), Andhra Pradesh [Work AP-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Tirupati,Govt,1226.9,45,1553.3,Yes
+"Gautam Buddh Nagar Gram Panchayat Jal Jeevan Water Supply Scheme (65 GPs), Uttar Pradesh [Work UP-JJM-2526-010]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Gautam Buddh Nagar,Private,623.7,30,851.3,Yes
+"Muzaffarpur Gram Panchayat Jal Jeevan Water Supply Scheme (27 GPs), Bihar [Work BR-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Bihar,Muzaffarpur,Govt,834.9,12,734.7,No
+"East Delhi Gram Panchayat Jal Jeevan Water Supply Scheme (128 GPs), Delhi [Work DL-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Delhi,East Delhi,Govt,560.5,44,618.9,Yes
+"Surat Gram Panchayat Jal Jeevan Water Supply Scheme (122 GPs), Gujarat [Work GJ-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Gujarat,Surat,Private,1129.6,18,1120.9,No
+"Darjeeling Gram Panchayat Jal Jeevan Water Supply Scheme (97 GPs), West Bengal [Work WB-JJM-2526-005]",Jal Jeevan Mission,Water Supply,West Bengal,Darjeeling,Govt,896.4,39,984.5,Yes
+"Jalandhar Gram Panchayat Jal Jeevan Water Supply Scheme (41 GPs), Punjab [Work PB-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Punjab,Jalandhar,Govt,854.5,18,814.5,No
+"Amritsar Gram Panchayat Jal Jeevan Water Supply Scheme (9 GPs), Punjab [Work PB-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Punjab,Amritsar,Private,1026.3,43,1139.0,Yes
+"Paschim Medinipur Gram Panchayat Jal Jeevan Water Supply Scheme (20 GPs), West Bengal [Work WB-JJM-2526-006]",Jal Jeevan Mission,Water Supply,West Bengal,Paschim Medinipur,Govt,951.3,47,895.7,No
+"Gaya Gram Panchayat Jal Jeevan Water Supply Scheme (117 GPs), Bihar [Work BR-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Bihar,Gaya,Govt,955.3,37,1250.0,Yes
+"Howrah Gram Panchayat Jal Jeevan Water Supply Scheme (114 GPs), West Bengal [Work WB-JJM-2526-007]",Jal Jeevan Mission,Water Supply,West Bengal,Howrah,Govt,520.4,52,657.5,Yes
+"Surat Gram Panchayat Jal Jeevan Water Supply Scheme (19 GPs), Gujarat [Work GJ-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Gujarat,Surat,Govt,478.4,47,559.3,Yes
+"Kota Gram Panchayat Jal Jeevan Water Supply Scheme (13 GPs), Rajasthan [Work RJ-JJM-2526-012]",Jal Jeevan Mission,Water Supply,Rajasthan,Kota,Govt,387.9,38,458.9,Yes
+"Jabalpur Gram Panchayat Jal Jeevan Water Supply Scheme (111 GPs), Madhya Pradesh [Work MP-JJM-2526-013]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Jabalpur,Govt,123.5,15,118.6,No
+"Bhopal Gram Panchayat Jal Jeevan Water Supply Scheme (51 GPs), Madhya Pradesh [Work MP-JJM-2526-014]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Bhopal,Govt,958.0,36,1067.9,Yes
+"Lucknow Gram Panchayat Jal Jeevan Water Supply Scheme (76 GPs), Uttar Pradesh [Work UP-JJM-2526-011]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Lucknow,Govt,573.0,29,716.9,Yes
+"Rajkot Gram Panchayat Jal Jeevan Water Supply Scheme (116 GPs), Gujarat [Work GJ-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Gujarat,Rajkot,Govt,704.3,32,673.8,No
+"Kolkata Gram Panchayat Jal Jeevan Water Supply Scheme (39 GPs), West Bengal [Work WB-JJM-2526-008]",Jal Jeevan Mission,Water Supply,West Bengal,Kolkata,Govt,50.0,33,57.5,Yes
+"Bhopal Gram Panchayat Jal Jeevan Water Supply Scheme (49 GPs), Madhya Pradesh [Work MP-JJM-2526-015]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Bhopal,Govt,207.1,33,240.1,Yes
+"Udaipur Gram Panchayat Jal Jeevan Water Supply Scheme (31 GPs), Rajasthan [Work RJ-JJM-2526-013]",Jal Jeevan Mission,Water Supply,Rajasthan,Udaipur,Govt,591.8,49,727.1,Yes
+"Paschim Medinipur Gram Panchayat Jal Jeevan Water Supply Scheme (51 GPs), West Bengal [Work WB-JJM-2526-009]",Jal Jeevan Mission,Water Supply,West Bengal,Paschim Medinipur,Govt,505.5,19,501.1,No
+"Muzaffarpur Gram Panchayat Jal Jeevan Water Supply Scheme (116 GPs), Bihar [Work BR-JJM-2526-010]",Jal Jeevan Mission,Water Supply,Bihar,Muzaffarpur,Govt,396.7,57,462.1,Yes
+"Varanasi Gram Panchayat Jal Jeevan Water Supply Scheme (10 GPs), Uttar Pradesh [Work UP-JJM-2526-012]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Varanasi,Private,489.3,13,468.2,No
+"Thane Gram Panchayat Jal Jeevan Water Supply Scheme (126 GPs), Maharashtra [Work MH-JJM-2526-017]",Jal Jeevan Mission,Water Supply,Maharashtra,Thane,Govt,217.0,21,205.0,No
+"Chennai Gram Panchayat Jal Jeevan Water Supply Scheme (111 GPs), Tamil Nadu [Work TN-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Chennai,Govt,2432.4,35,2311.2,No
+"Surat Gram Panchayat Jal Jeevan Water Supply Scheme (112 GPs), Gujarat [Work GJ-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Gujarat,Surat,Govt,483.0,16,560.9,Yes
+"Nashik Gram Panchayat Jal Jeevan Water Supply Scheme (135 GPs), Maharashtra [Work MH-JJM-2526-018]",Jal Jeevan Mission,Water Supply,Maharashtra,Nashik,Govt,197.8,50,233.6,Yes
+"Udaipur Gram Panchayat Jal Jeevan Water Supply Scheme (60 GPs), Rajasthan [Work RJ-JJM-2526-014]",Jal Jeevan Mission,Water Supply,Rajasthan,Udaipur,Govt,809.3,34,1006.5,Yes
+"Thane Gram Panchayat Jal Jeevan Water Supply Scheme (127 GPs), Maharashtra [Work MH-JJM-2526-019]",Jal Jeevan Mission,Water Supply,Maharashtra,Thane,Private,101.5,33,95.7,No
+"Surat Gram Panchayat Jal Jeevan Water Supply Scheme (100 GPs), Gujarat [Work GJ-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Gujarat,Surat,Private,268.8,28,246.7,No
+"Kalaburagi Gram Panchayat Jal Jeevan Water Supply Scheme (106 GPs), Karnataka [Work KA-JJM-2526-015]",Jal Jeevan Mission,Water Supply,Karnataka,Kalaburagi,Govt,900.7,21,839.4,No
+"Gautam Buddh Nagar Gram Panchayat Jal Jeevan Water Supply Scheme (72 GPs), Uttar Pradesh [Work UP-JJM-2526-013]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Gautam Buddh Nagar,Govt,749.5,42,983.1,Yes
+"Tirupati Gram Panchayat Jal Jeevan Water Supply Scheme (87 GPs), Andhra Pradesh [Work AP-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Tirupati,Govt,76.3,37,93.6,Yes
+"Madurai Gram Panchayat Jal Jeevan Water Supply Scheme (107 GPs), Tamil Nadu [Work TN-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Madurai,Govt,192.5,48,239.5,Yes
+"Howrah Gram Panchayat Jal Jeevan Water Supply Scheme (82 GPs), West Bengal [Work WB-JJM-2526-010]",Jal Jeevan Mission,Water Supply,West Bengal,Howrah,Govt,553.4,59,644.2,Yes
+"Vijayawada Gram Panchayat Jal Jeevan Water Supply Scheme (81 GPs), Andhra Pradesh [Work AP-JJM-2526-010]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Vijayawada,Govt,1217.6,13,1166.3,No
+Hyderabad Smart City – E-Governance Citizen Centre [Work TS-SC-2526-001],Smart Cities Mission,Smart City Infrastructure,Telangana,Hyderabad,Govt,7509.9,42,7502.4,No
+Udaipur Smart City – Smart Parking System [Work RJ-SC-2526-001],Smart Cities Mission,Smart City Infrastructure,Rajasthan,Udaipur,Govt,892.2,51,920.2,Yes
+Mysuru Smart City – Waste Management Facility [Work KA-SC-2526-001],Smart Cities Mission,Smart City Infrastructure,Karnataka,Mysuru,Private,1144.3,46,1117.1,No
+Paschim Medinipur Smart City – LED Street Lighting [Work WB-SC-2526-001],Smart Cities Mission,Smart City Infrastructure,West Bengal,Paschim Medinipur,Govt,3369.7,42,3028.2,No
+Salem Smart City – Waste Management Facility [Work TN-SC-2526-001],Smart Cities Mission,Smart City Infrastructure,Tamil Nadu,Salem,Govt,1131.2,45,1199.1,Yes
+Darjeeling Smart City – Cycle Track and Footpath Renewal [Work WB-SC-2526-002],Smart Cities Mission,Smart City Infrastructure,West Bengal,Darjeeling,Private,1856.7,40,1817.3,No
+Paschim Medinipur Smart City – Waste Management Facility [Work WB-SC-2526-003],Smart Cities Mission,Smart City Infrastructure,West Bengal,Paschim Medinipur,Govt,5909.5,68,6376.5,Yes
+Kanpur Nagar Smart City – Waste Management Facility [Work UP-SC-2526-001],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Kanpur Nagar,Private,10899.9,46,10542.0,No
+Coimbatore Smart City – Solar Microgrid [Work TN-SC-2526-002],Smart Cities Mission,Smart City Infrastructure,Tamil Nadu,Coimbatore,Govt,1305.8,49,1439.8,Yes
+Ludhiana Smart City – Riverfront Development [Work PB-SC-2526-001],Smart Cities Mission,Smart City Infrastructure,Punjab,Ludhiana,Govt,3165.0,53,3374.2,Yes
+Ahmedabad Smart City – Integrated Command and Control Centre [Work GJ-SC-2526-001],Smart Cities Mission,Smart City Infrastructure,Gujarat,Ahmedabad,Private,1835.3,42,1810.5,No
+Mumbai City Smart City – Riverfront Development [Work MH-SC-2526-001],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Mumbai City,Private,3424.2,32,3252.7,No
+Nizamabad Smart City – Riverfront Development [Work TS-SC-2526-002],Smart Cities Mission,Smart City Infrastructure,Telangana,Nizamabad,Govt,1298.8,68,1354.9,Yes
+Chhatrapati Sambhajinagar Smart City – Smart Parking System [Work MH-SC-2526-002],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Chhatrapati Sambhajinagar,Private,8482.0,45,8330.1,No
+Prayagraj Smart City – Smart Parking System [Work UP-SC-2526-002],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Prayagraj,Private,2257.6,30,2179.9,No
+Gaya Smart City – Riverfront Development [Work BR-SC-2526-001],Smart Cities Mission,Smart City Infrastructure,Bihar,Gaya,Private,6834.2,39,7043.3,Yes
+Indore Smart City – LED Street Lighting [Work MP-SC-2526-001],Smart Cities Mission,Smart City Infrastructure,Madhya Pradesh,Indore,Private,4335.2,71,4051.4,No
+Amravati Smart City – Riverfront Development [Work MH-SC-2526-003],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Amravati,Private,1521.6,58,1492.6,No
+Gwalior Smart City – Riverfront Development [Work MP-SC-2526-002],Smart Cities Mission,Smart City Infrastructure,Madhya Pradesh,Gwalior,Private,3838.7,38,3594.3,No
+Gaya Smart City – Cycle Track and Footpath Renewal [Work BR-SC-2526-002],Smart Cities Mission,Smart City Infrastructure,Bihar,Gaya,Govt,2813.6,21,2836.1,Yes
+Rajkot Smart City – Smart Parking System [Work GJ-SC-2526-002],Smart Cities Mission,Smart City Infrastructure,Gujarat,Rajkot,Govt,745.3,22,697.1,No
+Prayagraj Smart City – Waste Management Facility [Work UP-SC-2526-003],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Prayagraj,Private,1074.9,51,1159.0,Yes
+Thane Smart City – Integrated Command and Control Centre [Work MH-SC-2526-004],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Thane,Private,841.0,52,780.7,No
+Patna Smart City – Riverfront Development [Work BR-SC-2526-003],Smart Cities Mission,Smart City Infrastructure,Bihar,Patna,Govt,7426.8,33,7549.5,Yes
+Vijayawada Smart City – Waste Management Facility [Work AP-SC-2526-001],Smart Cities Mission,Smart City Infrastructure,Andhra Pradesh,Vijayawada,Private,692.2,41,661.6,No
+Nagpur Smart City – Riverfront Development [Work MH-SC-2526-005],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Nagpur,Private,5601.5,54,4929.3,No
+Rajkot Smart City – Solar Microgrid [Work GJ-SC-2526-003],Smart Cities Mission,Smart City Infrastructure,Gujarat,Rajkot,Private,1738.4,57,1613.9,No
+Salem Smart City – Solar Microgrid [Work TN-SC-2526-003],Smart Cities Mission,Smart City Infrastructure,Tamil Nadu,Salem,Private,4204.9,66,3995.7,No
+Warangal Smart City – E-Governance Citizen Centre [Work TS-SC-2526-003],Smart Cities Mission,Smart City Infrastructure,Telangana,Warangal,Private,8026.7,62,7916.6,No
+Bengaluru Urban Smart City – Solar Microgrid [Work KA-SC-2526-002],Smart Cities Mission,Smart City Infrastructure,Karnataka,Bengaluru Urban,Private,3419.1,55,3292.3,No
+Jalandhar Smart City – E-Governance Citizen Centre [Work PB-SC-2526-002],Smart Cities Mission,Smart City Infrastructure,Punjab,Jalandhar,Govt,5041.6,65,5243.1,Yes
+Vadodara Smart City – E-Governance Citizen Centre [Work GJ-SC-2526-004],Smart Cities Mission,Smart City Infrastructure,Gujarat,Vadodara,Private,3693.0,47,3387.3,No
+Belagavi Smart City – Smart Parking System [Work KA-SC-2526-003],Smart Cities Mission,Smart City Infrastructure,Karnataka,Belagavi,Private,15551.9,67,14132.2,No
+Kanpur Nagar Smart City – Solar Microgrid [Work UP-SC-2526-004],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Kanpur Nagar,Private,15647.3,70,16747.4,Yes
+Thane Smart City – Solar Microgrid [Work MH-SC-2526-006],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Thane,Private,7274.5,19,6660.9,No
+Lucknow Smart City – Riverfront Development [Work UP-SC-2526-005],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Lucknow,Private,1700.0,29,1739.4,Yes
+Dakshina Kannada Smart City – Integrated Command and Control Centre [Work KA-SC-2526-004],Smart Cities Mission,Smart City Infrastructure,Karnataka,Dakshina Kannada,Private,2675.8,65,2505.7,No
+Kozhikode Smart City – Underground Drainage [Work KL-SC-2526-001],Smart Cities Mission,Smart City Infrastructure,Kerala,Kozhikode,Private,4060.6,52,4051.1,No
+Nagpur Smart City – E-Governance Citizen Centre [Work MH-SC-2526-007],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Nagpur,Govt,6396.4,18,6047.1,No
+Mumbai City Smart City – Integrated Command and Control Centre [Work MH-SC-2526-008],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Mumbai City,Govt,1104.4,40,1101.4,No
+Paschim Medinipur Smart City – Underground Drainage [Work WB-SC-2526-004],Smart Cities Mission,Smart City Infrastructure,West Bengal,Paschim Medinipur,Private,2095.2,63,2323.6,Yes
+New Delhi Smart City – E-Governance Citizen Centre [Work DL-SC-2526-001],Smart Cities Mission,Smart City Infrastructure,Delhi,New Delhi,Private,4582.2,54,4577.6,No
+Gautam Buddh Nagar Smart City – Solar Microgrid [Work UP-SC-2526-006],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Gautam Buddh Nagar,Private,1271.5,43,1433.0,Yes
+Agra Smart City – Cycle Track and Footpath Renewal [Work UP-SC-2526-007],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Agra,Private,7962.0,62,8459.9,Yes
+Thane Smart City – E-Governance Citizen Centre [Work MH-SC-2526-009],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Thane,Govt,13611.3,33,12969.2,No
+Thiruvananthapuram Smart City – E-Governance Citizen Centre [Work KL-SC-2526-002],Smart Cities Mission,Smart City Infrastructure,Kerala,Thiruvananthapuram,Govt,1467.1,28,1385.4,No
+Amravati Smart City – Smart Parking System [Work MH-SC-2526-010],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Amravati,Private,1990.3,18,1856.7,No
+Bengaluru Urban Smart City – Waste Management Facility [Work KA-SC-2526-005],Smart Cities Mission,Smart City Infrastructure,Karnataka,Bengaluru Urban,Private,3396.0,23,3209.5,No
+Warangal Smart City – LED Street Lighting [Work TS-SC-2526-004],Smart Cities Mission,Smart City Infrastructure,Telangana,Warangal,Govt,6291.3,53,5939.3,No
+Pune Smart City – Riverfront Development [Work MH-SC-2526-011],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Pune,Govt,1914.7,22,1894.7,No
+Kanpur Nagar Smart City – Waste Management Facility [Work UP-SC-2526-008],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Kanpur Nagar,Private,6201.4,42,6624.0,Yes
+Udaipur Smart City – Waste Management Facility [Work RJ-SC-2526-002],Smart Cities Mission,Smart City Infrastructure,Rajasthan,Udaipur,Govt,9782.5,69,10925.8,Yes
+Amravati Smart City – LED Street Lighting [Work MH-SC-2526-012],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Amravati,Private,4999.2,57,4815.0,No
+Salem Smart City – Cycle Track and Footpath Renewal [Work TN-SC-2526-004],Smart Cities Mission,Smart City Infrastructure,Tamil Nadu,Salem,Private,2000.3,25,1998.3,No
+Thane Smart City – Underground Drainage [Work MH-SC-2526-013],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Thane,Govt,4304.6,23,4300.3,No
+Agra Smart City – Riverfront Development [Work UP-SC-2526-009],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Agra,Private,2123.2,33,1991.1,No
+Rajkot Smart City – Underground Drainage [Work GJ-SC-2526-005],Smart Cities Mission,Smart City Infrastructure,Gujarat,Rajkot,Private,793.9,51,780.1,No
+Paschim Medinipur Smart City – Riverfront Development [Work WB-SC-2526-005],Smart Cities Mission,Smart City Infrastructure,West Bengal,Paschim Medinipur,Private,826.0,33,870.9,Yes
+Nizamabad Smart City – Solar Microgrid [Work TS-SC-2526-005],Smart Cities Mission,Smart City Infrastructure,Telangana,Nizamabad,Govt,3078.1,59,3234.7,Yes
+Gautam Buddh Nagar Smart City – Waste Management Facility [Work UP-SC-2526-010],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Gautam Buddh Nagar,Private,3242.0,46,3727.7,Yes
+Pune Smart City – Cycle Track and Footpath Renewal [Work MH-SC-2526-014],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Pune,Private,3331.3,38,3110.9,No
+Agra Smart City – LED Street Lighting [Work UP-SC-2526-011],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Agra,Govt,2638.8,47,2993.0,Yes
+Kalaburagi Smart City – Waste Management Facility [Work KA-SC-2526-006],Smart Cities Mission,Smart City Infrastructure,Karnataka,Kalaburagi,Govt,3782.8,42,3505.7,No
+Warangal Smart City – Cycle Track and Footpath Renewal [Work TS-SC-2526-006],Smart Cities Mission,Smart City Infrastructure,Telangana,Warangal,Govt,9712.5,54,10878.8,Yes
+Ahmedabad Smart City – Cycle Track and Footpath Renewal [Work GJ-SC-2526-006],Smart Cities Mission,Smart City Infrastructure,Gujarat,Ahmedabad,Private,5999.0,66,5870.5,No
+Mysuru Smart City – Waste Management Facility [Work KA-SC-2526-007],Smart Cities Mission,Smart City Infrastructure,Karnataka,Mysuru,Govt,1700.9,33,1932.7,Yes
+Mumbai City Smart City – LED Street Lighting [Work MH-SC-2526-015],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Mumbai City,Govt,5746.5,25,5414.9,No
+Ernakulam Smart City – E-Governance Citizen Centre [Work KL-SC-2526-003],Smart Cities Mission,Smart City Infrastructure,Kerala,Ernakulam,Private,22779.9,49,22320.5,No
+Bhopal Smart City – Integrated Command and Control Centre [Work MP-SC-2526-003],Smart Cities Mission,Smart City Infrastructure,Madhya Pradesh,Bhopal,Private,21854.6,25,21832.7,No
+Gautam Buddh Nagar Smart City – Cycle Track and Footpath Renewal [Work UP-SC-2526-012],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Gautam Buddh Nagar,Private,2818.5,43,2695.3,No
+Mysuru Smart City – E-Governance Citizen Centre [Work KA-SC-2526-008],Smart Cities Mission,Smart City Infrastructure,Karnataka,Mysuru,Private,7252.3,49,7064.7,No
+Salem Smart City – Smart Parking System [Work TN-SC-2526-005],Smart Cities Mission,Smart City Infrastructure,Tamil Nadu,Salem,Private,3837.6,46,3734.8,No
+Gaya Smart City – E-Governance Citizen Centre [Work BR-SC-2526-004],Smart Cities Mission,Smart City Infrastructure,Bihar,Gaya,Private,5356.5,64,5399.4,Yes
+Nizamabad Smart City – Smart Parking System [Work TS-SC-2526-007],Smart Cities Mission,Smart City Infrastructure,Telangana,Nizamabad,Govt,4680.4,65,5418.5,Yes
+Warangal Smart City – Cycle Track and Footpath Renewal [Work TS-SC-2526-008],Smart Cities Mission,Smart City Infrastructure,Telangana,Warangal,Private,3012.0,59,3342.1,Yes
+Bhopal Smart City – Solar Microgrid [Work MP-SC-2526-004],Smart Cities Mission,Smart City Infrastructure,Madhya Pradesh,Bhopal,Private,2690.1,23,2423.1,No
+Madurai Smart City – Underground Drainage [Work TN-SC-2526-006],Smart Cities Mission,Smart City Infrastructure,Tamil Nadu,Madurai,Private,17717.9,26,17700.2,No
+Varanasi Smart City – LED Street Lighting [Work UP-SC-2526-013],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Varanasi,Private,3787.4,48,4319.7,Yes
+Warangal Smart City – Waste Management Facility [Work TS-SC-2526-009],Smart Cities Mission,Smart City Infrastructure,Telangana,Warangal,Private,9059.1,39,8592.7,No
+Indore Smart City – LED Street Lighting [Work MP-SC-2526-005],Smart Cities Mission,Smart City Infrastructure,Madhya Pradesh,Indore,Private,1605.0,27,1588.7,No
+Pune Smart City – Underground Drainage [Work MH-SC-2526-016],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Pune,Private,15670.6,31,14616.8,No
+Hyderabad Smart City – Underground Drainage [Work TS-SC-2526-010],Smart Cities Mission,Smart City Infrastructure,Telangana,Hyderabad,Private,2972.8,53,2827.3,No
+Mysuru Smart City – Underground Drainage [Work KA-SC-2526-009],Smart Cities Mission,Smart City Infrastructure,Karnataka,Mysuru,Govt,5330.7,51,5913.7,Yes
+Warangal Smart City – Underground Drainage [Work TS-SC-2526-011],Smart Cities Mission,Smart City Infrastructure,Telangana,Warangal,Govt,3680.2,40,3491.1,No
+Thiruvananthapuram Smart City – Smart Parking System [Work KL-SC-2526-004],Smart Cities Mission,Smart City Infrastructure,Kerala,Thiruvananthapuram,Private,7055.4,63,6973.2,No
+Nizamabad Smart City – Smart Parking System [Work TS-SC-2526-012],Smart Cities Mission,Smart City Infrastructure,Telangana,Nizamabad,Govt,4389.4,35,4314.6,No
+Bhagalpur Smart City – LED Street Lighting [Work BR-SC-2526-005],Smart Cities Mission,Smart City Infrastructure,Bihar,Bhagalpur,Private,2730.5,24,2982.9,Yes
+Vijayawada Smart City – Integrated Command and Control Centre [Work AP-SC-2526-002],Smart Cities Mission,Smart City Infrastructure,Andhra Pradesh,Vijayawada,Private,1306.9,24,1218.3,No
+Kolkata Smart City – Integrated Command and Control Centre [Work WB-SC-2526-006],Smart Cities Mission,Smart City Infrastructure,West Bengal,Kolkata,Private,5982.0,54,5424.9,No
+Gautam Buddh Nagar Smart City – Cycle Track and Footpath Renewal [Work UP-SC-2526-014],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Gautam Buddh Nagar,Govt,4091.5,25,4403.4,Yes
+Ghaziabad Smart City – Underground Drainage [Work UP-SC-2526-015],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Ghaziabad,Govt,1194.2,41,1323.6,Yes
+Kanpur Nagar Smart City – E-Governance Citizen Centre [Work UP-SC-2526-016],Smart Cities Mission,Smart City Infrastructure,Uttar Pradesh,Kanpur Nagar,Govt,5451.1,52,5856.7,Yes
+Amravati Smart City – Integrated Command and Control Centre [Work MH-SC-2526-017],Smart Cities Mission,Smart City Infrastructure,Maharashtra,Amravati,Govt,15310.4,49,14477.4,No
+Kalaburagi Smart City – Underground Drainage [Work KA-SC-2526-010],Smart Cities Mission,Smart City Infrastructure,Karnataka,Kalaburagi,Private,4244.3,55,4188.8,No
+Central Delhi Smart City – Waste Management Facility [Work DL-SC-2526-002],Smart Cities Mission,Smart City Infrastructure,Delhi,Central Delhi,Govt,2019.2,20,2288.5,Yes

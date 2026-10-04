@@ -1,0 +1,44 @@
+# ---------------------------------------------------------------------------
+# Runtime dependencies
+# ---------------------------------------------------------------------------
+# NOTE ON THE scikit-learn PIN:
+# On machines where Windows Smart App Control is enabled, scikit-learn 1.9.x
+# ships a compiled extension (sklearn/utils/_weight_vector.*.pyd) that the
+# policy refuses to load. That single blocked binary cascades into
+# sklearn.neighbors, which makes KNeighborsClassifier unusable. Version 1.8.0
+# loads fine. If your machine has Smart App Control OFF you may upgrade, but
+# 1.8.0 is what this project was tested against.
+scikit-learn==1.8.0
+
+# Same Smart App Control reasoning: scipy 1.18.x ships a binary
+# (scipy/linalg/_solve_toeplitz.*.pyd) that the policy blocks on a fresh
+# install, while 1.17.1 loads. Pin it so a clean `pip install` just works.
+scipy==1.17.1
+
+# Web framework serving the single page and the JSON API.
+Flask==3.1.3
+
+# Tabular data handling for the dataset and CSV uploads.
+pandas==3.0.6
+
+# Numerical backbone used by pandas and scikit-learn.
+numpy==2.5.3
+
+# Serialises the two fitted pipelines to model/india_knn.joblib and model/india_rf.joblib.
+joblib==1.6.0
+
+# Optional: only data_layer/storage.py's S3Store imports boto3, and it imports it lazily.
+# The app runs entirely on the local adapter without it. To load a dataset from an S3
+# bucket instead, install boto3 and export AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY /
+# AWS_REGION (or a profile) in the shell that starts app.py -- never in this repository.
+# boto3==1.35.0
+
+# ---------------------------------------------------------------------------
+# Test-only dependencies (not needed to run the website)
+# ---------------------------------------------------------------------------
+# Unit and API tests:  py -m pytest
+pytest==9.1.1
+
+# Headless browser smoke test:  py tests/smoke_test.py
+# After installing, fetch the browser once with:  py -m playwright install chromium
+playwright==1.63.0

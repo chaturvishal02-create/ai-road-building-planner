@@ -1,0 +1,788 @@
+{
+  "trained_at": "2026-10-04T07:59:16",
+  "elapsed_seconds": 1.14,
+  "project": {
+    "title": "Government Construction Project Budget Prediction Using Machine Learning",
+    "region": "India, FY 2025-26",
+    "team": [
+      "Vishal Raghunath Chatur",
+      "Mohsin Jabiulla Balgyar"
+    ],
+    "guide": "Tapase Miss",
+    "institution": "DBATU",
+    "programme": "B.Tech in Artificial Intelligence & Data Science Engineering"
+  },
+  "dataset": {
+    "path": "C:\\Users\\VISHAL\\PYTHON\\constrution Qoo\\data\\india_projects_2025_26.csv",
+    "source": "synthetic-india-2025-26",
+    "rows": 700,
+    "train_size": 560,
+    "test_size": 140,
+    "columns": [
+      "project_name",
+      "scheme_name",
+      "project_type",
+      "state",
+      "district",
+      "contractor_type",
+      "sanctioned_budget_lakh",
+      "duration_months",
+      "actual_cost_lakh",
+      "over_budget"
+    ],
+    "features": [
+      "scheme_name",
+      "state",
+      "district",
+      "contractor_type",
+      "sanctioned_budget_lakh",
+      "duration_months"
+    ],
+    "categorical_features": [
+      "scheme_name",
+      "state",
+      "district",
+      "contractor_type"
+    ],
+    "numeric_features": [
+      "sanctioned_budget_lakh",
+      "duration_months"
+    ],
+    "target": "over_budget",
+    "target_counts": {
+      "No": 406,
+      "Yes": 294
+    },
+    "over_budget_share_pct": 42.0,
+    "test_size_fraction": 0.2,
+    "random_state": 42,
+    "stratified": true,
+    "synthetic": true
+  },
+  "model": {
+    "pipeline_steps": [
+      "preprocess",
+      "model"
+    ],
+    "preprocessor": [
+      "ColumnTransformer",
+      "OneHotEncoder(handle_unknown='ignore')",
+      "StandardScaler"
+    ],
+    "encoded_width": 81,
+    "default_k": 5,
+    "k_range": [
+      1,
+      31
+    ],
+    "distance_metric": "euclidean",
+    "vote_rule": "uniform (majority)",
+    "random_state": 42
+  },
+  "metrics": {
+    "knn": {
+      "accuracy": 0.735714,
+      "precision": 0.6897,
+      "recall": 0.678,
+      "f1": 0.6838,
+      "roc_auc": 0.8095,
+      "log_loss": 1.4593,
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "confusion_matrix": [
+        [
+          63,
+          18
+        ],
+        [
+          19,
+          40
+        ]
+      ],
+      "report": {
+        "No": {
+          "precision": 0.7683,
+          "recall": 0.7778,
+          "f1": 0.773,
+          "support": 81
+        },
+        "Yes": {
+          "precision": 0.6897,
+          "recall": 0.678,
+          "f1": 0.6838,
+          "support": 59
+        },
+        "macro avg": {
+          "precision": 0.729,
+          "recall": 0.7279,
+          "f1": 0.7284,
+          "support": 140
+        },
+        "weighted avg": {
+          "precision": 0.7352,
+          "recall": 0.7357,
+          "f1": 0.7354,
+          "support": 140
+        }
+      },
+      "baseline_always_no_accuracy": 0.5786,
+      "correct": 103,
+      "total": 140,
+      "model": "K-Nearest Neighbours"
+    },
+    "rf": {
+      "accuracy": 0.785714,
+      "precision": 0.7042,
+      "recall": 0.8475,
+      "f1": 0.7692,
+      "roc_auc": 0.8908,
+      "log_loss": 0.4661,
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "confusion_matrix": [
+        [
+          60,
+          21
+        ],
+        [
+          9,
+          50
+        ]
+      ],
+      "report": {
+        "No": {
+          "precision": 0.8696,
+          "recall": 0.7407,
+          "f1": 0.8,
+          "support": 81
+        },
+        "Yes": {
+          "precision": 0.7042,
+          "recall": 0.8475,
+          "f1": 0.7692,
+          "support": 59
+        },
+        "macro avg": {
+          "precision": 0.7869,
+          "recall": 0.7941,
+          "f1": 0.7846,
+          "support": 140
+        },
+        "weighted avg": {
+          "precision": 0.7999,
+          "recall": 0.7857,
+          "f1": 0.787,
+          "support": 140
+        }
+      },
+      "baseline_always_no_accuracy": 0.5786,
+      "correct": 110,
+      "total": 140,
+      "model": "Random Forest"
+    }
+  },
+  "comparison": {
+    "winner": "rf",
+    "winner_label": "Random Forest",
+    "rule": "higher F1 on the over_budget=Yes class (accuracy is inflated by the majority class)",
+    "rows": [
+      {
+        "key": "knn",
+        "label": "K-Nearest Neighbours",
+        "accuracy": 0.735714,
+        "precision": 0.6897,
+        "recall": 0.678,
+        "f1": 0.6838,
+        "roc_auc": 0.8095
+      },
+      {
+        "key": "rf",
+        "label": "Random Forest",
+        "accuracy": 0.785714,
+        "precision": 0.7042,
+        "recall": 0.8475,
+        "f1": 0.7692,
+        "roc_auc": 0.8908
+      }
+    ]
+  },
+  "k_curve": {
+    "ks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "accuracies": [
+      0.757143,
+      0.642857,
+      0.692857,
+      0.721429,
+      0.735714,
+      0.728571,
+      0.721429,
+      0.764286,
+      0.757143,
+      0.771429,
+      0.771429,
+      0.757143,
+      0.778571,
+      0.785714,
+      0.785714,
+      0.792857,
+      0.785714,
+      0.792857,
+      0.807143,
+      0.807143,
+      0.821429,
+      0.807143,
+      0.8,
+      0.814286,
+      0.828571,
+      0.821429,
+      0.8,
+      0.814286,
+      0.807143,
+      0.821429,
+      0.814286
+    ],
+    "points": [
+      {
+        "k": 1,
+        "accuracy": 0.757143
+      },
+      {
+        "k": 2,
+        "accuracy": 0.642857
+      },
+      {
+        "k": 3,
+        "accuracy": 0.692857
+      },
+      {
+        "k": 4,
+        "accuracy": 0.721429
+      },
+      {
+        "k": 5,
+        "accuracy": 0.735714
+      },
+      {
+        "k": 6,
+        "accuracy": 0.728571
+      },
+      {
+        "k": 7,
+        "accuracy": 0.721429
+      },
+      {
+        "k": 8,
+        "accuracy": 0.764286
+      },
+      {
+        "k": 9,
+        "accuracy": 0.757143
+      },
+      {
+        "k": 10,
+        "accuracy": 0.771429
+      },
+      {
+        "k": 11,
+        "accuracy": 0.771429
+      },
+      {
+        "k": 12,
+        "accuracy": 0.757143
+      },
+      {
+        "k": 13,
+        "accuracy": 0.778571
+      },
+      {
+        "k": 14,
+        "accuracy": 0.785714
+      },
+      {
+        "k": 15,
+        "accuracy": 0.785714
+      },
+      {
+        "k": 16,
+        "accuracy": 0.792857
+      },
+      {
+        "k": 17,
+        "accuracy": 0.785714
+      },
+      {
+        "k": 18,
+        "accuracy": 0.792857
+      },
+      {
+        "k": 19,
+        "accuracy": 0.807143
+      },
+      {
+        "k": 20,
+        "accuracy": 0.807143
+      },
+      {
+        "k": 21,
+        "accuracy": 0.821429
+      },
+      {
+        "k": 22,
+        "accuracy": 0.807143
+      },
+      {
+        "k": 23,
+        "accuracy": 0.8
+      },
+      {
+        "k": 24,
+        "accuracy": 0.814286
+      },
+      {
+        "k": 25,
+        "accuracy": 0.828571
+      },
+      {
+        "k": 26,
+        "accuracy": 0.821429
+      },
+      {
+        "k": 27,
+        "accuracy": 0.8
+      },
+      {
+        "k": 28,
+        "accuracy": 0.814286
+      },
+      {
+        "k": 29,
+        "accuracy": 0.807143
+      },
+      {
+        "k": 30,
+        "accuracy": 0.821429
+      },
+      {
+        "k": 31,
+        "accuracy": 0.814286
+      }
+    ],
+    "best_k": 25,
+    "best_accuracy": 0.828571,
+    "default_k": 5,
+    "train_size": 560,
+    "test_size": 140
+  },
+  "importances": {
+    "random_forest": [
+      {
+        "feature": "contractor_type",
+        "importance_pct": 50.79
+      },
+      {
+        "feature": "state",
+        "importance_pct": 16.15
+      },
+      {
+        "feature": "duration_months",
+        "importance_pct": 11.0
+      },
+      {
+        "feature": "sanctioned_budget_lakh",
+        "importance_pct": 10.86
+      },
+      {
+        "feature": "district",
+        "importance_pct": 7.56
+      },
+      {
+        "feature": "scheme_name",
+        "importance_pct": 3.63
+      }
+    ],
+    "knn": {
+      "method": "ablation (replace one column with its training-set common value)",
+      "baseline_accuracy": 0.735714,
+      "features": [
+        {
+          "feature": "scheme_name",
+          "accuracy_with_blank": 0.707143,
+          "accuracy_drop": 0.028571
+        },
+        {
+          "feature": "state",
+          "accuracy_with_blank": 0.764286,
+          "accuracy_drop": -0.028571
+        },
+        {
+          "feature": "district",
+          "accuracy_with_blank": 0.785714,
+          "accuracy_drop": -0.05
+        },
+        {
+          "feature": "contractor_type",
+          "accuracy_with_blank": 0.528571,
+          "accuracy_drop": 0.207143
+        },
+        {
+          "feature": "sanctioned_budget_lakh",
+          "accuracy_with_blank": 0.707143,
+          "accuracy_drop": 0.028571
+        },
+        {
+          "feature": "duration_months",
+          "accuracy_with_blank": 0.678571,
+          "accuracy_drop": 0.057143
+        }
+      ],
+      "ranking": [
+        "contractor_type",
+        "duration_months",
+        "scheme_name",
+        "sanctioned_budget_lakh",
+        "state",
+        "district"
+      ]
+    }
+  },
+  "overrun_heuristic": {
+    "basis": "mean of (actual - sanctioned) / sanctioned over training projects that overran",
+    "overall_mean_pct": 13.48,
+    "overall_median_pct": 12.83,
+    "per_scheme": {
+      "Jal Jeevan Mission": {
+        "mean_overrun_pct": 18.91,
+        "median_overrun_pct": 17.85,
+        "sample_size": 51
+      },
+      "PMAY (Housing)": {
+        "mean_overrun_pct": 10.88,
+        "median_overrun_pct": 11.29,
+        "sample_size": 66
+      },
+      "PMGSY (Rural Roads)": {
+        "mean_overrun_pct": 13.95,
+        "median_overrun_pct": 13.62,
+        "sample_size": 91
+      },
+      "Smart Cities Mission": {
+        "mean_overrun_pct": 7.98,
+        "median_overrun_pct": 7.62,
+        "sample_size": 27
+      }
+    },
+    "note": "heuristic, not a regression model"
+  },
+  "vocabularies": {
+    "scheme_name": [
+      "Jal Jeevan Mission",
+      "PMAY (Housing)",
+      "PMGSY (Rural Roads)",
+      "Smart Cities Mission"
+    ],
+    "state": [
+      "Andhra Pradesh",
+      "Bihar",
+      "Delhi",
+      "Gujarat",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Punjab",
+      "Rajasthan",
+      "Tamil Nadu",
+      "Telangana",
+      "Uttar Pradesh",
+      "West Bengal"
+    ],
+    "district": [
+      "Agra",
+      "Ahmedabad",
+      "Amravati",
+      "Amritsar",
+      "Belagavi",
+      "Bengaluru Urban",
+      "Bhagalpur",
+      "Bhopal",
+      "Central Delhi",
+      "Chennai",
+      "Chhatrapati Sambhajinagar",
+      "Coimbatore",
+      "Dakshina Kannada",
+      "Darjeeling",
+      "East Delhi",
+      "Ernakulam",
+      "Gautam Buddh Nagar",
+      "Gaya",
+      "Ghaziabad",
+      "Gwalior",
+      "Howrah",
+      "Hyderabad",
+      "Indore",
+      "Jabalpur",
+      "Jaipur",
+      "Jalandhar",
+      "Jodhpur",
+      "Kalaburagi",
+      "Kanpur Nagar",
+      "Kolkata",
+      "Kota",
+      "Kozhikode",
+      "Lucknow",
+      "Ludhiana",
+      "Madurai",
+      "Mumbai City",
+      "Muzaffarpur",
+      "Mysuru",
+      "Nagpur",
+      "Nashik",
+      "New Delhi",
+      "Nizamabad",
+      "North-East Delhi",
+      "Paschim Medinipur",
+      "Patna",
+      "Prayagraj",
+      "Pune",
+      "Rajkot",
+      "Salem",
+      "Surat",
+      "Thane",
+      "Thiruvananthapuram",
+      "Tirupati",
+      "Udaipur",
+      "Vadodara",
+      "Varanasi",
+      "Vijayawada",
+      "Visakhapatnam",
+      "Warangal"
+    ],
+    "contractor_type": [
+      "Govt",
+      "Private"
+    ],
+    "district_states": {
+      "Agra": [
+        "Uttar Pradesh"
+      ],
+      "Ahmedabad": [
+        "Gujarat"
+      ],
+      "Amravati": [
+        "Maharashtra"
+      ],
+      "Amritsar": [
+        "Punjab"
+      ],
+      "Belagavi": [
+        "Karnataka"
+      ],
+      "Bengaluru Urban": [
+        "Karnataka"
+      ],
+      "Bhagalpur": [
+        "Bihar"
+      ],
+      "Bhopal": [
+        "Madhya Pradesh"
+      ],
+      "Central Delhi": [
+        "Delhi"
+      ],
+      "Chennai": [
+        "Tamil Nadu"
+      ],
+      "Chhatrapati Sambhajinagar": [
+        "Maharashtra"
+      ],
+      "Coimbatore": [
+        "Tamil Nadu"
+      ],
+      "Dakshina Kannada": [
+        "Karnataka"
+      ],
+      "Darjeeling": [
+        "West Bengal"
+      ],
+      "East Delhi": [
+        "Delhi"
+      ],
+      "Ernakulam": [
+        "Kerala"
+      ],
+      "Gautam Buddh Nagar": [
+        "Uttar Pradesh"
+      ],
+      "Gaya": [
+        "Bihar"
+      ],
+      "Ghaziabad": [
+        "Uttar Pradesh"
+      ],
+      "Gwalior": [
+        "Madhya Pradesh"
+      ],
+      "Howrah": [
+        "West Bengal"
+      ],
+      "Hyderabad": [
+        "Telangana"
+      ],
+      "Indore": [
+        "Madhya Pradesh"
+      ],
+      "Jabalpur": [
+        "Madhya Pradesh"
+      ],
+      "Jaipur": [
+        "Rajasthan"
+      ],
+      "Jalandhar": [
+        "Punjab"
+      ],
+      "Jodhpur": [
+        "Rajasthan"
+      ],
+      "Kalaburagi": [
+        "Karnataka"
+      ],
+      "Kanpur Nagar": [
+        "Uttar Pradesh"
+      ],
+      "Kolkata": [
+        "West Bengal"
+      ],
+      "Kota": [
+        "Rajasthan"
+      ],
+      "Kozhikode": [
+        "Kerala"
+      ],
+      "Lucknow": [
+        "Uttar Pradesh"
+      ],
+      "Ludhiana": [
+        "Punjab"
+      ],
+      "Madurai": [
+        "Tamil Nadu"
+      ],
+      "Mumbai City": [
+        "Maharashtra"
+      ],
+      "Muzaffarpur": [
+        "Bihar"
+      ],
+      "Mysuru": [
+        "Karnataka"
+      ],
+      "Nagpur": [
+        "Maharashtra"
+      ],
+      "Nashik": [
+        "Maharashtra"
+      ],
+      "New Delhi": [
+        "Delhi"
+      ],
+      "Nizamabad": [
+        "Telangana"
+      ],
+      "North-East Delhi": [
+        "Delhi"
+      ],
+      "Paschim Medinipur": [
+        "West Bengal"
+      ],
+      "Patna": [
+        "Bihar"
+      ],
+      "Prayagraj": [
+        "Uttar Pradesh"
+      ],
+      "Pune": [
+        "Maharashtra"
+      ],
+      "Rajkot": [
+        "Gujarat"
+      ],
+      "Salem": [
+        "Tamil Nadu"
+      ],
+      "Surat": [
+        "Gujarat"
+      ],
+      "Thane": [
+        "Maharashtra"
+      ],
+      "Thiruvananthapuram": [
+        "Kerala"
+      ],
+      "Tirupati": [
+        "Andhra Pradesh"
+      ],
+      "Udaipur": [
+        "Rajasthan"
+      ],
+      "Vadodara": [
+        "Gujarat"
+      ],
+      "Varanasi": [
+        "Uttar Pradesh"
+      ],
+      "Vijayawada": [
+        "Andhra Pradesh"
+      ],
+      "Visakhapatnam": [
+        "Andhra Pradesh"
+      ],
+      "Warangal": [
+        "Telangana"
+      ]
+    },
+    "budget_min_lakh": 30.0,
+    "budget_max_lakh": 22779.9,
+    "duration_min": 6,
+    "duration_max": 71,
+    "target_values": [
+      "Yes",
+      "No"
+    ]
+  }
+}

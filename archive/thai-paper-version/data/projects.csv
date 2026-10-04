@@ -1,0 +1,693 @@
+department,site_location,project_type,procurement_method,over_budget
+Office of Local Waterworks,Bangkok,Road,Bidding,No
+Department of Agricultural Extension,Nong Khai,Building,Specific,No
+Department of Medical Services,Mae Hong Son,Building,Specific,Yes
+Department of Irrigation,Nakhon Nayok,Building,Specific,No
+Office of the Basic Education Commission,Chonburi,Road,Specific,No
+Department of Public Works,Ranong,Building,Specific,No
+Department of Sports and Recreation,Ratchaburi,Building,Specific,No
+Bangkok Metropolitan Administration,Prachinburi,Irrigation,Chosen,Yes
+Office of Transport and Traffic Policy and Planning,Sakon Nakhon,Building,Specific,No
+Office of the Basic Education Commission,Phra Nakhon Si Ayutthaya,Building,Specific,No
+Department of Irrigation,Songkhla,Road,Specific,No
+Bangkok Metropolitan Administration,Chachoengsao,Irrigation,Specific,No
+Office of the Ministry of Public Health,Phayao,Irrigation,Specific,No
+Department of Provincial Administration,Nakhon Pathom,Building,Specific,No
+Department of Rural Roads,Bangkok,Road,Specific,No
+Office of the Basic Education Commission,Udon Thani,Building,Specific,No
+Department of Highways,Prachinburi,Building,Specific,No
+Department of Marine and Coastal Resources,Prachuap Khiri Khan,Road,Specific,Yes
+Department of Religious Affairs,Suphan Buri,Road,Specific,Yes
+Department of Highways,Chachoengsao,Road,Specific,No
+Department of Forest Resources,Sisaket,Building,Specific,No
+Department of Rural Roads,Pathum Thani,Road,Specific,No
+Office of the Vocational Education Commission,Lamphun,Building,Specific,No
+Office of Provincial Health,Nan,Road,Specific,Yes
+Department of Irrigation,Yala,Building,Specific,No
+Department of Highways,Nonthaburi,Building,Specific,No
+Department of Highways,Khon Kaen,Building,Specific,Yes
+Office of Transport and Traffic Policy and Planning,Saraburi,Building,Specific,No
+Office of the Vocational Education Commission,Nong Bua Lamphu,Building,Specific,No
+Department of Rural Roads,Samut Songkhram,Road,Specific,No
+Department of Highways,Trat,Building,Chosen,Yes
+Department of Rural Roads,Nonthaburi,Building,Specific,No
+Department of Irrigation,Sa Kaeo,Building,Specific,No
+Department of Highways,Uthai Thani,Building,Specific,No
+Department of Medical Services,Narathiwat,Building,Specific,No
+Department of Disaster Prevention and Mitigation,Khon Kaen,Road,Specific,No
+Office of the Ministry of Public Health,Nakhon Nayok,Road,Specific,Yes
+Department of Highways,Bueng Kan,Building,Chosen,No
+Department of Highways,Phang Nga,Road,Specific,No
+Department of Highways,Trat,Building,Bidding,Yes
+Department of Provincial Administration,Sa Kaeo,Irrigation,Specific,Yes
+Office of the Vocational Education Commission,Trang,Road,Specific,No
+Department of Local Administration,Udon Thani,Road,Specific,No
+Department of Highways,Narathiwat,Building,Specific,No
+Department of Land Development,Bangkok,Building,Specific,No
+Department of Government Procurement,Chachoengsao,Building,Specific,No
+Department of Highways,Nakhon Ratchasima,Road,Specific,Yes
+"Office of the Permanent Secretary, Ministry of Education",Bangkok,Road,Specific,Yes
+Department of Rural Roads,Phuket,Building,Chosen,No
+Department of Rural Roads,Phetchaburi,Road,Bidding,No
+Department of Irrigation,Pathum Thani,Building,Specific,No
+Department of Medical Services,Chachoengsao,Building,Specific,No
+Department of Provincial Administration,Songkhla,Building,Specific,No
+Department of Government Procurement,Bueng Kan,Building,Specific,No
+Office of the National Cultural Commission,Bangkok,Road,Specific,Yes
+Department of Highways,Singburi,Building,Specific,No
+Department of Social Development and Welfare,Nakhon Pathom,Building,Specific,No
+Department of Highways,Bangkok,Road,Bidding,Yes
+Department of Highways,Saraburi,Road,Chosen,Yes
+Department of National Parks Wildlife and Plant Conservation,Chumphon,Building,Specific,No
+Department of Provincial Administration,Phayao,Building,Specific,No
+Department of Social Development and Welfare,Sakon Nakhon,Building,Specific,Yes
+Department of Highways,Krabi,Building,Specific,No
+Department of Rice,Nonthaburi,Building,Specific,No
+Department of Health Service Support,Nakhon Nayok,Building,Specific,Yes
+"Office of the Permanent Secretary, Ministry of Interior",Nan,Building,Specific,No
+Department of Highways,Samut Prakan,Road,Specific,Yes
+Department of Disease Control,Tak,Road,Specific,No
+Department of National Parks Wildlife and Plant Conservation,Songkhla,Building,Specific,No
+Department of Cultural Promotion,Bangkok,Building,Specific,No
+Department of Highways,Nakhon Si Thammarat,Building,Specific,Yes
+Department of Public Works and Town and Country Planning,Chachoengsao,Road,Specific,No
+Department of Highways,Nakhon Ratchasima,Building,Specific,No
+Department of Land Development,Chachoengsao,Building,Specific,No
+Department of Government Procurement,Phra Nakhon Si Ayutthaya,Building,Chosen,No
+Office of the Ministry of Public Health,Nakhon Pathom,Road,Specific,No
+Department of Highways,Chachoengsao,Road,Specific,No
+Department of Highways,Rayong,Irrigation,Specific,No
+Department of Highways,Buriram,Irrigation,Chosen,Yes
+Department of Water Resources,Phetchaburi,Irrigation,Specific,Yes
+Department of Rural Roads,Sisaket,Building,Specific,No
+Department of Sports and Recreation,Kalasin,Road,Specific,No
+Department of Highways,Pattani,Road,Specific,Yes
+Department of Provincial Administration,Udon Thani,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Bangkok,Building,Bidding,No
+Department of Rural Roads,Samut Prakan,Building,Specific,No
+Office of the Basic Education Commission,Chachoengsao,Building,Specific,No
+Department of Irrigation,Lopburi,Road,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Tak,Road,Specific,No
+Office of Provincial Health,Singburi,Building,Specific,No
+Department of Industrial Promotion,Bueng Kan,Building,Specific,No
+Department of Highways,Bangkok,Road,Specific,Yes
+Department of Highways,Satun,Irrigation,Specific,Yes
+Department of National Parks Wildlife and Plant Conservation,Ranong,Irrigation,Specific,No
+Department of Rural Roads,Nonthaburi,Building,Specific,No
+Department of Corrections,Bangkok,Building,Specific,No
+Department of Agricultural Extension,Prachuap Khiri Khan,Building,Specific,No
+Department of Local Administration,Chachoengsao,Road,Specific,No
+Office of Local Waterworks,Nakhon Pathom,Road,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Phang Nga,Road,Specific,No
+Department of Provincial Administration,Chachoengsao,Road,Specific,No
+Department of Corrections,Samut Songkhram,Building,Specific,No
+Department of Highways,Krabi,Building,Specific,No
+Department of Rural Roads,Nonthaburi,Building,Specific,No
+Office of the National Economic and Social Development Board,Nakhon Ratchasima,Building,Specific,No
+Department of Public Works and Town and Country Planning,Phetchaburi,Building,Chosen,No
+Department of Local Administration,Loei,Building,Specific,No
+Department of Land Development,Yala,Building,Specific,No
+Department of Public Works and Town and Country Planning,Samut Prakan,Road,Specific,No
+Department of Irrigation,Saraburi,Building,Specific,No
+Department of Public Works,Lopburi,Building,Specific,Yes
+Department of Water Resources,Nonthaburi,Building,Specific,Yes
+Department of Highways,Chonburi,Building,Specific,No
+Department of Highways,Phang Nga,Building,Specific,No
+Department of Rural Roads,Lamphun,Building,Specific,No
+Department of Rural Roads,Trat,Road,Specific,No
+Department of Rural Roads,Nan,Building,Chosen,No
+Department of Highways,Bangkok,Building,Specific,No
+Department of Rice,Suphan Buri,Road,Specific,Yes
+Department of Highways,Lampang,Road,Specific,No
+Department of Public Works and Town and Country Planning,Yasothon,Road,Specific,No
+Bangkok Metropolitan Administration,Kanchanaburi,Building,Specific,No
+Department of Health Service Support,Bangkok,Building,Specific,Yes
+Department of Provincial Administration,Nonthaburi,Building,Bidding,Yes
+Office of the National Economic and Social Development Board,Lopburi,Road,Specific,No
+Department of Rural Roads,Nakhon Pathom,Building,Specific,No
+Office of the National Cultural Commission,Chonburi,Building,Specific,No
+Department of Medical Services,Samut Prakan,Building,Bidding,No
+Department of Public Works,Krabi,Building,Specific,No
+Department of Agricultural Extension,Chumphon,Road,Specific,No
+Department of Rice,Chanthaburi,Building,Specific,Yes
+Department of Physical Education,Phayao,Building,Specific,No
+Department of Social Development and Welfare,Udon Thani,Road,Specific,Yes
+Bangkok Metropolitan Administration,Chonburi,Road,Specific,Yes
+Department of Irrigation,Phetchaburi,Road,Specific,Yes
+Department of Disease Control,Chiang Rai,Building,Specific,No
+Department of Provincial Administration,Buriram,Building,Specific,No
+Department of Provincial Administration,Uthai Thani,Building,Specific,No
+Department of Corrections,Phang Nga,Road,Specific,Yes
+Department of Children and Youth,Amnat Charoen,Road,Specific,Yes
+Office of the National Economic and Social Development Board,Nonthaburi,Road,Specific,No
+Department of Irrigation,Surat Thani,Building,Specific,No
+Department of Rice,Ubon Ratchathani,Building,Bidding,No
+Office of the Vocational Education Commission,Chachoengsao,Building,Specific,No
+Department of Highways,Lopburi,Building,Bidding,No
+Department of Rural Roads,Nakhon Pathom,Road,Specific,No
+Department of Highways,Phrae,Building,Specific,No
+Department of Rural Roads,Bangkok,Road,Specific,Yes
+Department of Highways,Surat Thani,Building,Specific,No
+Department of Highways,Nakhon Si Thammarat,Road,Specific,No
+Department of Highways,Prachinburi,Road,Specific,Yes
+Department of Highways,Chiang Rai,Building,Specific,No
+Department of Rural Roads,Phuket,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Education",Surat Thani,Building,Specific,No
+Department of Local Administration,Chaiyaphum,Building,Specific,No
+Department of Local Administration,Rayong,Building,Chosen,No
+Department of Government Procurement,Trat,Road,Specific,No
+Department of Corrections,Sa Kaeo,Irrigation,Specific,No
+Department of Irrigation,Nong Khai,Road,Specific,No
+Department of Highways,Bueng Kan,Building,Specific,No
+Department of Water Resources,Suphan Buri,Road,Specific,No
+Department of Rural Roads,Nonthaburi,Road,Specific,No
+Department of Highways,Phra Nakhon Si Ayutthaya,Building,Chosen,Yes
+Department of Marine Transport,Bangkok,Road,Specific,No
+Department of Medical Services,Phuket,Building,Specific,No
+Department of Rural Roads,Nong Bua Lamphu,Road,Specific,No
+Department of Rural Roads,Lopburi,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Ubon Ratchathani,Building,Specific,No
+Department of Disaster Prevention and Mitigation,Chiang Rai,Building,Specific,No
+Department of Highways,Khon Kaen,Building,Specific,No
+Department of Irrigation,Sisaket,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Bangkok,Road,Specific,No
+Department of Public Works and Town and Country Planning,Ang Thong,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Phuket,Road,Specific,No
+Office of the Basic Education Commission,Phra Nakhon Si Ayutthaya,Building,Specific,No
+Department of Medical Services,Chaiyaphum,Road,Specific,Yes
+Department of Local Administration,Krabi,Building,Specific,No
+Department of Irrigation,Pathum Thani,Building,Bidding,No
+Office of the Ministry of Public Health,Samut Prakan,Road,Specific,No
+Department of Agricultural Extension,Saraburi,Building,Specific,No
+Department of Local Administration,Khon Kaen,Road,Specific,Yes
+Department of Lands,Chachoengsao,Road,Specific,No
+Department of Highways,Lamphun,Road,Specific,No
+"Office of the Permanent Secretary, Ministry of Education",Nakhon Pathom,Building,Specific,No
+Department of Disease Control,Chachoengsao,Road,Specific,No
+Department of Lands,Uthai Thani,Irrigation,Specific,Yes
+Office of Transport and Traffic Policy and Planning,Nonthaburi,Building,Specific,No
+Office of the Ministry of Public Health,Saraburi,Building,Specific,No
+Department of Disaster Prevention and Mitigation,Sisaket,Building,Specific,No
+Department of Health Service Support,Nonthaburi,Building,Specific,Yes
+Department of Disaster Prevention and Mitigation,Chaiyaphum,Irrigation,Bidding,No
+Department of Water Resources,Phatthalung,Building,Specific,No
+Department of Rural Roads,Nonthaburi,Building,Bidding,No
+Department of Public Works and Town and Country Planning,Singburi,Building,Specific,No
+Department of Public Works and Town and Country Planning,Trat,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Education",Samut Prakan,Road,Bidding,No
+Office of the Vocational Education Commission,Mukdahan,Road,Bidding,Yes
+Department of Rural Roads,Ang Thong,Building,Specific,No
+Department of Local Administration,Phayao,Building,Specific,No
+Department of Highways,Chumphon,Road,Specific,Yes
+Bangkok Metropolitan Administration,Chachoengsao,Building,Specific,Yes
+Department of Public Works and Town and Country Planning,Bangkok,Irrigation,Specific,No
+Department of Provincial Electricity,Bangkok,Road,Specific,No
+Department of Local Administration,Ang Thong,Road,Specific,Yes
+Department of Forest Resources,Samut Sakhon,Building,Specific,No
+Department of Marine and Coastal Resources,Ratchaburi,Building,Bidding,Yes
+Department of National Parks Wildlife and Plant Conservation,Ang Thong,Road,Chosen,No
+Department of Highways,Rayong,Road,Specific,No
+Department of Rural Roads,Phra Nakhon Si Ayutthaya,Building,Specific,No
+Department of Public Works and Town and Country Planning,Nonthaburi,Building,Specific,No
+Office of the Vocational Education Commission,Chanthaburi,Building,Specific,No
+Department of Highways,Singburi,Building,Specific,No
+Department of Irrigation,Bangkok,Building,Specific,No
+Department of Highways,Kalasin,Irrigation,Specific,No
+Office of the Ministry of Public Health,Bueng Kan,Building,Specific,No
+Department of Public Works and Town and Country Planning,Pathum Thani,Irrigation,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Pattani,Building,Specific,No
+Office of the Basic Education Commission,Nong Bua Lamphu,Building,Specific,No
+Department of Rural Roads,Chachoengsao,Building,Specific,No
+Department of Provincial Administration,Mae Hong Son,Building,Specific,Yes
+Department of Rural Roads,Samut Prakan,Road,Specific,No
+Department of Highways,Khon Kaen,Building,Specific,No
+Department of Highways,Samut Prakan,Building,Specific,No
+Department of Religious Affairs,Chonburi,Road,Chosen,Yes
+Department of Rural Roads,Mae Hong Son,Building,Specific,No
+Department of Highways,Prachinburi,Building,Specific,No
+Department of Water Resources,Chanthaburi,Road,Specific,Yes
+Department of Provincial Administration,Bangkok,Road,Specific,No
+Department of Agricultural Extension,Kanchanaburi,Building,Specific,No
+Department of Health Service Support,Kalasin,Building,Specific,No
+Department of Local Administration,Samut Sakhon,Road,Specific,Yes
+Department of Rural Roads,Chanthaburi,Building,Specific,No
+Department of Marine and Coastal Resources,Phang Nga,Road,Specific,No
+Department of Corrections,Bangkok,Irrigation,Specific,No
+Department of Cultural Promotion,Pathum Thani,Building,Specific,No
+Department of Provincial Administration,Bueng Kan,Road,Specific,No
+Department of Livestock Development,Nong Bua Lamphu,Building,Specific,No
+Department of Public Works and Town and Country Planning,Bangkok,Road,Specific,No
+Department of Rural Roads,Bangkok,Building,Specific,No
+Department of Airports,Suphan Buri,Building,Specific,No
+Department of Rural Roads,Samut Prakan,Irrigation,Specific,No
+Department of Government Procurement,Pattani,Building,Specific,No
+Department of Rural Roads,Suphan Buri,Building,Specific,No
+Department of Government Procurement,Tak,Road,Specific,No
+Department of Highways,Bangkok,Road,Specific,No
+Department of Highways,Chumphon,Irrigation,Bidding,No
+Department of Livestock Development,Nakhon Phanom,Building,Chosen,Yes
+Department of Highways,Rayong,Building,Specific,No
+Department of Highways,Singburi,Building,Specific,No
+Department of Rural Roads,Ubon Ratchathani,Building,Specific,No
+Department of Fisheries,Bangkok,Road,Specific,No
+"Office of the Permanent Secretary, Ministry of Education",Krabi,Road,Specific,No
+Department of Rural Roads,Sisaket,Building,Bidding,No
+Department of Medical Services,Samut Songkhram,Building,Specific,No
+Department of Corrections,Sisaket,Building,Specific,No
+Department of Marine and Coastal Resources,Trat,Building,Specific,No
+Department of Health Service Support,Loei,Building,Chosen,No
+Department of Provincial Administration,Surat Thani,Building,Specific,No
+Department of Irrigation,Bangkok,Building,Specific,No
+Department of Highways,Nonthaburi,Building,Specific,No
+Department of Livestock Development,Phetchaburi,Building,Specific,No
+Department of Health Service Support,Chonburi,Building,Specific,No
+Department of Fisheries,Samut Songkhram,Road,Specific,Yes
+Department of Highways,Prachinburi,Building,Specific,No
+Department of Rural Roads,Chumphon,Building,Specific,No
+Department of Disaster Prevention and Mitigation,Pathum Thani,Irrigation,Specific,No
+Department of Provincial Administration,Nakhon Phanom,Building,Specific,No
+Department of Public Works and Town and Country Planning,Singburi,Road,Chosen,No
+Department of Water Resources,Pathum Thani,Road,Specific,Yes
+Department of Local Administration,Rayong,Building,Specific,Yes
+Department of Local Administration,Prachuap Khiri Khan,Irrigation,Specific,No
+Department of Highways,Nakhon Phanom,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Phetchaburi,Building,Specific,No
+Department of Social Development and Welfare,Mae Hong Son,Building,Specific,No
+Department of Irrigation,Ranong,Building,Specific,No
+Office of the Ministry of Public Health,Chonburi,Building,Specific,No
+Department of Airports,Chiang Rai,Building,Specific,No
+Department of Provincial Administration,Nakhon Si Thammarat,Building,Specific,No
+Department of Rural Roads,Bangkok,Building,Specific,No
+Department of Highways,Samut Prakan,Building,Bidding,Yes
+Department of Public Works,Nakhon Phanom,Irrigation,Specific,Yes
+Office of the Basic Education Commission,Bangkok,Building,Specific,No
+Department of Airports,Suphan Buri,Building,Specific,No
+Department of Irrigation,Rayong,Building,Specific,No
+Department of Public Works and Town and Country Planning,Ratchaburi,Building,Specific,No
+Office of the Ministry of Public Health,Pattani,Road,Chosen,Yes
+"Office of the Permanent Secretary, Ministry of Interior",Trat,Road,Specific,No
+Department of Rural Roads,Nonthaburi,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Nakhon Pathom,Building,Specific,No
+Office of Agricultural Economics,Chumphon,Irrigation,Specific,No
+Department of Rail Transport,Roi Et,Building,Specific,No
+Department of Highways,Krabi,Building,Specific,No
+Department of Highways,Nonthaburi,Irrigation,Specific,Yes
+Department of Local Administration,Yasothon,Road,Specific,No
+Bangkok Metropolitan Administration,Chonburi,Building,Specific,No
+Department of Highways,Suphan Buri,Building,Specific,Yes
+Department of Highways,Prachinburi,Building,Specific,No
+Department of Highways,Maha Sarakham,Irrigation,Specific,No
+Bangkok Metropolitan Administration,Loei,Road,Specific,Yes
+Department of Corrections,Phrae,Road,Specific,No
+Department of Forest Resources,Kamphaeng Phet,Irrigation,Specific,No
+Department of Rail Transport,Bangkok,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Education",Bangkok,Road,Bidding,Yes
+Office of the National Economic and Social Development Board,Samut Songkhram,Irrigation,Specific,No
+Department of Rural Roads,Samut Sakhon,Road,Specific,No
+Department of Provincial Administration,Trang,Building,Specific,No
+Department of Rice,Pathum Thani,Building,Specific,Yes
+Department of Rural Roads,Pathum Thani,Road,Specific,No
+Department of Irrigation,Lopburi,Road,Specific,No
+Department of Agricultural Extension,Phra Nakhon Si Ayutthaya,Road,Specific,No
+Department of Highways,Nakhon Sawan,Building,Specific,No
+Department of Rural Roads,Bangkok,Road,Specific,No
+Department of Rural Roads,Buriram,Building,Specific,No
+Bangkok Metropolitan Administration,Ratchaburi,Building,Specific,No
+Department of Mineral Resources,Suphan Buri,Building,Specific,No
+Department of National Parks Wildlife and Plant Conservation,Phra Nakhon Si Ayutthaya,Building,Specific,No
+Department of Sports and Recreation,Kamphaeng Phet,Irrigation,Specific,No
+Department of Lands,Chumphon,Road,Specific,No
+Department of Highways,Songkhla,Irrigation,Specific,Yes
+Department of Rice,Samut Songkhram,Building,Specific,No
+Office of the Vocational Education Commission,Nakhon Sawan,Building,Specific,No
+Department of Highways,Khon Kaen,Building,Specific,Yes
+Department of Public Works and Town and Country Planning,Chaiyaphum,Building,Chosen,No
+Department of Public Works,Ratchaburi,Irrigation,Specific,Yes
+Department of Health Service Support,Saraburi,Building,Specific,No
+Department of Public Works and Town and Country Planning,Lampang,Irrigation,Specific,No
+Department of Highways,Nakhon Pathom,Irrigation,Specific,No
+Office of Agricultural Economics,Pathum Thani,Building,Bidding,No
+Office of the Basic Education Commission,Bangkok,Road,Specific,No
+"Office of the Permanent Secretary, Ministry of Education",Nakhon Pathom,Building,Specific,No
+Department of Irrigation,Rayong,Road,Specific,No
+Department of Rail Transport,Yasothon,Building,Specific,No
+Department of Rural Roads,Sisaket,Building,Specific,No
+Department of Irrigation,Nakhon Pathom,Road,Specific,Yes
+"Office of the Permanent Secretary, Ministry of Interior",Bangkok,Building,Specific,No
+Department of Rural Roads,Bangkok,Building,Specific,No
+Department of Highways,Surat Thani,Building,Chosen,Yes
+Department of Groundwater Resources,Nonthaburi,Building,Specific,No
+Department of Marine Transport,Chanthaburi,Road,Specific,Yes
+Bangkok Metropolitan Administration,Roi Et,Irrigation,Specific,No
+Department of Highways,Chachoengsao,Road,Specific,No
+Department of Rural Roads,Bangkok,Building,Specific,No
+Department of Public Works,Chachoengsao,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Bangkok,Irrigation,Specific,No
+Department of National Parks Wildlife and Plant Conservation,Samut Prakan,Road,Specific,Yes
+Department of Airports,Nakhon Nayok,Building,Specific,No
+Department of Irrigation,Ang Thong,Building,Specific,No
+Department of Mineral Resources,Phayao,Irrigation,Specific,No
+Department of Rural Roads,Nakhon Nayok,Building,Specific,No
+Department of Social Development and Welfare,Nonthaburi,Building,Chosen,No
+Department of Highways,Ranong,Building,Specific,No
+Department of Corrections,Nonthaburi,Building,Specific,No
+Department of Highways,Prachinburi,Road,Specific,Yes
+"Office of the Permanent Secretary, Ministry of Education",Kalasin,Road,Specific,Yes
+Department of Highways,Phang Nga,Road,Specific,No
+Department of Rural Roads,Chanthaburi,Road,Specific,No
+Department of Forest Resources,Bangkok,Building,Specific,No
+Department of Disease Control,Lopburi,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Chanthaburi,Building,Specific,No
+Department of Highways,Chonburi,Building,Specific,No
+Department of Public Works and Town and Country Planning,Phang Nga,Road,Bidding,No
+Department of Rural Roads,Chanthaburi,Building,Specific,No
+Department of Highways,Samut Songkhram,Road,Specific,Yes
+Department of Medical Services,Chachoengsao,Road,Chosen,No
+Department of Provincial Administration,Samut Sakhon,Building,Specific,No
+Department of Irrigation,Chanthaburi,Building,Specific,Yes
+Department of Rice,Sisaket,Building,Specific,Yes
+Department of Physical Education,Sa Kaeo,Building,Specific,No
+Department of Rice,Bueng Kan,Road,Specific,No
+Department of Rural Roads,Phang Nga,Building,Specific,No
+Department of Highways,Mae Hong Son,Road,Specific,Yes
+"Office of the Permanent Secretary, Ministry of Interior",Bangkok,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Kanchanaburi,Road,Specific,No
+Department of Irrigation,Rayong,Irrigation,Specific,No
+Department of Irrigation,Khon Kaen,Road,Specific,No
+Department of Highways,Lampang,Building,Specific,Yes
+Department of Local Administration,Samut Prakan,Road,Specific,No
+Office of the Basic Education Commission,Prachuap Khiri Khan,Road,Specific,No
+Department of Provincial Administration,Pathum Thani,Building,Bidding,Yes
+Department of Highways,Ranong,Building,Specific,No
+Department of Rural Roads,Lopburi,Road,Specific,No
+Department of Corrections,Trat,Road,Specific,No
+Bangkok Metropolitan Administration,Bangkok,Building,Specific,No
+Department of Disease Control,Bangkok,Building,Specific,No
+Department of Highways,Pathum Thani,Irrigation,Specific,No
+Department of Government Procurement,Prachinburi,Building,Specific,No
+Department of Livestock Development,Phetchaburi,Building,Bidding,No
+Office of the National Cultural Commission,Songkhla,Road,Specific,No
+Department of Physical Education,Maha Sarakham,Irrigation,Specific,No
+Department of Rice,Phatthalung,Building,Specific,No
+Bangkok Metropolitan Administration,Saraburi,Irrigation,Specific,No
+Bangkok Metropolitan Administration,Lamphun,Road,Specific,Yes
+"Office of the Permanent Secretary, Ministry of Interior",Ang Thong,Road,Specific,No
+Department of Public Works and Town and Country Planning,Samut Prakan,Building,Specific,No
+Department of Disease Control,Pathum Thani,Building,Specific,No
+Department of Local Administration,Trat,Road,Specific,No
+Department of Children and Youth,Bangkok,Road,Specific,Yes
+Department of Highways,Trat,Irrigation,Bidding,Yes
+Department of Rural Roads,Lopburi,Road,Specific,No
+Department of Irrigation,Sa Kaeo,Building,Specific,No
+Department of Rural Roads,Bangkok,Road,Specific,No
+Department of Rail Transport,Pattani,Building,Specific,Yes
+Department of Provincial Administration,Maha Sarakham,Building,Specific,No
+Department of Public Works and Town and Country Planning,Nakhon Ratchasima,Building,Specific,No
+Department of Highways,Sa Kaeo,Road,Specific,Yes
+Department of Rural Roads,Nakhon Si Thammarat,Road,Specific,No
+Department of Public Works and Town and Country Planning,Roi Et,Irrigation,Specific,No
+Department of Airports,Nakhon Si Thammarat,Road,Specific,No
+Department of Industrial Promotion,Chachoengsao,Irrigation,Chosen,Yes
+Department of Agricultural Extension,Amnat Charoen,Building,Specific,No
+Department of Medical Services,Chonburi,Building,Specific,No
+Office of the Basic Education Commission,Phuket,Road,Specific,No
+Department of Rural Roads,Bangkok,Building,Specific,No
+Department of Fisheries,Prachinburi,Building,Specific,No
+Department of Religious Affairs,Songkhla,Road,Specific,Yes
+Department of Airports,Nakhon Ratchasima,Building,Specific,No
+Department of Irrigation,Phuket,Building,Specific,No
+Department of Highways,Lopburi,Building,Bidding,No
+Department of Public Works and Town and Country Planning,Phang Nga,Road,Specific,No
+Department of Public Works and Town and Country Planning,Satun,Road,Specific,No
+Department of Rural Roads,Chiang Mai,Building,Specific,Yes
+Department of National Parks Wildlife and Plant Conservation,Krabi,Building,Specific,No
+Department of Highways,Prachuap Khiri Khan,Building,Specific,No
+Department of Airports,Nonthaburi,Irrigation,Chosen,Yes
+Department of Public Works and Town and Country Planning,Chachoengsao,Building,Specific,No
+Department of Public Works and Town and Country Planning,Nonthaburi,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Education",Suphan Buri,Building,Specific,No
+Department of Highways,Lopburi,Building,Specific,No
+Department of Religious Affairs,Ranong,Building,Bidding,Yes
+Department of Groundwater Resources,Nonthaburi,Building,Chosen,No
+Office of the Basic Education Commission,Phetchaburi,Building,Specific,No
+Department of Highways,Satun,Building,Specific,No
+Office of the Vocational Education Commission,Singburi,Building,Specific,No
+Department of Agricultural Extension,Uthai Thani,Building,Specific,No
+Department of Provincial Administration,Surat Thani,Building,Specific,No
+Department of Highways,Samut Prakan,Building,Specific,No
+Office of the National Cultural Commission,Khon Kaen,Building,Chosen,No
+Department of Sports and Recreation,Singburi,Building,Specific,No
+Department of Marine Transport,Ang Thong,Irrigation,Specific,No
+Department of Highways,Bangkok,Road,Specific,Yes
+Department of Cultural Promotion,Nan,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Pathum Thani,Road,Specific,No
+Department of Highways,Bangkok,Building,Specific,No
+Department of Medical Services,Yasothon,Building,Specific,No
+Department of Rural Roads,Pathum Thani,Building,Specific,No
+Department of Land Development,Bangkok,Building,Specific,Yes
+Department of Health Service Support,Bangkok,Road,Specific,No
+Department of Public Works and Town and Country Planning,Bangkok,Road,Specific,No
+Department of Forest Resources,Nonthaburi,Road,Specific,No
+Department of Highways,Samut Prakan,Building,Specific,No
+Office of the Basic Education Commission,Maha Sarakham,Building,Specific,Yes
+Department of Highways,Trat,Building,Specific,No
+Department of Medical Services,Nakhon Nayok,Road,Specific,No
+Department of Local Administration,Surin,Building,Specific,No
+Department of Local Administration,Khon Kaen,Road,Specific,Yes
+Department of National Parks Wildlife and Plant Conservation,Nakhon Pathom,Building,Specific,No
+Bangkok Metropolitan Administration,Ratchaburi,Building,Specific,No
+Department of Highways,Singburi,Road,Bidding,No
+Office of Agricultural Economics,Krabi,Irrigation,Specific,No
+Department of Provincial Administration,Sakon Nakhon,Road,Specific,No
+Department of Rural Roads,Bangkok,Building,Specific,No
+Department of Medical Services,Surat Thani,Road,Specific,No
+Department of Highways,Phang Nga,Building,Bidding,Yes
+Department of Corrections,Bueng Kan,Road,Specific,No
+Office of the Vocational Education Commission,Nan,Building,Specific,No
+Department of Rural Roads,Bueng Kan,Building,Specific,No
+Department of Highways,Pathum Thani,Building,Specific,No
+Department of Rural Roads,Sakon Nakhon,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Education",Chachoengsao,Road,Specific,Yes
+Department of Lands,Trang,Building,Specific,No
+Department of Provincial Administration,Rayong,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Chiang Rai,Building,Specific,No
+Department of Rice,Trang,Road,Specific,Yes
+Department of Provincial Administration,Chachoengsao,Building,Specific,No
+Department of Highways,Loei,Building,Bidding,Yes
+Department of Highways,Chumphon,Road,Specific,No
+Department of Highways,Trat,Building,Specific,Yes
+Department of Religious Affairs,Lampang,Building,Specific,Yes
+Department of Highways,Yala,Irrigation,Chosen,Yes
+Department of Highways,Nong Khai,Building,Specific,No
+Bangkok Metropolitan Administration,Chumphon,Irrigation,Specific,No
+Department of Highways,Bangkok,Building,Chosen,No
+Office of the National Economic and Social Development Board,Pattani,Irrigation,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Ang Thong,Road,Specific,No
+Department of Livestock Development,Trang,Building,Specific,No
+Bangkok Metropolitan Administration,Pathum Thani,Building,Specific,No
+Department of Mineral Resources,Pathum Thani,Building,Bidding,No
+Department of Disease Control,Kanchanaburi,Building,Specific,No
+Department of Irrigation,Bangkok,Building,Chosen,No
+Department of Health Service Support,Ranong,Building,Chosen,No
+Department of Religious Affairs,Pathum Thani,Road,Specific,Yes
+Department of Provincial Administration,Maha Sarakham,Building,Specific,No
+Department of Highways,Yala,Road,Bidding,Yes
+Office of the Vocational Education Commission,Bangkok,Building,Specific,No
+Department of Rural Roads,Sisaket,Road,Specific,No
+"Office of the Permanent Secretary, Ministry of Education",Khon Kaen,Road,Specific,Yes
+Department of Rural Roads,Yala,Building,Specific,No
+Department of National Parks Wildlife and Plant Conservation,Phatthalung,Building,Specific,No
+Department of Fisheries,Samut Prakan,Road,Specific,No
+Department of Highways,Rayong,Road,Bidding,No
+Department of Public Works and Town and Country Planning,Kalasin,Building,Specific,No
+Bangkok Metropolitan Administration,Ranong,Building,Specific,No
+Department of Livestock Development,Trat,Road,Specific,Yes
+Office of the National Cultural Commission,Nonthaburi,Road,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Satun,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Education",Chonburi,Building,Specific,No
+Department of Public Works and Town and Country Planning,Pathum Thani,Building,Specific,Yes
+Department of Marine Transport,Yasothon,Road,Specific,No
+Department of Public Works and Town and Country Planning,Sakon Nakhon,Road,Specific,No
+Department of Provincial Administration,Phetchaburi,Building,Specific,No
+Department of Livestock Development,Bangkok,Building,Specific,No
+Department of Groundwater Resources,Lopburi,Building,Specific,No
+Department of Irrigation,Kanchanaburi,Building,Specific,No
+Department of Forest Resources,Phetchaburi,Building,Specific,No
+Office of Local Waterworks,Nakhon Pathom,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Nonthaburi,Building,Specific,No
+Department of Highways,Trat,Building,Specific,No
+Department of Irrigation,Nan,Building,Specific,No
+Department of Highways,Phetchaburi,Building,Chosen,Yes
+Department of Rural Roads,Amnat Charoen,Building,Specific,No
+Department of Lands,Bangkok,Building,Specific,No
+Department of Rural Roads,Samut Prakan,Building,Specific,No
+Department of Rural Roads,Suphan Buri,Irrigation,Specific,No
+Department of Marine and Coastal Resources,Bangkok,Building,Specific,No
+Department of Highways,Khon Kaen,Irrigation,Specific,Yes
+Department of Corrections,Bangkok,Building,Specific,No
+Department of Corrections,Loei,Building,Specific,No
+Department of Rural Roads,Narathiwat,Building,Chosen,No
+Department of Forest Resources,Samut Sakhon,Building,Specific,No
+Department of Rural Roads,Pattani,Irrigation,Specific,No
+Bangkok Metropolitan Administration,Nakhon Pathom,Building,Specific,No
+Department of Groundwater Resources,Prachinburi,Building,Bidding,No
+Department of Corrections,Bangkok,Building,Specific,No
+Department of Irrigation,Tak,Building,Specific,No
+Department of Highways,Phang Nga,Road,Chosen,No
+"Office of the Permanent Secretary, Ministry of Interior",Phatthalung,Road,Specific,No
+Department of Medical Services,Amnat Charoen,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Phra Nakhon Si Ayutthaya,Road,Specific,No
+Department of Rural Roads,Nonthaburi,Building,Specific,No
+Department of Cultural Promotion,Nan,Building,Specific,No
+Office of the Ministry of Public Health,Nong Bua Lamphu,Building,Specific,No
+Department of Health Service Support,Phayao,Building,Specific,No
+Department of Rural Roads,Chachoengsao,Road,Specific,No
+Office of the Basic Education Commission,Trang,Building,Bidding,No
+Office of the National Cultural Commission,Trat,Irrigation,Bidding,Yes
+Department of Irrigation,Samut Songkhram,Building,Chosen,No
+Office of the Ministry of Public Health,Yala,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Education",Nakhon Phanom,Building,Specific,No
+Department of Rural Roads,Ubon Ratchathani,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Surin,Irrigation,Specific,Yes
+Department of Highways,Singburi,Building,Specific,No
+Department of Public Works and Town and Country Planning,Krabi,Irrigation,Specific,No
+Department of Highways,Chachoengsao,Building,Specific,No
+Department of Disease Control,Phra Nakhon Si Ayutthaya,Road,Bidding,No
+Department of Provincial Administration,Nakhon Sawan,Building,Bidding,Yes
+Office of Agricultural Economics,Nonthaburi,Irrigation,Specific,No
+Department of Provincial Administration,Nong Khai,Building,Specific,No
+Department of Livestock Development,Prachuap Khiri Khan,Building,Specific,Yes
+Department of Water Resources,Rayong,Irrigation,Specific,Yes
+Department of Rural Roads,Phitsanulok,Building,Specific,No
+Department of Highways,Saraburi,Irrigation,Specific,No
+Department of Local Administration,Prachuap Khiri Khan,Road,Specific,No
+Department of Lands,Samut Prakan,Building,Specific,No
+Department of Rural Roads,Phetchaburi,Building,Specific,No
+Department of Local Administration,Samut Sakhon,Road,Bidding,Yes
+Office of Transport and Traffic Policy and Planning,Ranong,Road,Specific,Yes
+Department of Rural Roads,Chachoengsao,Road,Specific,No
+Department of Corrections,Rayong,Road,Bidding,No
+Department of Public Works and Town and Country Planning,Phatthalung,Road,Specific,Yes
+Office of the Ministry of Public Health,Singburi,Road,Specific,No
+Department of Public Works and Town and Country Planning,Pathum Thani,Road,Bidding,Yes
+Department of Rail Transport,Chumphon,Building,Specific,No
+Department of Provincial Administration,Prachinburi,Road,Specific,Yes
+Department of Public Works and Town and Country Planning,Sa Kaeo,Building,Specific,No
+Department of Irrigation,Nakhon Pathom,Irrigation,Chosen,No
+Department of National Parks Wildlife and Plant Conservation,Phuket,Road,Specific,No
+Department of Highways,Nonthaburi,Road,Specific,Yes
+Department of Public Works and Town and Country Planning,Phatthalung,Building,Specific,No
+Bangkok Metropolitan Administration,Rayong,Building,Chosen,No
+Department of Irrigation,Lopburi,Building,Specific,No
+Department of Fisheries,Narathiwat,Road,Specific,Yes
+Department of Medical Services,Suphan Buri,Building,Specific,No
+Office of the National Economic and Social Development Board,Sisaket,Building,Specific,No
+Department of Public Works and Town and Country Planning,Nonthaburi,Building,Specific,No
+Department of Highways,Ubon Ratchathani,Building,Specific,No
+Department of Corrections,Prachinburi,Building,Chosen,No
+Department of Rural Roads,Samut Prakan,Road,Specific,No
+Department of Health Service Support,Nakhon Nayok,Building,Specific,No
+Department of Irrigation,Yala,Irrigation,Specific,No
+Department of Irrigation,Nonthaburi,Building,Specific,No
+Department of Highways,Chanthaburi,Irrigation,Specific,No
+Department of National Parks Wildlife and Plant Conservation,Chiang Rai,Building,Specific,No
+Department of Highways,Pathum Thani,Road,Specific,Yes
+Department of Forest Resources,Prachinburi,Road,Specific,Yes
+Department of Rural Roads,Chachoengsao,Building,Specific,No
+Department of Irrigation,Samut Sakhon,Building,Specific,No
+Department of Local Administration,Amnat Charoen,Road,Bidding,Yes
+Office of the Vocational Education Commission,Ranong,Road,Specific,No
+Department of Irrigation,Nonthaburi,Road,Specific,No
+Department of Highways,Sa Kaeo,Building,Bidding,Yes
+Department of Rice,Nakhon Phanom,Road,Chosen,Yes
+Department of Forest Resources,Nakhon Pathom,Building,Specific,Yes
+Bangkok Metropolitan Administration,Samut Sakhon,Building,Bidding,No
+Department of Government Procurement,Nakhon Si Thammarat,Building,Specific,Yes
+Department of National Parks Wildlife and Plant Conservation,Chonburi,Building,Chosen,No
+Department of Rice,Chiang Mai,Road,Specific,Yes
+Office of the Ministry of Public Health,Pattani,Building,Chosen,No
+Department of Marine Transport,Sa Kaeo,Building,Specific,No
+Department of Highways,Nakhon Pathom,Road,Specific,Yes
+Department of Highways,Pattani,Road,Specific,Yes
+Department of Livestock Development,Ang Thong,Building,Specific,No
+Department of Lands,Lopburi,Building,Specific,No
+Department of Corrections,Lopburi,Road,Specific,No
+Department of Provincial Administration,Ratchaburi,Irrigation,Specific,No
+Department of Highways,Prachinburi,Building,Specific,No
+Office of the National Cultural Commission,Pattani,Building,Specific,No
+Department of Sports and Recreation,Roi Et,Road,Specific,No
+Department of Health Service Support,Phang Nga,Road,Specific,No
+Department of Health Service Support,Ratchaburi,Building,Specific,No
+Department of Agricultural Extension,Trang,Building,Specific,No
+Department of Highways,Nakhon Nayok,Road,Specific,Yes
+Department of Health Service Support,Sa Kaeo,Building,Bidding,No
+Bangkok Metropolitan Administration,Phra Nakhon Si Ayutthaya,Road,Specific,No
+Office of the Vocational Education Commission,Sa Kaeo,Building,Bidding,Yes
+Office of the Basic Education Commission,Chaiyaphum,Road,Specific,No
+Department of Irrigation,Udon Thani,Building,Specific,No
+Bangkok Metropolitan Administration,Bangkok,Road,Specific,Yes
+Department of Medical Services,Krabi,Irrigation,Specific,No
+Office of the Vocational Education Commission,Buriram,Building,Specific,No
+Department of Highways,Kalasin,Building,Bidding,Yes
+Department of Airports,Bangkok,Irrigation,Specific,No
+Department of Physical Education,Maha Sarakham,Road,Specific,No
+Bangkok Metropolitan Administration,Suphan Buri,Building,Specific,No
+Department of Provincial Administration,Maha Sarakham,Building,Specific,No
+Office of the Basic Education Commission,Bangkok,Road,Specific,No
+Department of Highways,Ang Thong,Road,Chosen,Yes
+Office of Agricultural Economics,Sakon Nakhon,Road,Specific,No
+Department of Local Administration,Samut Prakan,Building,Specific,Yes
+Department of Water Resources,Nan,Road,Specific,No
+Department of Public Works and Town and Country Planning,Ubon Ratchathani,Building,Specific,No
+Department of Highways,Bangkok,Irrigation,Specific,Yes
+Department of Highways,Udon Thani,Building,Specific,Yes
+Department of Health Service Support,Bangkok,Building,Specific,No
+Department of Forest Resources,Samut Sakhon,Building,Specific,No
+Department of Marine and Coastal Resources,Ang Thong,Building,Specific,No
+Department of Health Service Support,Ranong,Building,Specific,No
+Department of Highways,Nong Bua Lamphu,Building,Specific,No
+Department of Public Works and Town and Country Planning,Kalasin,Building,Specific,No
+Department of Local Administration,Singburi,Road,Chosen,No
+Department of Rural Roads,Udon Thani,Building,Specific,No
+Office of Provincial Health,Singburi,Building,Specific,No
+Department of Sports and Recreation,Surat Thani,Building,Specific,No
+Department of Highways,Phra Nakhon Si Ayutthaya,Building,Specific,No
+Department of Local Administration,Lopburi,Building,Specific,No
+Department of Rural Roads,Chanthaburi,Building,Specific,No
+Office of the Ministry of Public Health,Prachinburi,Building,Chosen,No
+Department of Forest Resources,Chanthaburi,Road,Specific,Yes
+Department of Rural Roads,Amnat Charoen,Building,Specific,No
+Department of Highways,Chumphon,Building,Specific,No
+Department of Lands,Ang Thong,Irrigation,Specific,No
+Department of Highways,Pathum Thani,Road,Specific,Yes
+Department of Disaster Prevention and Mitigation,Saraburi,Building,Specific,No
+Department of Disease Control,Bangkok,Building,Specific,No
+Office of the Basic Education Commission,Samut Sakhon,Irrigation,Chosen,No
+Department of Government Procurement,Ratchaburi,Building,Specific,No
+Department of Health Service Support,Chanthaburi,Building,Specific,No
+Department of Provincial Administration,Phuket,Irrigation,Specific,No
+Bangkok Metropolitan Administration,Pathum Thani,Building,Specific,No
+Department of Land Development,Bangkok,Building,Specific,No
+Department of Corrections,Nakhon Pathom,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Phra Nakhon Si Ayutthaya,Building,Specific,No
+Bangkok Metropolitan Administration,Rayong,Building,Specific,No
+Department of Highways,Nong Khai,Building,Specific,No
+Department of Rural Roads,Phatthalung,Building,Specific,No
+Department of Rural Roads,Nakhon Phanom,Road,Specific,No
+Department of Provincial Administration,Roi Et,Building,Bidding,No
+Department of Rail Transport,Udon Thani,Road,Bidding,Yes
+Department of Industrial Promotion,Nong Khai,Building,Specific,No
+Department of Highways,Chaiyaphum,Irrigation,Specific,No
+Department of National Parks Wildlife and Plant Conservation,Saraburi,Irrigation,Specific,No
+Department of Mineral Resources,Chanthaburi,Building,Specific,No
+Department of Irrigation,Prachuap Khiri Khan,Road,Specific,No
+Department of Sports and Recreation,Phayao,Building,Specific,No
+Department of Highways,Pathum Thani,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Education",Bangkok,Building,Specific,No
+Department of Lands,Bangkok,Building,Specific,Yes
+Department of Provincial Administration,Nonthaburi,Building,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Amnat Charoen,Irrigation,Specific,No
+"Office of the Permanent Secretary, Ministry of Interior",Nong Bua Lamphu,Road,Specific,No
+Department of Local Administration,Sa Kaeo,Road,Specific,Yes
+Department of Rail Transport,Prachuap Khiri Khan,Road,Specific,Yes
+Department of Rural Roads,Sa Kaeo,Building,Specific,Yes

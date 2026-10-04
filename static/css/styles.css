@@ -1,0 +1,1178 @@
+/* ==========================================================================
+   Government Construction Budget Prediction (India, FY 2025-26) — custom styles
+   --------------------------------------------------------------------------
+   Tailwind (CDN) does the layout and spacing. This file holds only the things
+   Tailwind cannot express cleanly:
+     * the light/dark colour tokens that Chart.js and the canvas demo read
+     * the fade-in-on-scroll animation
+     * the range slider, spinner, heatmap, risk gauge, live feed and toast
+   Keep it small and obvious -- everything here is explained in the viva.
+
+   Tricolour rule: raw saffron (#FF9933) and green (#138808) are accents only --
+   borders, chart series, focus rings, the flag strip. Any saffron/green that
+   carries small text uses the darkened -text variant, because the raw hues fail
+   contrast on white. The base stays navy, which is the flag's own chakra colour.
+   ========================================================================== */
+
+/* ---------- 1. Colour tokens ------------------------------------------- */
+:root {
+  --bg: #eef2f7;
+  --bg-accent: #dbe4f0;
+  --surface: #ffffff;
+  --surface-2: #f6f8fc;
+  --text: #0f172a;
+  --muted: #55637a;
+  --border: #dfe6f0;
+  --navy: #0b2545;
+  --navy-600: #13315c;
+  --navy-300: #8aa5c8;
+
+  /* Indian tricolour */
+  --saffron: #ff9933;
+  --saffron-text: #b25a00;
+  --saffron-soft: #fff2e0;
+  --india-green: #138808;
+  --green-text: #0b6b0b;
+  --green-soft: #e3f4e1;
+  --chakra: #0a1f44;
+  --chakra-spokes: #1b3a63;
+
+  /* v1 names kept as aliases so older rules and any inline var() still resolve */
+  --amber: var(--saffron-text);
+  --amber-strong: var(--saffron);
+  --amber-soft: var(--saffron-soft);
+
+  --danger: #b91c1c;
+  --danger-soft: #fee2e2;
+  --success: var(--green-text);
+  --success-soft: var(--green-soft);
+  --shadow: 0 10px 30px -12px rgba(11, 37, 69, 0.28);
+  --grid-line: #e6ecf5;
+}
+
+.dark {
+  --bg: #060f1d;
+  --bg-accent: #0d1b30;
+  --surface: #0e1b2e;
+  --surface-2: #132339;
+  --text: #e9eff8;
+  --muted: #9db0ca;
+  --border: #22374f;
+  --navy: #1b3a63;
+  --navy-600: #2a5183;
+  --navy-300: #6f8db4;
+
+  --saffron: #ffb066;
+  --saffron-text: #ffc98a;
+  --saffron-soft: #3b2710;
+  --india-green: #4ade80;
+  --green-text: #86efac;
+  --green-soft: #10311f;
+  --chakra: #9db0ca;
+  --chakra-spokes: #c3d2e6;
+
+  --amber: var(--saffron-text);
+  --amber-strong: var(--saffron);
+  --amber-soft: var(--saffron-soft);
+
+  --danger: #f87171;
+  --danger-soft: #3b1518;
+  --success: var(--green-text);
+  --success-soft: var(--green-soft);
+  --shadow: 0 12px 34px -14px rgba(0, 0, 0, 0.75);
+  --grid-line: #1b2c45;
+}
+
+/* Let the body pick the tokens up. Tailwind's own bg/text classes are used
+   elsewhere; these two are what the theme toggle is asserted against. */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Safety net: an element with the hidden attribute must never be visible.
+   A Tailwind `display:grid` utility would otherwise win over `hidden`. */
+[hidden] {
+  display: none !important;
+}
+
+/* ---------- 2. Reusable surfaces --------------------------------------- */
+/* The markup puts no spacing utilities on .card, so the surface owns its own
+   padding: without it every card renders its content flush against the border. */
+.card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 1.05rem 1.15rem;
+}
+
+@media (min-width: 1024px) {
+  .card {
+    padding: 1.25rem 1.4rem;
+  }
+}
+
+.surface-2 {
+  background-color: var(--surface-2);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.border-token {
+  border-color: var(--border);
+}
+
+.accent-amber {
+  color: var(--amber);
+}
+
+.bg-amber-soft {
+  background-color: var(--amber-soft);
+}
+
+/* Soft top glow behind the hero. Purely decorative, so it is aria-hidden. */
+.hero-glow {
+  background:
+    radial-gradient(60rem 30rem at 12% -10%, rgba(245, 158, 11, 0.18), transparent 60%),
+    radial-gradient(50rem 28rem at 88% 0%, rgba(37, 99, 235, 0.22), transparent 62%);
+}
+
+/* ---------- 3. Fade-in on scroll --------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- 4. Navbar -------------------------------------------------- */
+.navbar {
+  background-color: color-mix(in srgb, var(--surface) 86%, transparent);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-link {
+  color: var(--muted);
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: var(--text);
+}
+
+.nav-link.active {
+  color: var(--amber);
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--amber);
+}
+
+/* ---------- 5. Buttons ------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.05rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background-color: var(--amber-strong);
+  color: #1a1205;
+  box-shadow: 0 8px 20px -8px rgba(245, 158, 11, 0.85);
+}
+
+.btn-primary:hover {
+  background-color: var(--amber);
+  color: #fff8ea;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-ghost:hover {
+  border-color: var(--amber);
+  color: var(--amber);
+}
+
+.btn-navy {
+  background-color: var(--navy-600);
+  color: #f4f8ff;
+}
+
+.btn-navy:hover {
+  background-color: var(--navy);
+}
+
+/* ---------- 6. Form controls ------------------------------------------- */
+/* In this markup .field is the <label> wrapper and .field-input is the control.
+   (v1 styled .field itself as the input, which drew a second box behind every
+   field once the markup changed.) */
+.field {
+  display: block;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* A <select> sizes itself to its longest <option>, and grid items default to
+   min-width:auto, so a single long scheme name ("PMGSY (Rural Roads)") would
+   stretch the predictor form past the viewport on a 375px phone. Letting grid
+   children shrink fixes the overflow. */
+.grid > * {
+  min-width: 0;
+}
+
+.field-input {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.field-input:focus {
+  outline: none;
+  border-color: var(--saffron);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--saffron) 30%, transparent);
+}
+
+.field-input[aria-invalid="true"] {
+  border-color: var(--danger);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--danger) 22%, transparent);
+}
+
+select.field-input {
+  text-overflow: ellipsis;
+}
+
+.field-error {
+  display: block;
+  color: var(--danger);
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+/* Range slider (the K control) — needs vendor pseudo-elements. */
+input[type="range"].k-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    var(--amber-strong) 0%,
+    var(--amber-strong) var(--fill, 20%),
+    var(--border) var(--fill, 20%),
+    var(--border) 100%
+  );
+  cursor: pointer;
+}
+
+input[type="range"].k-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 3px solid var(--amber-strong);
+  box-shadow: 0 2px 8px rgba(11, 37, 69, 0.35);
+}
+
+input[type="range"].k-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 3px solid var(--amber-strong);
+}
+
+input[type="range"].k-slider:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 4px;
+}
+
+/* ---------- 7. Data table ---------------------------------------------- */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 0.9rem;
+  border: 1px solid var(--border);
+}
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  min-width: 46rem; /* forces the wrapper to scroll instead of squashing text */
+}
+
+table.data-table th,
+table.data-table td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+table.data-table th {
+  background-color: var(--surface-2);
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+table.data-table th button {
+  color: inherit;
+  font: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+}
+
+table.data-table th button:hover {
+  color: var(--amber);
+}
+
+table.data-table tbody tr:hover {
+  background-color: var(--surface-2);
+}
+
+table.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* The neighbour table inside the result card sits in a narrower column than
+   the main data table, so it gets a smaller minimum width (fewer columns),
+   tighter padding and its own vertical scroll area to keep the card compact.
+   Without the narrower truncate cap the department cell alone pushed the
+   table past the column and clipped the OUTCOME header. */
+table.data-table.compact {
+  min-width: 30rem;
+}
+
+table.data-table.compact th,
+table.data-table.compact td {
+  padding: 0.5rem 0.6rem;
+}
+
+table.data-table.compact .truncate-cell {
+  max-width: 10rem;
+}
+
+.neighbour-scroll {
+  max-height: 20rem;
+  overflow-y: auto;
+}
+
+/* Pill badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.badge-yes {
+  background-color: var(--danger-soft);
+  color: var(--danger);
+}
+
+.badge-no {
+  background-color: var(--success-soft);
+  color: var(--success);
+}
+
+.badge-neutral {
+  background-color: var(--surface-2);
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+/* ---------- 8. Confusion-matrix heatmap -------------------------------- */
+/* Built from divs rather than a canvas: sharper text, no chart plugin needed,
+   and it stays readable at 375 px. Colour intensity is set inline from the
+   real counts. */
+.heat-grid {
+  display: grid;
+  grid-template-columns: minmax(4.5rem, auto) repeat(2, minmax(0, 1fr));
+  gap: 0.4rem;
+}
+
+.heat-cell {
+  border-radius: 0.75rem;
+  padding: 0.9rem 0.5rem;
+  text-align: center;
+  border: 1px solid var(--border);
+  min-height: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+}
+
+.heat-value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.heat-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
+}
+
+.heat-axis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  font-size: 0.7rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.heat-axis strong {
+  color: var(--text);
+}
+
+/* ---------- 9. Result card --------------------------------------------- */
+.result-over {
+  border-color: color-mix(in srgb, var(--danger) 45%, var(--border));
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--danger) 14%, var(--surface)),
+    var(--surface)
+  );
+}
+
+.result-within {
+  border-color: color-mix(in srgb, var(--success) 45%, var(--border));
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--success) 14%, var(--surface)),
+    var(--surface)
+  );
+}
+
+/* Vote bar: two segments whose widths are set inline from the real counts. */
+.vote-bar {
+  display: flex;
+  height: 0.85rem;
+  border-radius: 999px;
+  overflow: hidden;
+  background-color: var(--surface-2);
+  border: 1px solid var(--border);
+}
+
+.vote-yes {
+  background-color: var(--danger);
+}
+
+.vote-no {
+  background-color: var(--success);
+}
+
+/* ---------- 10. Spinner + toast ---------------------------------------- */
+.spinner {
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#toast-stack {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: min(22rem, calc(100vw - 2rem));
+}
+
+.toast {
+  border-radius: 0.8rem;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.875rem;
+  border: 1px solid var(--border);
+  background-color: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  animation: toast-in 0.25s ease;
+}
+
+.toast-error {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.toast-ok {
+  border-color: var(--success);
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+/* ---------- 11. KNN demo canvas ---------------------------------------- */
+#knn-canvas {
+  width: 100%;
+  height: 22rem;
+  display: block;
+  border-radius: 0.9rem;
+  border: 1px solid var(--border);
+  background-color: var(--surface-2);
+  touch-action: none; /* lets dragging work on a phone instead of scrolling */
+  cursor: grab;
+}
+
+#knn-canvas.dragging {
+  cursor: grabbing;
+}
+
+/* ---------- 12. Charts ------------------------------------------------- */
+.chart-box {
+  position: relative;
+  width: 100%;
+}
+
+.chart-box canvas {
+  width: 100% !important;
+}
+
+/* ---------- 13. Misc --------------------------------------------------- */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  z-index: 100;
+  background-color: var(--amber-strong);
+  color: #1a1205;
+  padding: 0.6rem 1rem;
+  border-radius: 0 0 0.75rem 0;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+.flow-arrow {
+  color: var(--navy-300);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--navy-300) transparent;
+}
+
+*::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--navy-300);
+  border-radius: 999px;
+}
+
+/* Respect users who ask for less motion. */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .spinner {
+    animation-duration: 1.6s;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Keep long department names from blowing out narrow layouts. */
+.truncate-cell {
+  max-width: 16rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   9. v2 component layer -- Indian theme, risk gauge, dashboard
+   --------------------------------------------------------------------------
+   Everything above is inherited from v1 and still carries the hard-won fixes
+   (grid min-width guard, table overflow wrapper, reveal, spinner, toast).
+   These are the new pieces the India rewrite needs.
+   ========================================================================== */
+
+/* ---------- 9.1 typography helpers ------------------------------------- */
+.eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--saffron-text);
+}
+
+.section-head { margin-bottom: 1.25rem; }
+
+.section-title {
+  font-size: clamp(1.5rem, 1.1rem + 1.6vw, 2.1rem);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.section-sub {
+  margin-top: 0.5rem;
+  max-width: 60rem;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.link {
+  color: var(--saffron-text);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.link:hover { color: var(--navy); }
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- 9.2 tricolour strip ---------------------------------------- */
+/* The one place raw flag hues are allowed as solid fills: no text sits on them. */
+.tricolour {
+  display: flex;
+  height: 4px;
+  overflow: hidden;
+}
+.tricolour span { flex: 1; }
+.tricolour span:nth-child(1) { background: var(--saffron); }
+.tricolour span:nth-child(2) { background: var(--india-green); opacity: 0.14; }
+.tricolour span:nth-child(3) { background: var(--india-green); }
+
+/* ---------- 9.3 chips, stats, minis ------------------------------------ */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--muted);
+}
+.chip-saffron { border-color: var(--saffron); color: var(--saffron-text); background: var(--saffron-soft); }
+.chip-green { border-color: var(--india-green); color: var(--green-text); background: var(--green-soft); }
+.chip-navy { border-color: var(--navy-300); color: var(--navy); background: var(--bg-accent); }
+
+.stat {
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.stat dt {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.stat dd {
+  margin-top: 0.25rem;
+  font-size: clamp(1rem, 0.8rem + 0.7vw, 1.35rem);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.mini {
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 0.65rem;
+  background: var(--surface-2);
+}
+.mini strong { display: block; font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+.mini span { display: block; margin-top: 0.15rem; font-size: 0.72rem; color: var(--muted); line-height: 1.4; }
+
+.metric { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.85rem; }
+.metric dt { color: var(--muted); }
+.metric dd { font-weight: 700; font-variant-numeric: tabular-nums; }
+
+/* ---------- 9.4 notices ------------------------------------------------- */
+.notice {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--muted);
+}
+.notice code { font-size: 0.78em; }
+.notice-saffron { border-left: 4px solid var(--saffron); background: var(--saffron-soft); }
+.notice-green { border-left: 4px solid var(--india-green); }
+
+/* ---------- 9.5 form fields -------------------------------------------- */
+.label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.label em {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.field-input {
+  display: block;
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.87rem;
+  font-family: inherit;
+}
+.field-input:focus {
+  outline: none;
+  border-color: var(--saffron);
+  box-shadow: 0 0 0 3px rgba(255, 153, 51, 0.28);
+}
+.hint { display: block; margin-top: 0.25rem; font-size: 0.72rem; color: var(--muted); }
+
+/* ---------- 9.6 tables -------------------------------------------------- */
+table.data-table th.num, table.data-table td.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.sortable { cursor: pointer; user-select: none; white-space: nowrap; }
+.sortable::after { content: " \2195"; color: var(--navy-300); font-size: 0.8em; }
+.sortable.is-sorted-asc::after { content: " \2191"; color: var(--saffron-text); }
+.sortable.is-sorted-desc::after { content: " \2193"; color: var(--saffron-text); }
+.empty { text-align: center; color: var(--muted); font-style: italic; padding: 1.2rem 0.6rem; }
+
+/* ---------- 9.7 verdict + risk gauge ------------------------------------ */
+.verdict-card { border-left: 6px solid var(--navy-300); }
+.verdict-card.is-over { border-left-color: var(--danger); }
+.verdict-card.is-within { border-left-color: var(--india-green); }
+
+.verdict {
+  margin-top: 0.35rem;
+  font-size: clamp(1.35rem, 1.1rem + 1.2vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+.is-over .verdict { color: var(--danger); }
+.is-within .verdict { color: var(--green-text); }
+
+.risk-gauge { position: relative; width: 130px; height: 150px; flex-shrink: 0; }
+.gauge-svg { width: 130px; height: 130px; transform: rotate(-90deg); }
+.gauge-track { fill: none; stroke: var(--border); stroke-width: 12; }
+.gauge-fill {
+  fill: none;
+  stroke: var(--saffron);
+  stroke-width: 12;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 600ms ease, stroke 300ms ease;
+}
+.gauge-fill.is-over { stroke: var(--danger); }
+.gauge-fill.is-within { stroke: var(--india-green); }
+.gauge-value {
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 130px;
+  display: grid; place-content: center;
+  font-size: 1.5rem; font-weight: 800; font-variant-numeric: tabular-nums;
+}
+.gauge-label {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  text-align: center;
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.advisory { border-color: var(--saffron); background: var(--saffron-soft); color: var(--text); }
+
+/* ---------- 9.8 tabs, steps, flow, formula ------------------------------ */
+.tab {
+  padding: 0.32rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--surface);
+}
+.tab.is-active { border-color: var(--saffron); color: var(--saffron-text); background: var(--saffron-soft); }
+
+.step-list { margin-top: 0.6rem; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+.step-list li { margin-bottom: 0.35rem; line-height: 1.55; }
+
+.flow {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  margin-top: 0.8rem;
+  list-style: none;
+}
+.flow li {
+  display: block;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  background: var(--surface-2);
+  font-size: 0.8rem;
+}
+.flow li span {
+  display: inline-grid;
+  place-content: center;
+  width: 1.35rem; height: 1.35rem;
+  border-radius: 999px;
+  background: var(--saffron);
+  color: #3b2710;
+  font-weight: 800;
+  font-size: 0.72rem;
+}
+.flow li strong { display: block; margin-top: 0.3rem; font-size: 0.85rem; }
+.flow li em {
+  display: block;
+  margin-top: 0.15rem;
+  font-style: normal;
+  font-size: 0.74rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.formula {
+  padding: 0.8rem 0.9rem;
+  border: 1px dashed var(--navy-300);
+  border-radius: 0.7rem;
+  background: var(--surface-2);
+}
+
+/* ---------- 9.9 slider + canvas ----------------------------------------- */
+input[type="range"].range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--bg-accent);
+  cursor: pointer;
+}
+input[type="range"].range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: var(--saffron);
+  border: 2px solid var(--surface);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+input[type="range"].range::-moz-range-thumb {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--saffron);
+  border: 2px solid var(--surface);
+}
+input[type="range"].range:focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; }
+
+.demo-canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  background: var(--surface-2);
+  touch-action: none;
+  cursor: grab;
+}
+.demo-canvas.dragging { cursor: grabbing; }
+
+/* ---------- 9.10 heatmap + chart boxes ---------------------------------- */
+.heatmap { display: grid; place-items: center; }
+.heatmap .heat-grid { width: 100%; }
+
+.chart-box { position: relative; height: 260px; margin-top: 0.75rem; }
+.chart-box.tall { height: 320px; }
+.chart-box canvas { max-width: 100%; }
+
+/* ---------- 9.11 route planner: Leaflet map, cards, skeleton ------------ */
+.map-canvas {
+  position: relative;
+  height: 420px;
+  margin-top: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  background: var(--surface-2);
+  overflow: hidden;
+  z-index: 0;
+}
+/* OpenStreetMap's standard tiles are bright; dim them in dark mode so the
+   section does not glare. The filter is cosmetic only. */
+.dark .map-canvas .leaflet-tile { filter: brightness(0.72) invert(0.92) hue-rotate(180deg) saturate(0.7); }
+.dark .map-canvas { background: var(--surface); }
+/* Leaflet puts .leaflet-container on the same element as .map-canvas, so the descendant form
+   never matched and its own #ddd showed through before the tiles arrived. */
+.map-canvas.leaflet-container,
+.map-canvas .leaflet-container { font: inherit; background: var(--surface-2); }
+.map-canvas .leaflet-popup-content-wrapper,
+.map-canvas .leaflet-tooltip {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.map-canvas .leaflet-tooltip { font-size: 0.72rem; font-weight: 600; }
+
+.map-fallback {
+  margin-top: 0.75rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--danger) 40%, var(--border));
+  border-left: 4px solid var(--danger);
+  border-radius: 0.6rem;
+  background: var(--surface-2);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Loading skeleton: five tiles that sweep while the API runs. */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--text) 8%, transparent), transparent);
+  animation: shimmer 1.25s infinite;
+}
+.skeleton.tile { height: 66px; border-radius: 0.7rem; }
+@keyframes shimmer { 100% { transform: translateX(100%); } }
+@media (prefers-reduced-motion: reduce) {
+  .skeleton::after { animation: none; }
+}
+
+.route-verdict {
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+.route-verdict.is-within { border-color: var(--india-green); color: var(--green-text); background: var(--green-soft); }
+.route-verdict.is-mixed { border-color: var(--saffron); color: var(--saffron-text); background: var(--saffron-soft); }
+.route-verdict.is-over { border-color: color-mix(in srgb, var(--danger) 55%, var(--border)); color: var(--danger); background: var(--danger-soft); }
+
+.risk-gauge.small { width: 104px; height: 124px; }
+.risk-gauge.small .gauge-svg { width: 104px; height: 104px; }
+.risk-gauge.small .gauge-value { height: 104px; font-size: 1.2rem; }
+
+.chip-route { cursor: pointer; transition: border-color 150ms ease, color 150ms ease; }
+.chip-route:hover { border-color: var(--saffron); color: var(--saffron-text); }
+
+.advisory.is-caution {
+  border-color: var(--danger);
+  background: var(--danger-soft);
+  color: var(--text);
+}
+
+details.route-more {
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  background: var(--surface-2);
+  padding: 0.6rem 0.75rem;
+}
+details.route-more > summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+details.route-more > summary::-webkit-details-marker { display: none; }
+details.route-more > summary::before { content: "▸ "; color: var(--saffron-text); }
+details.route-more[open] > summary::before { content: "▾ "; }
+
+/* ---------- 9.12 location hierarchy, search results --------------------- */
+.loc-cascade {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--navy-300);
+  border-radius: 0.7rem;
+  background: var(--surface-2);
+  padding: 0.7rem 0.8rem;
+}
+.loc-cascade-title {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+.loc-readout {
+  font-size: 0.72rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+.loc-readout strong { color: var(--text); }
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-height: 15rem;
+  overflow-y: auto;
+  padding: 0.15rem;
+}
+.search-hit {
+  display: grid;
+  gap: 0.1rem;
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: var(--surface);
+  padding: 0.45rem 0.6rem;
+  cursor: pointer;
+  transition: border-color 150ms ease, background 150ms ease;
+}
+.search-hit:hover, .search-hit:focus-visible {
+  border-color: var(--saffron);
+  background: var(--saffron-soft);
+  outline: none;
+}
+.search-hit strong { font-size: 0.85rem; color: var(--text); }
+.search-hit span { font-size: 0.72rem; color: var(--muted); }
+.search-hit em { font-size: 0.72rem; font-style: normal; color: var(--green-text); }
+.search-empty {
+  font-size: 0.75rem;
+  color: var(--muted);
+  padding: 0.5rem 0.6rem;
+  border: 1px dashed var(--border);
+  border-radius: 0.6rem;
+}
+
+/* ---------- 9.13 building estimator page -------------------------------- */
+/* The page reuses .card, .stat, .field, .data-table and .chart-box from the
+   dashboard; only the two-figure summary strip and the factor chips are new. */
+.factor-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+}
+.factor-strip span {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-2);
+  padding: 0.2rem 0.6rem;
+  color: var(--muted);
+}
+.factor-strip span strong { color: var(--text); font-variant-numeric: tabular-nums; }
+.page-link {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--saffron-text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+

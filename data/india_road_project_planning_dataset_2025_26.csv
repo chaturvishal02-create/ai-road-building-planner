@@ -1,0 +1,505 @@
+state,district,taluka,village,lat,lng,road_type,terrain,soil_type,distance_km,budget,time_months,cement_cost,steel_cost,bitumen_cost,labor_cost,machinery_cost
+Uttar Pradesh,Agra,Wadgaon-Yavat,Pimpri,27.3871,78.1344,rural_two_lane,plain,alluvial,30.5,3050.0,1,762.5,610.0,457.5,610.0,610.0
+Uttar Pradesh,Agra,Wadgaon-Yavat,Kelhi,27.4839,78.0072,state_highway,plain,alluvial,39.3,7860.0,1,1965.0,1572.0,1179.0,1572.0,1572.0
+Uttar Pradesh,Agra,Wadgaon-Yavat,Yeola,27.5526,78.2051,rural_two_lane,plain,alluvial,53.1,5310.0,1,1327.5,1062.0,796.5,1062.0,1062.0
+Uttar Pradesh,Agra,Bhamare-RV,Sonai,26.8816,78.338,rural_two_lane,plain,alluvial,53.3,5330.0,1,1332.5,1066.0,799.5,1066.0,1066.0
+Uttar Pradesh,Agra,Bhamare-RV,Wadali,27.1196,78.4365,national_highway_4,plain,alluvial,49.3,9860.0,1,2465.0,1972.0,1479.0,1972.0,1972.0
+Uttar Pradesh,Agra,Bhamare-RV,Bhamare,27.1613,78.1011,rural_two_lane,plain,alluvial,10.8,1080.0,1,270.0,216.0,162.0,216.0,216.0
+Uttar Pradesh,Agra,Kundmukhi Bk,Palkhi,26.9517,77.601,rural_two_lane,plain,alluvial,54.6,5460.0,1,1365.0,1092.0,819.0,1092.0,1092.0
+Uttar Pradesh,Agra,Kundmukhi Bk,Sawana,26.9687,77.6345,rural_two_lane,plain,alluvial,50.2,5020.0,1,1255.0,1004.0,753.0,1004.0,1004.0
+Uttar Pradesh,Agra,Kundmukhi Bk,Shirude,26.8224,77.7532,rural_two_lane,plain,alluvial,53.9,5390.0,1,1347.5,1078.0,808.5,1078.0,1078.0
+Gujarat,Ahmedabad,Dhomni-Yavat,Wadali,23.2713,72.5245,national_highway_4,plain,black_cotton,32.3,7106.0,1,1776.5,1421.2,1065.9,1421.2,1421.2
+Gujarat,Ahmedabad,Dhomni-Yavat,Arasgaon,23.4961,72.7009,national_highway_4,plain,black_cotton,62.5,13750.0,1,3437.5,2750.0,2062.5,2750.0,2750.0
+Gujarat,Ahmedabad,Dhomni-Yavat,Kharakala,23.1907,72.5802,state_highway,plain,black_cotton,21.6,4752.0,1,1188.0,950.4,712.8,950.4,950.4
+Gujarat,Ahmedabad,Kusumta-RV,Kinkhola,22.9922,72.6032,national_highway_4,plain,black_cotton,5.4,1188.0,1,297.0,237.6,178.2,237.6,237.6
+Gujarat,Ahmedabad,Kusumta-RV,Arasgaon,23.0175,72.8572,rural_two_lane,plain,black_cotton,33.7,3707.0,1,926.75,741.4,556.05,741.4,741.4
+Gujarat,Ahmedabad,Kusumta-RV,Bodal,22.8928,72.8031,rural_two_lane,plain,black_cotton,32.0,3520.0,1,880.0,704.0,528.0,704.0,704.0
+Gujarat,Ahmedabad,Pimpri Bk,Ganeri,22.9023,72.3384,rural_two_lane,plain,black_cotton,31.5,3465.0,1,866.25,693.0,519.75,693.0,693.0
+Gujarat,Ahmedabad,Pimpri Bk,Sawana,22.9924,72.548,state_highway,plain,black_cotton,4.7,1034.0,1,258.5,206.8,155.1,206.8,206.8
+Gujarat,Ahmedabad,Pimpri Bk,Mordad,23.0175,72.1091,rural_two_lane,plain,black_cotton,54.5,5995.0,1,1498.75,1199.0,899.25,1199.0,1199.0
+Maharashtra,Amravati,Wadali-Yavat,Parnera,21.1562,77.7137,rural_two_lane,hilly,black_cotton,28.9,3973.8,1,993.45,794.76,596.07,794.76,794.76
+Maharashtra,Amravati,Wadali-Yavat,Yeola,21.0509,77.8154,state_highway,hilly,black_cotton,17.0,4675.0,1,1168.75,935.0,701.25,935.0,935.0
+Maharashtra,Amravati,Wadali-Yavat,Pimpri,21.3699,77.5737,rural_two_lane,hilly,black_cotton,59.7,8208.8,2,2052.2,1641.76,1231.32,1641.76,1641.76
+Maharashtra,Amravati,Bhamare-RV,Palkhi,20.9194,77.8083,rural_two_lane,hilly,black_cotton,7.2,990.0,1,247.5,198.0,148.5,198.0,198.0
+Maharashtra,Amravati,Bhamare-RV,Pimpalgaon,20.7983,77.9242,rural_two_lane,hilly,black_cotton,27.1,3726.3,1,931.57,745.26,558.95,745.26,745.26
+Maharashtra,Amravati,Bhamare-RV,Kolhapur,20.9191,78.1492,state_highway,hilly,black_cotton,47.8,13145.0,2,3286.25,2629.0,1971.75,2629.0,2629.0
+Maharashtra,Amravati,Kharakala Bk,Wadali,20.7659,77.4602,state_highway,hilly,black_cotton,40.7,11192.5,1,2798.12,2238.5,1678.88,2238.5,2238.5
+Maharashtra,Amravati,Kharakala Bk,Palkhi,20.7422,77.4891,state_highway,hilly,black_cotton,39.6,10890.0,1,2722.5,2178.0,1633.5,2178.0,2178.0
+Maharashtra,Amravati,Kharakala Bk,Wadgaon,20.6885,77.5512,state_highway,hilly,black_cotton,39.3,10807.5,1,2701.88,2161.5,1621.12,2161.5,2161.5
+Punjab,Amritsar,Bhamare-Yavat,Deulwada,32.0498,74.6079,national_highway_4,plain,alluvial,60.5,12100.0,1,3025.0,2420.0,1815.0,2420.0,2420.0
+Punjab,Amritsar,Bhamare-Yavat,Shirval,32.119,74.8488,rural_two_lane,plain,alluvial,62.1,6210.0,1,1552.5,1242.0,931.5,1242.0,1242.0
+Punjab,Amritsar,Bhamare-Yavat,Sawana,31.7405,74.825,rural_two_lane,plain,alluvial,14.6,1460.0,1,365.0,292.0,219.0,292.0,292.0
+Punjab,Amritsar,Harnai-RV,Saswad,31.6029,74.9739,rural_two_lane,plain,alluvial,11.8,1180.0,1,295.0,236.0,177.0,236.0,236.0
+Punjab,Amritsar,Harnai-RV,Ukhale,31.633,75.2397,rural_two_lane,plain,alluvial,40.0,4000.0,1,1000.0,800.0,600.0,800.0,800.0
+Punjab,Amritsar,Harnai-RV,Pimpalgaon,31.5352,74.9953,national_highway_4,plain,alluvial,18.4,3680.0,1,920.0,736.0,552.0,736.0,736.0
+Punjab,Amritsar,Yeola Bk,Kolewadi,31.4309,74.643,national_highway_4,plain,alluvial,36.1,7220.0,1,1805.0,1444.0,1083.0,1444.0,1444.0
+Punjab,Amritsar,Yeola Bk,Kundmukhi,31.3332,74.63,rural_two_lane,plain,alluvial,46.7,4670.0,1,1167.5,934.0,700.5,934.0,934.0
+Punjab,Amritsar,Yeola Bk,Ambassa,31.5737,74.6594,state_highway,plain,alluvial,24.5,4900.0,1,1225.0,980.0,735.0,980.0,980.0
+Karnataka,Belagavi,Saswad-Yavat,Arasgaon,16.1602,74.3185,rural_two_lane,plain,black_cotton,45.4,4994.0,1,1248.5,998.8,749.1,998.8,998.8
+Karnataka,Belagavi,Saswad-Yavat,Morbadi,16.0795,74.4131,state_highway,plain,black_cotton,31.2,6864.0,1,1716.0,1372.8,1029.6,1372.8,1372.8
+Karnataka,Belagavi,Saswad-Yavat,Ghoti,15.9541,74.4895,state_highway,plain,black_cotton,13.4,2948.0,1,737.0,589.6,442.2,589.6,589.6
+Karnataka,Belagavi,Ukhale-RV,Kharakala,15.7416,74.7545,rural_two_lane,plain,black_cotton,34.5,3795.0,1,948.75,759.0,569.25,759.0,759.0
+Karnataka,Belagavi,Ukhale-RV,Deulwada,15.5694,74.6732,rural_two_lane,plain,black_cotton,41.9,4609.0,1,1152.25,921.8,691.35,921.8,921.8
+Karnataka,Belagavi,Ukhale-RV,Sawana,15.7402,74.6474,state_highway,plain,black_cotton,23.2,5104.0,1,1276.0,1020.8,765.6,1020.8,1020.8
+Karnataka,Belagavi,Palkhi Bk,Deulwada,15.7967,74.3353,expressway_6,plain,black_cotton,21.1,11605.0,1,2901.25,2321.0,1740.75,2321.0,2321.0
+Karnataka,Belagavi,Palkhi Bk,Shirval,15.6153,74.2057,rural_two_lane,plain,black_cotton,46.8,5148.0,1,1287.0,1029.6,772.2,1029.6,1029.6
+Karnataka,Belagavi,Palkhi Bk,Kinkhola,15.8043,74.1771,rural_two_lane,plain,black_cotton,39.9,4389.0,1,1097.25,877.8,658.35,877.8,877.8
+Karnataka,Bengaluru Urban,Sonai-Yavat,Sonai,13.369,77.4194,national_highway_4,plain,rocky,55.3,13272.0,1,3318.0,2654.4,1990.8,2654.4,2654.4
+Karnataka,Bengaluru Urban,Sonai-Yavat,Arasgaon,13.3589,77.6713,state_highway,plain,rocky,50.5,12120.0,1,3030.0,2424.0,1818.0,2424.0,2424.0
+Karnataka,Bengaluru Urban,Sonai-Yavat,Kolewadi,13.2788,77.5247,state_highway,plain,rocky,40.3,9672.0,1,2418.0,1934.4,1450.8,1934.4,1934.4
+Karnataka,Bengaluru Urban,Arasgaon-RV,Bodal,12.8299,78.0581,rural_two_lane,plain,rocky,60.6,7272.0,1,1818.0,1454.4,1090.8,1454.4,1454.4
+Karnataka,Bengaluru Urban,Arasgaon-RV,Kolhapur,12.9263,77.6341,rural_two_lane,plain,rocky,7.6,912.0,1,228.0,182.4,136.8,182.4,182.4
+Karnataka,Bengaluru Urban,Arasgaon-RV,Dhomni,12.6943,78.0037,state_highway,plain,rocky,62.2,14928.0,1,3732.0,2985.6,2239.2,2985.6,2985.6
+Karnataka,Bengaluru Urban,Kharakala Bk,Shirval,12.9593,77.4896,state_highway,plain,rocky,13.2,3168.0,1,792.0,633.6,475.2,633.6,633.6
+Karnataka,Bengaluru Urban,Kharakala Bk,Ambassa,12.9019,77.1652,rural_two_lane,plain,rocky,54.3,6516.0,1,1629.0,1303.2,977.4,1303.2,1303.2
+Karnataka,Bengaluru Urban,Kharakala Bk,Ganeri,12.736,77.3519,state_highway,plain,rocky,42.7,10248.0,1,2562.0,2049.6,1537.2,2049.6,2049.6
+Bihar,Bhagalpur,Tumane-Yavat,Ambassa,25.371,86.9964,rural_two_lane,plain,sandy,9.8,1029.0,1,257.25,205.8,154.35,205.8,205.8
+Bihar,Bhagalpur,Tumane-Yavat,Bodal,25.7543,87.0271,expressway_6,plain,sandy,59.0,30975.0,1,7743.75,6195.0,4646.25,6195.0,6195.0
+Bihar,Bhagalpur,Tumane-Yavat,Kusumta,25.5091,87.0109,national_highway_4,plain,sandy,27.6,5796.0,1,1449.0,1159.2,869.4,1159.2,1159.2
+Bihar,Bhagalpur,Shirude-RV,Pimpalgaon,25.2429,87.1093,rural_two_lane,plain,sandy,15.2,1596.0,1,399.0,319.2,239.4,319.2,319.2
+Bihar,Bhagalpur,Shirude-RV,Yeola,25.276,87.0471,rural_two_lane,plain,sandy,6.9,724.5,1,181.13,144.9,108.67,144.9,144.9
+Bihar,Bhagalpur,Shirude-RV,Mordad,24.9525,87.2958,state_highway,plain,sandy,56.2,11802.0,1,2950.5,2360.4,1770.3,2360.4,2360.4
+Bihar,Bhagalpur,Kolhapur Bk,Wadgaon,25.2578,86.9005,state_highway,plain,sandy,11.5,2415.0,1,603.75,483.0,362.25,483.0,483.0
+Bihar,Bhagalpur,Kolhapur Bk,Kolhapur,25.2711,86.8411,national_highway_4,plain,sandy,17.6,3696.0,1,924.0,739.2,554.4,739.2,739.2
+Bihar,Bhagalpur,Kolhapur Bk,Parnera,25.1346,86.6717,national_highway_4,plain,sandy,42.2,8862.0,1,2215.5,1772.4,1329.3,1772.4,1772.4
+Madhya Pradesh,Bhopal,Yeola-Yavat,Dhomni,23.7402,77.4971,rural_two_lane,plain,black_cotton,62.3,6853.0,1,1713.25,1370.6,1027.95,1370.6,1370.6
+Madhya Pradesh,Bhopal,Yeola-Yavat,Ukhale,23.3806,77.4469,state_highway,plain,black_cotton,16.0,3520.0,1,880.0,704.0,528.0,704.0,704.0
+Madhya Pradesh,Bhopal,Yeola-Yavat,Kelhi,23.5375,77.3735,state_highway,plain,black_cotton,35.8,7876.0,1,1969.0,1575.2,1181.4,1575.2,1575.2
+Madhya Pradesh,Bhopal,Sonai-RV,Kolewadi,23.2213,77.5168,rural_two_lane,plain,black_cotton,13.2,1452.0,1,363.0,290.4,217.8,290.4,290.4
+Madhya Pradesh,Bhopal,Sonai-RV,Wadali,23.2213,77.5495,state_highway,plain,black_cotton,16.8,3696.0,1,924.0,739.2,554.4,739.2,739.2
+Madhya Pradesh,Bhopal,Sonai-RV,Kinkhola,23.2563,77.5411,state_highway,plain,black_cotton,15.1,3322.0,1,830.5,664.4,498.3,664.4,664.4
+Madhya Pradesh,Bhopal,Kolhapur Bk,Palkhi,23.0168,77.0941,national_highway_4,plain,black_cotton,48.7,10714.0,1,2678.5,2142.8,1607.1,2142.8,2142.8
+Madhya Pradesh,Bhopal,Kolhapur Bk,Shirval,23.0802,77.2439,rural_two_lane,plain,black_cotton,30.4,3344.0,1,836.0,668.8,501.6,668.8,668.8
+Madhya Pradesh,Bhopal,Kolhapur Bk,Pimpalgaon,22.9475,77.1742,national_highway_4,plain,black_cotton,48.8,10736.0,1,2684.0,2147.2,1610.4,2147.2,2147.2
+Delhi,Central Delhi,Ganeri-Yavat,Wadali,28.8145,77.3124,rural_two_lane,plain,alluvial,25.8,2580.0,1,645.0,516.0,387.0,516.0,516.0
+Delhi,Central Delhi,Ganeri-Yavat,Ambassa,28.8336,77.2299,expressway_6,plain,alluvial,26.1,13050.0,1,3262.5,2610.0,1957.5,2610.0,2610.0
+Delhi,Central Delhi,Ganeri-Yavat,Kolewadi,28.7048,77.1957,rural_two_lane,plain,alluvial,10.0,1000.0,1,250.0,200.0,150.0,200.0,200.0
+Delhi,Central Delhi,Pimpalgaon-RV,Ghoti,28.5962,77.5245,rural_two_lane,plain,alluvial,34.5,3450.0,1,862.5,690.0,517.5,690.0,690.0
+Delhi,Central Delhi,Pimpalgaon-RV,Pimpri,28.5836,77.2767,state_highway,plain,alluvial,8.7,1740.0,1,435.0,348.0,261.0,348.0,348.0
+Delhi,Central Delhi,Pimpalgaon-RV,Kusumta,28.5361,77.3048,state_highway,plain,alluvial,15.3,3060.0,1,765.0,612.0,459.0,612.0,612.0
+Delhi,Central Delhi,Kelhi Bk,Tisgaon,28.5006,77.0186,expressway_6,plain,alluvial,28.0,14000.0,1,3500.0,2800.0,2100.0,2800.0,2800.0
+Delhi,Central Delhi,Kelhi Bk,Saswad,28.3863,76.9604,rural_two_lane,plain,alluvial,42.7,4270.0,1,1067.5,854.0,640.5,854.0,854.0
+Delhi,Central Delhi,Kelhi Bk,Pimpalgaon,28.5704,76.9475,state_highway,plain,alluvial,31.6,6320.0,1,1580.0,1264.0,948.0,1264.0,1264.0
+Tamil Nadu,Chennai,Tisgaon-Yavat,Kolhapur,13.1173,80.281,rural_two_lane,plain,sandy,4.6,483.0,1,120.75,96.6,72.45,96.6,96.6
+Tamil Nadu,Chennai,Tisgaon-Yavat,Ghoti,13.5517,80.2291,rural_two_lane,plain,sandy,60.2,6321.0,1,1580.25,1264.2,948.15,1264.2,1264.2
+Tamil Nadu,Chennai,Tisgaon-Yavat,Kolewadi,13.4604,80.0694,rural_two_lane,plain,sandy,54.5,5722.5,1,1430.62,1144.5,858.38,1144.5,1144.5
+Tamil Nadu,Chennai,Sonai-RV,Kharakala,12.9234,80.4214,rural_two_lane,plain,sandy,27.7,2908.5,1,727.13,581.7,436.27,581.7,581.7
+Tamil Nadu,Chennai,Sonai-RV,Morbadi,12.9861,80.7388,state_highway,plain,sandy,59.7,12537.0,1,3134.25,2507.4,1880.55,2507.4,2507.4
+Tamil Nadu,Chennai,Sonai-RV,Kelhi,12.9714,80.3959,rural_two_lane,plain,sandy,21.1,2215.5,1,553.88,443.1,332.32,443.1,443.1
+Tamil Nadu,Chennai,Wadgaon Bk,Pimpalgaon,13.0417,80.1967,rural_two_lane,plain,sandy,10.6,1113.0,1,278.25,222.6,166.95,222.6,222.6
+Tamil Nadu,Chennai,Wadgaon Bk,Tisgaon,13.0771,80.2138,state_highway,plain,sandy,7.1,1491.0,1,372.75,298.2,223.65,298.2,298.2
+Tamil Nadu,Chennai,Wadgaon Bk,Parnera,12.9391,80.1051,rural_two_lane,plain,sandy,27.6,2898.0,1,724.5,579.6,434.7,579.6,579.6
+Maharashtra,Chhatrapati Sambhajinagar,Parnera-Yavat,Pimpalgaon,20.2505,75.1483,rural_two_lane,plain,black_cotton,53.3,5863.0,1,1465.75,1172.6,879.45,1172.6,1172.6
+Maharashtra,Chhatrapati Sambhajinagar,Parnera-Yavat,Mhatari,20.0856,75.3224,national_highway_4,plain,black_cotton,26.9,5918.0,1,1479.5,1183.6,887.7,1183.6,1183.6
+Maharashtra,Chhatrapati Sambhajinagar,Parnera-Yavat,Kelhi,20.1799,75.3998,expressway_6,plain,black_cotton,39.5,21725.0,1,5431.25,4345.0,3258.75,4345.0,4345.0
+Maharashtra,Chhatrapati Sambhajinagar,Shirude-RV,Wadali,19.8707,75.4295,state_highway,plain,black_cotton,10.4,2288.0,1,572.0,457.6,343.2,457.6,457.6
+Maharashtra,Chhatrapati Sambhajinagar,Shirude-RV,Bhamare,19.7976,75.541,rural_two_lane,plain,black_cotton,25.8,2838.0,1,709.5,567.6,425.7,567.6,567.6
+Maharashtra,Chhatrapati Sambhajinagar,Shirude-RV,Morbadi,19.8693,75.4844,rural_two_lane,plain,black_cotton,17.0,1870.0,1,467.5,374.0,280.5,374.0,374.0
+Maharashtra,Chhatrapati Sambhajinagar,Tumane Bk,Kinkhola,19.6788,75.037,rural_two_lane,plain,black_cotton,44.7,4917.0,1,1229.25,983.4,737.55,983.4,983.4
+Maharashtra,Chhatrapati Sambhajinagar,Tumane Bk,Parnera,19.5817,74.9363,rural_two_lane,plain,black_cotton,61.8,6798.0,1,1699.5,1359.6,1019.7,1359.6,1359.6
+Maharashtra,Chhatrapati Sambhajinagar,Tumane Bk,Morbadi,19.7907,75.2214,rural_two_lane,plain,black_cotton,18.3,2013.0,1,503.25,402.6,301.95,402.6,402.6
+Tamil Nadu,Coimbatore,Mordad-Yavat,Palkhi,11.3485,76.8847,national_highway_4,ghat,red,43.4,11848.2,1,2962.05,2369.64,1777.23,2369.64,2369.64
+Tamil Nadu,Coimbatore,Mordad-Yavat,Harnai,11.216,76.8643,rural_two_lane,ghat,red,28.0,3822.0,1,955.5,764.4,573.3,764.4,764.4
+Tamil Nadu,Coimbatore,Mordad-Yavat,Tisgaon,11.1589,76.8891,national_highway_4,ghat,red,20.0,5460.0,1,1365.0,1092.0,819.0,1092.0,1092.0
+Tamil Nadu,Coimbatore,Kinkhola-RV,Kadepur,10.7648,77.3083,state_highway,ghat,red,54.8,14960.4,2,3740.1,2992.08,2244.06,2992.08,2992.08
+Tamil Nadu,Coimbatore,Kinkhola-RV,Bhamare,10.913,77.1262,rural_two_lane,ghat,red,25.2,3439.8,1,859.95,687.96,515.97,687.96,687.96
+Tamil Nadu,Coimbatore,Kinkhola-RV,Dhomni,10.7556,77.3383,state_highway,ghat,red,58.6,15997.8,2,3999.45,3199.56,2399.67,3199.56,3199.56
+Tamil Nadu,Coimbatore,Sonai Bk,Ukhale,10.6454,76.7065,rural_two_lane,ghat,red,56.9,7766.9,2,1941.72,1553.38,1165.04,1553.38,1553.38
+Tamil Nadu,Coimbatore,Sonai Bk,Shirude,10.9385,76.7904,national_highway_4,ghat,red,23.1,6306.3,1,1576.57,1261.26,945.95,1261.26,1261.26
+Tamil Nadu,Coimbatore,Sonai Bk,Kelhi,10.6517,76.6797,state_highway,ghat,red,58.2,15888.6,2,3972.15,3177.72,2383.29,3177.72,3177.72
+Karnataka,Dakshina Kannada,Sonai-Yavat,Pimpalgaon,13.3478,75.0344,rural_two_lane,ghat,laterite,59.8,8162.7,2,2040.68,1632.54,1224.4,1632.54,1632.54
+Karnataka,Dakshina Kannada,Sonai-Yavat,Ambassa,13.2133,74.7078,national_highway_4,ghat,laterite,42.5,11602.5,1,2900.62,2320.5,1740.38,2320.5,2320.5
+Karnataka,Dakshina Kannada,Sonai-Yavat,Kusumta,13.0736,74.8468,rural_two_lane,ghat,laterite,20.4,2784.6,1,696.15,556.92,417.69,556.92,556.92
+Karnataka,Dakshina Kannada,Ambassa-RV,Arasgaon,12.7388,75.1508,rural_two_lane,ghat,laterite,43.1,5883.2,1,1470.8,1176.64,882.48,1176.64,1176.64
+Karnataka,Dakshina Kannada,Ambassa-RV,Palkhi,12.6439,75.0457,expressway_6,ghat,laterite,41.9,28596.8,1,7149.2,5719.36,4289.52,5719.36,5719.36
+Karnataka,Dakshina Kannada,Ambassa-RV,Ghoti,12.8467,75.0511,rural_two_lane,ghat,laterite,25.8,3521.7,1,880.43,704.34,528.25,704.34,704.34
+Karnataka,Dakshina Kannada,Morbadi Bk,Bodal,12.8764,74.3724,expressway_6,ghat,laterite,60.5,41291.2,2,10322.8,8258.24,6193.68,8258.24,8258.24
+Karnataka,Dakshina Kannada,Morbadi Bk,Sawana,12.5969,74.4773,national_highway_4,ghat,laterite,62.3,17007.9,2,4251.97,3401.58,2551.19,3401.58,3401.58
+Karnataka,Dakshina Kannada,Morbadi Bk,Vaduj,12.7932,74.5383,state_highway,ghat,laterite,42.6,11629.8,1,2907.45,2325.96,1744.47,2325.96,2325.96
+West Bengal,Darjeeling,Wadali-Yavat,Pimpalgaon,27.1553,88.3247,national_highway_4,hilly,rocky,16.1,4830.0,1,1207.5,966.0,724.5,966.0,966.0
+West Bengal,Darjeeling,Wadali-Yavat,Kharakala,27.1519,88.2069,rural_two_lane,hilly,rocky,15.7,2355.0,1,588.75,471.0,353.25,471.0,471.0
+West Bengal,Darjeeling,Wadali-Yavat,Wadgaon,27.2469,88.3553,rural_two_lane,hilly,rocky,28.2,4230.0,1,1057.5,846.0,634.5,846.0,846.0
+West Bengal,Darjeeling,Kolewadi-RV,Yeola,26.6946,88.6368,state_highway,hilly,rocky,61.3,18390.0,2,4597.5,3678.0,2758.5,3678.0,3678.0
+West Bengal,Darjeeling,Kolewadi-RV,Kadepur,26.7119,88.5985,national_highway_4,hilly,rocky,56.7,17010.0,2,4252.5,3402.0,2551.5,3402.0,3402.0
+West Bengal,Darjeeling,Kolewadi-RV,Harnai,26.9435,88.4872,state_highway,hilly,rocky,28.1,8430.0,1,2107.5,1686.0,1264.5,1686.0,1686.0
+West Bengal,Darjeeling,Mordad Bk,Ambassa,26.8735,87.9032,national_highway_4,hilly,rocky,46.6,13980.0,2,3495.0,2796.0,2097.0,2796.0,2796.0
+West Bengal,Darjeeling,Mordad Bk,Ganeri,26.9029,88.0637,expressway_6,hilly,rocky,29.1,21825.0,1,5456.25,4365.0,3273.75,4365.0,4365.0
+West Bengal,Darjeeling,Mordad Bk,Kharakala,26.9897,88.0993,state_highway,hilly,rocky,20.1,6030.0,1,1507.5,1206.0,904.5,1206.0,1206.0
+Kerala,Ernakulam,Kusumta-Yavat,Kadepur,9.978,76.2534,rural_two_lane,plain,clay,6.2,682.0,1,170.5,136.4,102.3,136.4,136.4
+Kerala,Ernakulam,Kusumta-Yavat,Mhatari,10.0023,76.2426,rural_two_lane,plain,clay,9.6,1056.0,1,264.0,211.2,158.4,211.2,211.2
+Kerala,Ernakulam,Kusumta-Yavat,Ganeri,10.1207,76.2015,rural_two_lane,plain,clay,25.6,2816.0,1,704.0,563.2,422.4,563.2,563.2
+Kerala,Ernakulam,Bhamare-RV,Ukhale,9.8466,76.317,rural_two_lane,plain,clay,12.5,1375.0,1,343.75,275.0,206.25,275.0,275.0
+Kerala,Ernakulam,Bhamare-RV,Kundmukhi,9.7394,76.4086,rural_two_lane,plain,clay,30.3,3333.0,1,833.25,666.6,499.95,666.6,666.6
+Kerala,Ernakulam,Bhamare-RV,Sonai,9.7602,76.616,rural_two_lane,plain,clay,49.1,5401.0,1,1350.25,1080.2,810.15,1080.2,1080.2
+Kerala,Ernakulam,Arasgaon Bk,Mhatari,9.8798,75.9494,state_highway,plain,clay,40.6,8932.0,1,2233.0,1786.4,1339.8,1786.4,1786.4
+Kerala,Ernakulam,Arasgaon Bk,Ambassa,9.9232,76.1317,rural_two_lane,plain,clay,17.1,1881.0,1,470.25,376.2,282.15,376.2,376.2
+Kerala,Ernakulam,Arasgaon Bk,Bodal,9.5631,76.0132,rural_two_lane,plain,clay,57.0,6270.0,1,1567.5,1254.0,940.5,1254.0,1254.0
+Uttar Pradesh,Gautam Buddh Nagar,Sawana-Yavat,Mhatari,29.0097,77.5846,state_highway,plain,alluvial,58.4,11680.0,1,2920.0,2336.0,1752.0,2336.0,2336.0
+Uttar Pradesh,Gautam Buddh Nagar,Sawana-Yavat,Kolhapur,28.7707,77.4274,rural_two_lane,plain,alluvial,24.2,2420.0,1,605.0,484.0,363.0,484.0,484.0
+Uttar Pradesh,Gautam Buddh Nagar,Sawana-Yavat,Wadali,28.962,77.6071,state_highway,plain,alluvial,53.8,10760.0,1,2690.0,2152.0,1614.0,2152.0,2152.0
+Uttar Pradesh,Gautam Buddh Nagar,Yeola-RV,Pimpri,28.3501,77.7747,state_highway,plain,alluvial,51.6,10320.0,1,2580.0,2064.0,1548.0,2064.0,2064.0
+Uttar Pradesh,Gautam Buddh Nagar,Yeola-RV,Kinkhola,28.5105,77.5974,state_highway,plain,alluvial,24.1,4820.0,1,1205.0,964.0,723.0,964.0,964.0
+Uttar Pradesh,Gautam Buddh Nagar,Yeola-RV,Ambassa,28.5069,77.7585,rural_two_lane,plain,alluvial,41.5,4150.0,1,1037.5,830.0,622.5,830.0,830.0
+Uttar Pradesh,Gautam Buddh Nagar,Wadgaon Bk,Shirval,28.4556,77.0918,rural_two_lane,plain,alluvial,38.3,3830.0,1,957.5,766.0,574.5,766.0,766.0
+Uttar Pradesh,Gautam Buddh Nagar,Wadgaon Bk,Saswad,28.5262,77.3455,national_highway_4,plain,alluvial,9.5,1900.0,1,475.0,380.0,285.0,380.0,380.0
+Uttar Pradesh,Gautam Buddh Nagar,Wadgaon Bk,Parnera,28.5392,77.25,rural_two_lane,plain,alluvial,17.8,1780.0,1,445.0,356.0,267.0,356.0,356.0
+Bihar,Gaya,Yeola-Yavat,Wadali,25.0105,84.9717,state_highway,hilly,rocky,28.2,8460.0,1,2115.0,1692.0,1269.0,1692.0,1692.0
+Bihar,Gaya,Yeola-Yavat,Morbadi,25.2287,84.9932,rural_two_lane,hilly,rocky,56.0,8400.0,2,2100.0,1680.0,1260.0,1680.0,1680.0
+Bihar,Gaya,Yeola-Yavat,Pimpri,25.0759,84.8567,rural_two_lane,hilly,rocky,40.0,6000.0,1,1500.0,1200.0,900.0,1200.0,1200.0
+Bihar,Gaya,Kelhi-RV,Mordad,24.6127,85.1976,rural_two_lane,hilly,rocky,32.4,4860.0,1,1215.0,972.0,729.0,972.0,972.0
+Bihar,Gaya,Kelhi-RV,Bhamare,24.7597,85.2308,state_highway,hilly,rocky,27.1,8130.0,1,2032.5,1626.0,1219.5,1626.0,1626.0
+Bihar,Gaya,Kelhi-RV,Kinkhola,24.7472,85.0585,national_highway_4,hilly,rocky,8.8,2640.0,1,660.0,528.0,396.0,528.0,528.0
+Bihar,Gaya,Pimpri Bk,Tisgaon,24.5829,84.7581,rural_two_lane,hilly,rocky,38.8,5820.0,1,1455.0,1164.0,873.0,1164.0,1164.0
+Bihar,Gaya,Pimpri Bk,Kadepur,24.7759,84.7737,rural_two_lane,hilly,rocky,26.4,3960.0,1,990.0,792.0,594.0,792.0,792.0
+Bihar,Gaya,Pimpri Bk,Saswad,24.4514,84.6541,rural_two_lane,hilly,rocky,59.3,8895.0,2,2223.75,1779.0,1334.25,1779.0,1779.0
+Madhya Pradesh,Gwalior,Bodal-Yavat,Harnai,26.5569,78.1771,expressway_6,rocky_or_hilly,rocky,43.3,32475.0,1,8118.75,6495.0,4871.25,6495.0,6495.0
+Madhya Pradesh,Gwalior,Bodal-Yavat,Saswad,26.4876,78.2385,state_highway,rocky_or_hilly,rocky,35.1,10530.0,1,2632.5,2106.0,1579.5,2106.0,2106.0
+Madhya Pradesh,Gwalior,Bodal-Yavat,Vaduj,26.5557,78.0257,state_highway,rocky_or_hilly,rocky,46.8,14040.0,2,3510.0,2808.0,2106.0,2808.0,2808.0
+Madhya Pradesh,Gwalior,Arasgaon-RV,Wadali,25.988,78.4043,expressway_6,rocky_or_hilly,rocky,38.9,29175.0,1,7293.75,5835.0,4376.25,5835.0,5835.0
+Madhya Pradesh,Gwalior,Arasgaon-RV,Kinkhola,26.2042,78.2359,expressway_6,rocky_or_hilly,rocky,6.4,4800.0,1,1200.0,960.0,720.0,960.0,960.0
+Madhya Pradesh,Gwalior,Arasgaon-RV,Mordad,26.2096,78.3864,national_highway_4,rocky_or_hilly,rocky,23.4,7020.0,1,1755.0,1404.0,1053.0,1404.0,1404.0
+Madhya Pradesh,Gwalior,Ganeri Bk,Ganeri,26.0105,77.7982,national_highway_4,rocky_or_hilly,rocky,51.6,15480.0,2,3870.0,3096.0,2322.0,3096.0,3096.0
+Madhya Pradesh,Gwalior,Ganeri Bk,Bodal,26.2081,78.0302,national_highway_4,rocky_or_hilly,rocky,17.6,5280.0,1,1320.0,1056.0,792.0,1056.0,1056.0
+Madhya Pradesh,Gwalior,Ganeri Bk,Tisgaon,25.9769,77.7499,state_highway,rocky_or_hilly,rocky,58.6,17580.0,2,4395.0,3516.0,2637.0,3516.0,3516.0
+West Bengal,Howrah,Tisgaon-Yavat,Wadali,22.8524,88.3427,expressway_6,plain,clay,33.0,18150.0,1,4537.5,3630.0,2722.5,3630.0,3630.0
+West Bengal,Howrah,Tisgaon-Yavat,Deulwada,22.9618,88.5099,rural_two_lane,plain,clay,52.2,5742.0,1,1435.5,1148.4,861.3,1148.4,1148.4
+West Bengal,Howrah,Tisgaon-Yavat,Pimpalgaon,22.7578,88.3987,state_highway,plain,clay,23.0,5060.0,1,1265.0,1012.0,759.0,1012.0,1012.0
+West Bengal,Howrah,Palkhi-RV,Shirval,22.569,88.7102,state_highway,plain,clay,46.8,10296.0,1,2574.0,2059.2,1544.4,2059.2,2059.2
+West Bengal,Howrah,Palkhi-RV,Bhamare,22.4181,88.4582,rural_two_lane,plain,clay,28.3,3113.0,1,778.25,622.6,466.95,622.6,622.6
+West Bengal,Howrah,Palkhi-RV,Sawana,22.4023,88.4667,rural_two_lane,plain,clay,30.6,3366.0,1,841.5,673.2,504.9,673.2,673.2
+West Bengal,Howrah,Ambassa Bk,Parnera,22.4669,87.7995,rural_two_lane,plain,clay,63.1,6941.0,1,1735.25,1388.2,1041.15,1388.2,1388.2
+West Bengal,Howrah,Ambassa Bk,Kelhi,22.5391,88.0719,national_highway_4,plain,clay,29.6,6512.0,1,1628.0,1302.4,976.8,1302.4,1302.4
+West Bengal,Howrah,Ambassa Bk,Saswad,22.2424,88.066,rural_two_lane,plain,clay,54.0,5940.0,1,1485.0,1188.0,891.0,1188.0,1188.0
+Telangana,Hyderabad,Bodal-Yavat,Wadali,17.7058,78.4539,rural_two_lane,plain,rocky,41.3,4956.0,1,1239.0,991.2,743.4,991.2,991.2
+Telangana,Hyderabad,Bodal-Yavat,Mhatari,17.6242,78.5042,state_highway,plain,rocky,30.7,7368.0,1,1842.0,1473.6,1105.2,1473.6,1473.6
+Telangana,Hyderabad,Bodal-Yavat,Kusumta,17.5586,78.5864,state_highway,plain,rocky,25.3,6072.0,1,1518.0,1214.4,910.8,1214.4,1214.4
+Telangana,Hyderabad,Shirval-RV,Kharakala,17.3601,78.5638,rural_two_lane,plain,rocky,9.9,1188.0,1,297.0,237.6,178.2,237.6,237.6
+Telangana,Hyderabad,Shirval-RV,Ambassa,17.0163,78.7554,rural_two_lane,plain,rocky,57.5,6900.0,1,1725.0,1380.0,1035.0,1380.0,1380.0
+Telangana,Hyderabad,Shirval-RV,Wadali,17.2046,78.5981,rural_two_lane,plain,rocky,26.8,3216.0,1,804.0,643.2,482.4,643.2,643.2
+Telangana,Hyderabad,Kundmukhi Bk,Ghoti,17.2333,77.9986,rural_two_lane,plain,rocky,62.7,7524.0,1,1881.0,1504.8,1128.6,1504.8,1504.8
+Telangana,Hyderabad,Kundmukhi Bk,Arasgaon,17.2547,78.3193,expressway_6,plain,rocky,26.4,15840.0,1,3960.0,3168.0,2376.0,3168.0,3168.0
+Telangana,Hyderabad,Kundmukhi Bk,Bhamare,17.3569,78.3619,state_highway,plain,rocky,15.7,3768.0,1,942.0,753.6,565.2,753.6,753.6
+Madhya Pradesh,Indore,Ganeri-Yavat,Vaduj,22.9597,75.7166,state_highway,plain,black_cotton,34.9,7678.0,1,1919.5,1535.6,1151.7,1535.6,1535.6
+Madhya Pradesh,Indore,Ganeri-Yavat,Wadgaon,22.792,75.8879,state_highway,plain,black_cotton,9.9,2178.0,1,544.5,435.6,326.7,435.6,435.6
+Madhya Pradesh,Indore,Ganeri-Yavat,Kinkhola,22.9345,75.8709,state_highway,plain,black_cotton,27.5,6050.0,1,1512.5,1210.0,907.5,1210.0,1210.0
+Madhya Pradesh,Indore,Morbadi-RV,Pimpalgaon,22.4372,76.1248,rural_two_lane,plain,black_cotton,48.0,5280.0,1,1320.0,1056.0,792.0,1056.0,1056.0
+Madhya Pradesh,Indore,Morbadi-RV,Kinkhola,22.7036,76.0945,rural_two_lane,plain,black_cotton,28.1,3091.0,1,772.75,618.2,463.65,618.2,618.2
+Madhya Pradesh,Indore,Morbadi-RV,Sawana,22.4195,76.1478,national_highway_4,plain,black_cotton,51.5,11330.0,1,2832.5,2266.0,1699.5,2266.0,2266.0
+Madhya Pradesh,Indore,Kolhapur Bk,Deulwada,22.4306,75.5031,rural_two_lane,plain,black_cotton,55.9,6149.0,1,1537.25,1229.8,922.35,1229.8,1229.8
+Madhya Pradesh,Indore,Kolhapur Bk,Bhamare,22.6028,75.6529,rural_two_lane,plain,black_cotton,28.4,3124.0,1,781.0,624.8,468.6,624.8,624.8
+Madhya Pradesh,Indore,Kolhapur Bk,Pimpri,22.6818,75.719,rural_two_lane,plain,black_cotton,17.1,1881.0,1,470.25,376.2,282.15,376.2,376.2
+Madhya Pradesh,Jabalpur,Kelhi-Yavat,Kundmukhi,23.524,80.1425,rural_two_lane,hilly,rocky,47.5,7125.0,2,1781.25,1425.0,1068.75,1425.0,1425.0
+Madhya Pradesh,Jabalpur,Kelhi-Yavat,Deulwada,23.3242,79.9788,rural_two_lane,hilly,rocky,18.3,2745.0,1,686.25,549.0,411.75,549.0,549.0
+Madhya Pradesh,Jabalpur,Kelhi-Yavat,Saswad,23.263,79.9841,national_highway_4,hilly,rocky,10.4,3120.0,1,780.0,624.0,468.0,624.0,624.0
+Madhya Pradesh,Jabalpur,Vaduj-RV,Arasgaon,23.1564,80.0744,rural_two_lane,hilly,rocky,10.8,1620.0,1,405.0,324.0,243.0,324.0,324.0
+Madhya Pradesh,Jabalpur,Vaduj-RV,Mordad,23.0321,80.2136,rural_two_lane,hilly,rocky,32.9,4935.0,1,1233.75,987.0,740.25,987.0,987.0
+Madhya Pradesh,Jabalpur,Vaduj-RV,Kinkhola,23.0495,80.2279,state_highway,hilly,rocky,33.1,9930.0,1,2482.5,1986.0,1489.5,1986.0,1986.0
+Madhya Pradesh,Jabalpur,Wadgaon Bk,Sonai,22.7987,79.7095,national_highway_4,hilly,rocky,58.9,17670.0,2,4417.5,3534.0,2650.5,3534.0,3534.0
+Madhya Pradesh,Jabalpur,Wadgaon Bk,Bodal,23.1594,79.9275,rural_two_lane,hilly,rocky,7.5,1125.0,1,281.25,225.0,168.75,225.0,225.0
+Madhya Pradesh,Jabalpur,Wadgaon Bk,Harnai,23.1123,79.6946,national_highway_4,hilly,rocky,35.5,10650.0,1,2662.5,2130.0,1597.5,2130.0,2130.0
+Rajasthan,Jaipur,Pimpalgaon-Yavat,Deulwada,27.1901,75.7177,rural_two_lane,plain,sandy,36.4,3822.0,1,955.5,764.4,573.3,764.4,764.4
+Rajasthan,Jaipur,Pimpalgaon-Yavat,Morbadi,27.3493,75.6222,rural_two_lane,plain,sandy,59.0,6195.0,1,1548.75,1239.0,929.25,1239.0,1239.0
+Rajasthan,Jaipur,Pimpalgaon-Yavat,Pimpalgaon,27.36,75.9416,rural_two_lane,plain,sandy,59.9,6289.5,1,1572.38,1257.9,943.42,1257.9,1257.9
+Rajasthan,Jaipur,Sonai-RV,Saswad,26.6835,76.1881,rural_two_lane,plain,sandy,54.4,5712.0,1,1428.0,1142.4,856.8,1142.4,1142.4
+Rajasthan,Jaipur,Sonai-RV,Kinkhola,26.833,75.9736,state_highway,plain,sandy,23.6,4956.0,1,1239.0,991.2,743.4,991.2,991.2
+Rajasthan,Jaipur,Sonai-RV,Palkhi,26.6785,76.0419,national_highway_4,plain,sandy,41.7,8757.0,1,2189.25,1751.4,1313.55,1751.4,1751.4
+Rajasthan,Jaipur,Kundmukhi Bk,Ganeri,26.6886,75.4623,rural_two_lane,plain,sandy,46.9,4924.5,1,1231.13,984.9,738.67,984.9,984.9
+Rajasthan,Jaipur,Kundmukhi Bk,Ghoti,26.7767,75.3671,state_highway,plain,sandy,51.0,10710.0,1,2677.5,2142.0,1606.5,2142.0,2142.0
+Rajasthan,Jaipur,Kundmukhi Bk,Palkhi,26.8135,75.6517,national_highway_4,plain,sandy,20.0,4200.0,1,1050.0,840.0,630.0,840.0,840.0
+Punjab,Jalandhar,Shirval-Yavat,Palkhi,31.694,75.6444,national_highway_4,plain,alluvial,47.7,9540.0,1,2385.0,1908.0,1431.0,1908.0,1908.0
+Punjab,Jalandhar,Shirval-Yavat,Saswad,31.4573,75.5993,state_highway,plain,alluvial,17.1,3420.0,1,855.0,684.0,513.0,684.0,684.0
+Punjab,Jalandhar,Shirval-Yavat,Kolhapur,31.5465,75.7063,expressway_6,plain,alluvial,31.9,15950.0,1,3987.5,3190.0,2392.5,3190.0,3190.0
+Punjab,Jalandhar,Kundmukhi-RV,Wadgaon,31.0962,75.9218,rural_two_lane,plain,alluvial,48.6,4860.0,1,1215.0,972.0,729.0,972.0,972.0
+Punjab,Jalandhar,Kundmukhi-RV,Tumane,31.2271,76.0334,state_highway,plain,alluvial,52.4,10480.0,1,2620.0,2096.0,1572.0,2096.0,2096.0
+Punjab,Jalandhar,Kundmukhi-RV,Kusumta,30.9189,75.8573,state_highway,plain,alluvial,61.0,12200.0,1,3050.0,2440.0,1830.0,2440.0,2440.0
+Punjab,Jalandhar,Kinkhola Bk,Tumane,31.2797,75.122,national_highway_4,plain,alluvial,49.2,9840.0,1,2460.0,1968.0,1476.0,1968.0,1968.0
+Punjab,Jalandhar,Kinkhola Bk,Kinkhola,31.3065,75.5222,national_highway_4,plain,alluvial,5.7,1140.0,1,285.0,228.0,171.0,228.0,228.0
+Punjab,Jalandhar,Kinkhola Bk,Wadgaon,31.0904,75.3924,rural_two_lane,plain,alluvial,35.9,3590.0,1,897.5,718.0,538.5,718.0,718.0
+Rajasthan,Jodhpur,Parnera-Yavat,Ambassa,26.3192,73.0634,state_highway,plain,sandy,11.2,2352.0,1,588.0,470.4,352.8,470.4,470.4
+Rajasthan,Jodhpur,Parnera-Yavat,Arasgaon,26.6051,72.9776,state_highway,plain,sandy,47.2,9912.0,1,2478.0,1982.4,1486.8,1982.4,1982.4
+Rajasthan,Jodhpur,Parnera-Yavat,Harnai,26.6583,73.274,rural_two_lane,plain,sandy,60.8,6384.0,1,1596.0,1276.8,957.6,1276.8,1276.8
+Rajasthan,Jodhpur,Kolewadi-RV,Saswad,26.1695,73.1381,national_highway_4,plain,sandy,15.8,3318.0,1,829.5,663.6,497.7,663.6,663.6
+Rajasthan,Jodhpur,Kolewadi-RV,Sawana,26.1211,73.4648,national_highway_4,plain,sandy,52.8,11088.0,1,2772.0,2217.6,1663.2,2217.6,2217.6
+Rajasthan,Jodhpur,Kolewadi-RV,Parnera,26.1468,73.3126,state_highway,plain,sandy,35.1,7371.0,1,1842.75,1474.2,1105.65,1474.2,1474.2
+Rajasthan,Jodhpur,Bhamare Bk,Shirval,26.0807,72.7403,national_highway_4,plain,sandy,38.4,8064.0,1,2016.0,1612.8,1209.6,1612.8,1612.8
+Rajasthan,Jodhpur,Bhamare Bk,Kolewadi,26.2156,72.9031,state_highway,plain,sandy,14.2,2982.0,1,745.5,596.4,447.3,596.4,596.4
+Rajasthan,Jodhpur,Bhamare Bk,Deulwada,26.1875,72.9405,national_highway_4,plain,sandy,11.7,2457.0,1,614.25,491.4,368.55,491.4,491.4
+Karnataka,Kalaburagi,Kelhi-Yavat,Sawana,17.79,76.6568,rural_two_lane,plain,black_cotton,62.8,6908.0,1,1727.0,1381.6,1036.2,1381.6,1381.6
+Karnataka,Kalaburagi,Kelhi-Yavat,Shirval,17.6785,76.9301,state_highway,plain,black_cotton,46.1,10142.0,1,2535.5,2028.4,1521.3,2028.4,2028.4
+Karnataka,Kalaburagi,Kelhi-Yavat,Yeola,17.4736,76.8286,rural_two_lane,plain,black_cotton,18.4,2024.0,1,506.0,404.8,303.6,404.8,404.8
+Karnataka,Kalaburagi,Mordad-RV,Saswad,17.3039,76.9262,expressway_6,plain,black_cotton,11.7,6435.0,1,1608.75,1287.0,965.25,1287.0,1287.0
+Karnataka,Kalaburagi,Mordad-RV,Sawana,17.155,77.1677,national_highway_4,plain,black_cotton,46.5,10230.0,1,2557.5,2046.0,1534.5,2046.0,2046.0
+Karnataka,Kalaburagi,Mordad-RV,Kusumta,17.2534,77.105,state_highway,plain,black_cotton,34.5,7590.0,1,1897.5,1518.0,1138.5,1518.0,1518.0
+Karnataka,Kalaburagi,Kusumta Bk,Deulwada,17.1872,76.5858,state_highway,plain,black_cotton,35.4,7788.0,1,1947.0,1557.6,1168.2,1557.6,1557.6
+Karnataka,Kalaburagi,Kusumta Bk,Sonai,17.2829,76.3674,rural_two_lane,plain,black_cotton,57.4,6314.0,1,1578.5,1262.8,947.1,1262.8,1262.8
+Karnataka,Kalaburagi,Kusumta Bk,Shirval,17.1591,76.7299,national_highway_4,plain,black_cotton,25.3,5566.0,1,1391.5,1113.2,834.9,1113.2,1113.2
+Uttar Pradesh,Kanpur Nagar,Wadali-Yavat,Wadali,26.7481,80.2591,expressway_6,plain,alluvial,39.1,19550.0,1,4887.5,3910.0,2932.5,3910.0,3910.0
+Uttar Pradesh,Kanpur Nagar,Wadali-Yavat,Yeola,26.5678,80.3257,rural_two_lane,plain,alluvial,15.1,1510.0,1,377.5,302.0,226.5,302.0,302.0
+Uttar Pradesh,Kanpur Nagar,Wadali-Yavat,Morbadi,26.5914,80.2809,rural_two_lane,plain,alluvial,19.0,1900.0,1,475.0,380.0,285.0,380.0,380.0
+Uttar Pradesh,Kanpur Nagar,Ukhale-RV,Ambassa,26.4371,80.372,rural_two_lane,plain,alluvial,4.9,490.0,1,122.5,98.0,73.5,98.0,98.0
+Uttar Pradesh,Kanpur Nagar,Ukhale-RV,Wadgaon,26.3862,80.3823,state_highway,plain,alluvial,10.0,2000.0,1,500.0,400.0,300.0,400.0,400.0
+Uttar Pradesh,Kanpur Nagar,Ukhale-RV,Pimpri,26.2282,80.512,rural_two_lane,plain,alluvial,35.1,3510.0,1,877.5,702.0,526.5,702.0,702.0
+Uttar Pradesh,Kanpur Nagar,Kundmukhi Bk,Shirude,26.1602,80.1212,rural_two_lane,plain,alluvial,44.3,4430.0,1,1107.5,886.0,664.5,886.0,886.0
+Uttar Pradesh,Kanpur Nagar,Kundmukhi Bk,Bhamare,26.2418,80.1494,state_highway,plain,alluvial,33.9,6780.0,1,1695.0,1356.0,1017.0,1356.0,1356.0
+Uttar Pradesh,Kanpur Nagar,Kundmukhi Bk,Tumane,26.4467,79.9738,rural_two_lane,plain,alluvial,41.0,4100.0,1,1025.0,820.0,615.0,820.0,820.0
+West Bengal,Kolkata,Kinkhola-Yavat,Yeola,22.7891,88.4696,rural_two_lane,plain,clay,30.4,3344.0,1,836.0,668.8,501.6,668.8,668.8
+West Bengal,Kolkata,Kinkhola-Yavat,Kundmukhi,22.8886,88.4465,rural_two_lane,plain,clay,41.6,4576.0,1,1144.0,915.2,686.4,915.2,915.2
+West Bengal,Kolkata,Kinkhola-Yavat,Mordad,22.7511,88.4131,state_highway,plain,clay,23.6,5192.0,1,1298.0,1038.4,778.8,1038.4,1038.4
+West Bengal,Kolkata,Shirval-RV,Ganeri,22.4746,88.8147,expressway_6,plain,clay,54.8,30140.0,1,7535.0,6028.0,4521.0,6028.0,6028.0
+West Bengal,Kolkata,Shirval-RV,Pimpri,22.5176,88.4141,expressway_6,plain,clay,9.2,5060.0,1,1265.0,1012.0,759.0,1012.0,1012.0
+West Bengal,Kolkata,Shirval-RV,Ambassa,22.5644,88.5626,national_highway_4,plain,clay,23.5,5170.0,1,1292.5,1034.0,775.5,1034.0,1034.0
+West Bengal,Kolkata,Mhatari Bk,Kusumta,22.4426,88.2432,expressway_6,plain,clay,21.9,12045.0,1,3011.25,2409.0,1806.75,2409.0,2409.0
+West Bengal,Kolkata,Mhatari Bk,Kinkhola,22.4802,88.1681,rural_two_lane,plain,clay,26.0,2860.0,1,715.0,572.0,429.0,572.0,572.0
+West Bengal,Kolkata,Mhatari Bk,Morbadi,22.2521,88.0351,state_highway,plain,clay,56.5,12430.0,1,3107.5,2486.0,1864.5,2486.0,2486.0
+Rajasthan,Kota,Deulwada-Yavat,Bhamare,25.4255,75.733,rural_two_lane,plain,alluvial,31.1,3110.0,1,777.5,622.0,466.5,622.0,622.0
+Rajasthan,Kota,Deulwada-Yavat,Ambassa,25.6986,75.8678,rural_two_lane,plain,alluvial,62.0,6200.0,1,1550.0,1240.0,930.0,1240.0,1240.0
+Rajasthan,Kota,Deulwada-Yavat,Kusumta,25.3563,75.8638,state_highway,plain,alluvial,18.2,3640.0,1,910.0,728.0,546.0,728.0,728.0
+Rajasthan,Kota,Wadali-RV,Tisgaon,25.1177,75.9948,rural_two_lane,plain,alluvial,19.4,1940.0,1,485.0,388.0,291.0,388.0,388.0
+Rajasthan,Kota,Wadali-RV,Kelhi,25.1454,76.1876,rural_two_lane,plain,alluvial,38.4,3840.0,1,960.0,768.0,576.0,768.0,768.0
+Rajasthan,Kota,Wadali-RV,Ganeri,25.129,76.3901,rural_two_lane,plain,alluvial,61.8,6180.0,1,1545.0,1236.0,927.0,1236.0,1236.0
+Rajasthan,Kota,Wadgaon Bk,Mordad,25.1335,75.7267,national_highway_4,plain,alluvial,19.0,3800.0,1,950.0,760.0,570.0,760.0,760.0
+Rajasthan,Kota,Wadgaon Bk,Harnai,25.0272,75.5707,rural_two_lane,plain,alluvial,41.6,4160.0,1,1040.0,832.0,624.0,832.0,832.0
+Rajasthan,Kota,Wadgaon Bk,Ambassa,25.1837,75.8305,state_highway,plain,alluvial,5.5,1100.0,1,275.0,220.0,165.0,220.0,220.0
+Kerala,Kozhikode,Wadali-Yavat,Dhomni,11.6275,75.6875,expressway_6,ghat,laterite,48.6,33169.5,2,8292.37,6633.9,4975.43,6633.9,6633.9
+Kerala,Kozhikode,Wadali-Yavat,Tisgaon,11.464,75.7958,state_highway,ghat,laterite,26.3,7179.9,1,1794.98,1435.98,1076.98,1435.98,1435.98
+Kerala,Kozhikode,Wadali-Yavat,Kadepur,11.5324,75.6832,national_highway_4,ghat,laterite,37.1,10128.3,1,2532.08,2025.66,1519.24,2025.66,2025.66
+Kerala,Kozhikode,Kelhi-RV,Wadali,11.1623,75.9603,rural_two_lane,ghat,laterite,25.7,3508.1,1,877.02,701.62,526.22,701.62,701.62
+Kerala,Kozhikode,Kelhi-RV,Kadepur,11.2155,75.929,rural_two_lane,ghat,laterite,19.5,2661.8,1,665.45,532.36,399.27,532.36,532.36
+Kerala,Kozhikode,Kelhi-RV,Deulwada,10.9342,75.9791,national_highway_4,ghat,laterite,48.5,13240.5,2,3310.12,2648.1,1986.08,2648.1,2648.1
+Kerala,Kozhikode,Ghoti Bk,Mordad,10.956,75.3921,national_highway_4,ghat,laterite,62.3,17007.9,2,4251.97,3401.58,2551.19,3401.58,3401.58
+Kerala,Kozhikode,Ghoti Bk,Sawana,11.1093,75.363,rural_two_lane,ghat,laterite,55.8,7616.7,2,1904.17,1523.34,1142.51,1523.34,1523.34
+Kerala,Kozhikode,Ghoti Bk,Ukhale,11.0763,75.6668,rural_two_lane,ghat,laterite,27.4,3740.1,1,935.03,748.02,561.01,748.02,748.02
+Uttar Pradesh,Lucknow,Kelhi-Yavat,Tisgaon,27.2535,81.0119,state_highway,plain,alluvial,52.6,10520.0,1,2630.0,2104.0,1578.0,2104.0,2104.0
+Uttar Pradesh,Lucknow,Kelhi-Yavat,Kelhi,27.0753,80.9905,rural_two_lane,plain,alluvial,29.7,2970.0,1,742.5,594.0,445.5,594.0,594.0
+Uttar Pradesh,Lucknow,Kelhi-Yavat,Sawana,27.3205,80.8278,state_highway,plain,alluvial,62.1,12420.0,1,3105.0,2484.0,1863.0,2484.0,2484.0
+Uttar Pradesh,Lucknow,Kusumta-RV,Parnera,26.8154,80.9883,expressway_6,plain,alluvial,6.3,3150.0,1,787.5,630.0,472.5,630.0,630.0
+Uttar Pradesh,Lucknow,Kusumta-RV,Bodal,26.7909,81.1273,national_highway_4,plain,alluvial,21.9,4380.0,1,1095.0,876.0,657.0,876.0,876.0
+Uttar Pradesh,Lucknow,Kusumta-RV,Mordad,26.8257,80.9934,rural_two_lane,plain,alluvial,6.0,600.0,1,150.0,120.0,90.0,120.0,120.0
+Uttar Pradesh,Lucknow,Ghoti Bk,Kusumta,26.8251,80.8404,national_highway_4,plain,alluvial,12.4,2480.0,1,620.0,496.0,372.0,496.0,496.0
+Uttar Pradesh,Lucknow,Ghoti Bk,Bhamare,26.8451,80.8295,national_highway_4,plain,alluvial,13.3,2660.0,1,665.0,532.0,399.0,532.0,532.0
+Uttar Pradesh,Lucknow,Ghoti Bk,Dhomni,26.6249,80.72,rural_two_lane,plain,alluvial,38.4,3840.0,1,960.0,768.0,576.0,768.0,768.0
+Punjab,Ludhiana,Ukhale-Yavat,Pimpri,31.2378,76.0767,rural_two_lane,plain,alluvial,49.4,4940.0,1,1235.0,988.0,741.0,988.0,988.0
+Punjab,Ludhiana,Ukhale-Yavat,Yeola,31.007,75.859,state_highway,plain,alluvial,13.6,2720.0,1,680.0,544.0,408.0,544.0,544.0
+Punjab,Ludhiana,Ukhale-Yavat,Dhomni,31.2722,76.0237,rural_two_lane,plain,alluvial,50.9,5090.0,1,1272.5,1018.0,763.5,1018.0,1018.0
+Punjab,Ludhiana,Kolewadi-RV,Bodal,30.6734,76.2071,rural_two_lane,plain,alluvial,48.2,4820.0,1,1205.0,964.0,723.0,964.0,964.0
+Punjab,Ludhiana,Kolewadi-RV,Saswad,30.8866,76.0011,national_highway_4,plain,alluvial,15.9,3180.0,1,795.0,636.0,477.0,636.0,636.0
+Punjab,Ludhiana,Kolewadi-RV,Tisgaon,30.7707,76.3348,national_highway_4,plain,alluvial,55.1,11020.0,1,2755.0,2204.0,1653.0,2204.0,2204.0
+Punjab,Ludhiana,Dhomni Bk,Mhatari,30.5338,75.5166,state_highway,plain,alluvial,60.1,12020.0,1,3005.0,2404.0,1803.0,2404.0,2404.0
+Punjab,Ludhiana,Dhomni Bk,Wadgaon,30.6786,75.5627,rural_two_lane,plain,alluvial,43.1,4310.0,1,1077.5,862.0,646.5,862.0,862.0
+Punjab,Ludhiana,Dhomni Bk,Kinkhola,30.8909,75.4667,rural_two_lane,plain,alluvial,42.9,4290.0,1,1072.5,858.0,643.5,858.0,858.0
+Tamil Nadu,Madurai,Kadepur-Yavat,Kolhapur,10.2463,78.2962,rural_two_lane,plain,red,46.7,4903.5,1,1225.88,980.7,735.52,980.7,980.7
+Tamil Nadu,Madurai,Kadepur-Yavat,Kolewadi,10.2872,77.9191,state_highway,plain,red,52.8,11088.0,1,2772.0,2217.6,1663.2,2217.6,2217.6
+Tamil Nadu,Madurai,Kadepur-Yavat,Tumane,10.3961,78.1676,rural_two_lane,plain,red,60.6,6363.0,1,1590.75,1272.6,954.45,1272.6,1272.6
+Tamil Nadu,Madurai,Kelhi-RV,Wadali,9.8963,78.2287,rural_two_lane,plain,red,14.2,1491.0,1,372.75,298.2,223.65,298.2,298.2
+Tamil Nadu,Madurai,Kelhi-RV,Ukhale,9.6688,78.4123,rural_two_lane,plain,red,49.4,5187.0,1,1296.75,1037.4,778.05,1037.4,1037.4
+Tamil Nadu,Madurai,Kelhi-RV,Ambassa,9.6642,78.3016,state_highway,plain,red,40.5,8505.0,1,2126.25,1701.0,1275.75,1701.0,1701.0
+Tamil Nadu,Madurai,Shirude Bk,Kinkhola,9.8155,77.6929,rural_two_lane,plain,red,55.6,5838.0,1,1459.5,1167.6,875.7,1167.6,1167.6
+Tamil Nadu,Madurai,Shirude Bk,Kolhapur,9.7842,78.0205,rural_two_lane,plain,red,22.0,2310.0,1,577.5,462.0,346.5,462.0,462.0
+Tamil Nadu,Madurai,Shirude Bk,Dhomni,9.7794,77.7072,rural_two_lane,plain,red,55.3,5806.5,1,1451.62,1161.3,870.98,1161.3,1161.3
+Maharashtra,Mumbai City,Mhatari-Yavat,Vaduj,19.2716,72.8331,state_highway,plain,clay,25.6,5632.0,1,1408.0,1126.4,844.8,1126.4,1126.4
+Maharashtra,Mumbai City,Mhatari-Yavat,Pimpri,19.2904,73.0072,expressway_6,plain,clay,31.6,17380.0,1,4345.0,3476.0,2607.0,3476.0,3476.0
+Maharashtra,Mumbai City,Mhatari-Yavat,Bhamare,19.411,72.8732,national_highway_4,plain,clay,42.9,9438.0,1,2359.5,1887.6,1415.7,1887.6,1887.6
+Maharashtra,Mumbai City,Deulwada-RV,Tumane,18.7757,73.0708,rural_two_lane,plain,clay,45.0,4950.0,1,1237.5,990.0,742.5,990.0,990.0
+Maharashtra,Mumbai City,Deulwada-RV,Sonai,18.8143,73.0784,rural_two_lane,plain,clay,41.4,4554.0,1,1138.5,910.8,683.1,910.8,910.8
+Maharashtra,Mumbai City,Deulwada-RV,Kolhapur,19.0471,73.1925,rural_two_lane,plain,clay,38.3,4213.0,1,1053.25,842.6,631.95,842.6,842.6
+Maharashtra,Mumbai City,Harnai Bk,Arasgaon,18.9141,72.7295,rural_two_lane,plain,clay,27.4,3014.0,1,753.5,602.8,452.1,602.8,602.8
+Maharashtra,Mumbai City,Harnai Bk,Wadali,18.7903,72.5931,rural_two_lane,plain,clay,50.2,5522.0,1,1380.5,1104.4,828.3,1104.4,1104.4
+Maharashtra,Mumbai City,Harnai Bk,Tisgaon,18.9282,72.4196,rural_two_lane,plain,clay,58.6,6446.0,1,1611.5,1289.2,966.9,1289.2,1289.2
+Bihar,Muzaffarpur,Shirude-Yavat,Dhomni,26.4128,85.4356,rural_two_lane,plain,sandy,38.0,3990.0,1,997.5,798.0,598.5,798.0,798.0
+Bihar,Muzaffarpur,Shirude-Yavat,Yeola,26.1995,85.3722,rural_two_lane,plain,sandy,10.9,1144.5,1,286.12,228.9,171.68,228.9,228.9
+Bihar,Muzaffarpur,Shirude-Yavat,Wadgaon,26.1744,85.3986,rural_two_lane,plain,sandy,7.3,766.5,1,191.63,153.3,114.97,153.3,153.3
+Bihar,Muzaffarpur,Yeola-RV,Yeola,26.046,85.8099,rural_two_lane,plain,sandy,48.4,5082.0,1,1270.5,1016.4,762.3,1016.4,1016.4
+Bihar,Muzaffarpur,Yeola-RV,Kelhi,26.1126,85.621,state_highway,plain,sandy,25.8,5418.0,1,1354.5,1083.6,812.7,1083.6,1083.6
+Bihar,Muzaffarpur,Yeola-RV,Dhomni,26.0723,85.6012,national_highway_4,plain,sandy,24.2,5082.0,1,1270.5,1016.4,762.3,1016.4,1016.4
+Bihar,Muzaffarpur,Arasgaon Bk,Kolhapur,26.0302,85.1132,rural_two_lane,plain,sandy,34.5,3622.5,1,905.62,724.5,543.38,724.5,724.5
+Bihar,Muzaffarpur,Arasgaon Bk,Arasgaon,25.9759,85.2744,rural_two_lane,plain,sandy,23.0,2415.0,1,603.75,483.0,362.25,483.0,483.0
+Bihar,Muzaffarpur,Arasgaon Bk,Sonai,26.101,85.1138,state_highway,plain,sandy,32.6,6846.0,1,1711.5,1369.2,1026.9,1369.2,1369.2
+Karnataka,Mysuru,Palkhi-Yavat,Kinkhola,12.4426,76.6227,rural_two_lane,plain,clay,18.9,2079.0,1,519.75,415.8,311.85,415.8,415.8
+Karnataka,Mysuru,Palkhi-Yavat,Arasgaon,12.737,76.7252,state_highway,plain,clay,57.5,12650.0,1,3162.5,2530.0,1897.5,2530.0,2530.0
+Karnataka,Mysuru,Palkhi-Yavat,Kharakala,12.3472,76.6671,rural_two_lane,plain,clay,7.4,814.0,1,203.5,162.8,122.1,162.8,162.8
+Karnataka,Mysuru,Vaduj-RV,Morbadi,12.0895,76.8141,rural_two_lane,plain,clay,34.3,3773.0,1,943.25,754.6,565.95,754.6,754.6
+Karnataka,Mysuru,Vaduj-RV,Kusumta,12.29,76.6891,national_highway_4,plain,clay,6.3,1386.0,1,346.5,277.2,207.9,277.2,277.2
+Karnataka,Mysuru,Vaduj-RV,Sawana,12.2427,76.7611,rural_two_lane,plain,clay,16.7,1837.0,1,459.25,367.4,275.55,367.4,367.4
+Karnataka,Mysuru,Shirval Bk,Pimpri,12.0146,76.3439,rural_two_lane,plain,clay,51.6,5676.0,1,1419.0,1135.2,851.4,1135.2,1135.2
+Karnataka,Mysuru,Shirval Bk,Mhatari,12.2911,76.511,national_highway_4,plain,clay,16.1,3542.0,1,885.5,708.4,531.3,708.4,708.4
+Karnataka,Mysuru,Shirval Bk,Arasgaon,12.1818,76.5564,rural_two_lane,plain,clay,17.9,1969.0,1,492.25,393.8,295.35,393.8,393.8
+Maharashtra,Nagpur,Kolhapur-Yavat,Mhatari,21.421,78.961,rural_two_lane,plain,black_cotton,38.3,4213.0,1,1053.25,842.6,631.95,842.6,842.6
+Maharashtra,Nagpur,Kolhapur-Yavat,Deulwada,21.2858,79.0922,rural_two_lane,plain,black_cotton,17.9,1969.0,1,492.25,393.8,295.35,393.8,393.8
+Maharashtra,Nagpur,Kolhapur-Yavat,Mordad,21.4002,79.1548,state_highway,plain,black_cotton,33.5,7370.0,1,1842.5,1474.0,1105.5,1474.0,1474.0
+Maharashtra,Nagpur,Mordad-RV,Ghoti,20.8684,79.5095,rural_two_lane,plain,black_cotton,61.6,6776.0,1,1694.0,1355.2,1016.4,1355.2,1355.2
+Maharashtra,Nagpur,Mordad-RV,Arasgaon,21.1065,79.4736,state_highway,plain,black_cotton,46.3,10186.0,1,2546.5,2037.2,1527.9,2037.2,2037.2
+Maharashtra,Nagpur,Mordad-RV,Shirval,21.0966,79.1644,state_highway,plain,black_cotton,11.1,2442.0,1,610.5,488.4,366.3,488.4,488.4
+Maharashtra,Nagpur,Pimpalgaon Bk,Kadepur,20.8847,78.7021,rural_two_lane,plain,black_cotton,57.0,6270.0,1,1567.5,1254.0,940.5,1254.0,1254.0
+Maharashtra,Nagpur,Pimpalgaon Bk,Ukhale,20.9676,78.6697,state_highway,plain,black_cotton,54.9,12078.0,1,3019.5,2415.6,1811.7,2415.6,2415.6
+Maharashtra,Nagpur,Pimpalgaon Bk,Tisgaon,21.0705,78.7151,state_highway,plain,black_cotton,45.6,10032.0,1,2508.0,2006.4,1504.8,2006.4,2006.4
+Maharashtra,Nashik,Kinkhola-Yavat,Mhatari,20.1698,73.7843,rural_two_lane,ghat,black_cotton,22.1,3160.3,1,790.07,632.06,474.05,632.06,632.06
+Maharashtra,Nashik,Kinkhola-Yavat,Wadali,20.2173,73.6915,state_highway,ghat,black_cotton,30.5,8723.0,1,2180.75,1744.6,1308.45,1744.6,1744.6
+Maharashtra,Nashik,Kinkhola-Yavat,Ukhale,20.4139,73.9388,rural_two_lane,ghat,black_cotton,56.2,8036.6,2,2009.15,1607.32,1205.49,1607.32,1607.32
+Maharashtra,Nashik,Kolhapur-RV,Pimpri,19.6937,74.1169,rural_two_lane,ghat,black_cotton,55.3,7907.9,2,1976.98,1581.58,1186.18,1581.58,1581.58
+Maharashtra,Nashik,Kolhapur-RV,Wadgaon,19.9343,73.9861,state_highway,ghat,black_cotton,25.0,7150.0,1,1787.5,1430.0,1072.5,1430.0,1430.0
+Maharashtra,Nashik,Kolhapur-RV,Tumane,19.9454,73.8247,rural_two_lane,ghat,black_cotton,7.9,1129.7,1,282.42,225.94,169.46,225.94,225.94
+Maharashtra,Nashik,Saswad Bk,Parnera,19.9369,73.7241,rural_two_lane,ghat,black_cotton,11.1,1587.3,1,396.83,317.46,238.09,317.46,317.46
+Maharashtra,Nashik,Saswad Bk,Harnai,19.891,73.6124,rural_two_lane,ghat,black_cotton,25.3,3617.9,1,904.48,723.58,542.68,723.58,723.58
+Maharashtra,Nashik,Saswad Bk,Kinkhola,19.8248,73.4796,rural_two_lane,ghat,black_cotton,43.4,6206.2,1,1551.55,1241.24,930.93,1241.24,1241.24
+Delhi,New Delhi,Arasgaon-Yavat,Kinkhola,28.7315,77.2061,national_highway_4,plain,alluvial,15.1,3020.0,1,755.0,604.0,453.0,604.0,604.0
+Delhi,New Delhi,Arasgaon-Yavat,Ambassa,29.0061,77.161,rural_two_lane,plain,alluvial,50.5,5050.0,1,1262.5,1010.0,757.5,1010.0,1010.0
+Delhi,New Delhi,Arasgaon-Yavat,Sawana,28.7501,77.2214,rural_two_lane,plain,alluvial,17.5,1750.0,1,437.5,350.0,262.5,350.0,350.0
+Delhi,New Delhi,Palkhi-RV,Yeola,28.5804,77.7161,national_highway_4,plain,alluvial,57.1,11420.0,1,2855.0,2284.0,1713.0,2284.0,2284.0
+Delhi,New Delhi,Palkhi-RV,Kundmukhi,28.2228,77.533,national_highway_4,plain,alluvial,61.9,12380.0,1,3095.0,2476.0,1857.0,2476.0,2476.0
+Delhi,New Delhi,Palkhi-RV,Kusumta,28.5194,77.4033,national_highway_4,plain,alluvial,25.0,5000.0,1,1250.0,1000.0,750.0,1000.0,1000.0
+Delhi,New Delhi,Ghoti Bk,Bodal,28.5674,77.0886,state_highway,plain,alluvial,14.8,2960.0,1,740.0,592.0,444.0,592.0,592.0
+Delhi,New Delhi,Ghoti Bk,Kusumta,28.5192,76.7524,rural_two_lane,plain,alluvial,52.7,5270.0,1,1317.5,1054.0,790.5,1054.0,1054.0
+Delhi,New Delhi,Ghoti Bk,Bhamare,28.5634,76.7727,state_highway,plain,alluvial,49.5,9900.0,1,2475.0,1980.0,1485.0,1980.0,1980.0
+Telangana,Nizamabad,Kolhapur-Yavat,Kusumta,18.8911,78.0802,state_highway,plain,red,28.1,5901.0,1,1475.25,1180.2,885.15,1180.2,1180.2
+Telangana,Nizamabad,Kolhapur-Yavat,Saswad,19.0261,77.8857,rural_two_lane,plain,red,51.9,5449.5,1,1362.38,1089.9,817.42,1089.9,1089.9
+Telangana,Nizamabad,Kolhapur-Yavat,Kharakala,19.0202,78.2082,state_highway,plain,red,46.6,9786.0,1,2446.5,1957.2,1467.9,1957.2,1957.2
+Telangana,Nizamabad,Dhomni-RV,Kinkhola,18.6347,78.1595,national_highway_4,plain,red,9.3,1953.0,1,488.25,390.6,292.95,390.6,390.6
+Telangana,Nizamabad,Dhomni-RV,Kharakala,18.4636,78.4233,state_highway,plain,red,48.0,10080.0,1,2520.0,2016.0,1512.0,2016.0,2016.0
+Telangana,Nizamabad,Dhomni-RV,Kusumta,18.5461,78.3399,national_highway_4,plain,red,33.9,7119.0,1,1779.75,1423.8,1067.85,1423.8,1423.8
+Telangana,Nizamabad,Saswad Bk,Pimpri,18.4671,77.7494,national_highway_4,plain,red,49.4,10374.0,1,2593.5,2074.8,1556.1,2074.8,2074.8
+Telangana,Nizamabad,Saswad Bk,Kinkhola,18.3722,77.707,rural_two_lane,plain,red,60.7,6373.5,1,1593.38,1274.7,956.02,1274.7,1274.7
+Telangana,Nizamabad,Saswad Bk,Yeola,18.6363,78.0389,national_highway_4,plain,red,8.1,1701.0,1,425.25,340.2,255.15,340.2,340.2
+West Bengal,Paschim Medinipur,Tumane-Yavat,Parnera,22.6667,87.3297,state_highway,plain,laterite,30.4,6384.0,1,1596.0,1276.8,957.6,1276.8,1276.8
+West Bengal,Paschim Medinipur,Tumane-Yavat,Kelhi,22.6313,87.3114,state_highway,plain,laterite,25.5,5355.0,1,1338.75,1071.0,803.25,1071.0,1071.0
+West Bengal,Paschim Medinipur,Tumane-Yavat,Pimpalgaon,22.6992,87.1941,state_highway,plain,laterite,35.0,7350.0,1,1837.5,1470.0,1102.5,1470.0,1470.0
+West Bengal,Paschim Medinipur,Kusumta-RV,Bodal,22.2169,87.6546,rural_two_lane,plain,laterite,53.2,5586.0,1,1396.5,1117.2,837.9,1117.2,1117.2
+West Bengal,Paschim Medinipur,Kusumta-RV,Kolewadi,22.3222,87.7904,rural_two_lane,plain,laterite,63.0,6615.0,1,1653.75,1323.0,992.25,1323.0,1323.0
+West Bengal,Paschim Medinipur,Kusumta-RV,Pimpalgaon,22.3083,87.4586,expressway_6,plain,laterite,27.4,14385.0,1,3596.25,2877.0,2157.75,2877.0,2877.0
+West Bengal,Paschim Medinipur,Morbadi Bk,Deulwada,22.3403,86.8091,state_highway,plain,laterite,56.1,11781.0,1,2945.25,2356.2,1767.15,2356.2,2356.2
+West Bengal,Paschim Medinipur,Morbadi Bk,Shirude,22.3605,87.2205,national_highway_4,plain,laterite,11.3,2373.0,1,593.25,474.6,355.95,474.6,474.6
+West Bengal,Paschim Medinipur,Morbadi Bk,Kolhapur,22.4349,87.1813,rural_two_lane,plain,laterite,10.7,1123.5,1,280.87,224.7,168.53,224.7,224.7
+Bihar,Patna,Ukhale-Yavat,Vaduj,26.0495,85.1004,state_highway,plain,alluvial,58.4,11680.0,1,2920.0,2336.0,1752.0,2336.0,2336.0
+Bihar,Patna,Ukhale-Yavat,Ambassa,25.6826,85.1545,rural_two_lane,plain,alluvial,11.5,1150.0,1,287.5,230.0,172.5,230.0,230.0
+Bihar,Patna,Ukhale-Yavat,Bhamare,25.6927,85.1812,state_highway,plain,alluvial,13.6,2720.0,1,680.0,544.0,408.0,544.0,544.0
+Bihar,Patna,Kolhapur-RV,Kharakala,25.4806,85.4603,expressway_6,plain,alluvial,40.0,20000.0,1,5000.0,4000.0,3000.0,4000.0,4000.0
+Bihar,Patna,Kolhapur-RV,Kelhi,25.3255,85.5292,rural_two_lane,plain,alluvial,56.8,5680.0,1,1420.0,1136.0,852.0,1136.0,1136.0
+Bihar,Patna,Kolhapur-RV,Kundmukhi,25.4793,85.6656,expressway_6,plain,alluvial,62.7,31350.0,1,7837.5,6270.0,4702.5,6270.0,6270.0
+Bihar,Patna,Bodal Bk,Kharakala,25.4702,84.969,national_highway_4,plain,alluvial,25.1,5020.0,1,1255.0,1004.0,753.0,1004.0,1004.0
+Bihar,Patna,Bodal Bk,Ghoti,25.5736,85.0112,state_highway,plain,alluvial,14.8,2960.0,1,740.0,592.0,444.0,592.0,592.0
+Bihar,Patna,Bodal Bk,Dhomni,25.4548,84.8789,national_highway_4,plain,alluvial,34.8,6960.0,1,1740.0,1392.0,1044.0,1392.0,1392.0
+Uttar Pradesh,Prayagraj,Saswad-Yavat,Arasgaon,25.7518,81.6631,national_highway_4,plain,alluvial,45.6,9120.0,1,2280.0,1824.0,1368.0,1824.0,1824.0
+Uttar Pradesh,Prayagraj,Saswad-Yavat,Palkhi,25.6184,81.9596,state_highway,plain,alluvial,26.8,5360.0,1,1340.0,1072.0,804.0,1072.0,1072.0
+Uttar Pradesh,Prayagraj,Saswad-Yavat,Pimpri,25.8864,81.8873,state_highway,plain,alluvial,57.9,11580.0,1,2895.0,2316.0,1737.0,2316.0,2316.0
+Uttar Pradesh,Prayagraj,Yeola-RV,Deulwada,25.2714,81.9579,rural_two_lane,plain,alluvial,24.7,2470.0,1,617.5,494.0,370.5,494.0,494.0
+Uttar Pradesh,Prayagraj,Yeola-RV,Tumane,25.1139,82.1643,rural_two_lane,plain,alluvial,55.2,5520.0,1,1380.0,1104.0,828.0,1104.0,1104.0
+Uttar Pradesh,Prayagraj,Yeola-RV,Dhomni,25.3938,81.8759,rural_two_lane,plain,alluvial,6.4,640.0,1,160.0,128.0,96.0,128.0,128.0
+Uttar Pradesh,Prayagraj,Ukhale Bk,Bhamare,25.2892,81.6695,rural_two_lane,plain,alluvial,27.8,2780.0,1,695.0,556.0,417.0,556.0,556.0
+Uttar Pradesh,Prayagraj,Ukhale Bk,Pimpalgaon,25.3282,81.5226,state_highway,plain,alluvial,39.9,7980.0,1,1995.0,1596.0,1197.0,1596.0,1596.0
+Uttar Pradesh,Prayagraj,Ukhale Bk,Ukhale,25.2908,81.6433,rural_two_lane,plain,alluvial,29.9,2990.0,1,747.5,598.0,448.5,598.0,598.0
+Maharashtra,Pune,Pimpri-Yavat,Ukhale,18.6824,73.9468,state_highway,ghat,black_cotton,23.4,6692.4,1,1673.1,1338.48,1003.86,1338.48,1338.48
+Maharashtra,Pune,Pimpri-Yavat,Shirude,18.9311,73.8448,national_highway_4,ghat,black_cotton,52.6,15043.6,2,3760.9,3008.72,2256.54,3008.72,3008.72
+Maharashtra,Pune,Pimpri-Yavat,Ghoti,18.7983,73.764,national_highway_4,ghat,black_cotton,37.3,10667.8,1,2666.95,2133.56,1600.17,2133.56,2133.56
+Maharashtra,Pune,Parnera-RV,Kadepur,18.3967,73.9702,state_highway,ghat,black_cotton,21.0,6006.0,1,1501.5,1201.2,900.9,1201.2,1201.2
+Maharashtra,Pune,Parnera-RV,Mhatari,18.4632,74.0342,state_highway,ghat,black_cotton,22.8,6520.8,1,1630.2,1304.16,978.12,1304.16,1304.16
+Maharashtra,Pune,Parnera-RV,Shirval,18.4227,74.214,state_highway,ghat,black_cotton,45.1,12898.6,1,3224.65,2579.72,1934.79,2579.72,2579.72
+Maharashtra,Pune,Arasgaon Bk,Ghoti,18.4194,73.6634,state_highway,ghat,black_cotton,26.8,7664.8,1,1916.2,1532.96,1149.72,1532.96,1532.96
+Maharashtra,Pune,Arasgaon Bk,Parnera,18.1056,73.5793,rural_two_lane,ghat,black_cotton,62.9,8994.7,2,2248.68,1798.94,1349.2,1798.94,1798.94
+Maharashtra,Pune,Arasgaon Bk,Wadali,18.4772,73.7488,state_highway,ghat,black_cotton,14.2,4061.2,1,1015.3,812.24,609.18,812.24,812.24
+Gujarat,Rajkot,Shirude-Yavat,Parnera,22.6344,70.647,state_highway,plain,sandy,51.4,10794.0,1,2698.5,2158.8,1619.1,2158.8,2158.8
+Gujarat,Rajkot,Shirude-Yavat,Ambassa,22.4776,70.7624,rural_two_lane,plain,sandy,28.6,3003.0,1,750.75,600.6,450.45,600.6,600.6
+Gujarat,Rajkot,Shirude-Yavat,Dhomni,22.695,70.9423,rural_two_lane,plain,sandy,58.9,6184.5,1,1546.13,1236.9,927.67,1236.9,1236.9
+Gujarat,Rajkot,Morbadi-RV,Ambassa,22.1014,71.1635,rural_two_lane,plain,sandy,48.2,5061.0,1,1265.25,1012.2,759.15,1012.2,1012.2
+Gujarat,Rajkot,Morbadi-RV,Kelhi,22.2197,71.165,state_highway,plain,sandy,44.4,9324.0,1,2331.0,1864.8,1398.6,1864.8,1864.8
+Gujarat,Rajkot,Morbadi-RV,Kadepur,22.0386,71.0561,rural_two_lane,plain,sandy,41.8,4389.0,1,1097.25,877.8,658.35,877.8,877.8
+Gujarat,Rajkot,Vaduj Bk,Ganeri,22.1912,70.5118,rural_two_lane,plain,sandy,34.2,3591.0,1,897.75,718.2,538.65,718.2,718.2
+Gujarat,Rajkot,Vaduj Bk,Pimpri,22.1804,70.6705,national_highway_4,plain,sandy,17.4,3654.0,1,913.5,730.8,548.1,730.8,730.8
+Gujarat,Rajkot,Vaduj Bk,Saswad,22.1436,70.4616,state_highway,plain,sandy,41.7,8757.0,1,2189.25,1751.4,1313.55,1751.4,1751.4
+Tamil Nadu,Salem,Harnai-Yavat,Wadgaon,12.1412,78.0662,rural_two_lane,hilly,rocky,61.9,9285.0,2,2321.25,1857.0,1392.75,1857.0,1857.0
+Tamil Nadu,Salem,Harnai-Yavat,Harnai,11.8308,78.1409,state_highway,hilly,rocky,21.3,6390.0,1,1597.5,1278.0,958.5,1278.0,1278.0
+Tamil Nadu,Salem,Harnai-Yavat,Ganeri,11.8708,78.261,rural_two_lane,hilly,rocky,30.1,4515.0,1,1128.75,903.0,677.25,903.0,903.0
+Tamil Nadu,Salem,Vaduj-RV,Harnai,11.6582,78.1888,state_highway,hilly,rocky,5.4,1620.0,1,405.0,324.0,243.0,324.0,324.0
+Tamil Nadu,Salem,Vaduj-RV,Dhomni,11.5332,78.2366,state_highway,hilly,rocky,20.2,6060.0,1,1515.0,1212.0,909.0,1212.0,1212.0
+Tamil Nadu,Salem,Vaduj-RV,Tumane,11.486,78.3732,national_highway_4,hilly,rocky,36.5,10950.0,1,2737.5,2190.0,1642.5,2190.0,2190.0
+Tamil Nadu,Salem,Kolhapur Bk,Sonai,11.5062,77.9081,state_highway,hilly,rocky,36.1,10830.0,1,2707.5,2166.0,1624.5,2166.0,2166.0
+Tamil Nadu,Salem,Kolhapur Bk,Morbadi,11.5773,78.0923,state_highway,hilly,rocky,13.0,3900.0,1,975.0,780.0,585.0,780.0,780.0
+Tamil Nadu,Salem,Kolhapur Bk,Arasgaon,11.3696,77.9028,state_highway,hilly,rocky,48.5,14550.0,2,3637.5,2910.0,2182.5,2910.0,2910.0
+Gujarat,Surat,Palkhi-Yavat,Mhatari,21.4801,72.9934,expressway_6,plain,black_cotton,44.4,24420.0,1,6105.0,4884.0,3663.0,4884.0,4884.0
+Gujarat,Surat,Palkhi-Yavat,Pimpalgaon,21.2469,72.8206,rural_two_lane,plain,black_cotton,10.2,1122.0,1,280.5,224.4,168.3,224.4,224.4
+Gujarat,Surat,Palkhi-Yavat,Kinkhola,21.3688,72.9465,rural_two_lane,plain,black_cotton,29.2,3212.0,1,803.0,642.4,481.8,642.4,642.4
+Gujarat,Surat,Kadepur-RV,Pimpalgaon,21.158,72.9665,expressway_6,plain,black_cotton,16.2,8910.0,1,2227.5,1782.0,1336.5,1782.0,1782.0
+Gujarat,Surat,Kadepur-RV,Pimpri,21.1406,72.8774,rural_two_lane,plain,black_cotton,6.5,715.0,1,178.75,143.0,107.25,143.0,143.0
+Gujarat,Surat,Kadepur-RV,Deulwada,21.0894,73.0168,rural_two_lane,plain,black_cotton,24.3,2673.0,1,668.25,534.6,400.95,534.6,534.6
+Gujarat,Surat,Kolhapur Bk,Kelhi,20.8875,72.5356,state_highway,plain,black_cotton,50.3,11066.0,1,2766.5,2213.2,1659.9,2213.2,2213.2
+Gujarat,Surat,Kolhapur Bk,Sawana,20.8457,72.5352,national_highway_4,plain,black_cotton,54.3,11946.0,1,2986.5,2389.2,1791.9,2389.2,2389.2
+Gujarat,Surat,Kolhapur Bk,Tumane,21.1129,72.7044,rural_two_lane,plain,black_cotton,16.7,1837.0,1,459.25,367.4,275.55,367.4,367.4
+Maharashtra,Thane,Wadgaon-Yavat,Kolewadi,19.5933,72.8541,national_highway_4,plain,laterite,52.7,11067.0,1,2766.75,2213.4,1660.05,2213.4,2213.4
+Maharashtra,Thane,Wadgaon-Yavat,Bhamare,19.3947,73.0263,state_highway,plain,laterite,26.1,5481.0,1,1370.25,1096.2,822.15,1096.2,1096.2
+Maharashtra,Thane,Wadgaon-Yavat,Kinkhola,19.397,72.8714,state_highway,plain,laterite,28.3,5943.0,1,1485.75,1188.6,891.45,1188.6,1188.6
+Maharashtra,Thane,Bhamare-RV,Mordad,18.9103,73.228,rural_two_lane,plain,laterite,48.0,5040.0,1,1260.0,1008.0,756.0,1008.0,1008.0
+Maharashtra,Thane,Bhamare-RV,Kharakala,19.1837,73.0303,national_highway_4,plain,laterite,7.3,1533.0,1,383.25,306.6,229.95,306.6,306.6
+Maharashtra,Thane,Bhamare-RV,Sonai,18.8948,73.2607,rural_two_lane,plain,laterite,52.1,5470.5,1,1367.62,1094.1,820.58,1094.1,1094.1
+Maharashtra,Thane,Pimpri Bk,Wadgaon,19.1664,72.8389,rural_two_lane,plain,laterite,16.6,1743.0,1,435.75,348.6,261.45,348.6,348.6
+Maharashtra,Thane,Pimpri Bk,Pimpri,19.177,72.8838,state_highway,plain,laterite,11.0,2310.0,1,577.5,462.0,346.5,462.0,462.0
+Maharashtra,Thane,Pimpri Bk,Morbadi,19.0527,72.8365,rural_two_lane,plain,laterite,24.7,2593.5,1,648.38,518.7,389.02,518.7,518.7
+Kerala,Thiruvananthapuram,Sonai-Yavat,Sawana,8.6578,76.9477,rural_two_lane,plain,laterite,17.2,1806.0,1,451.5,361.2,270.9,361.2,361.2
+Kerala,Thiruvananthapuram,Sonai-Yavat,Kharakala,8.9774,77.1147,rural_two_lane,plain,laterite,62.2,6531.0,1,1632.75,1306.2,979.65,1306.2,1306.2
+Kerala,Thiruvananthapuram,Sonai-Yavat,Kolhapur,8.6317,76.9643,state_highway,plain,laterite,14.2,2982.0,1,745.5,596.4,447.3,596.4,596.4
+Kerala,Thiruvananthapuram,Dhomni-RV,Ganeri,8.4178,77.3636,rural_two_lane,plain,laterite,55.7,5848.5,1,1462.13,1169.7,877.27,1169.7,1169.7
+Kerala,Thiruvananthapuram,Dhomni-RV,Deulwada,8.5129,77.1998,national_highway_4,plain,laterite,33.3,6993.0,1,1748.25,1398.6,1048.95,1398.6,1398.6
+Kerala,Thiruvananthapuram,Dhomni-RV,Wadgaon,8.4094,77.2877,state_highway,plain,laterite,46.8,9828.0,1,2457.0,1965.6,1474.2,1965.6,1965.6
+Kerala,Thiruvananthapuram,Morbadi Bk,Palkhi,8.4014,76.7274,state_highway,plain,laterite,30.8,6468.0,1,1617.0,1293.6,970.2,1293.6,1293.6
+Kerala,Thiruvananthapuram,Morbadi Bk,Morbadi,8.4686,76.7731,state_highway,plain,laterite,21.9,4599.0,1,1149.75,919.8,689.85,919.8,919.8
+Kerala,Thiruvananthapuram,Morbadi Bk,Ambassa,8.4414,76.7991,rural_two_lane,plain,laterite,20.4,2142.0,1,535.5,428.4,321.3,428.4,428.4
+Andhra Pradesh,Tirupati,Ukhale-Yavat,Ganeri,13.8014,79.4897,rural_two_lane,hilly,red,23.8,3123.8,1,780.95,624.76,468.57,624.76,624.76
+Andhra Pradesh,Tirupati,Ukhale-Yavat,Harnai,13.7701,79.4131,rural_two_lane,hilly,red,18.1,2375.6,1,593.9,475.12,356.34,475.12,475.12
+Andhra Pradesh,Tirupati,Ukhale-Yavat,Kolewadi,14.0165,79.6115,state_highway,hilly,red,55.1,14463.8,2,3615.95,2892.76,2169.57,2892.76,2892.76
+Andhra Pradesh,Tirupati,Pimpri-RV,Kusumta,13.4113,79.6198,national_highway_4,hilly,red,37.4,9817.5,1,2454.38,1963.5,1472.62,1963.5,1963.5
+Andhra Pradesh,Tirupati,Pimpri-RV,Palkhi,13.5673,79.8944,rural_two_lane,hilly,red,59.6,7822.5,2,1955.62,1564.5,1173.38,1564.5,1564.5
+Andhra Pradesh,Tirupati,Pimpri-RV,Shirude,13.3037,79.6577,rural_two_lane,hilly,red,51.1,6706.9,2,1676.73,1341.38,1006.03,1341.38,1341.38
+Andhra Pradesh,Tirupati,Tisgaon Bk,Vaduj,13.5855,79.3043,rural_two_lane,hilly,red,15.3,2008.1,1,502.03,401.62,301.21,401.62,401.62
+Andhra Pradesh,Tirupati,Tisgaon Bk,Kusumta,13.4898,78.9451,national_highway_4,hilly,red,61.6,16170.0,2,4042.5,3234.0,2425.5,3234.0,3234.0
+Andhra Pradesh,Tirupati,Tisgaon Bk,Sawana,13.5782,79.334,national_highway_4,hilly,red,12.4,3255.0,1,813.75,651.0,488.25,651.0,651.0
+Rajasthan,Udaipur,Tisgaon-Yavat,Arasgaon,24.7132,73.7846,national_highway_4,hilly,rocky,18.4,5520.0,1,1380.0,1104.0,828.0,1104.0,1104.0
+Rajasthan,Udaipur,Tisgaon-Yavat,Deulwada,24.9897,73.7606,national_highway_4,hilly,rocky,52.0,15600.0,2,3900.0,3120.0,2340.0,3120.0,3120.0
+Rajasthan,Udaipur,Tisgaon-Yavat,Dhomni,24.9433,73.9121,national_highway_4,hilly,rocky,51.3,15390.0,2,3847.5,3078.0,2308.5,3078.0,3078.0
+Rajasthan,Udaipur,Ghoti-RV,Kolhapur,24.4972,73.8428,rural_two_lane,hilly,rocky,18.9,2835.0,1,708.75,567.0,425.25,567.0,567.0
+Rajasthan,Udaipur,Ghoti-RV,Deulwada,24.2817,73.9184,national_highway_4,hilly,rocky,45.7,13710.0,2,3427.5,2742.0,2056.5,2742.0,2742.0
+Rajasthan,Udaipur,Ghoti-RV,Shirude,24.456,73.8627,state_highway,hilly,rocky,24.1,7230.0,1,1807.5,1446.0,1084.5,1446.0,1446.0
+Rajasthan,Udaipur,Dhomni Bk,Ganeri,24.518,73.5058,state_highway,hilly,rocky,25.6,7680.0,1,1920.0,1536.0,1152.0,1536.0,1536.0
+Rajasthan,Udaipur,Dhomni Bk,Tisgaon,24.5376,73.5596,state_highway,hilly,rocky,18.8,5640.0,1,1410.0,1128.0,846.0,1128.0,1128.0
+Rajasthan,Udaipur,Dhomni Bk,Ambassa,24.2976,73.281,rural_two_lane,hilly,rocky,62.3,9345.0,2,2336.25,1869.0,1401.75,1869.0,1869.0
+Gujarat,Vadodara,Palkhi-Yavat,Shirude,22.4099,73.1378,national_highway_4,plain,black_cotton,14.1,3102.0,1,775.5,620.4,465.3,620.4,620.4
+Gujarat,Vadodara,Palkhi-Yavat,Kadepur,22.6529,73.3213,state_highway,plain,black_cotton,47.2,10384.0,1,2596.0,2076.8,1557.6,2076.8,2076.8
+Gujarat,Vadodara,Palkhi-Yavat,Dhomni,22.4384,73.1534,rural_two_lane,plain,black_cotton,17.1,1881.0,1,470.25,376.2,282.15,376.2,376.2
+Gujarat,Vadodara,Kelhi-RV,Parnera,22.238,73.2678,national_highway_4,plain,black_cotton,13.6,2992.0,1,748.0,598.4,448.8,598.4,598.4
+Gujarat,Vadodara,Kelhi-RV,Bhamare,22.1871,73.4308,rural_two_lane,plain,black_cotton,33.3,3663.0,1,915.75,732.6,549.45,732.6,732.6
+Gujarat,Vadodara,Kelhi-RV,Pimpri,22.2772,73.5258,national_highway_4,plain,black_cotton,41.0,9020.0,1,2255.0,1804.0,1353.0,1804.0,1804.0
+Gujarat,Vadodara,Pimpri Bk,Palkhi,22.2843,73.1181,rural_two_lane,plain,black_cotton,8.0,880.0,1,220.0,176.0,132.0,176.0,176.0
+Gujarat,Vadodara,Pimpri Bk,Pimpalgaon,22.2893,73.1221,rural_two_lane,plain,black_cotton,7.4,814.0,1,203.5,162.8,122.1,162.8,162.8
+Gujarat,Vadodara,Pimpri Bk,Shirval,22.0837,72.7543,rural_two_lane,plain,black_cotton,58.1,6391.0,1,1597.75,1278.2,958.65,1278.2,1278.2
+Uttar Pradesh,Varanasi,Kolewadi-Yavat,Pimpri,25.6707,83.1671,state_highway,plain,sandy,50.4,10584.0,1,2646.0,2116.8,1587.6,2116.8,2116.8
+Uttar Pradesh,Varanasi,Kolewadi-Yavat,Pimpalgaon,25.6125,82.9711,national_highway_4,plain,sandy,37.7,7917.0,1,1979.25,1583.4,1187.55,1583.4,1583.4
+Uttar Pradesh,Varanasi,Kolewadi-Yavat,Kusumta,25.4817,82.9096,state_highway,plain,sandy,22.3,4683.0,1,1170.75,936.6,702.45,936.6,936.6
+Uttar Pradesh,Varanasi,Saswad-RV,Ambassa,25.2163,83.1051,rural_two_lane,plain,sandy,20.0,2100.0,1,525.0,420.0,315.0,420.0,420.0
+Uttar Pradesh,Varanasi,Saswad-RV,Ghoti,25.1678,83.3023,national_highway_4,plain,sandy,42.6,8946.0,1,2236.5,1789.2,1341.9,1789.2,1789.2
+Uttar Pradesh,Varanasi,Saswad-RV,Deulwada,24.9607,83.3452,national_highway_4,plain,sandy,62.7,13167.0,1,3291.75,2633.4,1975.05,2633.4,2633.4
+Uttar Pradesh,Varanasi,Kusumta Bk,Arasgaon,25.1772,82.5488,national_highway_4,plain,sandy,52.4,11004.0,1,2751.0,2200.8,1650.6,2200.8,2200.8
+Uttar Pradesh,Varanasi,Kusumta Bk,Ganeri,25.3036,82.7671,national_highway_4,plain,sandy,24.0,5040.0,1,1260.0,1008.0,756.0,1008.0,1008.0
+Uttar Pradesh,Varanasi,Kusumta Bk,Ambassa,25.1267,82.5429,state_highway,plain,sandy,55.6,11676.0,1,2919.0,2335.2,1751.4,2335.2,2335.2
+Andhra Pradesh,Vijayawada,Palkhi-Yavat,Saswad,16.8935,80.6211,rural_two_lane,plain,clay,49.7,5467.0,1,1366.75,1093.4,820.05,1093.4,1093.4
+Andhra Pradesh,Vijayawada,Palkhi-Yavat,Parnera,16.5574,80.6569,state_highway,plain,clay,6.6,1452.0,1,363.0,290.4,217.8,290.4,290.4
+Andhra Pradesh,Vijayawada,Palkhi-Yavat,Shirval,16.851,80.4806,state_highway,plain,clay,48.7,10714.0,1,2678.5,2142.8,1607.1,2142.8,2142.8
+Andhra Pradesh,Vijayawada,Kinkhola-RV,Tisgaon,16.2074,81.0383,rural_two_lane,plain,clay,61.2,6732.0,1,1683.0,1346.4,1009.8,1346.4,1346.4
+Andhra Pradesh,Vijayawada,Kinkhola-RV,Sawana,16.455,80.6822,rural_two_lane,plain,clay,7.7,847.0,1,211.75,169.4,127.05,169.4,169.4
+Andhra Pradesh,Vijayawada,Kinkhola-RV,Arasgaon,16.411,80.9713,national_highway_4,plain,clay,41.4,9108.0,1,2277.0,1821.6,1366.2,1821.6,1821.6
+Andhra Pradesh,Vijayawada,Kadepur Bk,Mhatari,16.4121,80.5852,rural_two_lane,plain,clay,14.4,1584.0,1,396.0,316.8,237.6,316.8,316.8
+Andhra Pradesh,Vijayawada,Kadepur Bk,Vaduj,16.387,80.284,state_highway,plain,clay,47.3,10406.0,1,2601.5,2081.2,1560.9,2081.2,2081.2
+Andhra Pradesh,Vijayawada,Kadepur Bk,Saswad,16.4454,80.5942,state_highway,plain,clay,10.3,2266.0,1,566.5,453.2,339.9,453.2,453.2
+Andhra Pradesh,Visakhapatnam,Tisgaon-Yavat,Shirval,18.0573,83.0892,state_highway,ghat,laterite,50.0,13650.0,2,3412.5,2730.0,2047.5,2730.0,2730.0
+Andhra Pradesh,Visakhapatnam,Tisgaon-Yavat,Tisgaon,17.8988,83.1451,rural_two_lane,ghat,laterite,28.6,3903.9,1,975.97,780.78,585.59,780.78,780.78
+Andhra Pradesh,Visakhapatnam,Tisgaon-Yavat,Morbadi,18.0125,83.3236,rural_two_lane,ghat,laterite,43.6,5951.4,1,1487.85,1190.28,892.71,1190.28,1190.28
+Andhra Pradesh,Visakhapatnam,Saswad-RV,Kolhapur,17.6233,83.5952,national_highway_4,ghat,laterite,46.7,12749.1,2,3187.27,2549.82,1912.37,2549.82,2549.82
+Andhra Pradesh,Visakhapatnam,Saswad-RV,Bhamare,17.5002,83.4588,rural_two_lane,ghat,laterite,37.8,5159.7,1,1289.92,1031.94,773.96,1031.94,1031.94
+Andhra Pradesh,Visakhapatnam,Saswad-RV,Dhomni,17.5029,83.6234,rural_two_lane,ghat,laterite,54.7,7466.6,2,1866.65,1493.32,1119.99,1493.32,1493.32
+Andhra Pradesh,Visakhapatnam,Sonai Bk,Kolewadi,17.6492,83.1151,rural_two_lane,ghat,laterite,13.5,1842.8,1,460.7,368.56,276.42,368.56,368.56
+Andhra Pradesh,Visakhapatnam,Sonai Bk,Bodal,17.6089,83.1535,rural_two_lane,ghat,laterite,12.7,1733.5,1,433.38,346.7,260.02,346.7,346.7
+Andhra Pradesh,Visakhapatnam,Sonai Bk,Wadgaon,17.6519,83.0478,rural_two_lane,ghat,laterite,21.3,2907.5,1,726.88,581.5,436.12,581.5,581.5
+Telangana,Warangal,Wadgaon-Yavat,Ghoti,18.2179,79.5398,rural_two_lane,plain,red,32.5,3412.5,1,853.12,682.5,511.88,682.5,682.5
+Telangana,Warangal,Wadgaon-Yavat,Wadali,18.1097,79.6304,state_highway,plain,red,18.6,3906.0,1,976.5,781.2,585.9,781.2,781.2
+Telangana,Warangal,Wadgaon-Yavat,Kolewadi,18.1319,79.5331,national_highway_4,plain,red,22.1,4641.0,1,1160.25,928.2,696.15,928.2,928.2
+Telangana,Warangal,Parnera-RV,Saswad,17.7129,79.7759,rural_two_lane,plain,red,39.5,4147.5,1,1036.88,829.5,622.12,829.5,829.5
+Telangana,Warangal,Parnera-RV,Mhatari,17.9492,79.6356,national_highway_4,plain,red,5.6,1176.0,1,294.0,235.2,176.4,235.2,235.2
+Telangana,Warangal,Parnera-RV,Ukhale,17.7866,79.7175,rural_two_lane,plain,red,27.8,2919.0,1,729.75,583.8,437.85,583.8,583.8
+Telangana,Warangal,Sonai Bk,Mordad,17.9292,79.5247,national_highway_4,plain,red,9.9,2079.0,1,519.75,415.8,311.85,415.8,415.8
+Telangana,Warangal,Sonai Bk,Wadgaon,17.8043,79.4545,state_highway,plain,red,27.1,5691.0,1,1422.75,1138.2,853.65,1138.2,1138.2
+Telangana,Warangal,Sonai Bk,Yeola,17.9368,79.4443,state_highway,plain,red,18.7,3927.0,1,981.75,785.4,589.05,785.4,785.4

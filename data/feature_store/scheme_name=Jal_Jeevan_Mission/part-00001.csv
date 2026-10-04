@@ -1,0 +1,106 @@
+project_name,scheme_name,project_type,state,district,contractor_type,sanctioned_budget_lakh,duration_months,actual_cost_lakh,over_budget,overrun_lakh,overrun_pct
+"Amritsar Gram Panchayat Jal Jeevan Water Supply Scheme (66 GPs), Punjab [Work PB-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Punjab,Amritsar,Govt,304.4,34,282.4,No,-22.0,-7.23
+"Gwalior Gram Panchayat Jal Jeevan Water Supply Scheme (135 GPs), Madhya Pradesh [Work MP-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Gwalior,Govt,86.7,31,108.5,Yes,21.8,25.14
+"Ghaziabad Gram Panchayat Jal Jeevan Water Supply Scheme (58 GPs), Uttar Pradesh [Work UP-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Ghaziabad,Govt,257.8,27,290.2,Yes,32.4,12.57
+"Bengaluru Urban Gram Panchayat Jal Jeevan Water Supply Scheme (32 GPs), Karnataka [Work KA-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Karnataka,Bengaluru Urban,Private,920.9,22,920.0,No,-0.9,-0.1
+"Udaipur Gram Panchayat Jal Jeevan Water Supply Scheme (96 GPs), Rajasthan [Work RJ-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Rajasthan,Udaipur,Govt,452.7,14,433.1,No,-19.6,-4.33
+"Muzaffarpur Gram Panchayat Jal Jeevan Water Supply Scheme (131 GPs), Bihar [Work BR-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Bihar,Muzaffarpur,Govt,1246.2,13,1137.1,No,-109.1,-8.75
+"Darjeeling Gram Panchayat Jal Jeevan Water Supply Scheme (93 GPs), West Bengal [Work WB-JJM-2526-003]",Jal Jeevan Mission,Water Supply,West Bengal,Darjeeling,Govt,242.3,41,309.6,Yes,67.3,27.78
+"Howrah Gram Panchayat Jal Jeevan Water Supply Scheme (96 GPs), West Bengal [Work WB-JJM-2526-004]",Jal Jeevan Mission,Water Supply,West Bengal,Howrah,Govt,231.3,49,264.1,Yes,32.8,14.18
+"Salem Gram Panchayat Jal Jeevan Water Supply Scheme (50 GPs), Tamil Nadu [Work TN-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Salem,Govt,744.3,57,875.4,Yes,131.1,17.61
+"Chhatrapati Sambhajinagar Gram Panchayat Jal Jeevan Water Supply Scheme (31 GPs), Maharashtra [Work MH-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Maharashtra,Chhatrapati Sambhajinagar,Govt,1148.8,45,1129.1,No,-19.7,-1.71
+"Mysuru Gram Panchayat Jal Jeevan Water Supply Scheme (132 GPs), Karnataka [Work KA-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Karnataka,Mysuru,Govt,335.8,47,322.3,No,-13.5,-4.02
+"Hyderabad Gram Panchayat Jal Jeevan Water Supply Scheme (11 GPs), Telangana [Work TS-JJM-2526-002]",Jal Jeevan Mission,Water Supply,Telangana,Hyderabad,Private,278.4,45,278.1,No,-0.3,-0.11
+"Madurai Gram Panchayat Jal Jeevan Water Supply Scheme (13 GPs), Tamil Nadu [Work TN-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Madurai,Private,4028.1,39,3670.3,No,-357.8,-8.88
+"Bengaluru Urban Gram Panchayat Jal Jeevan Water Supply Scheme (29 GPs), Karnataka [Work KA-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Karnataka,Bengaluru Urban,Private,612.8,41,589.8,No,-23.0,-3.75
+"Pune Gram Panchayat Jal Jeevan Water Supply Scheme (91 GPs), Maharashtra [Work MH-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Maharashtra,Pune,Private,1022.7,31,980.4,No,-42.3,-4.14
+"Pune Gram Panchayat Jal Jeevan Water Supply Scheme (30 GPs), Maharashtra [Work MH-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Maharashtra,Pune,Govt,1447.3,26,1330.6,No,-116.7,-8.06
+"Kanpur Nagar Gram Panchayat Jal Jeevan Water Supply Scheme (22 GPs), Uttar Pradesh [Work UP-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Kanpur Nagar,Govt,169.0,51,225.3,Yes,56.3,33.31
+"Jodhpur Gram Panchayat Jal Jeevan Water Supply Scheme (13 GPs), Rajasthan [Work RJ-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Rajasthan,Jodhpur,Private,598.9,53,563.1,No,-35.8,-5.98
+"Jodhpur Gram Panchayat Jal Jeevan Water Supply Scheme (135 GPs), Rajasthan [Work RJ-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Rajasthan,Jodhpur,Govt,183.6,17,212.6,Yes,29.0,15.8
+"Jaipur Gram Panchayat Jal Jeevan Water Supply Scheme (98 GPs), Rajasthan [Work RJ-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Rajasthan,Jaipur,Govt,1411.5,15,1392.1,No,-19.4,-1.37
+"Bengaluru Urban Gram Panchayat Jal Jeevan Water Supply Scheme (86 GPs), Karnataka [Work KA-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Karnataka,Bengaluru Urban,Private,2326.9,51,2279.0,No,-47.9,-2.06
+"Jabalpur Gram Panchayat Jal Jeevan Water Supply Scheme (137 GPs), Madhya Pradesh [Work MP-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Jabalpur,Govt,2727.8,39,2578.2,No,-149.6,-5.48
+"Vijayawada Gram Panchayat Jal Jeevan Water Supply Scheme (54 GPs), Andhra Pradesh [Work AP-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Vijayawada,Govt,957.2,48,1224.4,Yes,267.2,27.91
+"Hyderabad Gram Panchayat Jal Jeevan Water Supply Scheme (40 GPs), Telangana [Work TS-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Telangana,Hyderabad,Govt,938.8,49,918.8,No,-20.0,-2.13
+"Gwalior Gram Panchayat Jal Jeevan Water Supply Scheme (16 GPs), Madhya Pradesh [Work MP-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Gwalior,Private,601.8,60,712.0,Yes,110.2,18.31
+"Mumbai City Gram Panchayat Jal Jeevan Water Supply Scheme (44 GPs), Maharashtra [Work MH-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Maharashtra,Mumbai City,Govt,629.0,40,763.1,Yes,134.1,21.32
+"Dakshina Kannada Gram Panchayat Jal Jeevan Water Supply Scheme (99 GPs), Karnataka [Work KA-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Karnataka,Dakshina Kannada,Govt,244.6,35,290.0,Yes,45.4,18.56
+"Rajkot Gram Panchayat Jal Jeevan Water Supply Scheme (18 GPs), Gujarat [Work GJ-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Gujarat,Rajkot,Govt,884.0,40,1103.1,Yes,219.1,24.79
+"Amritsar Gram Panchayat Jal Jeevan Water Supply Scheme (129 GPs), Punjab [Work PB-JJM-2526-003]",Jal Jeevan Mission,Water Supply,Punjab,Amritsar,Private,475.2,27,474.7,No,-0.5,-0.11
+"Dakshina Kannada Gram Panchayat Jal Jeevan Water Supply Scheme (61 GPs), Karnataka [Work KA-JJM-2526-010]",Jal Jeevan Mission,Water Supply,Karnataka,Dakshina Kannada,Govt,869.7,53,978.5,Yes,108.8,12.51
+"Patna Gram Panchayat Jal Jeevan Water Supply Scheme (18 GPs), Bihar [Work BR-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Bihar,Patna,Govt,315.0,60,346.9,Yes,31.9,10.13
+"Hyderabad Gram Panchayat Jal Jeevan Water Supply Scheme (85 GPs), Telangana [Work TS-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Telangana,Hyderabad,Govt,778.1,59,748.2,No,-29.9,-3.84
+"Gwalior Gram Panchayat Jal Jeevan Water Supply Scheme (7 GPs), Madhya Pradesh [Work MP-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Gwalior,Govt,251.3,41,283.7,Yes,32.4,12.89
+"Bhopal Gram Panchayat Jal Jeevan Water Supply Scheme (114 GPs), Madhya Pradesh [Work MP-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Bhopal,Private,676.2,38,675.5,No,-0.7,-0.1
+"Indore Gram Panchayat Jal Jeevan Water Supply Scheme (114 GPs), Madhya Pradesh [Work MP-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Indore,Govt,603.8,50,717.3,Yes,113.5,18.8
+"Agra Gram Panchayat Jal Jeevan Water Supply Scheme (70 GPs), Uttar Pradesh [Work UP-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Agra,Govt,439.7,28,400.8,No,-38.9,-8.85
+"Ernakulam Gram Panchayat Jal Jeevan Water Supply Scheme (19 GPs), Kerala [Work KL-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Kerala,Ernakulam,Govt,393.9,29,376.1,No,-17.8,-4.52
+"Chennai Gram Panchayat Jal Jeevan Water Supply Scheme (44 GPs), Tamil Nadu [Work TN-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Chennai,Govt,784.2,23,774.1,No,-10.1,-1.29
+"Varanasi Gram Panchayat Jal Jeevan Water Supply Scheme (81 GPs), Uttar Pradesh [Work UP-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Varanasi,Private,658.1,58,764.9,Yes,106.8,16.23
+"Kota Gram Panchayat Jal Jeevan Water Supply Scheme (80 GPs), Rajasthan [Work RJ-JJM-2526-010]",Jal Jeevan Mission,Water Supply,Rajasthan,Kota,Govt,179.4,55,221.9,Yes,42.5,23.69
+"Indore Gram Panchayat Jal Jeevan Water Supply Scheme (69 GPs), Madhya Pradesh [Work MP-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Indore,Private,509.5,26,499.8,No,-9.7,-1.9
+"Madurai Gram Panchayat Jal Jeevan Water Supply Scheme (71 GPs), Tamil Nadu [Work TN-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Madurai,Govt,572.8,58,735.7,Yes,162.9,28.44
+"Mumbai City Gram Panchayat Jal Jeevan Water Supply Scheme (47 GPs), Maharashtra [Work MH-JJM-2526-010]",Jal Jeevan Mission,Water Supply,Maharashtra,Mumbai City,Govt,137.9,51,152.0,Yes,14.1,10.22
+"Bhopal Gram Panchayat Jal Jeevan Water Supply Scheme (99 GPs), Madhya Pradesh [Work MP-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Bhopal,Govt,154.0,19,172.7,Yes,18.7,12.14
+"Pune Gram Panchayat Jal Jeevan Water Supply Scheme (36 GPs), Maharashtra [Work MH-JJM-2526-011]",Jal Jeevan Mission,Water Supply,Maharashtra,Pune,Govt,154.8,15,154.6,No,-0.2,-0.13
+"Kozhikode Gram Panchayat Jal Jeevan Water Supply Scheme (24 GPs), Kerala [Work KL-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Kerala,Kozhikode,Private,180.6,27,179.3,No,-1.3,-0.72
+"Gaya Gram Panchayat Jal Jeevan Water Supply Scheme (101 GPs), Bihar [Work BR-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Bihar,Gaya,Private,413.4,45,384.3,No,-29.1,-7.04
+"Jabalpur Gram Panchayat Jal Jeevan Water Supply Scheme (77 GPs), Madhya Pradesh [Work MP-JJM-2526-010]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Jabalpur,Govt,1324.7,32,1183.0,No,-141.7,-10.7
+"North-East Delhi Gram Panchayat Jal Jeevan Water Supply Scheme (10 GPs), Delhi [Work DL-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Delhi,North-East Delhi,Govt,368.2,35,345.4,No,-22.8,-6.19
+"Bhopal Gram Panchayat Jal Jeevan Water Supply Scheme (91 GPs), Madhya Pradesh [Work MP-JJM-2526-011]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Bhopal,Govt,309.2,53,297.7,No,-11.5,-3.72
+"Pune Gram Panchayat Jal Jeevan Water Supply Scheme (64 GPs), Maharashtra [Work MH-JJM-2526-012]",Jal Jeevan Mission,Water Supply,Maharashtra,Pune,Govt,206.1,18,200.5,No,-5.6,-2.72
+"Prayagraj Gram Panchayat Jal Jeevan Water Supply Scheme (71 GPs), Uttar Pradesh [Work UP-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Prayagraj,Govt,1376.1,38,1465.7,Yes,89.6,6.51
+"Visakhapatnam Gram Panchayat Jal Jeevan Water Supply Scheme (72 GPs), Andhra Pradesh [Work AP-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Visakhapatnam,Govt,529.8,58,711.2,Yes,181.4,34.24
+"Jaipur Gram Panchayat Jal Jeevan Water Supply Scheme (48 GPs), Rajasthan [Work RJ-JJM-2526-011]",Jal Jeevan Mission,Water Supply,Rajasthan,Jaipur,Govt,297.9,35,294.5,No,-3.4,-1.14
+"Amravati Gram Panchayat Jal Jeevan Water Supply Scheme (12 GPs), Maharashtra [Work MH-JJM-2526-013]",Jal Jeevan Mission,Water Supply,Maharashtra,Amravati,Govt,163.5,28,196.9,Yes,33.4,20.43
+"Visakhapatnam Gram Panchayat Jal Jeevan Water Supply Scheme (15 GPs), Andhra Pradesh [Work AP-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Visakhapatnam,Private,1778.3,27,1597.3,No,-181.0,-10.18
+"Kalaburagi Gram Panchayat Jal Jeevan Water Supply Scheme (88 GPs), Karnataka [Work KA-JJM-2526-011]",Jal Jeevan Mission,Water Supply,Karnataka,Kalaburagi,Govt,783.6,50,954.7,Yes,171.1,21.84
+"Central Delhi Gram Panchayat Jal Jeevan Water Supply Scheme (19 GPs), Delhi [Work DL-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Delhi,Central Delhi,Govt,185.1,54,198.6,Yes,13.5,7.29
+"Dakshina Kannada Gram Panchayat Jal Jeevan Water Supply Scheme (64 GPs), Karnataka [Work KA-JJM-2526-012]",Jal Jeevan Mission,Water Supply,Karnataka,Dakshina Kannada,Private,613.7,59,592.6,No,-21.1,-3.44
+"Bengaluru Urban Gram Panchayat Jal Jeevan Water Supply Scheme (119 GPs), Karnataka [Work KA-JJM-2526-013]",Jal Jeevan Mission,Water Supply,Karnataka,Bengaluru Urban,Govt,156.4,21,140.2,No,-16.2,-10.36
+"Bhopal Gram Panchayat Jal Jeevan Water Supply Scheme (35 GPs), Madhya Pradesh [Work MP-JJM-2526-012]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Bhopal,Private,474.4,40,435.6,No,-38.8,-8.18
+"Nagpur Gram Panchayat Jal Jeevan Water Supply Scheme (38 GPs), Maharashtra [Work MH-JJM-2526-014]",Jal Jeevan Mission,Water Supply,Maharashtra,Nagpur,Govt,659.0,15,658.3,No,-0.7,-0.11
+"Visakhapatnam Gram Panchayat Jal Jeevan Water Supply Scheme (124 GPs), Andhra Pradesh [Work AP-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Visakhapatnam,Govt,369.9,39,436.4,Yes,66.5,17.98
+"Rajkot Gram Panchayat Jal Jeevan Water Supply Scheme (116 GPs), Gujarat [Work GJ-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Gujarat,Rajkot,Govt,1939.4,48,2367.5,Yes,428.1,22.07
+"Patna Gram Panchayat Jal Jeevan Water Supply Scheme (96 GPs), Bihar [Work BR-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Bihar,Patna,Private,476.7,34,467.2,No,-9.5,-1.99
+"Pune Gram Panchayat Jal Jeevan Water Supply Scheme (58 GPs), Maharashtra [Work MH-JJM-2526-015]",Jal Jeevan Mission,Water Supply,Maharashtra,Pune,Govt,373.4,28,366.0,No,-7.4,-1.98
+"Thiruvananthapuram Gram Panchayat Jal Jeevan Water Supply Scheme (50 GPs), Kerala [Work KL-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Kerala,Thiruvananthapuram,Govt,188.3,13,181.2,No,-7.1,-3.77
+"Nashik Gram Panchayat Jal Jeevan Water Supply Scheme (70 GPs), Maharashtra [Work MH-JJM-2526-016]",Jal Jeevan Mission,Water Supply,Maharashtra,Nashik,Govt,350.8,57,406.9,Yes,56.1,15.99
+"Bengaluru Urban Gram Panchayat Jal Jeevan Water Supply Scheme (52 GPs), Karnataka [Work KA-JJM-2526-014]",Jal Jeevan Mission,Water Supply,Karnataka,Bengaluru Urban,Govt,1493.4,20,1436.4,No,-57.0,-3.82
+"Tirupati Gram Panchayat Jal Jeevan Water Supply Scheme (50 GPs), Andhra Pradesh [Work AP-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Tirupati,Govt,1226.9,45,1553.3,Yes,326.4,26.6
+"Gautam Buddh Nagar Gram Panchayat Jal Jeevan Water Supply Scheme (65 GPs), Uttar Pradesh [Work UP-JJM-2526-010]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Gautam Buddh Nagar,Private,623.7,30,851.3,Yes,227.6,36.49
+"Muzaffarpur Gram Panchayat Jal Jeevan Water Supply Scheme (27 GPs), Bihar [Work BR-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Bihar,Muzaffarpur,Govt,834.9,12,734.7,No,-100.2,-12.0
+"East Delhi Gram Panchayat Jal Jeevan Water Supply Scheme (128 GPs), Delhi [Work DL-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Delhi,East Delhi,Govt,560.5,44,618.9,Yes,58.4,10.42
+"Surat Gram Panchayat Jal Jeevan Water Supply Scheme (122 GPs), Gujarat [Work GJ-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Gujarat,Surat,Private,1129.6,18,1120.9,No,-8.7,-0.77
+"Darjeeling Gram Panchayat Jal Jeevan Water Supply Scheme (97 GPs), West Bengal [Work WB-JJM-2526-005]",Jal Jeevan Mission,Water Supply,West Bengal,Darjeeling,Govt,896.4,39,984.5,Yes,88.1,9.83
+"Jalandhar Gram Panchayat Jal Jeevan Water Supply Scheme (41 GPs), Punjab [Work PB-JJM-2526-004]",Jal Jeevan Mission,Water Supply,Punjab,Jalandhar,Govt,854.5,18,814.5,No,-40.0,-4.68
+"Amritsar Gram Panchayat Jal Jeevan Water Supply Scheme (9 GPs), Punjab [Work PB-JJM-2526-005]",Jal Jeevan Mission,Water Supply,Punjab,Amritsar,Private,1026.3,43,1139.0,Yes,112.7,10.98
+"Paschim Medinipur Gram Panchayat Jal Jeevan Water Supply Scheme (20 GPs), West Bengal [Work WB-JJM-2526-006]",Jal Jeevan Mission,Water Supply,West Bengal,Paschim Medinipur,Govt,951.3,47,895.7,No,-55.6,-5.84
+"Gaya Gram Panchayat Jal Jeevan Water Supply Scheme (117 GPs), Bihar [Work BR-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Bihar,Gaya,Govt,955.3,37,1250.0,Yes,294.7,30.85
+"Howrah Gram Panchayat Jal Jeevan Water Supply Scheme (114 GPs), West Bengal [Work WB-JJM-2526-007]",Jal Jeevan Mission,Water Supply,West Bengal,Howrah,Govt,520.4,52,657.5,Yes,137.1,26.35
+"Surat Gram Panchayat Jal Jeevan Water Supply Scheme (19 GPs), Gujarat [Work GJ-JJM-2526-006]",Jal Jeevan Mission,Water Supply,Gujarat,Surat,Govt,478.4,47,559.3,Yes,80.9,16.91
+"Kota Gram Panchayat Jal Jeevan Water Supply Scheme (13 GPs), Rajasthan [Work RJ-JJM-2526-012]",Jal Jeevan Mission,Water Supply,Rajasthan,Kota,Govt,387.9,38,458.9,Yes,71.0,18.3
+"Jabalpur Gram Panchayat Jal Jeevan Water Supply Scheme (111 GPs), Madhya Pradesh [Work MP-JJM-2526-013]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Jabalpur,Govt,123.5,15,118.6,No,-4.9,-3.97
+"Bhopal Gram Panchayat Jal Jeevan Water Supply Scheme (51 GPs), Madhya Pradesh [Work MP-JJM-2526-014]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Bhopal,Govt,958.0,36,1067.9,Yes,109.9,11.47
+"Lucknow Gram Panchayat Jal Jeevan Water Supply Scheme (76 GPs), Uttar Pradesh [Work UP-JJM-2526-011]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Lucknow,Govt,573.0,29,716.9,Yes,143.9,25.11
+"Rajkot Gram Panchayat Jal Jeevan Water Supply Scheme (116 GPs), Gujarat [Work GJ-JJM-2526-007]",Jal Jeevan Mission,Water Supply,Gujarat,Rajkot,Govt,704.3,32,673.8,No,-30.5,-4.33
+"Kolkata Gram Panchayat Jal Jeevan Water Supply Scheme (39 GPs), West Bengal [Work WB-JJM-2526-008]",Jal Jeevan Mission,Water Supply,West Bengal,Kolkata,Govt,50.0,33,57.5,Yes,7.5,15.0
+"Bhopal Gram Panchayat Jal Jeevan Water Supply Scheme (49 GPs), Madhya Pradesh [Work MP-JJM-2526-015]",Jal Jeevan Mission,Water Supply,Madhya Pradesh,Bhopal,Govt,207.1,33,240.1,Yes,33.0,15.93
+"Udaipur Gram Panchayat Jal Jeevan Water Supply Scheme (31 GPs), Rajasthan [Work RJ-JJM-2526-013]",Jal Jeevan Mission,Water Supply,Rajasthan,Udaipur,Govt,591.8,49,727.1,Yes,135.3,22.86
+"Paschim Medinipur Gram Panchayat Jal Jeevan Water Supply Scheme (51 GPs), West Bengal [Work WB-JJM-2526-009]",Jal Jeevan Mission,Water Supply,West Bengal,Paschim Medinipur,Govt,505.5,19,501.1,No,-4.4,-0.87
+"Muzaffarpur Gram Panchayat Jal Jeevan Water Supply Scheme (116 GPs), Bihar [Work BR-JJM-2526-010]",Jal Jeevan Mission,Water Supply,Bihar,Muzaffarpur,Govt,396.7,57,462.1,Yes,65.4,16.49
+"Varanasi Gram Panchayat Jal Jeevan Water Supply Scheme (10 GPs), Uttar Pradesh [Work UP-JJM-2526-012]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Varanasi,Private,489.3,13,468.2,No,-21.1,-4.31
+"Thane Gram Panchayat Jal Jeevan Water Supply Scheme (126 GPs), Maharashtra [Work MH-JJM-2526-017]",Jal Jeevan Mission,Water Supply,Maharashtra,Thane,Govt,217.0,21,205.0,No,-12.0,-5.53
+"Chennai Gram Panchayat Jal Jeevan Water Supply Scheme (111 GPs), Tamil Nadu [Work TN-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Chennai,Govt,2432.4,35,2311.2,No,-121.2,-4.98
+"Surat Gram Panchayat Jal Jeevan Water Supply Scheme (112 GPs), Gujarat [Work GJ-JJM-2526-008]",Jal Jeevan Mission,Water Supply,Gujarat,Surat,Govt,483.0,16,560.9,Yes,77.9,16.13
+"Nashik Gram Panchayat Jal Jeevan Water Supply Scheme (135 GPs), Maharashtra [Work MH-JJM-2526-018]",Jal Jeevan Mission,Water Supply,Maharashtra,Nashik,Govt,197.8,50,233.6,Yes,35.8,18.1
+"Udaipur Gram Panchayat Jal Jeevan Water Supply Scheme (60 GPs), Rajasthan [Work RJ-JJM-2526-014]",Jal Jeevan Mission,Water Supply,Rajasthan,Udaipur,Govt,809.3,34,1006.5,Yes,197.2,24.37
+"Thane Gram Panchayat Jal Jeevan Water Supply Scheme (127 GPs), Maharashtra [Work MH-JJM-2526-019]",Jal Jeevan Mission,Water Supply,Maharashtra,Thane,Private,101.5,33,95.7,No,-5.8,-5.71
+"Surat Gram Panchayat Jal Jeevan Water Supply Scheme (100 GPs), Gujarat [Work GJ-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Gujarat,Surat,Private,268.8,28,246.7,No,-22.1,-8.22
+"Kalaburagi Gram Panchayat Jal Jeevan Water Supply Scheme (106 GPs), Karnataka [Work KA-JJM-2526-015]",Jal Jeevan Mission,Water Supply,Karnataka,Kalaburagi,Govt,900.7,21,839.4,No,-61.3,-6.81
+"Gautam Buddh Nagar Gram Panchayat Jal Jeevan Water Supply Scheme (72 GPs), Uttar Pradesh [Work UP-JJM-2526-013]",Jal Jeevan Mission,Water Supply,Uttar Pradesh,Gautam Buddh Nagar,Govt,749.5,42,983.1,Yes,233.6,31.17
+"Tirupati Gram Panchayat Jal Jeevan Water Supply Scheme (87 GPs), Andhra Pradesh [Work AP-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Tirupati,Govt,76.3,37,93.6,Yes,17.3,22.67
+"Madurai Gram Panchayat Jal Jeevan Water Supply Scheme (107 GPs), Tamil Nadu [Work TN-JJM-2526-009]",Jal Jeevan Mission,Water Supply,Tamil Nadu,Madurai,Govt,192.5,48,239.5,Yes,47.0,24.42
+"Howrah Gram Panchayat Jal Jeevan Water Supply Scheme (82 GPs), West Bengal [Work WB-JJM-2526-010]",Jal Jeevan Mission,Water Supply,West Bengal,Howrah,Govt,553.4,59,644.2,Yes,90.8,16.41
+"Vijayawada Gram Panchayat Jal Jeevan Water Supply Scheme (81 GPs), Andhra Pradesh [Work AP-JJM-2526-010]",Jal Jeevan Mission,Water Supply,Andhra Pradesh,Vijayawada,Govt,1217.6,13,1166.3,No,-51.3,-4.21

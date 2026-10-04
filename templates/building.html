@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Government Building Cost Prediction — Gram Panchayat, School, Hospital FY 2025-26</title>
+  <meta name="description" content="Cost and construction time for a government building from built-up area, storeys, material quality and location type. Second estimator in the Indian construction budget project. Mini project by Vishal Raghunath Chatur and Mohsin Jabiulla Balgyar, DBATU.">
+
+  <!-- Inline SVG favicon: a linked file that does not exist would log a 404 in the
+       console, and the browser test treats console errors as failures. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b2545'/%3E%3Cpath d='M8 24V12l8-5 8 5v12' stroke='%23ff9933' stroke-width='3' fill='none' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Theme is decided before first paint so a dark-mode user never sees a white flash.
+    (function () {
+      try {
+        var saved = localStorage.getItem('budget-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
+      } catch (e) { /* storage can be blocked; light mode is a safe default */ }
+    })();
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'Segoe UI', 'sans-serif'] },
+          colors: {
+            navy: { DEFAULT: '#0b2545', 600: '#13315c', 300: '#8aa5c8' },
+            saffron: { DEFAULT: '#ff9933', text: '#b25a00', soft: '#fff2e0' },
+            indiagreen: { DEFAULT: '#138808', text: '#0b6b0b', soft: '#e3f4e1' },
+          },
+          boxShadow: { card: '0 10px 30px -12px rgba(11, 37, 69, 0.28)' },
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script id="team-data" type="application/json">{{ TEAM | tojson }}</script>
+  <script id="settings-data" type="application/json">{{ SETTINGS | tojson }}</script>
+  <script id="building-data" type="application/json">{{ BUILDING | tojson }}</script>
+</head>
+
+<body class="min-h-screen bg-[var(--bg)] text-[var(--text)] font-sans antialiased">
+
+  <div class="tricolour" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <!-- ===================== navbar =========================================
+       Same bar as the dashboard, but every link here is a page link: an
+       in-page anchor would point at a section that does not exist on this
+       route. `Building` is the current page, so it carries aria-current.
+       ==================================================================== -->
+  <header id="navbar" class="sticky top-0 z-40 border-b border-[var(--border)] bg-[var(--surface)]/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3 sm:px-6" aria-label="Primary">
+      <a href="{{ url_for('index') }}" class="flex shrink-0 items-center gap-2">
+        <span class="grid h-9 w-9 place-items-center rounded-lg bg-[var(--navy)] text-sm font-bold text-white">₹</span>
+        <span class="hidden text-sm font-bold leading-tight sm:block">Budget<br>Prediction</span>
+      </a>
+      <ul class="ml-auto flex items-center gap-1 overflow-x-auto text-sm font-medium">
+        <li><a class="nav-link" href="{{ url_for('index') }}#home">Home</a></li>
+        <li><a class="nav-link" href="{{ url_for('index') }}#predictor">Predictor</a></li>
+        <li><a class="nav-link" href="{{ url_for('index') }}#routes">Route map</a></li>
+        <li><a class="nav-link active" href="{{ url_for('building_page') }}" aria-current="page">Building</a></li>
+      </ul>
+      <button id="theme-toggle" type="button" class="shrink-0 rounded-lg border border-[var(--border)] px-3 py-2 text-sm font-semibold hover:bg-[var(--surface-2)]" aria-label="Switch between dark and light mode" title="Toggle dark mode">
+        <span data-theme-label>Dark</span>
+      </button>
+    </nav>
+  </header>
+
+  <div id="api-banner" class="hidden"></div>
+  <div id="toast-stack" class="pointer-events-none fixed bottom-4 right-4 z-50 flex w-[min(22rem,90vw)] flex-col gap-2" aria-live="polite"></div>
+
+  <main class="mx-auto max-w-7xl px-4 pb-16 sm:px-6">
+
+    <!-- ===================== 1. WHAT THIS PAGE IS ========================= -->
+    <section id="home" class="reveal pt-10 pb-8">
+      <p class="eyebrow">Second estimator · separate engine, separate API</p>
+      <h1 class="mt-3 max-w-4xl text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
+        Government
+        <span class="text-[var(--saffron-text)]">Building Cost Prediction</span>
+        <span class="text-[var(--green-text)]">— area, storeys, quality, location</span>
+      </h1>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
+        A Gram Panchayat office, a school block and an urban health centre are not road
+        corridors, so they are not priced by the road engine and they are not classified by
+        the trained models either — the classifier was fitted on sanctioned <em>scheme</em>
+        projects, not on a 1,200 sq ft panchayat building. This page answers the question
+        that model was never trained for, with one published rate per square foot and every
+        factor it is multiplied by printed on screen.
+      </p>
+      <p class="mt-4 max-w-3xl text-sm leading-relaxed text-[var(--muted)]">
+        Mini project by <strong>Vishal Raghunath Chatur</strong> and
+        <strong>Mohsin Jabiulla Balgyar</strong>, under the guidance of
+        <strong>Tapase Miss</strong> — B.Tech in Artificial Intelligence &amp; Data Science
+        Engineering, <strong>DBATU</strong>. Same team, same repository, one extra estimator.
+      </p>
+      <p class="formula mt-4 max-w-3xl text-sm leading-relaxed">
+        Total = Built-up area × ₹ per sq ft (location) × Floor factor × Location factor ×
+        Quality factor × Building type factor
+      </p>
+      <p class="mt-3 max-w-3xl text-xs leading-relaxed text-[var(--muted)]">
+        The road planner, the predictor and the dashboard are untouched by this page — it
+        calls <code>POST /predict-building</code> and nothing else, and it shares only the
+        location hierarchy with the route system.
+        <a class="page-link" href="{{ url_for('index') }}#routes">Back to the corridor planner →</a>
+      </p>
+    </section>
+
+    <!-- ===================== 2. FORM + RESULT ============================ -->
+    <section id="building" class="reveal py-6">
+      <div class="section-head">
+        <p class="eyebrow">Building estimator</p>
+        <h2 class="section-title">Cost one building and see the whole multiplication</h2>
+        <p class="section-sub">Choose where it goes, what it is for and how good the finish
+          is. The server returns the ₹ lakh total, the months, and the seven work sections the
+          money is split across — the split adds back to the total exactly, to the rupee.</p>
+      </div>
+
+      <div class="grid gap-5 lg:grid-cols-5">
+        <!-- form ------------------------------------------------------- -->
+        <form id="building-form" class="card lg:col-span-2 self-start" novalidate>
+          <h3 class="card-title">The building</h3>
+
+          <div class="mt-3 space-y-3">
+            <label class="field"><span class="label">Building type</span>
+              <select id="bd-type" name="building_type" class="field-input"></select>
+              <span class="hint" id="bd-type-hint"></span>
+              <span class="field-error" data-error-for="building_type"></span></label>
+
+            <div class="grid gap-3 sm:grid-cols-2">
+              <label class="field"><span class="label">Built-up area (sq ft)</span>
+                <input id="bd-area" name="area_sqft" class="field-input" type="number"
+                       min="100" max="500000" step="10" value="1200" required
+                       inputmode="decimal">
+                <span class="field-error" data-error-for="area_sqft"></span></label>
+
+              <label class="field"><span class="label">Floors</span>
+                <select id="bd-floors" name="floors" class="field-input"></select>
+                <span class="hint" id="bd-floors-hint"></span>
+                <span class="field-error" data-error-for="floors"></span></label>
+            </div>
+
+            <div class="grid gap-3 sm:grid-cols-2">
+              <label class="field"><span class="label">Material quality</span>
+                <select id="bd-quality" name="quality" class="field-input"></select>
+                <span class="hint" id="bd-quality-hint"></span>
+                <span class="field-error" data-error-for="quality"></span></label>
+
+              <label class="field"><span class="label">Location type</span>
+                <select id="bd-location-type" name="location_type" class="field-input"></select>
+                <span class="hint" id="bd-location-type-hint"></span>
+                <span class="field-error" data-error-for="location_type"></span></label>
+            </div>
+
+            <div class="loc-cascade">
+              <p class="loc-cascade-title">Site — State → District → Taluka → Village</p>
+              <div class="grid gap-2 sm:grid-cols-2">
+                <label class="field"><span class="label">State</span>
+                  <select id="bd-state" name="state" class="field-input" data-level="state"></select>
+                  <span class="field-error" data-error-for="state"></span></label>
+                <label class="field"><span class="label">District</span>
+                  <select id="bd-district" name="district" class="field-input" data-level="district"></select>
+                  <span class="field-error" data-error-for="district"></span></label>
+                <label class="field"><span class="label">Taluka <em>optional</em></span>
+                  <select id="bd-taluka" name="taluka" class="field-input" data-level="taluka"></select>
+                  <span class="field-error" data-error-for="taluka"></span></label>
+                <label class="field"><span class="label">Village <em>optional</em></span>
+                  <select id="bd-village" name="village" class="field-input" data-level="village"></select>
+                  <span class="field-error" data-error-for="village"></span></label>
+              </div>
+              <p class="loc-readout mt-2" id="bd-site-line">Loading the location hierarchy from
+                <code>/locations</code>…</p>
+            </div>
+
+            <p class="hint">The site names the building; it does not price it. The ₹ per square
+              foot comes from the location type above, because a rural rate is set by haulage and
+              labour availability, not by which district the plot sits in.</p>
+          </div>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <button id="bd-submit" type="submit" class="btn btn-primary">Estimate the building</button>
+            <button id="bd-reset" type="button" class="btn btn-ghost">Reset</button>
+          </div>
+
+          <div id="bd-examples" class="mt-3 flex flex-wrap gap-2"></div>
+          <ul id="building-errors" class="mt-3 list-disc space-y-1 pl-5 text-sm text-[var(--danger)]" hidden></ul>
+        </form>
+
+        <!-- results ---------------------------------------------------- -->
+        <div class="lg:col-span-3">
+          <div id="building-loading" hidden class="card" aria-live="polite">
+            <div class="flex items-center gap-3">
+              <span class="spinner" aria-hidden="true"></span>
+              <span class="text-sm font-medium">Multiplying the area by the rates…</span>
+            </div>
+            <div class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3" aria-hidden="true">
+              <div class="skeleton tile"></div><div class="skeleton tile"></div>
+              <div class="skeleton tile"></div><div class="skeleton tile"></div>
+            </div>
+          </div>
+
+          <div id="building-placeholder" class="card text-center">
+            <p class="text-4xl" aria-hidden="true">🏛</p>
+            <h3 class="card-title mt-2">No estimate yet</h3>
+            <p class="mt-1 text-sm text-[var(--muted)]">Set the area and the finish and press
+              estimate: the ₹ lakh cost, the months, the factor strip and the work-section split
+              appear here.</p>
+          </div>
+
+          <div id="building-result" hidden>
+            <div class="grid grid-cols-2 gap-3 sm:grid-cols-3">
+              <div class="stat"><dt>Estimated cost (₹ lakh)</dt><dd id="bd-out-cost">—</dd></div>
+              <div class="stat"><dt>Time</dt><dd id="bd-out-time">—</dd></div>
+              <div class="stat"><dt>₹ per sq ft (effective)</dt><dd id="bd-out-rate">—</dd></div>
+              <div class="stat"><dt>Built-up area</dt><dd id="bd-out-built">—</dd></div>
+              <div class="stat"><dt>Cost in ₹ crore</dt><dd id="bd-out-crore">—</dd></div>
+              <div class="stat"><dt>Base rate</dt><dd id="bd-out-base">—</dd></div>
+            </div>
+
+            <div id="bd-factors" class="factor-strip mt-3"></div>
+            <p id="bd-site-result" class="loc-readout mt-3"></p>
+            <p id="bd-basis" class="formula mt-2 text-sm leading-relaxed"></p>
+
+            <div class="mt-5 grid gap-5 lg:grid-cols-2">
+              <div class="card">
+                <h3 class="card-title">Work-section split</h3>
+                <p class="mt-1 text-xs text-[var(--muted)]">Percentage of the total, applied by
+                  the server. Rounding is carried by the structure line so the seven rows add
+                  back to the figure on the card exactly.</p>
+                <div class="table-wrap mt-3">
+                  <table class="data-table compact">
+                    <thead><tr><th>Work section</th><th class="num">Share</th><th class="num">₹ lakh</th><th class="num">₹</th></tr></thead>
+                    <tbody id="bd-split-body"></tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="card">
+                <h3 class="card-title">Where the money goes</h3>
+                <p class="mt-1 text-xs text-[var(--muted)]">The same seven lines as a pie —
+                  structure, masonry, finishes, electrical and plumbing, contract labour,
+                  fixtures and site development.</p>
+                <div class="chart-box mt-3"><canvas id="chart-building-split"></canvas></div>
+              </div>
+            </div>
+
+            <div class="card mt-5">
+              <h3 class="card-title">How the months were got</h3>
+              <p id="bd-time-basis" class="mt-2 text-sm leading-relaxed"></p>
+            </div>
+
+            <div class="notice notice-saffron mt-5" role="note">
+              <p id="bd-note" class="text-sm leading-relaxed"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. ASSUMPTION TABLES ======================== -->
+    <section id="rates" class="reveal py-14">
+      <div class="section-head">
+        <p class="eyebrow">Assumptions on the record</p>
+        <h2 class="section-title">Every rate this page can multiply</h2>
+        <p class="section-sub">These are the tables <code>model/building.py</code> holds, sent to
+          the browser so the explanation cannot drift from the arithmetic. A viva question about
+          where ₹ 2,500 per square foot came from is answered by the file, not by memory.</p>
+      </div>
+
+      <div class="grid gap-5 lg:grid-cols-3">
+        <div class="card">
+          <h3 class="card-title">Base cost per sq ft</h3>
+          <div class="table-wrap mt-3">
+            <table class="data-table compact">
+              <thead><tr><th>Location type</th><th class="num">₹ / sq ft</th><th class="num">Factor</th></tr></thead>
+              <tbody id="rate-locations"></tbody>
+            </table>
+          </div>
+          <p class="mt-2 text-xs text-[var(--muted)]">Remote is a documented middle case: rural
+            haulage plus mobilisation, without urban labour rates.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Storeys and quality</h3>
+          <div class="table-wrap mt-3">
+            <table class="data-table compact">
+              <thead><tr><th>Floors</th><th class="num">Factor</th></tr></thead>
+              <tbody id="rate-floors"></tbody>
+            </table>
+          </div>
+          <div class="table-wrap mt-3">
+            <table class="data-table compact">
+              <thead><tr><th>Quality</th><th class="num">Factor</th><th class="num">sq ft / day</th></tr></thead>
+              <tbody id="rate-qualities"></tbody>
+            </table>
+          </div>
+          <p class="mt-2 text-xs text-[var(--muted)]">Two floors cost 1.90 × one, not 2.00 ×: the
+            foundation, the staircase and the plot works are already paid for once.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Building type and work split</h3>
+          <div class="table-wrap mt-3">
+            <table class="data-table compact">
+              <thead><tr><th>Type</th><th class="num">Factor</th></tr></thead>
+              <tbody id="rate-types"></tbody>
+            </table>
+          </div>
+          <div class="table-wrap mt-3">
+            <table class="data-table compact">
+              <thead><tr><th>Work section</th><th class="num">% of total</th></tr></thead>
+              <tbody id="rate-split"></tbody>
+            </table>
+          </div>
+          <p class="mt-2 text-xs text-[var(--muted)]">The seven shares add to 100 % — a test
+            asserts it, because a pie that disagrees with the card is the mistake this project
+            has already been caught making once.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. WHAT IT IS NOT =========================== -->
+    <section id="limits" class="reveal pb-14">
+      <div class="grid gap-5 lg:grid-cols-2">
+        <div class="card">
+          <h3 class="card-title">What this number is</h3>
+          <ul class="mt-2 space-y-2 text-sm leading-relaxed text-[var(--muted)]">
+            <li>A <strong>planning-grade rate estimate</strong>: one standard structural frame at
+              a published ₹ per square foot, times five stated factors.</li>
+            <li>Reproducible — the same inputs give the same rupees, with no random component and
+              no model call.</li>
+            <li>Checkable by hand: the basis line prints the full multiplication, and the work
+              split adds back to its result to the rupee.</li>
+            <li>Accompanied by a site duration from a sq-ft-per-day crew productivity rate plus
+              fixed mobilisation days.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="card-title">What it is not</h3>
+          <ul class="mt-2 list-disc space-y-1 pl-5 text-sm leading-relaxed text-[var(--muted)]">
+            <li><strong>Not a trained-model output.</strong> Nothing on this page reads the KNN or
+              Random Forest classifier, so no <em>measured</em> metric applies to it.</li>
+            <li>No land, no boundary wall, no furniture, no specialist medical equipment — the
+              three biggest surprises on a real panchayat or health-centre bill.</li>
+            <li>No state SGDA rate schedule, no GST or labour-ceiling variation, no tender
+              escalation, no monsoon idle days.</li>
+            <li>Not a structural design: a hospital wing at 3 storeys may need a frame this rate
+              does not describe at all.</li>
+            <li>The site names come from the same generated hierarchy the route planner uses —
+              real districts and coordinates, placeholder taluka and village names.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. TEAM ===================================== -->
+    <section id="team" class="reveal pb-14">
+      <div class="section-head">
+        <p class="eyebrow">Credit</p>
+        <h2 class="section-title">Team</h2>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3" id="bd-team"></div>
+    </section>
+
+  </main>
+
+  <!-- ===================== 6. FOOTER ===================================== -->
+  <footer id="footer" class="border-t border-[var(--border)] bg-[var(--surface)]">
+    <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+      <div class="grid gap-6 lg:grid-cols-3">
+        <div>
+          <h2 class="text-sm font-bold">{{ TEAM.title }}</h2>
+          <p class="mt-1 text-xs text-[var(--muted)]">{{ TEAM.subtitle }}</p>
+        </div>
+        <p class="text-xs leading-relaxed text-[var(--muted)]">{{ TEAM.credit_line }}</p>
+        <p class="text-xs leading-relaxed text-[var(--muted)]">{{ TEAM.data_note }}</p>
+      </div>
+      <div class="tricolour mt-6" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+  <!-- app.js is deliberately NOT loaded here: its boot() runs the dashboard, the
+       predictor and the map, none of which exist on this page. -->
+  <script src="{{ url_for('static', filename='js/building.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+project_name,scheme_name,project_type,state,district,contractor_type,sanctioned_budget_lakh,duration_months,actual_cost_lakh,over_budget,overrun_lakh,overrun_pct
+"Hyderabad – Nizamabad Major District Road, Telangana [Work TS-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Telangana,Hyderabad,Govt,48.5,14,48.5,No,0.0,0.0
+"Amravati – Thane Link Road, Maharashtra [Work MH-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Maharashtra,Amravati,Govt,718.9,35,684.4,No,-34.5,-4.8
+"Gautam Buddh Nagar – Lucknow Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Gautam Buddh Nagar,Govt,662.8,15,766.7,Yes,103.9,15.68
+"Madurai – Chennai Link Road, Tamil Nadu [Work TN-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Madurai,Govt,136.7,23,128.3,No,-8.4,-6.14
+"Muzaffarpur – Patna Link Road, Bihar [Work BR-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Bihar,Muzaffarpur,Private,215.8,31,203.4,No,-12.4,-5.75
+"Paschim Medinipur – Howrah Rural Road Upgradation, West Bengal [Work WB-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,West Bengal,Paschim Medinipur,Private,236.0,36,264.2,Yes,28.2,11.95
+"Warangal – Hyderabad Link Road, Telangana [Work TS-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Private,168.5,13,159.6,No,-8.9,-5.28
+"Hyderabad – Warangal Bridge Causeway, Telangana [Work TS-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Telangana,Hyderabad,Govt,78.7,8,93.9,Yes,15.2,19.31
+"East Delhi – New Delhi Bridge Causeway, Delhi [Work DL-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Delhi,East Delhi,Private,363.4,30,352.7,No,-10.7,-2.94
+"Thane – Chhatrapati Sambhajinagar Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Govt,188.5,25,226.4,Yes,37.9,20.11
+"Indore – Jabalpur Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Govt,546.5,31,537.9,No,-8.6,-1.57
+"Kanpur Nagar – Gautam Buddh Nagar Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Govt,137.1,19,152.8,Yes,15.7,11.45
+"Jodhpur – Udaipur Major District Road, Rajasthan [Work RJ-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Rajasthan,Jodhpur,Govt,346.5,28,326.9,No,-19.6,-5.66
+"Kanpur Nagar – Gautam Buddh Nagar Bridge Causeway, Uttar Pradesh [Work UP-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Govt,480.6,26,559.0,Yes,78.4,16.31
+"Nagpur – Thane Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nagpur,Private,670.5,21,635.1,No,-35.4,-5.28
+"Dakshina Kannada – Belagavi Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Govt,107.4,11,104.9,No,-2.5,-2.33
+"Nagpur – Amravati Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nagpur,Govt,191.1,35,233.6,Yes,42.5,22.24
+"Muzaffarpur – Patna Link Road, Bihar [Work BR-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Bihar,Muzaffarpur,Private,55.8,28,51.7,No,-4.1,-7.35
+"Gautam Buddh Nagar – Prayagraj Bridge Causeway, Uttar Pradesh [Work UP-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Gautam Buddh Nagar,Private,292.4,36,372.0,Yes,79.6,27.22
+"Udaipur – Jodhpur Rural Road Upgradation, Rajasthan [Work RJ-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Govt,109.6,22,130.6,Yes,21.0,19.16
+"Chennai – Madurai Rural Road Upgradation, Tamil Nadu [Work TN-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Chennai,Private,32.5,27,32.1,No,-0.4,-1.23
+"Jabalpur – Indore Bridge Causeway, Madhya Pradesh [Work MP-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Jabalpur,Govt,38.6,10,44.1,Yes,5.5,14.25
+"Darjeeling – Kolkata Major District Road, West Bengal [Work WB-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,West Bengal,Darjeeling,Private,239.0,28,233.6,No,-5.4,-2.26
+"Varanasi – Gautam Buddh Nagar Bridge Causeway, Uttar Pradesh [Work UP-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Varanasi,Govt,215.9,31,245.3,Yes,29.4,13.62
+"Warangal – Hyderabad Link Road, Telangana [Work TS-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Private,161.7,35,147.3,No,-14.4,-8.91
+"Vadodara – Surat Rural Road Upgradation, Gujarat [Work GJ-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Gujarat,Vadodara,Private,550.6,11,514.2,No,-36.4,-6.61
+"Thane – Nashik Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Private,182.8,26,177.5,No,-5.3,-2.9
+"Vijayawada – Visakhapatnam Rural Road Upgradation, Andhra Pradesh [Work AP-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Vijayawada,Govt,1038.7,33,1224.6,Yes,185.9,17.9
+"Ahmedabad – Rajkot Major District Road, Gujarat [Work GJ-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Gujarat,Ahmedabad,Private,196.5,8,186.9,No,-9.6,-4.89
+"Kota – Jodhpur Major District Road, Rajasthan [Work RJ-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Rajasthan,Kota,Private,99.9,6,95.4,No,-4.5,-4.5
+"Madurai – Chennai Bridge Causeway, Tamil Nadu [Work TN-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Madurai,Govt,32.1,7,32.1,No,0.0,0.0
+"Kolkata – Howrah Link Road, West Bengal [Work WB-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,West Bengal,Kolkata,Private,201.1,25,198.5,No,-2.6,-1.29
+"Ernakulam – Thiruvananthapuram Bridge Causeway, Kerala [Work KL-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Kerala,Ernakulam,Govt,158.4,32,179.3,Yes,20.9,13.19
+"Indore – Jabalpur Link Road, Madhya Pradesh [Work MP-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Govt,148.5,6,171.3,Yes,22.8,15.35
+"Amravati – Thane Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Maharashtra,Amravati,Govt,59.6,14,63.5,Yes,3.9,6.54
+"Rajkot – Vadodara Rural Road Upgradation, Gujarat [Work GJ-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Gujarat,Rajkot,Private,210.3,32,202.2,No,-8.1,-3.85
+"Central Delhi – New Delhi Rural Road Upgradation, Delhi [Work DL-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Delhi,Central Delhi,Private,500.3,22,485.6,No,-14.7,-2.94
+"Chhatrapati Sambhajinagar – Thane Major District Road, Maharashtra [Work MH-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Maharashtra,Chhatrapati Sambhajinagar,Private,93.1,6,88.7,No,-4.4,-4.73
+"Dakshina Kannada – Belagavi Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Govt,243.4,8,225.4,No,-18.0,-7.4
+"Jodhpur – Kota Link Road, Rajasthan [Work RJ-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Rajasthan,Jodhpur,Govt,363.7,17,447.6,Yes,83.9,23.07
+"Jabalpur – Indore Rural Road Upgradation, Madhya Pradesh [Work MP-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Jabalpur,Private,249.9,13,242.3,No,-7.6,-3.04
+"Kanpur Nagar – Ghaziabad Rural Road Upgradation, Uttar Pradesh [Work UP-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Private,140.2,18,148.6,Yes,8.4,5.99
+"Coimbatore – Salem Rural Road Upgradation, Tamil Nadu [Work TN-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Coimbatore,Govt,241.7,20,268.2,Yes,26.5,10.96
+"Bengaluru Urban – Mysuru Major District Road, Karnataka [Work KA-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Karnataka,Bengaluru Urban,Govt,191.0,35,219.0,Yes,28.0,14.66
+"Varanasi – Agra Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Varanasi,Govt,177.8,36,227.5,Yes,49.7,27.95
+"Nizamabad – Warangal Link Road, Telangana [Work TS-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Telangana,Nizamabad,Govt,78.4,34,87.1,Yes,8.7,11.1
+"Bhopal – Indore Rural Road Upgradation, Madhya Pradesh [Work MP-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Bhopal,Private,88.1,16,87.4,No,-0.7,-0.79
+"Belagavi – Dakshina Kannada Bridge Causeway, Karnataka [Work KA-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Karnataka,Belagavi,Govt,288.4,13,315.3,Yes,26.9,9.33
+"Udaipur – Jodhpur Rural Road Upgradation, Rajasthan [Work RJ-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Private,1271.9,35,1208.6,No,-63.3,-4.98
+"Ahmedabad – Rajkot Rural Road Upgradation, Gujarat [Work GJ-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Gujarat,Ahmedabad,Private,173.7,28,168.5,No,-5.2,-2.99
+"Vadodara – Rajkot Bridge Causeway, Gujarat [Work GJ-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Gujarat,Vadodara,Govt,298.6,32,288.1,No,-10.5,-3.52
+"Vijayawada – Visakhapatnam Major District Road, Andhra Pradesh [Work AP-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Vijayawada,Private,143.8,28,139.3,No,-4.5,-3.13
+"Warangal – Nizamabad Major District Road, Telangana [Work TS-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Govt,59.1,18,65.1,Yes,6.0,10.15
+"Udaipur – Jaipur Bridge Causeway, Rajasthan [Work RJ-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Private,30.0,21,37.7,Yes,7.7,25.67
+"Coimbatore – Chennai Rural Road Upgradation, Tamil Nadu [Work TN-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Coimbatore,Govt,256.9,10,259.0,Yes,2.1,0.82
+"Warangal – Hyderabad Rural Road Upgradation, Telangana [Work TS-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Govt,328.0,29,292.8,No,-35.2,-10.73
+"Nashik – Amravati Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Private,615.0,35,614.4,No,-0.6,-0.1
+"Thane – Pune Major District Road, Maharashtra [Work MH-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Govt,519.5,32,555.8,Yes,36.3,6.99
+"Ahmedabad – Vadodara Link Road, Gujarat [Work GJ-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Gujarat,Ahmedabad,Govt,586.1,34,569.5,No,-16.6,-2.83
+"North-East Delhi – New Delhi Major District Road, Delhi [Work DL-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Delhi,North-East Delhi,Govt,56.0,11,74.5,Yes,18.5,33.04
+"Udaipur – Jodhpur Link Road, Rajasthan [Work RJ-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Private,100.5,14,96.5,No,-4.0,-3.98
+"Nagpur – Thane Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nagpur,Govt,149.9,30,177.1,Yes,27.2,18.15
+"Chhatrapati Sambhajinagar – Nagpur Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Maharashtra,Chhatrapati Sambhajinagar,Govt,298.0,34,316.6,Yes,18.6,6.24
+"Nizamabad – Warangal Bridge Causeway, Telangana [Work TS-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Telangana,Nizamabad,Private,169.8,19,167.0,No,-2.8,-1.65
+"Jodhpur – Udaipur Major District Road, Rajasthan [Work RJ-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Rajasthan,Jodhpur,Private,93.1,6,86.9,No,-6.2,-6.66
+"Nashik – Mumbai City Link Road, Maharashtra [Work MH-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Govt,356.1,15,404.9,Yes,48.8,13.7
+"Thane – Nashik Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Govt,208.7,10,195.3,No,-13.4,-6.42
+"Bengaluru Urban – Dakshina Kannada Bridge Causeway, Karnataka [Work KA-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Karnataka,Bengaluru Urban,Private,209.0,28,200.9,No,-8.1,-3.88
+"Tirupati – Vijayawada Rural Road Upgradation, Andhra Pradesh [Work AP-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Tirupati,Private,238.1,21,230.5,No,-7.6,-3.19
+"Indore – Gwalior Rural Road Upgradation, Madhya Pradesh [Work MP-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Govt,309.8,21,354.6,Yes,44.8,14.46
+"Kalaburagi – Belagavi Bridge Causeway, Karnataka [Work KA-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Karnataka,Kalaburagi,Govt,606.9,9,584.7,No,-22.2,-3.66
+"Gwalior – Jabalpur Link Road, Madhya Pradesh [Work MP-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Gwalior,Govt,131.9,6,158.2,Yes,26.3,19.94
+"Ghaziabad – Gautam Buddh Nagar Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Ghaziabad,Private,333.4,32,321.1,No,-12.3,-3.69
+"Bengaluru Urban – Kalaburagi Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Karnataka,Bengaluru Urban,Private,471.5,12,453.7,No,-17.8,-3.78
+"Gaya – Bhagalpur Major District Road, Bihar [Work BR-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Bihar,Gaya,Govt,253.7,7,321.9,Yes,68.2,26.88
+"Kalaburagi – Belagavi Bridge Causeway, Karnataka [Work KA-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Karnataka,Kalaburagi,Private,62.3,26,60.2,No,-2.1,-3.37
+"Mysuru – Kalaburagi Link Road, Karnataka [Work KA-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Karnataka,Mysuru,Private,217.3,34,207.0,No,-10.3,-4.74
+"Jodhpur – Jaipur Rural Road Upgradation, Rajasthan [Work RJ-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Rajasthan,Jodhpur,Govt,221.8,14,207.9,No,-13.9,-6.27
+"Thane – Amravati Link Road, Maharashtra [Work MH-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Private,503.7,13,502.1,No,-1.6,-0.32
+"Nizamabad – Warangal Rural Road Upgradation, Telangana [Work TS-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Telangana,Nizamabad,Govt,133.8,27,156.2,Yes,22.4,16.74
+"Udaipur – Kota Link Road, Rajasthan [Work RJ-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Govt,78.6,27,86.6,Yes,8.0,10.18
+"Indore – Gwalior Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Govt,845.1,25,1010.0,Yes,164.9,19.51
+"Lucknow – Prayagraj Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Lucknow,Private,49.5,7,49.1,No,-0.4,-0.81
+"Surat – Ahmedabad Link Road, Gujarat [Work GJ-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Gujarat,Surat,Govt,633.3,8,632.7,No,-0.6,-0.09
+"Visakhapatnam – Vijayawada Major District Road, Andhra Pradesh [Work AP-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Visakhapatnam,Govt,207.1,33,226.0,Yes,18.9,9.13
+"Bhagalpur – Muzaffarpur Major District Road, Bihar [Work BR-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Bihar,Bhagalpur,Private,92.1,36,98.3,Yes,6.2,6.73
+"Madurai – Chennai Rural Road Upgradation, Tamil Nadu [Work TN-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Madurai,Private,260.2,15,243.0,No,-17.2,-6.61
+"Thane – Nagpur Link Road, Maharashtra [Work MH-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Govt,106.1,32,107.9,Yes,1.8,1.7
+"Surat – Rajkot Rural Road Upgradation, Gujarat [Work GJ-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Gujarat,Surat,Private,242.0,7,230.5,No,-11.5,-4.75
+"Thane – Nashik Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Private,289.7,35,273.7,No,-16.0,-5.52
+"Vadodara – Rajkot Link Road, Gujarat [Work GJ-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Gujarat,Vadodara,Private,130.8,20,130.7,No,-0.1,-0.08
+"Coimbatore – Madurai Rural Road Upgradation, Tamil Nadu [Work TN-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Coimbatore,Govt,131.8,30,119.5,No,-12.3,-9.33
+"Amravati – Chhatrapati Sambhajinagar Link Road, Maharashtra [Work MH-PMGSY-2526-017]",PMGSY (Rural Roads),Road Construction,Maharashtra,Amravati,Govt,97.5,15,95.4,No,-2.1,-2.15
+"Gwalior – Indore Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Gwalior,Govt,155.9,30,160.6,Yes,4.7,3.01
+"Dakshina Kannada – Mysuru Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Govt,398.2,33,380.3,No,-17.9,-4.5
+"Jodhpur – Udaipur Link Road, Rajasthan [Work RJ-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Rajasthan,Jodhpur,Govt,294.6,10,317.4,Yes,22.8,7.74
+"Bhopal – Indore Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Bhopal,Govt,154.8,14,163.7,Yes,8.9,5.75
+"Muzaffarpur – Bhagalpur Major District Road, Bihar [Work BR-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Bihar,Muzaffarpur,Govt,84.2,22,97.8,Yes,13.6,16.15
+"North-East Delhi – Central Delhi Link Road, Delhi [Work DL-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Delhi,North-East Delhi,Govt,90.7,16,95.8,Yes,5.1,5.62
+"Howrah – Kolkata Rural Road Upgradation, West Bengal [Work WB-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,West Bengal,Howrah,Govt,78.3,32,78.9,Yes,0.6,0.77
+"Gautam Buddh Nagar – Lucknow Link Road, Uttar Pradesh [Work UP-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Gautam Buddh Nagar,Govt,223.3,8,238.2,Yes,14.9,6.67
+"Chennai – Coimbatore Link Road, Tamil Nadu [Work TN-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Chennai,Private,33.6,20,31.4,No,-2.2,-6.55
+"Dakshina Kannada – Kalaburagi Bridge Causeway, Karnataka [Work KA-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Private,195.2,14,193.2,No,-2.0,-1.02
+"Paschim Medinipur – Darjeeling Major District Road, West Bengal [Work WB-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,West Bengal,Paschim Medinipur,Private,92.8,15,90.6,No,-2.2,-2.37
+"Nizamabad – Warangal Major District Road, Telangana [Work TS-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Telangana,Nizamabad,Private,691.5,8,660.1,No,-31.4,-4.54
+"Madurai – Salem Link Road, Tamil Nadu [Work TN-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Madurai,Govt,252.6,15,222.3,No,-30.3,-12.0
+"Chhatrapati Sambhajinagar – Pune Major District Road, Maharashtra [Work MH-PMGSY-2526-018]",PMGSY (Rural Roads),Road Construction,Maharashtra,Chhatrapati Sambhajinagar,Govt,234.1,28,259.1,Yes,25.0,10.68
+"Dakshina Kannada – Belagavi Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Govt,639.9,15,608.5,No,-31.4,-4.91
+"Patna – Muzaffarpur Link Road, Bihar [Work BR-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Bihar,Patna,Private,182.9,30,200.8,Yes,17.9,9.79
+"Varanasi – Agra Link Road, Uttar Pradesh [Work UP-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Varanasi,Govt,68.2,14,85.0,Yes,16.8,24.63
+"Thane – Nagpur Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-019]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Private,182.8,23,166.7,No,-16.1,-8.81
+"Ahmedabad – Vadodara Link Road, Gujarat [Work GJ-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Gujarat,Ahmedabad,Private,161.9,28,177.6,Yes,15.7,9.7
+"Mysuru – Dakshina Kannada Link Road, Karnataka [Work KA-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Karnataka,Mysuru,Private,47.5,11,57.1,Yes,9.6,20.21
+"Chhatrapati Sambhajinagar – Amravati Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-020]",PMGSY (Rural Roads),Road Construction,Maharashtra,Chhatrapati Sambhajinagar,Private,186.6,25,172.4,No,-14.2,-7.61
+"Rajkot – Vadodara Rural Road Upgradation, Gujarat [Work GJ-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Gujarat,Rajkot,Private,476.0,29,451.7,No,-24.3,-5.11
+"Kanpur Nagar – Agra Link Road, Uttar Pradesh [Work UP-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Private,213.3,35,242.9,Yes,29.6,13.88
+"Warangal – Hyderabad Bridge Causeway, Telangana [Work TS-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Govt,113.2,29,128.7,Yes,15.5,13.69
+"Coimbatore – Chennai Link Road, Tamil Nadu [Work TN-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Coimbatore,Govt,77.1,14,83.4,Yes,6.3,8.17
+"Gwalior – Jabalpur Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Gwalior,Private,75.8,16,75.0,No,-0.8,-1.06
+"Udaipur – Jodhpur Rural Road Upgradation, Rajasthan [Work RJ-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Private,166.0,8,154.1,No,-11.9,-7.17
+"Amravati – Nagpur Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-021]",PMGSY (Rural Roads),Road Construction,Maharashtra,Amravati,Private,77.8,30,88.4,Yes,10.6,13.62
+"Udaipur – Jaipur Rural Road Upgradation, Rajasthan [Work RJ-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Govt,528.8,19,574.5,Yes,45.7,8.64
+"Bhagalpur – Gaya Bridge Causeway, Bihar [Work BR-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Bihar,Bhagalpur,Govt,675.4,34,778.0,Yes,102.6,15.19
+"Indore – Jabalpur Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Private,343.3,17,343.0,No,-0.3,-0.09
+"Vijayawada – Visakhapatnam Major District Road, Andhra Pradesh [Work AP-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Vijayawada,Govt,358.3,16,402.5,Yes,44.2,12.34
+"Nashik – Pune Major District Road, Maharashtra [Work MH-PMGSY-2526-022]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Private,249.3,7,227.4,No,-21.9,-8.78
+"Ernakulam – Thiruvananthapuram Bridge Causeway, Kerala [Work KL-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Kerala,Ernakulam,Govt,173.5,24,165.5,No,-8.0,-4.61
+"Rajkot – Ahmedabad Major District Road, Gujarat [Work GJ-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Gujarat,Rajkot,Govt,133.6,7,133.5,No,-0.1,-0.07
+"Patna – Muzaffarpur Rural Road Upgradation, Bihar [Work BR-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Bihar,Patna,Govt,312.1,13,335.2,Yes,23.1,7.4
+"Ludhiana – Amritsar Bridge Causeway, Punjab [Work PB-PMGSY-2526-001]",PMGSY (Rural Roads),Road Construction,Punjab,Ludhiana,Private,153.6,15,149.0,No,-4.6,-2.99
+"Ahmedabad – Rajkot Bridge Causeway, Gujarat [Work GJ-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Gujarat,Ahmedabad,Govt,78.8,17,74.1,No,-4.7,-5.96
+"Ghaziabad – Kanpur Nagar Link Road, Uttar Pradesh [Work UP-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Ghaziabad,Private,131.2,19,126.9,No,-4.3,-3.28
+"Nashik – Thane Major District Road, Maharashtra [Work MH-PMGSY-2526-023]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Govt,133.4,8,125.2,No,-8.2,-6.15
+"Thiruvananthapuram – Kozhikode Major District Road, Kerala [Work KL-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Kerala,Thiruvananthapuram,Govt,94.9,28,93.5,No,-1.4,-1.48
+"Ludhiana – Jalandhar Link Road, Punjab [Work PB-PMGSY-2526-002]",PMGSY (Rural Roads),Road Construction,Punjab,Ludhiana,Private,162.3,7,162.1,No,-0.2,-0.12
+"Visakhapatnam – Tirupati Major District Road, Andhra Pradesh [Work AP-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Visakhapatnam,Private,69.6,17,67.0,No,-2.6,-3.74
+"Darjeeling – Howrah Link Road, West Bengal [Work WB-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,West Bengal,Darjeeling,Private,275.0,11,263.7,No,-11.3,-4.11
+"Thane – Amravati Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-024]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Govt,88.0,22,106.4,Yes,18.4,20.91
+"Hyderabad – Warangal Bridge Causeway, Telangana [Work TS-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Telangana,Hyderabad,Private,94.6,8,91.8,No,-2.8,-2.96
+"Gaya – Muzaffarpur Rural Road Upgradation, Bihar [Work BR-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Bihar,Gaya,Govt,159.6,18,186.7,Yes,27.1,16.98
+"Nashik – Pune Major District Road, Maharashtra [Work MH-PMGSY-2526-025]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Private,253.7,8,234.2,No,-19.5,-7.69
+"Nashik – Thane Major District Road, Maharashtra [Work MH-PMGSY-2526-026]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Govt,76.5,11,84.8,Yes,8.3,10.85
+"Kanpur Nagar – Ghaziabad Rural Road Upgradation, Uttar Pradesh [Work UP-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Govt,352.4,34,405.3,Yes,52.9,15.01
+"Nagpur – Thane Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-027]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nagpur,Private,233.2,32,229.8,No,-3.4,-1.46
+"Nashik – Nagpur Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-028]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Govt,254.4,31,288.5,Yes,34.1,13.4
+"Kalaburagi – Mysuru Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Karnataka,Kalaburagi,Private,126.1,26,119.9,No,-6.2,-4.92
+"Kozhikode – Ernakulam Major District Road, Kerala [Work KL-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Kerala,Kozhikode,Private,200.0,22,191.6,No,-8.4,-4.2
+"Nagpur – Amravati Link Road, Maharashtra [Work MH-PMGSY-2526-029]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nagpur,Govt,149.6,33,161.5,Yes,11.9,7.95
+"Nagpur – Pune Major District Road, Maharashtra [Work MH-PMGSY-2526-030]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nagpur,Private,167.4,21,167.2,No,-0.2,-0.12
+"Vijayawada – Tirupati Rural Road Upgradation, Andhra Pradesh [Work AP-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Vijayawada,Private,415.1,15,414.7,No,-0.4,-0.1
+"Prayagraj – Ghaziabad Link Road, Uttar Pradesh [Work UP-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Prayagraj,Private,57.5,23,65.8,Yes,8.3,14.43
+"Prayagraj – Lucknow Bridge Causeway, Uttar Pradesh [Work UP-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Prayagraj,Private,63.2,14,60.6,No,-2.6,-4.11
+"Surat – Vadodara Major District Road, Gujarat [Work GJ-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Gujarat,Surat,Private,126.2,11,113.7,No,-12.5,-9.9
+"Chhatrapati Sambhajinagar – Thane Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-031]",PMGSY (Rural Roads),Road Construction,Maharashtra,Chhatrapati Sambhajinagar,Private,167.0,33,157.4,No,-9.6,-5.75
+"Muzaffarpur – Bhagalpur Rural Road Upgradation, Bihar [Work BR-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Bihar,Muzaffarpur,Govt,336.2,11,368.7,Yes,32.5,9.67
+"Jodhpur – Udaipur Link Road, Rajasthan [Work RJ-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Rajasthan,Jodhpur,Private,181.7,31,181.5,No,-0.2,-0.11
+"Dakshina Kannada – Belagavi Major District Road, Karnataka [Work KA-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Govt,240.8,33,258.6,Yes,17.8,7.39
+"Kota – Udaipur Rural Road Upgradation, Rajasthan [Work RJ-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Rajasthan,Kota,Govt,82.8,34,85.0,Yes,2.2,2.66
+"Salem – Chennai Rural Road Upgradation, Tamil Nadu [Work TN-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Salem,Private,288.5,14,288.2,No,-0.3,-0.1
+"Nizamabad – Warangal Bridge Causeway, Telangana [Work TS-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Telangana,Nizamabad,Private,37.3,29,35.0,No,-2.3,-6.17
+"Gaya – Muzaffarpur Bridge Causeway, Bihar [Work BR-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Bihar,Gaya,Govt,397.1,28,442.7,Yes,45.6,11.48
+"Agra – Lucknow Bridge Causeway, Uttar Pradesh [Work UP-PMGSY-2526-017]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Agra,Private,122.0,27,117.5,No,-4.5,-3.69
+"Bengaluru Urban – Kalaburagi Major District Road, Karnataka [Work KA-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Karnataka,Bengaluru Urban,Govt,301.3,16,355.4,Yes,54.1,17.96
+"Vijayawada – Tirupati Link Road, Andhra Pradesh [Work AP-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Vijayawada,Private,102.3,31,94.7,No,-7.6,-7.43
+"Nashik – Amravati Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-032]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Private,251.7,6,248.3,No,-3.4,-1.35
+"Bhopal – Jabalpur Link Road, Madhya Pradesh [Work MP-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Bhopal,Private,64.5,27,70.4,Yes,5.9,9.15
+"Gautam Buddh Nagar – Kanpur Nagar Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-018]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Gautam Buddh Nagar,Govt,253.0,17,333.1,Yes,80.1,31.66
+"Hyderabad – Nizamabad Link Road, Telangana [Work TS-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Telangana,Hyderabad,Govt,111.8,17,134.4,Yes,22.6,20.21
+"Ernakulam – Kozhikode Bridge Causeway, Kerala [Work KL-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Kerala,Ernakulam,Govt,171.1,27,210.7,Yes,39.6,23.14
+"Agra – Ghaziabad Link Road, Uttar Pradesh [Work UP-PMGSY-2526-019]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Agra,Govt,91.4,35,109.3,Yes,17.9,19.58
+"Kalaburagi – Dakshina Kannada Link Road, Karnataka [Work KA-PMGSY-2526-017]",PMGSY (Rural Roads),Road Construction,Karnataka,Kalaburagi,Govt,531.9,25,505.0,No,-26.9,-5.06
+"Mumbai City – Nashik Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-033]",PMGSY (Rural Roads),Road Construction,Maharashtra,Mumbai City,Govt,196.9,12,184.0,No,-12.9,-6.55
+"Belagavi – Bengaluru Urban Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-018]",PMGSY (Rural Roads),Road Construction,Karnataka,Belagavi,Govt,147.3,21,187.0,Yes,39.7,26.95
+"Varanasi – Agra Bridge Causeway, Uttar Pradesh [Work UP-PMGSY-2526-020]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Varanasi,Govt,110.8,6,120.2,Yes,9.4,8.48
+"Vadodara – Rajkot Major District Road, Gujarat [Work GJ-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Gujarat,Vadodara,Govt,376.2,15,366.2,No,-10.0,-2.66
+"Visakhapatnam – Vijayawada Major District Road, Andhra Pradesh [Work AP-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Visakhapatnam,Private,267.7,29,260.4,No,-7.3,-2.73
+"Gwalior – Jabalpur Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Gwalior,Private,481.9,18,462.3,No,-19.6,-4.07
+"Kolkata – Darjeeling Link Road, West Bengal [Work WB-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,West Bengal,Kolkata,Private,151.4,14,142.9,No,-8.5,-5.61
+"Gautam Buddh Nagar – Lucknow Link Road, Uttar Pradesh [Work UP-PMGSY-2526-021]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Gautam Buddh Nagar,Govt,236.0,14,237.9,Yes,1.9,0.81
+"Chennai – Madurai Link Road, Tamil Nadu [Work TN-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Chennai,Private,151.9,9,145.9,No,-6.0,-3.95
+"Gautam Buddh Nagar – Kanpur Nagar Bridge Causeway, Uttar Pradesh [Work UP-PMGSY-2526-022]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Gautam Buddh Nagar,Private,151.0,8,140.5,No,-10.5,-6.95
+"Agra – Varanasi Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-023]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Agra,Private,511.0,19,566.6,Yes,55.6,10.88
+"Nashik – Chhatrapati Sambhajinagar Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-034]",PMGSY (Rural Roads),Road Construction,Maharashtra,Nashik,Govt,169.6,22,165.2,No,-4.4,-2.59
+"Belagavi – Bengaluru Urban Bridge Causeway, Karnataka [Work KA-PMGSY-2526-019]",PMGSY (Rural Roads),Road Construction,Karnataka,Belagavi,Govt,120.6,26,142.2,Yes,21.6,17.91
+"Warangal – Hyderabad Bridge Causeway, Telangana [Work TS-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Govt,389.3,7,388.9,No,-0.4,-0.1
+"Kota – Jaipur Major District Road, Rajasthan [Work RJ-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Rajasthan,Kota,Govt,119.0,11,136.9,Yes,17.9,15.04
+"Gwalior – Jabalpur Link Road, Madhya Pradesh [Work MP-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Gwalior,Govt,30.0,20,34.8,Yes,4.8,16.0
+"Bhagalpur – Patna Rural Road Upgradation, Bihar [Work BR-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Bihar,Bhagalpur,Private,58.5,6,52.7,No,-5.8,-9.91
+"Coimbatore – Salem Link Road, Tamil Nadu [Work TN-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Coimbatore,Private,133.1,22,130.2,No,-2.9,-2.18
+"Dakshina Kannada – Mysuru Bridge Causeway, Karnataka [Work KA-PMGSY-2526-020]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Private,85.8,14,83.8,No,-2.0,-2.33
+"Kanpur Nagar – Agra Rural Road Upgradation, Uttar Pradesh [Work UP-PMGSY-2526-024]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Govt,238.6,10,294.1,Yes,55.5,23.26
+"Dakshina Kannada – Belagavi Link Road, Karnataka [Work KA-PMGSY-2526-021]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Govt,291.4,17,280.3,No,-11.1,-3.81
+"North-East Delhi – Central Delhi Bridge Causeway, Delhi [Work DL-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Delhi,North-East Delhi,Govt,287.1,32,335.0,Yes,47.9,16.68
+"Varanasi – Ghaziabad Link Road, Uttar Pradesh [Work UP-PMGSY-2526-025]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Varanasi,Private,318.2,16,304.8,No,-13.4,-4.21
+"Surat – Rajkot Link Road, Gujarat [Work GJ-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Gujarat,Surat,Govt,552.1,33,536.4,No,-15.7,-2.84
+"Vadodara – Ahmedabad Bridge Causeway, Gujarat [Work GJ-PMGSY-2526-017]",PMGSY (Rural Roads),Road Construction,Gujarat,Vadodara,Govt,167.9,26,161.3,No,-6.6,-3.93
+"Ludhiana – Amritsar Major District Road, Punjab [Work PB-PMGSY-2526-003]",PMGSY (Rural Roads),Road Construction,Punjab,Ludhiana,Private,1003.5,16,964.6,No,-38.9,-3.88
+"Varanasi – Ghaziabad Link Road, Uttar Pradesh [Work UP-PMGSY-2526-026]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Varanasi,Govt,106.1,27,126.9,Yes,20.8,19.6
+"Surat – Vadodara Bridge Causeway, Gujarat [Work GJ-PMGSY-2526-018]",PMGSY (Rural Roads),Road Construction,Gujarat,Surat,Private,74.0,12,79.5,Yes,5.5,7.43
+"Dakshina Kannada – Belagavi Link Road, Karnataka [Work KA-PMGSY-2526-022]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Govt,326.0,19,346.6,Yes,20.6,6.32
+"Warangal – Nizamabad Bridge Causeway, Telangana [Work TS-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Govt,275.8,34,263.3,No,-12.5,-4.53
+"Howrah – Darjeeling Major District Road, West Bengal [Work WB-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,West Bengal,Howrah,Private,193.4,30,193.2,No,-0.2,-0.1
+"Thane – Mumbai City Link Road, Maharashtra [Work MH-PMGSY-2526-035]",PMGSY (Rural Roads),Road Construction,Maharashtra,Thane,Private,288.2,36,260.4,No,-27.8,-9.65
+"Vadodara – Surat Major District Road, Gujarat [Work GJ-PMGSY-2526-019]",PMGSY (Rural Roads),Road Construction,Gujarat,Vadodara,Private,121.7,19,117.4,No,-4.3,-3.53
+"Tirupati – Vijayawada Major District Road, Andhra Pradesh [Work AP-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Tirupati,Govt,159.4,29,199.7,Yes,40.3,25.28
+"Mysuru – Belagavi Rural Road Upgradation, Karnataka [Work KA-PMGSY-2526-023]",PMGSY (Rural Roads),Road Construction,Karnataka,Mysuru,Govt,227.3,16,260.7,Yes,33.4,14.69
+"New Delhi – East Delhi Link Road, Delhi [Work DL-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Delhi,New Delhi,Private,668.3,15,629.9,No,-38.4,-5.75
+"Kota – Jaipur Bridge Causeway, Rajasthan [Work RJ-PMGSY-2526-017]",PMGSY (Rural Roads),Road Construction,Rajasthan,Kota,Govt,129.6,29,142.1,Yes,12.5,9.65
+"North-East Delhi – East Delhi Rural Road Upgradation, Delhi [Work DL-PMGSY-2526-007]",PMGSY (Rural Roads),Road Construction,Delhi,North-East Delhi,Govt,295.2,9,294.9,No,-0.3,-0.1
+"Chhatrapati Sambhajinagar – Nashik Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-036]",PMGSY (Rural Roads),Road Construction,Maharashtra,Chhatrapati Sambhajinagar,Govt,239.8,34,262.9,Yes,23.1,9.63
+"Salem – Madurai Link Road, Tamil Nadu [Work TN-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Salem,Private,238.1,8,231.9,No,-6.2,-2.6
+"Mumbai City – Nagpur Link Road, Maharashtra [Work MH-PMGSY-2526-037]",PMGSY (Rural Roads),Road Construction,Maharashtra,Mumbai City,Private,329.3,20,360.4,Yes,31.1,9.44
+"Rajkot – Vadodara Rural Road Upgradation, Gujarat [Work GJ-PMGSY-2526-020]",PMGSY (Rural Roads),Road Construction,Gujarat,Rajkot,Govt,814.5,32,798.3,No,-16.2,-1.99
+"Warangal – Nizamabad Rural Road Upgradation, Telangana [Work TS-PMGSY-2526-017]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Private,36.7,12,33.6,No,-3.1,-8.45
+"Salem – Madurai Rural Road Upgradation, Tamil Nadu [Work TN-PMGSY-2526-015]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Salem,Private,76.1,34,74.4,No,-1.7,-2.23
+"Chennai – Coimbatore Major District Road, Tamil Nadu [Work TN-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Tamil Nadu,Chennai,Private,287.4,21,269.4,No,-18.0,-6.26
+"East Delhi – Central Delhi Major District Road, Delhi [Work DL-PMGSY-2526-008]",PMGSY (Rural Roads),Road Construction,Delhi,East Delhi,Govt,457.0,34,498.3,Yes,41.3,9.04
+"North-East Delhi – East Delhi Major District Road, Delhi [Work DL-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,Delhi,North-East Delhi,Govt,109.3,8,107.1,No,-2.2,-2.01
+"Lucknow – Kanpur Nagar Major District Road, Uttar Pradesh [Work UP-PMGSY-2526-027]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Lucknow,Private,240.3,21,252.4,Yes,12.1,5.04
+"Jabalpur – Gwalior Rural Road Upgradation, Madhya Pradesh [Work MP-PMGSY-2526-016]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Jabalpur,Govt,178.3,30,184.5,Yes,6.2,3.48
+"Kalaburagi – Belagavi Link Road, Karnataka [Work KA-PMGSY-2526-024]",PMGSY (Rural Roads),Road Construction,Karnataka,Kalaburagi,Govt,55.1,19,62.1,Yes,7.0,12.7
+"Mumbai City – Pune Major District Road, Maharashtra [Work MH-PMGSY-2526-038]",PMGSY (Rural Roads),Road Construction,Maharashtra,Mumbai City,Private,349.8,12,340.6,No,-9.2,-2.63
+"Jaipur – Jodhpur Bridge Causeway, Rajasthan [Work RJ-PMGSY-2526-018]",PMGSY (Rural Roads),Road Construction,Rajasthan,Jaipur,Private,296.9,36,287.2,No,-9.7,-3.27
+"Kolkata – Darjeeling Rural Road Upgradation, West Bengal [Work WB-PMGSY-2526-009]",PMGSY (Rural Roads),Road Construction,West Bengal,Kolkata,Private,252.0,12,232.2,No,-19.8,-7.86
+"Dakshina Kannada – Bengaluru Urban Major District Road, Karnataka [Work KA-PMGSY-2526-025]",PMGSY (Rural Roads),Road Construction,Karnataka,Dakshina Kannada,Private,104.7,22,104.6,No,-0.1,-0.1
+"Gautam Buddh Nagar – Ghaziabad Link Road, Uttar Pradesh [Work UP-PMGSY-2526-028]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Gautam Buddh Nagar,Govt,68.8,34,75.6,Yes,6.8,9.88
+"Tirupati – Visakhapatnam Bridge Causeway, Andhra Pradesh [Work AP-PMGSY-2526-011]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Tirupati,Private,136.7,8,136.6,No,-0.1,-0.07
+"Chhatrapati Sambhajinagar – Nashik Bridge Causeway, Maharashtra [Work MH-PMGSY-2526-039]",PMGSY (Rural Roads),Road Construction,Maharashtra,Chhatrapati Sambhajinagar,Govt,360.4,11,360.0,No,-0.4,-0.11
+"Udaipur – Jaipur Link Road, Rajasthan [Work RJ-PMGSY-2526-019]",PMGSY (Rural Roads),Road Construction,Rajasthan,Udaipur,Private,77.8,12,77.2,No,-0.6,-0.77
+"Muzaffarpur – Bhagalpur Bridge Causeway, Bihar [Work BR-PMGSY-2526-013]",PMGSY (Rural Roads),Road Construction,Bihar,Muzaffarpur,Private,337.6,25,411.0,Yes,73.4,21.74
+"Rajkot – Vadodara Rural Road Upgradation, Gujarat [Work GJ-PMGSY-2526-021]",PMGSY (Rural Roads),Road Construction,Gujarat,Rajkot,Private,275.1,18,270.8,No,-4.3,-1.56
+"Indore – Gwalior Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-017]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Govt,30.0,20,34.8,Yes,4.8,16.0
+"Kolkata – Darjeeling Link Road, West Bengal [Work WB-PMGSY-2526-010]",PMGSY (Rural Roads),Road Construction,West Bengal,Kolkata,Private,462.5,28,462.0,No,-0.5,-0.11
+"Ludhiana – Jalandhar Link Road, Punjab [Work PB-PMGSY-2526-004]",PMGSY (Rural Roads),Road Construction,Punjab,Ludhiana,Govt,549.0,8,539.1,No,-9.9,-1.8
+"Kanpur Nagar – Ghaziabad Rural Road Upgradation, Uttar Pradesh [Work UP-PMGSY-2526-029]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Private,284.9,17,330.1,Yes,45.2,15.87
+"Hyderabad – Warangal Link Road, Telangana [Work TS-PMGSY-2526-018]",PMGSY (Rural Roads),Road Construction,Telangana,Hyderabad,Govt,142.2,17,154.7,Yes,12.5,8.79
+"Mumbai City – Thane Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-040]",PMGSY (Rural Roads),Road Construction,Maharashtra,Mumbai City,Private,219.6,14,219.4,No,-0.2,-0.09
+"Warangal – Nizamabad Bridge Causeway, Telangana [Work TS-PMGSY-2526-019]",PMGSY (Rural Roads),Road Construction,Telangana,Warangal,Private,965.2,26,956.1,No,-9.1,-0.94
+"Visakhapatnam – Vijayawada Major District Road, Andhra Pradesh [Work AP-PMGSY-2526-012]",PMGSY (Rural Roads),Road Construction,Andhra Pradesh,Visakhapatnam,Private,964.8,18,891.5,No,-73.3,-7.6
+"Gaya – Bhagalpur Link Road, Bihar [Work BR-PMGSY-2526-014]",PMGSY (Rural Roads),Road Construction,Bihar,Gaya,Govt,154.9,19,175.3,Yes,20.4,13.17
+"Kanpur Nagar – Varanasi Link Road, Uttar Pradesh [Work UP-PMGSY-2526-030]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Kanpur Nagar,Private,336.4,31,392.0,Yes,55.6,16.53
+"Nizamabad – Warangal Link Road, Telangana [Work TS-PMGSY-2526-020]",PMGSY (Rural Roads),Road Construction,Telangana,Nizamabad,Govt,90.3,31,107.5,Yes,17.2,19.05
+"Bengaluru Urban – Dakshina Kannada Bridge Causeway, Karnataka [Work KA-PMGSY-2526-026]",PMGSY (Rural Roads),Road Construction,Karnataka,Bengaluru Urban,Govt,130.3,14,123.5,No,-6.8,-5.22
+"Amravati – Nashik Rural Road Upgradation, Maharashtra [Work MH-PMGSY-2526-041]",PMGSY (Rural Roads),Road Construction,Maharashtra,Amravati,Govt,237.6,28,269.3,Yes,31.7,13.34
+"Amritsar – Ludhiana Major District Road, Punjab [Work PB-PMGSY-2526-005]",PMGSY (Rural Roads),Road Construction,Punjab,Amritsar,Private,1037.3,6,990.0,No,-47.3,-4.56
+"Varanasi – Lucknow Rural Road Upgradation, Uttar Pradesh [Work UP-PMGSY-2526-031]",PMGSY (Rural Roads),Road Construction,Uttar Pradesh,Varanasi,Private,265.7,28,323.0,Yes,57.3,21.57
+"Amritsar – Jalandhar Rural Road Upgradation, Punjab [Work PB-PMGSY-2526-006]",PMGSY (Rural Roads),Road Construction,Punjab,Amritsar,Govt,1017.1,29,1007.0,No,-10.1,-0.99
+"Gwalior – Jabalpur Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-018]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Gwalior,Govt,105.3,27,120.1,Yes,14.8,14.06
+"Indore – Jabalpur Major District Road, Madhya Pradesh [Work MP-PMGSY-2526-019]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Govt,69.1,21,82.6,Yes,13.5,19.54
+"Indore – Bhopal Rural Road Upgradation, Madhya Pradesh [Work MP-PMGSY-2526-020]",PMGSY (Rural Roads),Road Construction,Madhya Pradesh,Indore,Private,421.5,17,466.1,Yes,44.6,10.58

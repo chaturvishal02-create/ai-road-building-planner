@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Government Construction Project Budget Prediction — India FY 2025-26</title>
+  <meta name="description" content="KNN and Random Forest prediction of cost overruns on Indian government construction schemes. Mini project by Vishal Raghunath Chatur and Mohsin Jabiulla Balgyar, DBATU.">
+
+  <!-- Inline SVG favicon: a linked file that does not exist would log a 404 in the
+       console, and the browser test treats console errors as failures. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b2545'/%3E%3Cpath d='M6 10h20M6 16h20M6 22h20' stroke='%23ff9933' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Theme is decided before first paint so a dark-mode user never sees a white flash.
+    (function () {
+      try {
+        var saved = localStorage.getItem('budget-theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) document.documentElement.classList.add('dark');
+      } catch (e) { /* storage can be blocked; light mode is a safe default */ }
+    })();
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'Segoe UI', 'sans-serif'] },
+          colors: {
+            navy: { DEFAULT: '#0b2545', 600: '#13315c', 300: '#8aa5c8' },
+            saffron: { DEFAULT: '#ff9933', text: '#b25a00', soft: '#fff2e0' },
+            indiagreen: { DEFAULT: '#138808', text: '#0b6b0b', soft: '#e3f4e1' },
+          },
+          boxShadow: { card: '0 10px 30px -12px rgba(11, 37, 69, 0.28)' },
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <!-- Leaflet 1.9.4 (BSD-2) + OpenStreetMap raster tiles: free and open-source, no key,
+       no quota. routes.js still works if the CDN is unreachable -- it says so on screen
+       instead of throwing -- because the numbers come from the Flask API, not the map. -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script id="team-data" type="application/json">{{ TEAM | tojson }}</script>
+  <script id="settings-data" type="application/json">{{ SETTINGS | tojson }}</script>
+</head>
+
+<body class="min-h-screen bg-[var(--bg)] text-[var(--text)] font-sans antialiased">
+
+  <!-- ================= flag strip: the only decorative use of raw hues ========= -->
+  <div class="tricolour" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <!-- ================= navbar ================================================= -->
+  <header id="navbar" class="sticky top-0 z-40 border-b border-[var(--border)] bg-[var(--surface)]/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3 sm:px-6" aria-label="Primary">
+      <a href="#home" class="flex shrink-0 items-center gap-2">
+        <span class="grid h-9 w-9 place-items-center rounded-lg bg-[var(--navy)] text-sm font-bold text-white">₹</span>
+        <span class="hidden text-sm font-bold leading-tight sm:block">Budget<br>Prediction</span>
+      </a>
+      <ul class="ml-auto flex items-center gap-1 overflow-x-auto text-sm font-medium">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#dataset">Dataset</a></li>
+        <li><a class="nav-link" href="#predictor">Predictor</a></li>
+        <li><a class="nav-link" href="#performance">Models</a></li>
+        <li><a class="nav-link" href="#dashboard">Dashboard</a></li>
+        <li><a class="nav-link" href="#routes">Route map</a></li>
+        <li><a class="nav-link" href="{{ url_for('building_page') }}">Building</a></li>
+        <li class="hidden lg:block"><a class="nav-link" href="#knn">How it works</a></li>
+        <li class="hidden lg:block"><a class="nav-link" href="#about">About</a></li>
+        <li class="hidden lg:block"><a class="nav-link" href="#team">Team</a></li>
+      </ul>
+      <button id="theme-toggle" type="button" class="shrink-0 rounded-lg border border-[var(--border)] px-3 py-2 text-sm font-semibold hover:bg-[var(--surface-2)]" aria-label="Switch between dark and light mode" title="Toggle dark mode">
+        <span data-theme-label>Dark</span>
+      </button>
+    </nav>
+  </header>
+
+  <div id="api-banner" class="hidden"></div>
+  <div id="toast-stack" class="pointer-events-none fixed bottom-4 right-4 z-50 flex w-[min(22rem,90vw)] flex-col gap-2" aria-live="polite"></div>
+
+  <main class="mx-auto max-w-7xl px-4 pb-16 sm:px-6">
+
+    <!-- ===================== 1. HOME ======================================== -->
+    <section id="home" class="reveal pt-10 pb-14">
+      <p class="eyebrow">Mini Project · B.Tech Artificial Intelligence &amp; Data Science</p>
+      <h1 class="mt-3 max-w-4xl text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
+        Government Construction Project
+        <span class="text-[var(--saffron-text)]">Budget Prediction</span>
+        <span class="text-[var(--green-text)]">Using Machine Learning</span>
+      </h1>
+
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-[var(--muted)]">
+        Cost overruns on Indian infrastructure are not random. This project trains a
+        <strong>K-Nearest Neighbours</strong> model and a <strong>Random Forest</strong> on
+        700 government construction works across four central schemes, and predicts whether a
+        newly sanctioned project will finish <strong>over its sanctioned cost</strong> — with a
+        rupee estimate of what it will actually cost.
+      </p>
+
+      <div class="mt-5 flex flex-wrap gap-3 text-sm">
+        <span class="chip chip-saffron">PMGSY · Rural Roads</span>
+        <span class="chip chip-green">PMAY · Housing</span>
+        <span class="chip chip-navy">Jal Jeevan Mission</span>
+        <span class="chip">Smart Cities Mission</span>
+      </div>
+
+      <!-- counters -->
+      <dl class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        <div class="stat"><dt>Projects</dt><dd id="counter-projects">—</dd></div>
+        <div class="stat"><dt>States</dt><dd id="counter-states">—</dd></div>
+        <div class="stat"><dt>Districts</dt><dd id="counter-districts">—</dd></div>
+        <div class="stat"><dt>Central schemes</dt><dd id="counter-schemes">—</dd></div>
+        <div class="stat"><dt>Sanctioned</dt><dd id="counter-sanctioned">—</dd></div>
+        <div class="stat"><dt>Over sanction</dt><dd id="counter-overrun">—</dd></div>
+      </dl>
+
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a href="#predictor" class="btn btn-primary" id="cta-predictor">Try the Predictor</a>
+        <a href="#performance" class="btn btn-ghost">See model accuracy</a>
+        <a href="#dashboard" class="btn btn-ghost">Open dashboard</a>
+      </div>
+
+      <!-- problem statement + team -->
+      <div class="mt-10 grid gap-5 lg:grid-cols-3">
+        <article class="card lg:col-span-2">
+          <h2 class="card-title">The problem, in one paragraph</h2>
+          <p class="mt-2 text-sm leading-relaxed text-[var(--muted)]">
+            When a work finishes above its administrative sanction, the exchequer pays the
+            difference and the public loses the benefit of the delay. Audit reports of the
+            Comptroller and Auditor General of India have repeatedly recorded large numbers of
+            central-scheme works completing above sanctioned cost, with percentage cost escalation
+            concentrated in small rural works and in department-executed packages.
+            A prediction model cannot stop an overrun, but it can rank projects by risk
+            <em>before</em> sanction — telling an engineer where to insist on a detailed survey,
+            a geotechnical report and a realistic schedule.
+          </p>
+          <div class="mt-4 grid gap-3 sm:grid-cols-3">
+            <div class="mini"><strong>Precision</strong><span>Of what we flagged, how many truly overran</span></div>
+            <div class="mini"><strong>Recall</strong><span>Of all real overruns, how many we caught</span></div>
+            <div class="mini"><strong>F1</strong><span>One number balancing both — our model choice</span></div>
+          </div>
+        </article>
+
+        <aside class="card">
+          <h2 class="card-title">Project team</h2>
+          <p class="mt-2 text-sm font-semibold">Vishal Raghunath Chatur</p>
+          <p class="text-sm font-semibold">Mohsin Jabiulla Balgyar</p>
+          <p class="mt-3 text-sm text-[var(--muted)]">Under the guidance of <strong>Tapase Miss</strong></p>
+          <p class="text-sm text-[var(--muted)]">B.Tech in Artificial Intelligence &amp; Data Science Engineering, <strong>DBATU</strong></p>
+          <p class="mt-3 border-t border-[var(--border)] pt-3 text-xs leading-relaxed text-[var(--muted)]">
+            The project rows are <strong>simulated</strong>: real 2025-26 project-level
+            sanction and actual figures are not published as one downloadable file.
+            Every model number shown is measured from the trained model.
+          </p>
+        </aside>
+      </div>
+
+      <!-- flow diagram -->
+      <div class="card mt-5">
+        <h2 class="card-title">How a project becomes a prediction</h2>
+        <ol class="flow">
+          <li><span>1</span><strong>Dataset</strong><em>700 scheme works with sanctioned cost, actual cost, duration</em></li>
+          <li><span>2</span><strong>Preprocess</strong><em>one-hot the categories, scale rupees and months</em></li>
+          <li><span>3</span><strong>Split 80 / 20</strong><em>stratified on the target, fixed seed 42</em></li>
+          <li><span>4</span><strong>Train both</strong><em>KNN and Random Forest, identical split</em></li>
+          <li><span>5</span><strong>Pick winner</strong><em>higher F1 on the over-budget class</em></li>
+          <li><span>6</span><strong>Predict</strong><em>verdict, risk %, expected spend in rupees</em></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== 2. DATASET ===================================== -->
+    <section id="dataset" class="reveal py-14">
+      <div class="section-head">
+        <p class="eyebrow">Explorer</p>
+        <h2 class="section-title">Dataset — Indian scheme works, FY 2025-26</h2>
+        <p class="section-sub">Search, filter and sort every project row, and see how the classes and schemes are distributed.</p>
+      </div>
+
+      <div class="notice notice-saffron" role="status">
+        <strong>Simulated data.</strong> These 700 rows are generated by
+        <code>model/generate_dataset.py</code> to reproduce the structure and documented
+        patterns of Indian central-scheme works. They are not government records. The model
+        metrics on this page are real measurements on these rows.
+        <a class="link" id="download-sample" href="/sample.csv" download>Download the 20-row sample CSV</a>
+      </div>
+
+      <div class="mt-5 grid gap-5 lg:grid-cols-4">
+        <div class="card lg:col-span-2"><h3 class="card-title">Scheme distribution</h3><div class="chart-box"><canvas id="chart-scheme"></canvas></div></div>
+        <div class="card lg:col-span-2"><h3 class="card-title">Over-budget rate by scheme</h3><div class="chart-box"><canvas id="chart-overrun"></canvas></div></div>
+        <div class="card lg:col-span-2"><h3 class="card-title">Project distribution by state</h3><div class="chart-box"><canvas id="chart-state"></canvas></div></div>
+        <div class="card lg:col-span-2"><h3 class="card-title">Execution type vs class</h3><div class="chart-box"><canvas id="chart-contractor"></canvas></div></div>
+      </div>
+
+      <div class="card mt-5">
+        <div class="flex flex-wrap items-end gap-3">
+          <label class="field grow"><span class="label">Search projects, districts, states</span>
+            <input id="dataset-search" class="field-input" type="search" placeholder="e.g. Nashik, PMAY, Bihar"></label>
+          <label class="field"><span class="label">Scheme</span><select id="filter-scheme" class="field-input"><option value="">All</option></select></label>
+          <label class="field"><span class="label">State</span><select id="filter-state" class="field-input"><option value="">All</option></select></label>
+          <label class="field"><span class="label">Execution</span><select id="filter-contractor" class="field-input"><option value="">All</option></select></label>
+          <label class="field"><span class="label">Outcome</span><select id="filter-target" class="field-input"><option value="">All</option></select></label>
+          <button id="dataset-clear" type="button" class="btn btn-ghost">Clear</button>
+        </div>
+
+        <div class="mt-4 table-wrap">
+          <table class="data-table">
+            <caption class="sr-only">Indian government construction projects with sanctioned and actual cost</caption>
+            <thead>
+              <tr>
+                <th class="sortable" data-sort="project_name">Project</th>
+                <th class="sortable" data-sort="scheme_name">Scheme</th>
+                <th class="sortable" data-sort="district">District / State</th>
+                <th class="sortable hidden md:table-cell" data-sort="contractor_type">Exec.</th>
+                <th class="sortable num" data-sort="sanctioned_budget_lakh">Sanctioned</th>
+                <th class="sortable num" data-sort="duration_months">Months</th>
+                <th class="sortable num" data-sort="actual_cost_lakh">Actual</th>
+                <th class="sortable num" data-sort="overrun_pct">Overrun</th>
+                <th class="sortable" data-sort="over_budget">Outcome</th>
+              </tr>
+            </thead>
+            <tbody id="dataset-body"><tr><td colspan="9" class="empty">Loading dataset…</td></tr></tbody>
+          </table>
+        </div>
+
+        <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-sm">
+          <p id="page-info" class="text-[var(--muted)]">—</p>
+          <div class="flex items-center gap-2">
+            <button id="page-prev" type="button" class="btn btn-ghost" disabled>Previous</button>
+            <button id="page-next" type="button" class="btn btn-ghost" disabled>Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. PREDICTOR =================================== -->
+    <section id="predictor" class="reveal py-14">
+      <div class="section-head">
+        <p class="eyebrow">Predictor</p>
+        <h2 class="section-title">Will this project finish over sanction?</h2>
+        <p class="section-sub">Describe a sanctioned work. The model compares it with the 560 training projects and answers with a verdict, a risk percentage and an expected rupee cost.</p>
+      </div>
+
+      <div class="grid gap-5 lg:grid-cols-5">
+        <form id="predict-form" class="card lg:col-span-2 self-start" novalidate>
+          <h3 class="card-title">Project details</h3>
+
+          <div class="mt-3 space-y-3">
+            <label class="field"><span class="label">Scheme <em>PMGSY, PMAY, Jal Jeevan, Smart Cities</em></span>
+              <select id="in-scheme" name="scheme_name" class="field-input" required><option value="">Loading…</option></select>
+              <span class="field-error" data-error-for="scheme_name"></span></label>
+
+            <label class="field"><span class="label">State</span>
+              <select id="in-state" name="state" class="field-input" required><option value="">Loading…</option></select>
+              <span class="field-error" data-error-for="state"></span></label>
+
+            <label class="field"><span class="label">District <em>narrows to the selected state</em></span>
+              <select id="in-district" name="district" class="field-input" required><option value="">Loading…</option></select>
+              <span class="field-error" data-error-for="district"></span></label>
+
+            <label class="field"><span class="label">Execution</span>
+              <select id="in-contractor" name="contractor_type" class="field-input" required><option value="">Loading…</option></select>
+              <span class="field-error" data-error-for="contractor_type"></span></label>
+
+            <div class="grid gap-3 sm:grid-cols-2">
+              <label class="field"><span class="label">Sanctioned cost (₹ lakh)</span>
+                <input id="in-budget" name="sanctioned_budget_lakh" class="field-input" type="number" min="1" step="0.1" inputmode="decimal" placeholder="250">
+                <span class="hint" id="budget-live-hint"></span>
+                <span class="field-error" data-error-for="sanctioned_budget_lakh"></span></label>
+
+              <label class="field"><span class="label">Scheduled duration (months)</span>
+                <input id="in-duration" name="duration_months" class="field-input" type="number" min="1" max="240" step="1" inputmode="numeric" placeholder="18">
+                <span class="field-error" data-error-for="duration_months"></span></label>
+            </div>
+
+            <hr class="border-[var(--border)]">
+
+            <div class="grid gap-3 sm:grid-cols-2">
+              <label class="field"><span class="label">Model</span>
+                <select id="in-model" name="model" class="field-input">
+                  <option value="auto">Best model (auto)</option>
+                  <option value="rf">Random Forest</option>
+                  <option value="knn">K-Nearest Neighbours</option>
+                </select>
+                <span class="field-error" data-error-for="model"></span></label>
+
+              <label class="field"><span class="label">K neighbours <span id="k-value" class="font-bold">5</span></span>
+                <input id="in-k" name="k" type="range" min="1" max="31" step="1" value="5" class="range">
+                <span class="hint">Applies to KNN and to the comparable-project list.</span></label>
+            </div>
+          </div>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <button id="predict-submit" type="submit" class="btn btn-primary">Predict overrun risk</button>
+            <button id="predict-reset" type="button" class="btn btn-ghost">Reset</button>
+            <button id="predict-example" type="button" class="btn btn-ghost">Use example</button>
+          </div>
+
+          <ul id="form-errors" class="mt-3 list-disc space-y-1 pl-5 text-sm text-[var(--danger)]" hidden></ul>
+          <p class="mt-3 text-xs leading-relaxed text-[var(--muted)]">
+            Only six inputs are used, exactly the fields an engineer has on the day of
+            sanction: scheme, place, execution type, money and time.
+          </p>
+        </form>
+
+        <div class="lg:col-span-3">
+          <div id="predict-result" hidden>
+            <div id="result-card" class="card verdict-card">
+              <div class="flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <p class="eyebrow">Prediction</p>
+                  <p id="result-verdict" class="verdict">—</p>
+                  <p id="result-model-line" class="mt-1 text-sm text-[var(--muted)]">—</p>
+                </div>
+                <div class="risk-gauge" role="img" aria-labelledby="result-risk-label">
+                  <svg viewBox="0 0 120 120" class="gauge-svg" aria-hidden="true">
+                    <circle class="gauge-track" cx="60" cy="60" r="52"></circle>
+                    <circle id="risk-gauge-fill" class="gauge-fill" cx="60" cy="60" r="52" stroke-dasharray="326.7" stroke-dashoffset="326.7"></circle>
+                  </svg>
+                  <p id="result-risk" class="gauge-value">—</p>
+                  <p id="result-risk-label" class="gauge-label">cost-overrun risk</p>
+                </div>
+              </div>
+
+              <dl class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                <div class="mini"><strong id="cost-sanctioned">—</strong><span>sanctioned</span></div>
+                <div class="mini"><strong id="cost-expected">—</strong><span>expected actual</span></div>
+                <div class="mini"><strong id="cost-overrun">—</strong><span>expected overrun</span></div>
+                <div class="mini"><strong id="vote-line">—</strong><span>neighbour vote</span></div>
+              </dl>
+
+              <p id="result-explanation" class="mt-4 text-sm leading-relaxed"></p>
+              <p id="specific-advisory" class="mt-3 rounded-lg border-l-4 px-3 py-2 text-sm advisory"></p>
+            </div>
+
+            <div class="card mt-5">
+              <h3 class="card-title">Comparable training projects</h3>
+              <p class="mt-1 text-xs text-[var(--muted)]">The K nearest projects to this one in the encoded space, nearest first. Distance 0 would mean an identical project.</p>
+              <div class="mt-3 table-wrap neighbour-scroll">
+                <table class="data-table compact">
+                  <thead><tr>
+                    <th>#</th><th>Project</th><th>State / District</th>
+                    <th class="num">Sanctioned</th><th class="num">Actual</th><th>Outcome</th><th class="num">Distance</th>
+                  </tr></thead>
+                  <tbody id="neighbour-body"></tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              <button id="export-csv" type="button" class="btn btn-ghost">Export CSV</button>
+              <button id="export-pdf" type="button" class="btn btn-ghost">Export PDF report</button>
+            </div>
+          </div>
+
+          <div id="predict-spinner" hidden class="card flex items-center gap-3">
+            <span class="spinner" aria-hidden="true"></span>
+            <span class="text-sm font-medium">Measuring distances and voting…</span>
+          </div>
+
+          <div id="predict-placeholder" class="card text-center">
+            <p class="text-4xl" aria-hidden="true">₹</p>
+            <h3 class="card-title mt-2">No prediction yet</h3>
+            <p class="mt-1 text-sm text-[var(--muted)]">Fill the form and the verdict card, risk gauge, rupee estimate and neighbour table appear here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. MODEL PERFORMANCE =========================== -->
+    <section id="performance" class="reveal py-14">
+      <div class="section-head">
+        <p class="eyebrow">Evaluation</p>
+        <h2 class="section-title">Model performance — KNN against Random Forest</h2>
+        <p class="section-sub">Both models saw the same 560 training projects and were scored on the same 140 held-out projects. Every figure below is read from the trained artifacts.</p>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Head to head</h3>
+        <div class="mt-3 table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Model</th><th class="num">Accuracy</th><th class="num">Precision (Yes)</th><th class="num">Recall (Yes)</th><th class="num">F1 (Yes)</th><th class="num">ROC AUC</th></tr></thead>
+            <tbody id="compare-body"></tbody>
+          </table>
+        </div>
+        <p class="mt-3 text-xs leading-relaxed text-[var(--muted)]" id="selection-rule"></p>
+      </div>
+
+      <div class="mt-5 grid gap-5 lg:grid-cols-3">
+        <div class="card lg:col-span-2">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h3 class="card-title">Confusion matrix</h3>
+            <div class="flex gap-1 text-xs" role="group" aria-label="Choose model to display">
+              <button class="tab" data-metric-model="knn" type="button">KNN</button>
+              <button class="tab is-active" data-metric-model="rf" type="button">Random Forest</button>
+            </div>
+          </div>
+          <div id="confusion-grid" class="heatmap mt-4"></div>
+          <p class="mt-3 text-xs text-[var(--muted)]">Rows are the truth in the test set, columns are what the model said. The off-diagonal cells are the two different kinds of mistake — and they do not cost the same.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Selected model</h3>
+          <p class="mt-1 text-xs font-semibold text-[var(--saffron-text)]" id="m-model-name">—</p>
+          <dl class="mt-3 space-y-2">
+            <div class="metric"><dt>Accuracy</dt><dd id="m-accuracy">—</dd></div>
+            <div class="metric"><dt>Precision (over budget)</dt><dd id="m-precision">—</dd></div>
+            <div class="metric"><dt>Recall (over budget)</dt><dd id="m-recall">—</dd></div>
+            <div class="metric"><dt>F1 (over budget)</dt><dd id="m-f1">—</dd></div>
+            <div class="metric"><dt>ROC AUC</dt><dd id="m-auc">—</dd></div>
+            <div class="metric"><dt>Correct of total</dt><dd id="m-correct">—</dd></div>
+            <div class="metric"><dt>Always-No baseline</dt><dd id="m-baseline">—</dd></div>
+          </dl>
+          <p class="mt-3 text-xs leading-relaxed text-[var(--muted)]">The Always-No baseline is what a model gets by never predicting an overrun. Anything close to it is not learning.</p>
+        </div>
+      </div>
+
+      <div class="mt-5 grid gap-5 lg:grid-cols-2">
+        <div class="card">
+          <h3 class="card-title">Classification report</h3>
+          <div class="table-wrap mt-3">
+            <table class="data-table compact">
+              <thead><tr><th>Class</th><th class="num">Precision</th><th class="num">Recall</th><th class="num">F1</th><th class="num">Support</th></tr></thead>
+              <tbody id="report-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">K versus accuracy</h3>
+          <p class="mt-1 text-xs text-[var(--muted)]">The KNN was refitted for every K from 1 to 31 on the identical split.</p>
+          <div class="chart-box mt-3"><canvas id="chart-kcurve"></canvas></div>
+        </div>
+      </div>
+
+      <div class="mt-5 grid gap-5 lg:grid-cols-2">
+        <div class="card">
+          <h3 class="card-title">What the Random Forest thinks matters</h3>
+          <p class="mt-1 text-xs text-[var(--muted)]">Impurity-based importance, summed back from dummy columns to the original field.</p>
+          <div class="chart-box mt-3"><canvas id="chart-importance-rf"></canvas></div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">What the KNN actually matches on</h3>
+          <p class="mt-1 text-xs text-[var(--muted)]">Ablation: each field is replaced by its most common training value and the accuracy change is measured. A negative number means blanking that field <em>helped</em>.</p>
+          <ul id="knn-ablation" class="mt-3 space-y-2"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. DASHBOARD =================================== -->
+    <section id="dashboard" class="reveal py-14">
+      <div class="section-head">
+        <p class="eyebrow">Live</p>
+        <h2 class="section-title">Dashboard — money, geography and a live feed</h2>
+        <p class="section-sub">Aggregated from the same 700 rows the models trained on, plus every prediction this server has served, streamed without a page reload.</p>
+      </div>
+
+      <dl class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        <div class="stat"><dt>Sanctioned total</dt><dd id="kpi-sanctioned">—</dd></div>
+        <div class="stat"><dt>Actual total</dt><dd id="kpi-actual">—</dd></div>
+        <div class="stat"><dt>Total overrun</dt><dd id="kpi-overrun">—</dd></div>
+        <div class="stat"><dt>Overrun share</dt><dd id="kpi-share">—</dd></div>
+        <div class="stat"><dt>Predictions served</dt><dd id="kpi-predictions">0</dd></div>
+        <div class="stat"><dt>Stream</dt><dd id="stream-status" class="text-sm">connecting…</dd></div>
+      </dl>
+
+      <div class="mt-5 grid gap-5 lg:grid-cols-2">
+        <div class="card">
+          <h3 class="card-title">Sanctioned against actual, by scheme</h3>
+          <p class="mt-1 text-xs text-[var(--muted)]">In ₹ crore. The gap between the pair of bars for each scheme is the money that left the estimate.</p>
+          <div class="chart-box tall"><canvas id="chart-budget-actual"></canvas></div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">State-wise project distribution</h3>
+          <p class="mt-1 text-xs text-[var(--muted)]">Stacked by outcome, so a state's exposure is the saffron part of its bar.</p>
+          <div class="chart-box tall"><canvas id="chart-state-dist"></canvas></div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Execution type risk</h3>
+          <div class="chart-box"><canvas id="chart-contractor-risk"></canvas></div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Data pipeline status</h3>
+          <dl class="mt-3 space-y-2" id="pipeline-status"><div class="metric"><dt>Loading…</dt><dd>—</dd></div></dl>
+          <p class="mt-3 text-xs leading-relaxed text-[var(--muted)]">The chunked batch job writes a partitioned feature store; this panel reads its manifest.</p>
+        </div>
+      </div>
+
+      <div class="card mt-5">
+        <h3 class="card-title">Where the data comes from</h3>
+        <p class="mt-1 text-sm text-[var(--muted)]" id="source-line">Loading…</p>
+        <div class="mt-3 grid gap-3 sm:grid-cols-3">
+          <label class="field"><span class="label">Storage adapter</span>
+            <select id="source-store" class="field-input">
+              <option value="local">LocalStore — files under data/</option>
+              <option value="http">HttpStore — API-based download</option>
+              <option value="s3">S3Store — AWS S3 / MinIO</option>
+            </select></label>
+          <label class="field grow"><span class="label">File, URL or bucket key</span>
+            <input id="source-ref" class="field-input" type="text" placeholder="data/india_projects_2025_26.csv"></label>
+          <div class="flex items-end gap-2">
+            <button id="source-load" type="button" class="btn btn-ghost">Reload from this source</button>
+            <button id="pipeline-rebuild" type="button" class="btn btn-ghost">Rebuild feature store</button>
+          </div>
+        </div>
+        <p class="mt-2 text-xs leading-relaxed text-[var(--muted)]" id="source-availability"></p>
+
+        <hr class="my-4 border-[var(--border)]">
+
+        <div class="flex flex-wrap items-end gap-3">
+          <label class="field"><span class="label">Retrain on your own CSV</span>
+            <input id="retrain-file" class="field-input" type="file" accept=".csv,text/csv"></label>
+          <div class="flex items-end gap-2">
+            <button id="retrain-run" type="button" class="btn btn-primary">Retrain both models</button>
+            <button id="retrain-reset" type="button" class="btn btn-ghost">Back to the 700 simulated rows</button>
+          </div>
+        </div>
+        <p class="mt-2 text-xs leading-relaxed text-[var(--muted)]" id="retrain-status">
+          Needs the same columns as the sample CSV, at least 30 rows and both Yes and No outcomes.
+          Artifacts are backed up first — a failed retrain restores the previous model.
+        </p>
+      </div>
+
+      <div class="mt-5 grid gap-5 lg:grid-cols-2">
+        <div class="card">
+          <h3 class="card-title">Ten largest overruns</h3>
+          <div class="table-wrap mt-3">
+            <table class="data-table compact">
+              <thead><tr><th>Project</th><th>State</th><th class="num">Sanctioned</th><th class="num">Actual</th><th class="num">Overrun</th></tr></thead>
+              <tbody id="top-overruns"><tr><td colspan="5" class="empty">Loading…</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Live prediction feed</h3>
+          <p class="mt-1 text-xs text-[var(--muted)]">Every prediction anyone submits on this server appears here within a second — no refresh. Submit one in the predictor above to watch it arrive.</p>
+          <div class="table-wrap mt-3 neighbour-scroll">
+            <table class="data-table compact">
+              <thead><tr><th>Time</th><th>Scheme</th><th>District</th><th class="num">Risk</th><th>Verdict</th></tr></thead>
+              <tbody id="live-feed"><tr><td colspan="5" class="empty">Waiting for the first prediction…</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. ROUTE PLANNER =============================== -->
+    <section id="routes" class="reveal py-14">
+      <div class="section-head">
+        <p class="eyebrow">Route planner</p>
+        <h2 class="section-title">Cost a corridor on the map: Nashik to Pune, and every other Indian pair</h2>
+        <p class="section-sub">Choose two Indian locations — either two district cities or a full
+          State → District → Taluka → Village path with search-as-you-type. Leaflet draws the corridor
+          on OpenStreetMap, the engine measures the distance, and the budget is assembled bottom-up
+          from cement, steel, bitumen, aggregate, labour and machinery — then multiplied by the ground
+          you are building on. The same corridor is also priced by the one-line planning formula, and
+          both numbers are shown side by side because they answer different questions. Completion time
+          comes out of the same distance, divided by the km-per-day speed band the cross-section and
+          terrain fall in.</p>
+      </div>
+
+      <div class="grid gap-5 lg:grid-cols-5">
+        <!-- map -->
+        <div class="card lg:col-span-3 self-start">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h3 class="card-title">India — project cities</h3>
+            <p id="map-status" class="text-xs font-medium text-[var(--muted)]">Loading map…</p>
+          </div>
+          <div id="india-map" class="map-canvas" role="img"
+               aria-label="OpenStreetMap of India showing project cities and the selected road corridor"></div>
+          <div id="map-fallback" class="map-fallback" hidden>
+            <p class="font-semibold">The map tiles could not load.</p>
+            <p class="mt-1 text-sm">Leaflet comes from a public CDN, so an offline machine shows this
+              notice instead of a blank box. Everything below still works: the distance, the rupee
+              breakdown, the completion time and the risk grade all come from the Flask API, not from
+              the map.</p>
+            <p class="mt-1 text-sm"><a class="text-[var(--saffron-text)] underline"
+               href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">unpkg.com/leaflet@1.9.4</a>
+              is the file to make reachable, or vendor it under static/js/.</p>
+          </div>
+          <p class="mt-2 text-xs leading-relaxed text-[var(--muted)]">
+            Tiles © <a class="underline" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
+            contributors, rendered by Leaflet 1.9.4 (BSD-2). Markers are the project cities; in
+            location mode the two chosen villages get their own markers, with the connector budget and
+            time in the popup. The line is the calibrated corridor between the ends,
+            <strong>not a surveyed alignment</strong>.
+          </p>
+        </div>
+
+        <!-- form -->
+        <form id="route-form" class="card lg:col-span-2 self-start" novalidate>
+          <h3 class="card-title">Corridor and cross-section</h3>
+
+          <div class="mt-3 space-y-3">
+            <label class="field"><span class="label">Name each end of the corridor by</span>
+              <select id="rt-mode" class="field-input">
+                <option value="cities">City — the 56 district centres the models know</option>
+                <option value="hierarchy">Location — State → District → Taluka → Village</option>
+              </select>
+              <span class="hint">The hierarchy comes from <code>/locations</code>: real district
+                coordinates, generated taluka and village names. Distances are haversine between the
+                two points either way.</span></label>
+
+            <div id="rt-cities" class="grid gap-3 sm:grid-cols-2">
+              <label class="field"><span class="label">Start city</span>
+                <select id="rt-start" name="start" class="field-input" required><option value="">Loading…</option></select>
+                <span class="field-error" data-error-for="start"></span></label>
+
+              <label class="field"><span class="label">End city</span>
+                <select id="rt-end" name="end" class="field-input" required><option value="">Loading…</option></select>
+                <span class="field-error" data-error-for="end"></span></label>
+            </div>
+
+            <div id="rt-hierarchy" class="space-y-3" hidden>
+              <div class="grid gap-3 sm:grid-cols-[1fr_auto]">
+                <label class="field"><span class="label">Search a place</span>
+                  <input id="rt-search" class="field-input" type="search" autocomplete="off"
+                         placeholder="village, taluka, district or state — try Pune"
+                         aria-controls="rt-search-results">
+                  <span class="hint">Two letters are enough. Choosing a result fills the side picked
+                    beside it.</span></label>
+                <label class="field"><span class="label">Fill</span>
+                  <select id="rt-search-side" class="field-input">
+                    <option value="start">the start</option>
+                    <option value="end">the end</option>
+                  </select></label>
+              </div>
+              <ul id="rt-search-results" class="search-results" hidden></ul>
+
+              <div class="loc-cascade">
+                <p class="loc-cascade-title">Start location</p>
+                <div class="grid gap-2 sm:grid-cols-2">
+                  <label class="field"><span class="label">State</span>
+                    <select id="rt-s-state" class="field-input" data-level="state" data-side="start"></select>
+                    <span class="field-error" data-error-for="start_state"></span></label>
+                  <label class="field"><span class="label">District</span>
+                    <select id="rt-s-district" class="field-input" data-level="district" data-side="start"></select>
+                    <span class="field-error" data-error-for="start_district"></span></label>
+                  <label class="field"><span class="label">Taluka</span>
+                    <select id="rt-s-taluka" class="field-input" data-level="taluka" data-side="start"></select>
+                    <span class="field-error" data-error-for="start_taluka"></span></label>
+                  <label class="field"><span class="label">Village</span>
+                    <select id="rt-s-village" class="field-input" data-level="village" data-side="start"></select>
+                    <span class="field-error" data-error-for="start_village"></span></label>
+                </div>
+              </div>
+
+              <div class="loc-cascade">
+                <p class="loc-cascade-title">End location</p>
+                <div class="grid gap-2 sm:grid-cols-2">
+                  <label class="field"><span class="label">State</span>
+                    <select id="rt-e-state" class="field-input" data-level="state" data-side="end"></select>
+                    <span class="field-error" data-error-for="end_state"></span></label>
+                  <label class="field"><span class="label">District</span>
+                    <select id="rt-e-district" class="field-input" data-level="district" data-side="end"></select>
+                    <span class="field-error" data-error-for="end_district"></span></label>
+                  <label class="field"><span class="label">Taluka</span>
+                    <select id="rt-e-taluka" class="field-input" data-level="taluka" data-side="end"></select>
+                    <span class="field-error" data-error-for="end_taluka"></span></label>
+                  <label class="field"><span class="label">Village</span>
+                    <select id="rt-e-village" class="field-input" data-level="village" data-side="end"></select>
+                    <span class="field-error" data-error-for="end_village"></span></label>
+                </div>
+              </div>
+
+              <p id="rt-loc-readout" class="loc-readout">Choose a village at both ends, or a district
+                at each, to price the corridor between them.</p>
+              <p id="rt-loc-source" class="loc-readout text-xs">Loading the location hierarchy…</p>
+            </div>
+
+            <button id="rt-swap" type="button" class="btn btn-ghost w-full text-xs">Swap start and end ⇅</button>
+
+            <label class="field"><span class="label">Road type</span>
+              <select id="rt-type" name="road_type" class="field-input"></select>
+              <span class="hint" id="rt-type-hint"></span>
+              <span class="field-error" data-error-for="road_type"></span></label>
+
+            <div class="grid gap-3 sm:grid-cols-2">
+              <label class="field"><span class="label">Terrain <em>auto-detected</em></span>
+                <select id="rt-terrain" name="terrain" class="field-input"></select>
+                <span class="hint" id="rt-terrain-hint"></span></label>
+
+              <label class="field"><span class="label">Soil <em>auto-detected</em></span>
+                <select id="rt-soil" name="soil" class="field-input"></select>
+                <span class="hint" id="rt-soil-hint"></span></label>
+            </div>
+
+            <div class="grid gap-3 sm:grid-cols-2">
+              <label class="field"><span class="label">Carriageway width (m)</span>
+                <input id="rt-width" name="width_m" class="field-input" type="number" min="3" max="30" step="0.5" placeholder="from road type">
+                <span class="field-error" data-error-for="width_m"></span></label>
+
+              <label class="field"><span class="label">Cost per km (₹ crore)</span>
+                <input id="rt-perkm" name="cost_per_km_crore" class="field-input" type="number" min="0.01" max="200" step="0.05" placeholder="blank = itemised">
+                <span class="hint">Blank uses the take-off. Type a rate to force it.</span>
+                <span class="field-error" data-error-for="cost_per_km_crore"></span></label>
+            </div>
+
+            <details class="route-more">
+              <summary>Known length or execution mode</summary>
+              <div class="mt-3 grid gap-3 sm:grid-cols-2">
+                <label class="field"><span class="label">Length from DPR (km)</span>
+                  <input id="rt-distance" name="distance_km" class="field-input" type="number" min="0.1" max="4000" step="0.1" placeholder="use calibrated">
+                  <span class="field-error" data-error-for="distance_km"></span></label>
+
+                <label class="field"><span class="label">Execution</span>
+                  <select id="rt-contractor" name="contractor_type" class="field-input">
+                    <option value="Private">Private contractor</option>
+                    <option value="Govt">Government agency</option>
+                  </select></label>
+
+                <label class="field"><span class="label">Model for the cross-check</span>
+                  <select id="rt-model" name="model" class="field-input">
+                    <option value="auto">Best model (auto)</option>
+                    <option value="rf">Random Forest</option>
+                    <option value="knn">K-Nearest Neighbours</option>
+                  </select></label>
+              </div>
+            </details>
+          </div>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            <button id="rt-submit" type="submit" class="btn btn-primary">Estimate this route</button>
+            <button id="rt-reset" type="button" class="btn btn-ghost">Reset</button>
+          </div>
+
+          <div id="rt-examples" class="mt-3 flex flex-wrap gap-2"></div>
+          <ul id="route-errors" class="mt-3 list-disc space-y-1 pl-5 text-sm text-[var(--danger)]" hidden></ul>
+        </form>
+
+        <!-- results -->
+        <div class="lg:col-span-5">
+          <!-- loading -->
+          <div id="route-loading" hidden class="card" aria-live="polite">
+            <div class="flex items-center gap-3">
+              <span class="spinner" aria-hidden="true"></span>
+              <span class="text-sm font-medium">Measuring the corridor and pricing the take-off…</span>
+            </div>
+            <div class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3" aria-hidden="true">
+              <div class="skeleton tile"></div><div class="skeleton tile"></div>
+              <div class="skeleton tile"></div><div class="skeleton tile"></div>
+              <div class="skeleton tile"></div><div class="skeleton tile"></div>
+              <div class="skeleton tile"></div>
+            </div>
+          </div>
+
+          <div id="route-placeholder" class="card text-center">
+            <p class="text-4xl" aria-hidden="true">🛣</p>
+            <h3 class="card-title mt-2">No corridor chosen yet</h3>
+            <p class="mt-1 text-sm text-[var(--muted)]">Pick two cities, or two
+              State → District → Taluka → Village locations, then estimate: the distance, the
+              rupee breakdown, the completion time, the planning formula and the risk grade
+              appear here.</p>
+          </div>
+
+          <div id="route-result" hidden>
+            <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-3">
+              <div class="stat"><dt>Distance</dt><dd id="rt-out-distance">—</dd></div>
+              <div class="stat"><dt>Total budget</dt><dd id="rt-out-total">—</dd></div>
+              <div class="stat"><dt>Per km</dt><dd id="rt-out-perkm">—</dd></div>
+              <div class="stat"><dt>Completion time</dt><dd id="rt-out-time">—</dd></div>
+              <div class="stat"><dt>Terrain impact</dt><dd id="rt-out-terrain">—</dd></div>
+              <div class="stat"><dt>Soil impact</dt><dd id="rt-out-soil">—</dd></div>
+              <div class="stat"><dt>Risk grade</dt><dd id="rt-out-risk">—</dd></div>
+            </div>
+
+            <p id="rt-locations-line" class="loc-readout mt-3"></p>
+
+            <div class="mt-5 grid gap-5 lg:grid-cols-5">
+              <div class="card lg:col-span-2">
+                <h3 class="card-title">Where the money goes</h3>
+                <p class="mt-1 text-xs text-[var(--muted)]">Component share of the works cost, from the
+                  quantity take-off. Percentages are of the total, not of the materials bill.</p>
+                <div class="chart-box mt-3"><canvas id="chart-route-split"></canvas></div>
+                <ul id="rt-quantities" class="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 text-xs text-[var(--muted)]"></ul>
+              </div>
+
+              <div class="card lg:col-span-3">
+                <div class="flex flex-wrap items-baseline justify-between gap-2">
+                  <h3 class="card-title">Cost components</h3>
+                  <p id="rt-verdict" class="route-verdict">—</p>
+                </div>
+                <div class="table-wrap mt-3">
+                  <table class="data-table compact">
+                    <thead><tr><th>Item</th><th>Rate basis</th><th class="num">Quantity</th><th class="num">Cost</th><th class="num">Share</th></tr></thead>
+                    <tbody id="rt-component-body"></tbody>
+                  </table>
+                </div>
+                <p id="rt-note" class="mt-3 text-xs leading-relaxed text-[var(--muted)]"></p>
+              </div>
+            </div>
+
+            <div class="mt-5 grid gap-5 lg:grid-cols-5">
+              <div class="card lg:col-span-3">
+                <div class="flex flex-wrap items-baseline justify-between gap-2">
+                  <h3 class="card-title">Planning formula view</h3>
+                  <p id="pf-verdict" class="route-verdict">—</p>
+                </div>
+                <p class="mt-1 text-xs text-[var(--muted)]">The same corridor priced by the planning
+                  formula <em>Distance × base ₹ per km × road width × terrain × soil</em>. It is a
+                  different measurement from the quantity take-off above — the take-off prices
+                  materials and labour, this prices the cross-section class at one assumed rate — not
+                  a check on it.</p>
+                <div class="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  <div class="stat"><dt>Base rate</dt><dd id="pf-base">—</dd></div>
+                  <div class="stat"><dt>Effective ₹/km</dt><dd id="pf-perkm">—</dd></div>
+                  <div class="stat"><dt>Formula budget</dt><dd id="pf-total">—</dd></div>
+                  <div class="stat"><dt>Risk by size</dt><dd id="pf-risk">—</dd></div>
+                </div>
+                <p id="pf-basis" class="formula mt-3 text-sm leading-relaxed"></p>
+                <div class="table-wrap mt-3">
+                  <table class="data-table compact">
+                    <thead><tr><th>Material</th><th class="num">Share</th><th class="num">Cost</th></tr></thead>
+                    <tbody id="pf-material-body"></tbody>
+                  </table>
+                </div>
+                <p id="pf-time" class="mt-2 text-xs leading-relaxed text-[var(--muted)]"></p>
+              </div>
+
+              <div class="card lg:col-span-2">
+                <h3 class="card-title">Material split</h3>
+                <p class="mt-1 text-xs text-[var(--muted)]">Cement 25 %, steel 20 %, bitumen 15 %,
+                  labour 20 %, machinery 20 % of the formula budget — the split the planning brief
+                  states, applied by the server, not by this page.</p>
+                <div class="chart-box mt-3"><canvas id="chart-planning-split"></canvas></div>
+              </div>
+            </div>
+
+            <div class="mt-5 grid gap-5 lg:grid-cols-2">
+              <div class="card">
+                <div class="flex flex-wrap items-baseline justify-between gap-2">
+                  <h3 class="card-title">Budget versus distance</h3>
+                  <select id="rt-series-type" class="field-input w-auto py-1 text-xs" aria-label="Road type for the comparison series"></select>
+                </div>
+                <p class="mt-1 text-xs text-[var(--muted)]">Every calibration route, priced by the same engine
+                  at the selected cross-section. This is a computed series, not a stored table.</p>
+                <div class="chart-box tall mt-3"><canvas id="chart-route-budget"></canvas></div>
+              </div>
+
+              <div class="card">
+                <h3 class="card-title">Budget versus time</h3>
+                <p class="mt-1 text-xs text-[var(--muted)]">The same corridors, this time against the
+                  months the km/day speed bands give them. Bars are months, the line is ₹ crore.</p>
+                <div class="chart-box tall mt-3"><canvas id="chart-route-time"></canvas></div>
+              </div>
+            </div>
+
+            <div class="mt-5 grid gap-5 lg:grid-cols-2">
+              <div class="card lg:col-span-2">
+                <h3 class="card-title">Trained-model cross-check</h3>
+                <p id="ml-model-line" class="mt-1 text-sm font-semibold">—</p>
+                <div class="mt-3 grid grid-cols-2 gap-3">
+                  <div class="mini"><strong id="ml-risk">—</strong><span>model probability of overrun</span></div>
+                  <div class="mini"><strong id="ml-expected">—</strong><span>expected actual cost</span></div>
+                </div>
+                <div class="mt-3 flex flex-wrap items-center gap-4">
+                  <div class="risk-gauge small" role="img" aria-labelledby="ml-gauge-label">
+                    <svg viewBox="0 0 120 120" class="gauge-svg" aria-hidden="true">
+                      <circle class="gauge-track" cx="60" cy="60" r="52"></circle>
+                      <circle id="ml-gauge-fill" class="gauge-fill" cx="60" cy="60" r="52"
+                              stroke-dasharray="326.7" stroke-dashoffset="326.7"></circle>
+                    </svg>
+                    <p id="ml-gauge-value" class="gauge-value">—</p>
+                    <p class="gauge-label" id="ml-gauge-label">overrun probability</p>
+                  </div>
+                  <p id="ml-weight-line" class="max-w-sm text-sm leading-relaxed text-[var(--muted)]"></p>
+                </div>
+                <p id="ml-note" class="mt-3 rounded-lg border-l-4 px-3 py-2 text-sm advisory"></p>
+              </div>
+            </div>
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              <button id="rt-export-csv" type="button" class="btn btn-ghost">Export breakdown CSV</button>
+              <button id="rt-export-pdf" type="button" class="btn btn-ghost">Export route PDF</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. HOW IT WORKS ================================ -->
+    <section id="knn" class="reveal py-14">
+      <div class="section-head">
+        <p class="eyebrow">Explainability</p>
+        <h2 class="section-title">How the two models decide</h2>
+        <p class="section-sub">Drag the test project and watch which training projects become its neighbours, then how the vote changes with K.</p>
+      </div>
+
+      <div class="grid gap-5 lg:grid-cols-5">
+        <div class="card lg:col-span-3">
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <h3 class="card-title">KNN, live</h3>
+            <label class="flex items-center gap-2 text-sm"><span>K</span>
+              <input id="knn-k" class="range w-40" type="range" min="1" max="25" step="1" value="5">
+              <strong id="knn-k-value">5</strong></label>
+          </div>
+          <canvas id="knn-canvas" class="demo-canvas mt-3" width="640" height="420" role="img" aria-label="Interactive K nearest neighbours plot"></canvas>
+          <p id="knn-readout" class="mt-3 text-sm font-medium">—</p>
+          <p class="mt-1 text-xs text-[var(--muted)]">Vertical axis is not a rupee figure: it is a scaled coordinate standing for "how many category fields differ", so Euclidean distance here means exactly what it means in the model.</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <button id="knn-reset" type="button" class="btn btn-ghost">Reset point</button>
+            <button id="knn-random" type="button" class="btn btn-ghost">New sample</button>
+          </div>
+          <div class="formula mt-4">
+            <p class="text-xs font-semibold uppercase tracking-wide text-[var(--muted)]">Euclidean distance, as the model computes it</p>
+            <p class="mt-1 text-sm">d(q, p) = √ Σᵢ (qᵢ − pᵢ)² &nbsp;over the one-hot and scaled columns</p>
+            <p class="mt-2 text-xs text-[var(--muted)]">Two projects that differ in <em>n</em> one-hot fields land at distance √<em>n</em>, because 1 − 0 = 1. The two numeric fields contribute their standardised difference, so a ₹900 crore Smart City scheme is not automatically "far" from a ₹40 lakh rural road.</p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2 space-y-5">
+          <div class="card">
+            <h3 class="card-title">K-Nearest Neighbours</h3>
+            <ol class="step-list">
+              <li>Encode the query project exactly like the training rows.</li>
+              <li>Measure its distance to all 560 training projects.</li>
+              <li>Keep the K closest.</li>
+              <li>Count the votes: majority class wins.</li>
+              <li>Report the winning fraction as the risk percentage.</li>
+            </ol>
+            <p class="mt-3 text-xs leading-relaxed text-[var(--muted)]">Nothing is learned in the usual sense — the training set <em>is</em> the model, which is why it is so easy to explain and so slow on millions of rows.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Random Forest</h3>
+            <ol class="step-list">
+              <li>Build 300 decision trees, each on a bootstrap sample of rows.</li>
+              <li>At every split pick the field and cut that most reduces impurity (Gini).</li>
+              <li>Average the trees' probabilities — here, the fraction voting "over budget".</li>
+              <li>Class weights rebalance for the fact that overruns are the minority.</li>
+            </ol>
+            <p class="mt-3 text-xs leading-relaxed text-[var(--muted)]">It wins on this dataset because it can split on rupees and months directly, and because 300 votes are steadier than K neighbours' bare majority.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 8. ABOUT ======================================= -->
+    <section id="about" class="reveal py-14">
+      <div class="section-head">
+        <p class="eyebrow">Documentation</p>
+        <h2 class="section-title">About this project</h2>
+        <p class="section-sub">Method, findings, limitations and what would come next — the parts an examiner reads first.</p>
+      </div>
+
+      <div class="grid gap-5 lg:grid-cols-2">
+        <article class="card">
+          <h3 class="card-title">Methodology</h3>
+          <p class="mt-2 text-sm leading-relaxed text-[var(--muted)]">
+            Seven fields describe each work: scheme, state, district, execution type, sanctioned
+            rupee amount, scheduled months, and the target — did the actual cost exceed sanction.
+            Categorical fields go through a one-hot encoder configured to ignore unknown
+            categories; the two numeric fields are standardised, because a rupee column spanning
+            three orders of magnitude would otherwise dominate every distance calculation.
+            A stratified 80/20 split with seed 42 keeps 42 % overruns in both halves. KNN and
+            Random Forest are fitted on that identical split and compared on the F1 of the
+            over-budget class, not on accuracy, which the majority class inflates.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Findings</h3>
+          <ul class="mt-2 space-y-2 text-sm leading-relaxed text-[var(--muted)]">
+            <li><strong>Execution type dominates.</strong> Department or PSU-executed works carry the single largest share of the forest's importance — the land, utility and clearance delays stay with the department itself.</li>
+            <li><strong>Geography is second.</strong> State matters at this sample size; district, with 59 categories and roughly a dozen rows each, mostly adds noise.</li>
+            <li><strong>Small works slip by a larger percentage.</strong> Mobilisation and survey costs are nearly fixed, so they bite hardest on a small sanction.</li>
+            <li><strong>Longer schedules overrun more.</strong> Every extra year of scheduled time is more change orders.</li>
+            <li><strong>Water and rural-road schemes lead</strong> in overrun rate; Smart City works, being larger and consultant-managed, are lower.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Limitations</h3>
+          <ul class="mt-2 list-disc space-y-1 pl-5 text-sm leading-relaxed text-[var(--muted)]">
+            <li>The dataset is simulated, so absolute numbers are illustrative — the relationships are what the model genuinely learns.</li>
+            <li>Only six input fields. Land records, seasonal monsoon windows, agency capacity, steel and cement price indices and prior delay history all matter and are absent.</li>
+            <li>Predicted spend uses a stated risk-weighted heuristic, not a trained cost-regression model.</li>
+            <li>Probabilities are the models' own votes, not calibrated, so 58 % should not be read as 58 long-run successes.</li>
+            <li>140 test rows means one row is 0.7 % of accuracy — figures will move between seeds.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Future scope</h3>
+          <ul class="mt-2 list-disc space-y-1 pl-5 text-sm leading-relaxed text-[var(--muted)]">
+            <li>Replace the simulated rows with e-Procure / CAG audit extracts and retrain without touching the code — the storage adapter already supports a URL or a bucket.</li>
+            <li>Add SMOTE or class weighting tuned per scheme to lift over-budget recall further.</li>
+            <li>Compare a gradient-boosted model; XGBoost was deliberately skipped here because its compiled binary trips Windows Smart App Control on this machine.</li>
+            <li>Train a second model to predict the overrun <em>amount</em> directly, replacing the heuristic.</li>
+            <li>Calibrate probabilities and report a reliability diagram.</li>
+            <li>Move the chunked pipeline to Spark and the CSV feature store to a Delta or Iceberg table; SPEC_INDIA.md section 8 lists the exact one-line changes.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="card mt-5">
+        <h3 class="card-title">From this laptop to the cloud, without rewriting the app</h3>
+        <div class="table-wrap mt-3">
+          <table class="data-table">
+            <thead><tr><th>Runs today here</th><th>Production equivalent</th><th>Change required</th></tr></thead>
+            <tbody>
+              <tr><td>LocalStore reads data/*.csv</td><td>S3 or Azure Blob</td><td>set <code>DATA_STORE=s3</code> plus credentials in the environment</td></tr>
+              <tr><td><code>map_partitions()</code> over CSV chunks</td><td><code>df.mapInPandas()</code> on Spark</td><td>swap that one function body</td></tr>
+              <tr><td>partitioned CSV + <code>_manifest.json</code></td><td>Delta / Iceberg table</td><td>add pyarrow, change the writer</td></tr>
+              <tr><td>in-process SSE queue</td><td>Kinesis / SNS</td><td>publish to the stream service instead of a list</td></tr>
+              <tr><td>joblib file in <code>model/</code></td><td>SageMaker Model Registry / MLflow</td><td>add a registry client</td></tr>
+              <tr><td>Flask dev server, threaded</td><td>Gunicorn behind a load balancer</td><td>deployment configuration only</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-3 text-xs leading-relaxed text-[var(--muted)]">No credentials live in this repository, and the app never writes to a bucket unless <code>ALLOW_WRITES=1</code> is also set.</p>
+      </div>
+
+      <div class="card mt-5">
+        <h3 class="card-title">Data provenance</h3>
+        <p class="mt-2 text-sm leading-relaxed text-[var(--muted)]">
+          Quotas, state weights, scheme overrun rates and the risk model are design choices
+          documented in <code>SPEC_INDIA.md</code> sections 3 and 11, informed by what audit
+          reporting says about Indian central works. The generator is seeded, so
+          <code>py model/generate_dataset.py</code> reproduces the identical 700 rows on any
+          machine.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== 9. TEAM ======================================== -->
+    <section id="team" class="reveal py-14">
+      <div class="section-head">
+        <p class="eyebrow">Credit</p>
+        <h2 class="section-title">Team</h2>
+      </div>
+      <div id="team-cards" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"><!-- filled by app.js --></div>
+    </section>
+
+  </main>
+
+  <!-- ===================== 10. FOOTER ======================================== -->
+  <footer id="footer" class="border-t border-[var(--border)] bg-[var(--surface)]">
+    <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+      <div class="grid gap-6 lg:grid-cols-3">
+        <div>
+          <h2 class="text-sm font-bold">{{ TEAM.title }}</h2>
+          <p class="mt-1 text-xs text-[var(--muted)]">{{ TEAM.subtitle }}</p>
+        </div>
+        <p class="text-xs leading-relaxed text-[var(--muted)]" id="footer-credit">{{ TEAM.credit_line }}</p>
+        <p class="text-xs leading-relaxed text-[var(--muted)]">{{ TEAM.data_note }}</p>
+      </div>
+      <div class="tricolour mt-6" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/charts.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/knn-demo.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/routes.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
