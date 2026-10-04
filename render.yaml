@@ -1,0 +1,38 @@
+# Render blueprint -- optional.
+#
+# Two ways to put this project on Render, and they do not mix:
+#   1. Dashboard "New + Web Service" (Blueprint Repository not used): type the Build and
+#      Start Commands yourself. This file is then ignored, so keep the values identical.
+#   2. Dashboard "New + Blueprint": Render reads this file and creates the service, so the
+#      commands are version-controlled with the code.
+#
+# `region` is left unset on purpose: it takes the region your Render account defaults to.
+# For an India-focused project Singapore (singapore) is usually the better choice, and
+# Render will not let you move a live service between regions, so set it here only when
+# you know which region you want.
+services:
+  - type: web
+    name: budget-prediction
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    # No --bind here on purpose: gunicorn.conf.py next to this file reads $PORT and binds
+    # 0.0.0.0:<that port>. Render routes the public URL to the port it injects, so a hard
+    # coded --bind 0.0.0.0:10000 breaks the day Render hands out a different one.
+    startCommand: "gunicorn app:app"
+    # /health answers as soon as the module has imported, which is after bootstrap() has
+    # loaded both pipelines -- so a green check here means the models are really in RAM.
+    healthCheckPath: "/health"
+    autoDeploy: true
+    envVars:
+      # One worker is deliberate, not a cost cut: the SSE live feed (/stream) keeps its
+      # event broker in process, so with two workers a prediction handled by worker A
+      # would never reach a dashboard subscribed to worker B. gthread workers + threads
+      # give concurrency inside the one process instead.
+      - key: WEB_CONCURRENCY
+        value: "1"
+      - key: GUNICORN_THREADS
+        value: "8"
+      # Never commit a secret: put real values in the Render dashboard's Environment tab.
+      - key: DATA_STORE
+        value: "local"

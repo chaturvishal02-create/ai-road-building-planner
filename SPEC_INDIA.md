@@ -1,12 +1,13 @@
-# SPEC v3 — Government Construction Project Budget Prediction (India, 2025–26)
+# SPEC v3.2 — Government Construction Project Budget Prediction (India, 2025–26)
 
 **Project:** Government Construction Project Budget Prediction Using Machine Learning
 **Developed by:** Vishal Raghunath Chatur and Mohsin Jabiulla Balgyar
 **Guide:** Tapase Miss
 **Programme:** B.Tech in Artificial Intelligence & Data Science Engineering, DBATU (Mini Project)
-**Version:** 3.0 — adds the road-planning hierarchy and the building estimator on top of v2's
-Indian dataset rewrite (v2.1 route planner, v2.2 completion time). Supersedes v1 (Thai e-GP
-reproduction of a published paper).
+**Version:** 3.2 — v3.0's road-planning hierarchy and building estimator, plus the deploy contract
+(F20: `gunicorn app:app`, `$PORT`, `gthread`, runtime/dev requirements split). Built on v2's Indian
+dataset rewrite (v2.1 route planner, v2.2 completion time). Supersedes v1 (Thai e-GP reproduction of
+a published paper).
 
 ---
 
@@ -51,6 +52,7 @@ Two decisions the user made explicitly, recorded here because they change the gr
 - **F17 — Four-level location hierarchy (v3).** Both corridor ends can be picked as State → District → Taluka → Village instead of a city, from `data/india_road_project_planning_dataset_2025_26.csv` (504 rows · 17 columns · 14 states · 56 districts · 168 talukas · 504 villages). `GET /locations` serves the whole tree and answers `?q=` searches across all four levels for the auto-suggestion box; each level refills the ones below it and clears them, a village inherits its taluka and district, and a village name repeated inside the chosen district is refused rather than guessed. District centres carry real coordinates/terrain/soil; taluka and village names are generated placeholders seated 4–55 km out, and the page says so in a node that survives every readout rewrite (§13.1).
 - **F18 — The brief's planning formula as a second, labelled view (v3).** `Total = Distance × base cost per km × road width × terrain factor × soil factor` with the brief's own numbers (rural ₹1 / highway ₹2 / expressway ₹5 crore per km, ghat +30 %, urban +15 %, rocky +20 % / clay +10 % / sandy +5 %) and the fixed 25/20/15/20/20 material split, plus size-threshold risk (>₹500 crore High, ₹200–500 Medium, <₹200 Low). It is attached to `/predict-route` as its own `planning` key so the original five-key response contract is untouched, and printed in a panel that shows the multipliers it used and the difference from the bottom-up take-off instead of averaging the two (§13.2).
 - **F19 — Government building estimator, additive only (v3).** New page `/building`, new endpoint `POST /predict-building`, new engine `model/building.py`, new controller — no existing route, file or response modified, and a browser check asserts the main front-end bundle is absent on that page. `Total = Area × cost per sq ft × floor factor × location factor × quality factor` (rural ₹1,500 / urban ₹2,500 / remote ₹1,800 per sq ft), `Time = Area ÷ sq-ft-per-day + 120 mobilisation days`, answers `{cost, time_months, breakdown}` with a 7-work split. No probability, because the classifier's 10-column contract has no area/floors/quality column (§13.3).
+- **F20 — Deployable on a hosted platform (v3.2).** The same code that runs with `py app.py` runs with `gunicorn app:app`: the WSGI import bootstraps the models, `gunicorn.conf.py` binds the platform's injected `$PORT`, `gthread` keeps the SSE `/stream` from starving the site, one worker keeps the live feed shared, `requirements.txt` carries runtime pins only and `requirements-dev.txt` carries the test tools. Health check `/health`. `requirements.txt` was the cause of the one real deploy failure this project has had — a Render log ending `bash: line 1: gunicorn: command not found` / `Exited with status 127`, because the pushed copy installed only the training libraries — so gunicorn is now pinned there, Werkzeug is named because `app.py` imports it directly, and a test parses every shipped module with `ast` to prove the build installs what the code imports. Nothing about this changes a route, a response or a number (README §15).
 
 ### 1.2 Non-functional
 
@@ -92,7 +94,11 @@ templates/building.html       standalone /building page, own nav + 5 rate tables
 static/css/styles.css         theme tokens, tricolour accents, map + loading skeletons
 static/js/  app.js charts.js knn-demo.js dashboard.js routes.js building.js
 tests/      conftest.py test_model.py test_api.py test_data_layer.py test_routes.py
-            test_planning.py test_building.py smoke_test.py
+            test_planning.py test_building.py test_deploy.py smoke_test.py
+requirements.txt            runtime pins only — every import the code makes, gunicorn included
+requirements-dev.txt        -r requirements.txt + pytest + Playwright
+gunicorn.conf.py            bind 0.0.0.0:$PORT, gthread, 1 worker, stdout logs
+Procfile · runtime.txt · .python-version · render.yaml · .gitignore · pytest.ini
 screenshots/                  generated by smoke_test.py
 README.md  SPEC_INDIA.md  PROGRESS.md
 archive/thai-paper-version/   v1 dataset, model, docs, screenshots (kept for history)
@@ -283,15 +289,15 @@ Spark-shaped without Spark:
 | Partitioned CSV + `_manifest.json` | Delta/Iceberg table on the bucket | add pyarrow, change writer |
 | In-process SSE queue | Kinesis / SNS / WebSocket service | publish to stream instead of list |
 | joblib artifact on disk | SageMaker Model Registry / MLflow | add registry client |
-| Flask dev server, `threaded=True` | Gunicorn/Uvicorn behind a load balancer | deploy config only |
+| Flask dev server, `threaded=True` (local) | Gunicorn behind the platform's proxy | **done** — `gunicorn app:app` + `gunicorn.conf.py` bind `$PORT`, `gthread`, one worker (F20) |
 
 ---
 
 ## 9. Testing strategy
 
-**pytest** — 430 tests in `test_data_layer.py` (36), `test_model.py` (37), `test_api.py` (169),
-`test_routes.py` (83), `test_planning.py` (63) and `test_building.py` (42), run by
-`py -m pytest` in about 15 s.
+**pytest** — 445 tests in `test_data_layer.py` (36), `test_model.py` (37), `test_api.py` (169),
+`test_routes.py` (83), `test_planning.py` (63), `test_building.py` (42) and `test_deploy.py` (15),
+run by `py -m pytest` in about 15 s.
 
 - dataset: 700 rows, exactly the 10 columns, `over_budget ⟺ actual > sanctioned`, every district legal for its state, scheme shares within ±1 of §3.3, target rate 42 % ±3 pp
 - pipeline: both models share preprocessing, split sizes 560/140, stratification preserved, scaler fitted on train only, unknown categories encoded rather than raising
@@ -307,6 +313,7 @@ Spark-shaped without Spark:
 - planning catalogue: the CSV regenerating byte-stable from the seed, 504 rows × the 17 briefed columns, every taluka/village parent valid, connectors inside the 4–55 km offset window and equal to Haversine × the corridor coefficient, `?q=` matching at all four levels, an ambiguous leaf name refused with the taluka named, and the real/placeholder provenance split asserted per column
 - planning engine: base rates and both factor tables equal to the brief's numbers, `Σ materials = total`, the 25/20/15/20/20 shares exact, the threshold band flipping at ₹200 and ₹500 crore, width factor clamped to its stated range, and every `planning` sub-key re-derived from the printed `basis` string
 - building engine: five-factor product equal to `cost`, ₹/sq ft by location type, floor factors 1.00/1.90/2.65, the 7-work split summing to 100 % and to the printed total with the residual in the largest line, time = area ÷ rate + 120 mobilisation days, and area/floor bounds rejected by field name
+- deploy contract (F20): importing `app` without `app.run()` leaves both pipelines loaded and `/health` green; templates and the three map/dashboard scripts resolve from `__file__` after `chdir` to an unrelated directory; `requirements.txt` names Flask, Werkzeug, gunicorn, pandas, numpy, scikit-learn, scipy, joblib and not pytest/Playwright, **and an `ast` audit of every shipped module proves there is no third-party import the build would not install** (`boto3` excepted as the documented lazy S3-only import), with `scikit-learn==1.8.0` matching the pickles on disk; `gunicorn.conf.py` parsed the way gunicorn parses it binds `0.0.0.0:$PORT` at both 10000 and 20500, runs `gthread`/1 worker/`preload_app=False`/stdout logs; `Procfile` and `render.yaml` carry the two documented commands and `/health`; and with an `/stream` connection held on a real threaded HTTP server, four page loads and a prediction each finish in under 2 s and that prediction is broadcast on the held stream
 
 **Playwright smoke test** (`smoke_test.py`) — 332 checks, exits non-zero on any failure, writes 26 screenshots.
 
@@ -347,6 +354,7 @@ Spark-shaped without Spark:
 16. Location mode: State → District → Taluka → Village cascades on both ends from `GET /locations`, a searched village resolves its own parents, an ambiguous leaf name is refused with the taluka named, the placeholder-name provenance stays visible next to the dropdowns, and city mode still works unchanged
 17. Planning panel: the brief's rate/km × terrain × soil total is shown with the multipliers it used, its five material rows sum to its own total, and the gap to the bottom-up take-off is printed rather than averaged away
 18. `/building`: a separate page and endpoint that costs `area × ₹/sq ft × factors`, returns `{cost, time_months, breakdown}`, sums its seven work lines to the card, shows no risk percentage, and leaves every pre-existing route and response untouched
+19. Deployable (F20): `pip install -r requirements.txt` then `gunicorn app:app` on a host that injects `$PORT` — proven locally by the WSGI import serving every route, by the parsed gunicorn config binding `0.0.0.0:$PORT`, by an `ast` audit that the build installs every import the code makes (the pushed-file gap behind Render's `Exited with status 127`), and by a held `/stream` not starving page loads; the platform's own build log is the remaining, honestly unverified step
 
 ---
 

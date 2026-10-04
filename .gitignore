@@ -1,0 +1,59 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+# Byte-compiled files: regenerated on every run, and a .pyc is only valid for the
+# interpreter that produced it, so committing them just makes merges noisy.
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Test caches. pytest rewrites these within seconds of a run.
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------------------------
+# Virtual environments (venv is per-machine: it holds interpreter-specific paths)
+# ---------------------------------------------------------------------------
+.venv/
+venv/
+env/
+
+# ---------------------------------------------------------------------------
+# Local runtime leftovers
+# ---------------------------------------------------------------------------
+# dev_server.log is written by the shell command that starts the app for browser
+# testing; it captures one machine's stdout and goes stale immediately.
+dev_server.log
+
+# Scratch folders created by ad-hoc generator checks (a redirect once expanded
+# %TEMP% literally instead of as an environment variable).
+.scratch_*/
+%TEMP%/
+
+# Uploaded datasets and the retrain marker. data/retrain_active.csv points the app at a
+# CSV that is not in this repository, so shipping it would break a fresh clone; the
+# retrained model artifacts under model/ stay tracked because the README quotes them.
+data/retrain_active.csv
+data/uploads/
+data/downloads/
+
+# ---------------------------------------------------------------------------
+# Editors and operating systems
+# ---------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------------------
+# Secrets -- none are expected here, but the rules make the intent explicit.
+# Credentials go in Render's environment variables, never in a committed file.
+# ---------------------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key

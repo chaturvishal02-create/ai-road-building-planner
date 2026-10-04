@@ -1,5 +1,32 @@
 # ---------------------------------------------------------------------------
-# Runtime dependencies
+# Runtime dependencies -- what a deploy installs:  pip install -r requirements.txt
+#
+# Test-only tools (pytest, playwright) moved to requirements-dev.txt so a build
+# machine does not download a headless browser it will never open. Run
+# `pip install -r requirements-dev.txt` before `py -m pytest` or the smoke test.
+# ---------------------------------------------------------------------------
+
+# Web framework serving the two pages, the JSON API and the SSE stream.
+Flask==3.1.3
+
+# Werkzeug is Flask's WSGI toolkit, and app.py imports from it directly
+# (`from werkzeug.exceptions import HTTPException`) for the JSON error handler.
+# Flask would pull it in anyway, but only at `werkzeug>=3.1.0`; naming the
+# version this project was actually tested with keeps a build machine from
+# resolving a different one. Same number installs on Windows and on Render.
+Werkzeug==3.1.9
+
+# Production WSGI server:  gunicorn app:app   (see gunicorn.conf.py)
+# `py app.py` still uses Flask's own dev server, but a PaaS has no dev server and
+# no reloader, and this is what the Render Start Command actually calls.
+gunicorn==26.2.0
+
+# Tabular data handling for the dataset and CSV uploads.
+pandas==3.0.6
+
+# Numerical backbone used by pandas and scikit-learn.
+numpy==2.5.3
+
 # ---------------------------------------------------------------------------
 # NOTE ON THE scikit-learn PIN:
 # On machines where Windows Smart App Control is enabled, scikit-learn 1.9.x
@@ -8,21 +35,17 @@
 # sklearn.neighbors, which makes KNeighborsClassifier unusable. Version 1.8.0
 # loads fine. If your machine has Smart App Control OFF you may upgrade, but
 # 1.8.0 is what this project was tested against.
+#
+# It also has to stay exactly 1.8.0 in the deployed copy: model/india_knn.joblib
+# and model/india_rf.joblib are pickles of that version's classes, so a different
+# scikit-learn on the server is a load-time error, not a warning.
+# ---------------------------------------------------------------------------
 scikit-learn==1.8.0
 
 # Same Smart App Control reasoning: scipy 1.18.x ships a binary
 # (scipy/linalg/_solve_toeplitz.*.pyd) that the policy blocks on a fresh
 # install, while 1.17.1 loads. Pin it so a clean `pip install` just works.
 scipy==1.17.1
-
-# Web framework serving the single page and the JSON API.
-Flask==3.1.3
-
-# Tabular data handling for the dataset and CSV uploads.
-pandas==3.0.6
-
-# Numerical backbone used by pandas and scikit-learn.
-numpy==2.5.3
 
 # Serialises the two fitted pipelines to model/india_knn.joblib and model/india_rf.joblib.
 joblib==1.6.0
@@ -32,13 +55,3 @@ joblib==1.6.0
 # bucket instead, install boto3 and export AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY /
 # AWS_REGION (or a profile) in the shell that starts app.py -- never in this repository.
 # boto3==1.35.0
-
-# ---------------------------------------------------------------------------
-# Test-only dependencies (not needed to run the website)
-# ---------------------------------------------------------------------------
-# Unit and API tests:  py -m pytest
-pytest==9.1.1
-
-# Headless browser smoke test:  py tests/smoke_test.py
-# After installing, fetch the browser once with:  py -m playwright install chromium
-playwright==1.63.0

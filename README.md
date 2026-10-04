@@ -40,10 +40,14 @@ Open **http://127.0.0.1:5000**. That is the whole setup. The route planner is th
 about two seconds and prints a banner with the real measured metrics so you can confirm the
 numbers you are looking at are the numbers on disk.
 
-- `python app.py` works the same wherever `python` points at Python 3.10+; on this machine the
-  `py` launcher is the reliable one (see §11).
-- Tests additionally need Playwright: `py -m playwright install chromium` (§10).
+- `python app.py` works the same wherever `python` points at Python 3.12 or newer (that floor comes
+  from numpy 2.5.3's own metadata; everything here was built and tested on 3.14.3). On this machine
+  the `py` launcher is the reliable one — see §11.
+- `requirements.txt` is what a deploy installs. The test tools live in `requirements-dev.txt`:
+  `pip install -r requirements-dev.txt`, then `py -m playwright install chromium` once (§10).
 - Nothing in this project reads a `.env` file. Configuration is plain environment variables (§7).
+- The same code runs on Render with Build `pip install -r requirements.txt` and Start
+  `gunicorn app:app` (§15).
 
 ### What you get
 
@@ -221,10 +225,17 @@ model/india_knn.joblib + india_rf.joblib + model_meta.json
         ▼  Flask                                       app.py
    / /meta /predict /metrics /dataset /sample.csv /dashboard
    /sources GET+POST /pipeline /pipeline/rebuild /retrain /stream /health
+   /route/cities /route/samples /predict-route /locations
+   /building POST /predict-building
         │
-        ▼  single page                                 templates/index.html + static/js/*
+        ▼  single page + second page                   templates/index.html, building.html + static/js/*
    app.js (state, fetch, rendering) · charts.js (every Chart.js instance)
    dashboard.js (aggregates + SSE subscriber) · knn-demo.js (canvas KNN)
+   routes.js (map + both corridor pickers) · building.js (/building controller)
+        │
+        ▼  who serves it
+   locally: py app.py -> Flask, threaded=True, bound to 0.0.0.0:$PORT
+   deployed: gunicorn app:app + gunicorn.conf.py (gthread, 1 worker)  -- §15
 ```
 
 ### `data_layer/storage.py` — one interface, three backends
@@ -608,7 +619,11 @@ All plain environment variables, no `.env` dependency (`config.py`):
 | `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` | *(never in repo)* | Read by boto3 from the shell environment |
 | `ALLOW_WRITES` | `0` | Even with the s3 adapter, `put()` is refused unless this is truthy |
 | `CHUNK_SIZE` | `250` | Rows per partition in the pipeline |
-| `PORT` | `5000` | Flask port |
+| `PORT` | `5000` under `py app.py`, `10000` under gunicorn | The platform injects it; each start path has its own fallback (`config.py`, `gunicorn.conf.py`) |
+| `FLASK_HOST` | `0.0.0.0` | Bind address for the dev-server path only; `0.0.0.0` is what makes a container/LAN reachable (§15) |
+| `WEB_CONCURRENCY` | `1` | gunicorn workers. One is deliberate: the SSE broker is in-process (§15.2) |
+| `GUNICORN_THREADS` | `8` | Threads per worker — the concurrency that replaces the extra workers |
+| `GUNICORN_BIND`, `GUNICORN_TIMEOUT`, `GUNICORN_LOG_LEVEL` | `0.0.0.0:$PORT`, `120`, `info` | Overrides for `gunicorn.conf.py`, for a machine that needs them |
 
 `GET /meta` returns `config.describe()`, which deliberately reports only *whether* credentials
 are present (`s3_credentials_present: false`) and never their values.
@@ -675,7 +690,8 @@ which is fixed and now asserted by `tests/test_api.py`.
 ## 10. Testing
 
 ```bash
-py -m pytest              # 430 unit + API + route + planning + building tests, ~20 s
+pip install -r requirements-dev.txt          # pytest + Playwright, on top of the runtime pins
+py -m pytest              # 445 unit + API + route + planning + building + deploy tests, ~15 s
 py tests/smoke_test.py    # 332 headless-browser checks + 26 screenshots, ~2 min
 py -m playwright install chromium   # once, before the smoke test
 ```
@@ -809,6 +825,25 @@ py -m playwright install chromium   # once, before the smoke test
   rejected with `area_sqft` named in its own error slot, and the skeleton/spinner parked the same
   way. No `$` anywhere on either page, no overflow at 1280 px or 375 px on either.
 
+- **`tests/test_deploy.py` (15)** — the contract a PaaS platform puts on this app, because
+  `gunicorn app:app` *imports* the project instead of running `python app.py` and therefore never
+  reaches `main()`: importing `app` must leave both pipelines in memory (`/health` green, rows
+  counted), pages and the three map/dashboard scripts must still resolve when the working
+  directory is somewhere else entirely (`__file__`, not cwd), `requirements.txt` must name Flask,
+  Werkzeug, pandas, numpy, gunicorn, scikit-learn, scipy and joblib while leaving pytest and
+  Playwright in `requirements-dev.txt` — and a second check parses every shipped module with `ast`,
+  strips the standard library and this project's own packages, and fails if any remaining import is
+  not declared, which is the `ModuleNotFoundError`/`command not found` family caught at commit time
+  instead of in a platform log. scikit-learn must stay exactly 1.8.0 because the two `.joblib` files
+  are pickles of that version's classes, and `gunicorn.conf.py` read the way gunicorn reads it must
+  bind `0.0.0.0:$PORT` (checked at both 10000 and 20500), run `gthread` with one worker so the
+  in-process SSE broker stays shared, and log to stdout. The last two checks are the reason the
+  worker class is not `sync`: with an `/stream` connection held open by a dashboard, four page
+  loads and a prediction still complete in well under a second each over a real threaded HTTP
+  server, and the prediction is broadcast on the held stream. gunicorn itself is not executed
+  here — it is fork-based and cannot start on Windows — so the Start Command is verified by its
+  config plus the WSGI callable, and §15 records that honestly.
+
 The smoke test has already paid for itself five times: it caught a real user-facing bug where
 `runPrediction()` only re-enabled the submit button in its error branch, so a successful prediction
 left the button dead for the rest of the visit — one prediction per page load; it caught the route
@@ -834,6 +869,20 @@ line; and `/building`'s hero carried no team credits, which this project require
 | `UnicodeEncodeError: 'charmap' … '\u20b9'` | Windows console defaults to cp1252 while printing ₹ | Run from Windows Terminal/UTF-8 code page, or `py -X utf8 app.py`; test scripts call `sys.stdout.reconfigure(encoding="utf-8")` |
 | Port 5000 already in use | An earlier dev server is still alive | `set PORT=5001 && py app.py` |
 | Playwright "Executable doesn't exist" | Browser not downloaded | `py -m playwright install chromium` |
+
+### Deploy-side
+
+| Symptom in the platform log | Cause | Fix |
+|---|---|---|
+| `bash: line 1: gunicorn: command not found`, then `Exited with status 127` | 127 is the shell saying "that program is not on PATH" — the Start Command ran before any gunicorn was installed. Three ways to get here: the **pushed** `requirements.txt` did not list gunicorn (a fix left uncommitted is not deployed), the Build Command was not `pip install -r requirements.txt`, or Render detected the service as something other than a Python environment (wrong Root Directory, or Environment manually set) so pip never ran on our file | `grep -c gunicorn requirements.txt` must be ≥ 1 **in the pushed commit** (`git show HEAD:requirements.txt`), set the Build Command per §15, and confirm Render's Environment dropdown reads **Python** with Root Directory at the repository root. If the binary is on a PATH pip did not touch, `python -m gunicorn app:app` starts the same server and cannot fail with 127 while the package is installed |
+| `ModuleNotFoundError: No module named 'gunicorn'` | Same root cause seen one layer in: the interpreter is found but the package is not installed | Build Command must be exactly `pip install -r requirements.txt` (§15) |
+| `ModuleNotFoundError` for any other library, on the first request that touches it | That import exists in the code but is not in the file the build installed | `py -m pytest tests/test_deploy.py` parses every shipped module and fails if a third-party import is missing from `requirements.txt`, so this class of bug is caught before the push |
+| Build succeeds, then the service is marked down and Render restarts it forever | gunicorn bound `127.0.0.1:8000` instead of the injected `$PORT` | Keep `gunicorn.conf.py` next to `app.py`; it is loaded automatically and binds `0.0.0.0:$PORT` |
+| `Starting gunicorn` never appears; `SyntaxError`/`ImportError` on `sklearn` classes at load | The server installed a different scikit-learn than the one that pickled `model/*.joblib` | Keep `scikit-learn==1.8.0`; do not "upgrade for performance" |
+| `ModuleNotFoundError: No module named 'model'` (or templates not found) | The Start Command runs from a directory that is not the repository root | `app.py` builds every path from `__file__`, so check the command is `gunicorn app:app` and the repo root is the service root |
+| Pages load but the live feed never updates, or half the visitors see nothing | More than one gunicorn worker, each with its own in-process `EventBroker` | `WEB_CONCURRENCY=1` and let `GUNICORN_THREADS` provide the concurrency |
+| First visit after a quiet period is slow | Render suspends a free instance after 15 idle minutes and documents about a minute to resume; our own import of pandas/scikit-learn plus 1.5 MB of pickles adds to it | Expected, and the only figure here is Render's documentation rather than our measurement. Keep a tab open during a demo |
+| An uploaded/retrained dataset disappeared after a deploy | Render's disk is ephemeral | Expected. Persistence is §6's object-store migration, not a bug |
 
 ## 12. Assumptions & limitations
 
@@ -908,7 +957,7 @@ deployment.
 
 ---
 
-## 13. Viva preparation — 15 questions and their real answers
+## 13. Viva preparation — 16 questions and their real answers
 
 **Q1. Why Random Forest over KNN here?**
 Higher Yes-class F1 (0.7692 vs 0.6838), higher recall (0.8475 — it catches 50 of 59 real
@@ -1039,6 +1088,27 @@ instead is the arithmetic — every factor that multiplied, the ₹/sq ft it sta
 that land, furnishing and statutory contingencies are excluded. Same rule as everywhere else in the
 app: a rate table is shown as a rate table.
 
+**Q16. How would you put this on the internet, and what broke when you tried?**
+One `git push` and two commands: Build `pip install -r requirements.txt`, Start `gunicorn app:app`
+(Render free tier, §15). Four fixes had to happen first, and each is a real bug rather than a
+preference. The first one is what a live Render log actually said — `bash: line 1: gunicorn: command
+not found`, `Exited with status 127` — because 127 is the shell reporting a missing program and the
+pushed `requirements.txt` did not install gunicorn at all; the pin now lives in that file, and
+`git show HEAD:requirements.txt` is how you check what a build will really see. gunicorn **imports**
+`app.py` and never calls `main()`, so `bootstrap()` now runs at
+import time — without that the first request hits an unloaded model and returns 500. gunicorn's
+default bind is `127.0.0.1:8000` while the platform routes to the port it injects in `$PORT`, so
+`gunicorn.conf.py` binds `0.0.0.0:$PORT`. And the default `sync` worker serves one request at a
+time, which the **SSE** `/stream` would monopolise — one dashboard visitor would freeze the site for
+everyone — so the worker class is `gthread` with 8 threads. Workers stay at 1 deliberately: the event
+broker is in-process, so a second worker would split the live feed in half (and the loaded process
+measured 172 MB against the free tier's 512 MB). `tests/test_deploy.py` (15 checks) holds a stream
+open and measures four page loads plus a prediction finishing in well under a second each, and audits
+every third-party import in the project against `requirements.txt`. What I
+could not verify on this machine: gunicorn is fork-based and cannot start on Windows, so the Start
+Command is proven by the config it would load and by serving the same WSGI callable over a threaded
+HTTP server — the first Render build log is the real confirmation, and §15.4 states that plainly.
+
 ### Two-member topic split
 
 | Member | Owns |
@@ -1057,7 +1127,7 @@ contract but never touched the model contract.
 ## 14. Project layout
 
 ```
-app.py                     Flask app, ModelService, validation, SSE broker, ₹ exports, 20 endpoints, /building page   (1416)
+app.py                     Flask app, ModelService, validation, SSE broker, ₹ exports, 20 endpoints, /building page   (1428)
 config.py                  env-var settings, theme + currency tokens                                                 (66)
 data_layer/schema.py       the one contract: 10 columns, features, vocabularies                                     (141)
 data_layer/storage.py      LocalStore | HttpStore | S3Store + build_adapter                                         (283)
@@ -1077,17 +1147,174 @@ static/js/dashboard.js     aggregates + SSE subscriber                          
 static/js/knn-demo.js      interactive canvas KNN                                                                     (383)
 static/js/routes.js        Leaflet map, city + 4-level hierarchy pickers, corridor/time cards, planning panel       (1041)
 static/js/building.js      /building controller: cascades, payload, ₹ lakh cards, 7-row split                        (608)
-tests/                     conftest + 430 pytest + 332 smoke checks + 26 screenshots                               (5517)
+tests/                     conftest + 445 pytest + 332 smoke checks + 26 screenshots                               (5863)
 data/india_projects_2025_26.csv   700 rows · data/sample_20_projects.csv  20 rows
 data/india_road_project_planning_dataset_2025_26.csv   504 rows · 17 columns
 data/feature_store/               partitioned output + _manifest.json
 model/india_knn.joblib · india_rf.joblib · model_meta.json
 screenshots/                      26 regenerated by the smoke test
 archive/thai-paper-version/       v1, preserved, not loaded
-SPEC_INDIA.md · PROGRESS.md · requirements.txt · pytest.ini
+requirements.txt (57) · requirements-dev.txt (17) · pytest.ini
+gunicorn.conf.py (56) · Procfile · runtime.txt · .python-version · render.yaml · .gitignore (59)
+SPEC_INDIA.md · PROGRESS.md
 ```
 
-Total ≈ 16,924 lines of Python/HTML/CSS/JS, or 18,812 with the three markdown documents.
+Total ≈ 17,340 lines of Python/HTML/CSS/JS outside `archive/`, plus 2,140 lines of
+documentation (README + SPEC_INDIA + PROGRESS) — about 19,480 in all.
+
+---
+
+## 15. Deploying to Render
+
+Everything the platform needs is already in the repository. Render's free tier runs a hosted
+Python service from a GitHub repo with two commands, and this project is wired for them:
+
+| Setting | Value |
+|---|---|
+| Environment | Python |
+| Build Command | `pip install -r requirements.txt` |
+| Start Command | `gunicorn app:app` |
+| Health check path | `/health` |
+| Instance type | Free (512 MB RAM) |
+
+### 15.1 What each deploy file does
+
+| File | Why it exists |
+|---|---|
+| `requirements.txt` | Runtime only: Flask, Werkzeug, gunicorn, pandas, numpy, scikit-learn, scipy, joblib — every third-party module the shipped code imports, and nothing it does not. `tests/test_deploy.py` parses each module with `ast` and fails the suite if an import is missing from this file. Test tools are not here, so the build machine does not download a headless browser. |
+| `requirements-dev.txt` | `-r requirements.txt` + pytest + Playwright, for the machine that runs the tests (yours). |
+| `gunicorn.conf.py` | Loaded automatically by gunicorn from the working directory. Sets `bind = 0.0.0.0:$PORT`, `worker_class = gthread`, `workers = 1`, `timeout = 120`, stdout logs. |
+| `Procfile` | `web: gunicorn app:app` — read by Heroku-style tooling, and it keeps the Start Command written down in the repo. |
+| `.python-version` | `3.14`. Render reads this file (or the `PYTHON_VERSION` env var) to choose the interpreter. |
+| `runtime.txt` | `python-3.14.3`, the interpreter this project was built and tested on. Render ignores it; it is here for tools that still read it. |
+| `render.yaml` | Optional blueprint: the same table as above in version control. Use **New → Blueprint** for Render to read it, or create a normal Web Service and this file is simply documentation. |
+| `.gitignore` | Keeps `__pycache__/`, `*.pyc`, `.pytest_cache/`, `dev_server.log`, the `%TEMP%/` scratch folder and `data/retrain_active.csv` out of the deploy. |
+
+### 15.2 The four things that break this deploy
+
+1. **Binding the wrong port.** gunicorn's default is `127.0.0.1:8000`. Render routes the public
+   URL to the port it injects in `$PORT` (its documented default is 10000). Binding the default
+   gives a service that answers only itself, and the health check fails. `gunicorn.conf.py` reads
+   `$PORT`, and `app.py` binds `0.0.0.0` too, so `py app.py` behaves the same on a laptop and on a
+   container — which also means anyone on the same Wi-Fi can open the demo URL.
+2. **A `sync` worker plus Server-Sent Events.** `/stream` holds a connection open for as long as a
+   dashboard is watching. One worker serving one request at a time means the first visitor freezes
+   the site for everyone. `worker_class = "gthread"` with 8 threads fixes it, and
+   `tests/test_deploy.py` proves it: with a stream connection deliberately held, four page loads and
+   a prediction each finish in well under a second, and that prediction arrives on the held stream.
+3. **More than one worker.** `EventBroker` is in-process. With two workers, a prediction handled by
+   worker A is invisible to a dashboard subscribed to worker B, so the live feed would silently stop
+   updating for half the visitors. `WEB_CONCURRENCY` therefore stays 1 and concurrency comes from
+   threads inside that single process. It also keeps memory in the one budget: a running server with
+   both pipelines loaded measured **172 MB working set** on this Windows machine, and the free
+   instance has 512 MB — a second worker would eat the margin.
+4. **The build never installing gunicorn — this one actually happened.** A Render log of
+   `bash: line 1: gunicorn: command not found` followed by `Exited with status 127` is not a
+   configuration mistake in `app.py`; it is the shell reporting that the Start Command asked for a
+   program the environment does not have. Cause: Render installs from the **pushed** `requirements.txt`,
+   and the commit on the repository still listed only the training libraries (the gunicorn pin existed
+   only in the working tree at that point). `git show HEAD:requirements.txt` is the command that shows
+   what a build will really see, and it now carries `gunicorn==26.2.0`. The second-hand cause to rule
+   out is the service not being a Python environment at all — Environment **Python** and Root Directory
+   at the repository root, otherwise pip never reads our file. And if a platform's PATH ever hides the
+   console script while the package is installed, `python -m gunicorn app:app` is the same server
+   reached through the interpreter — gunicorn ships a `__main__.py`, confirmed in the installed
+   package — so it cannot fail with 127 while the dependency is really there.
+
+`app.py` also bootstraps at import time, because `gunicorn app:app` never calls `main()`. Without
+that, the process would start, pass nothing, and answer its first request with a 500 from an empty
+`ModelService`.
+
+### 15.3 Push it
+
+The repository was created before `.gitignore` existed, so the junk it now ignores is **tracked**.
+Clean it in the same commit that adds the deploy files:
+
+```bash
+git rm -r --cached '%TEMP%' __pycache__ data/__pycache__ model/__pycache__ \
+    data_layer/__pycache__ tests/__pycache__ dev_server.log
+git add .gitignore .python-version Procfile render.yaml runtime.txt \
+    gunicorn.conf.py requirements.txt requirements-dev.txt app.py tests/test_deploy.py
+git commit -m 'Make the app deployable on Render (gunicorn, $PORT, gthread)'
+git push
+```
+
+Then on Render: **New + → Web Service** (or **Blueprint** if you want `render.yaml` to drive it),
+connect the GitHub repository, confirm Render detected **Environment: Python** with **Root Directory**
+at the repository root, confirm the Build and Start Commands match §15, and add
+`healthCheckPath: /health` if the form asks. A normal Web Service shows the same result; the
+blueprint only means the settings live in the repo.
+
+If a build still exits 127 after you deploy, these three checks tell you whether the commit actually
+carried the fix:
+
+```bash
+git show HEAD:requirements.txt | grep -i gunicorn   # what the build will install
+git show HEAD:app.py | grep -n "^bootstrap()"       # models load on import, not in main()
+py -m pytest tests/test_deploy.py                   # imports declared, $PORT bound, SSE safe
+```
+
+The first two read the **committed** copy, which is the copy Render builds — a file that looks right
+in your editor but is still unstaged is the most common way to deploy the same bug twice.
+
+`git rm -r --cached` touches git's index only — every one of those files stays on your disk and in
+your working tree, which is what you want for the screenshots and the model artifacts, and what you
+no longer want for the compiled caches and the log. The 26 PNGs under `screenshots/` stay tracked on
+purpose: they are the visual evidence the smoke test regenerates for the report.
+
+### 15.4 What is verified, and what is not
+
+Verified on this machine: `from app import app` with no `app.run()` serves `/`, `/building`,
+`/health`, `/meta`, `/metrics`, `/dataset`, `/dashboard`, `/sources`, `/pipeline`, `/locations`,
+`/route/cities`, `/route/samples`, `/sample.csv`, `POST /predict`, `POST /predict-route`,
+`POST /predict-building` and `GET /stream`, including the static assets, from a working directory
+that is not the repository. 445 pytest checks and 332 browser checks pass.
+
+Not verified here, and said plainly: **gunicorn cannot start on Windows** (it is fork-based), so the
+literal command `gunicorn app:app` was validated by reading the config file exactly as gunicorn
+does and by serving the same WSGI callable through a threaded HTTP server. The first Render build
+log is the real confirmation; it should end with lines like
+
+```
+[INFO] Starting gunicorn 26.2.0
+[INFO] Listening at: http://0.0.0.0:10000
+```
+
+If instead it says `Bind to socket ... failed`, the port is the problem, and `echo $PORT` in a Render
+shell will show why.
+
+### 15.5 Free-tier behaviour to expect in the viva
+
+- **Spin-down.** Render's free-tier page says a web service with no inbound traffic for **15 minutes**
+  is suspended, and that a request then takes "about a minute" to wake it. Our own start-up adds to
+  that: the interpreter imports pandas and scikit-learn and reads 1.5 MB of joblib pickles before the
+  worker reports ready. So plan for "the first hit after a gap is slow, the rest are not" — and open
+  the page before the viva starts, not during it. A free instance is also 512 MB with 0.1 CPU, which
+  is the other reason `workers` stays at 1 (the loaded process measured 172 MB here).
+- **Ephemeral disk.** Render clears local changes on a **redeploy, a restart, or an idle suspension**.
+  So everything written at runtime is temporary: the feature-store partitions (rebuilt on start-up),
+  `data/retrain_active.csv`, and a retrained `model/*.joblib`. **A dataset you upload through
+  `/retrain` does not survive**, and it can vanish without any deploy at all — the overnight
+  suspension is enough. The page then describes the shipped 700-row CSV again, which is the honest
+  behaviour rather than a failure: the metrics and the rows always come from the same load.
+  Persisting an upload needs a real object store, which is §6's migration path.
+- **No outbound calls, no keys.** The server contacts nothing: no paid API, no API key, no database.
+  Leaflet tiles and Chart.js are fetched by the *visitor's* browser from OpenStreetMap and the CDN,
+  so a machine that is offline still gets the numbers and the offline map fallback instead of tiles.
+- **Secrets.** `DATA_STORE`, `ALLOW_WRITES` and any AWS credentials belong in Render's Environment
+  tab, never in a committed file. The default (`local`, writes off) is what the deploy runs with, and
+  `config.describe()` deliberately refuses to report anything that could look like a credential.
+- **Logs.** gunicorn writes access and error logs to stdout, so they show up in Render's "Logs" tab
+  with no configuration.
+
+Platform figures in this section are quoted from Render's own documentation, retrieved 2026-10-04:
+[Setting Your Python Version](https://render.com/docs/python-version) (`.python-version` and
+`PYTHON_VERSION` are what Render reads — `runtime.txt` is not mentioned, and instances created on or
+after 2026-02-11 default to Python 3.14.3) and [Free
+Tier](https://render.com/docs/free) (0.1 CPU / 512 MB, suspension after 15 minutes without traffic,
+"about a minute" to resume, ephemeral filesystem cleared on redeploy, restart **or idle
+suspension**). Nothing there was measured by us on a live Render instance; the 172 MB working set and
+the sub-second concurrent timings are measurements on this machine.
 
 ---
 

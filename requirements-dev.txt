@@ -1,0 +1,17 @@
+# ---------------------------------------------------------------------------
+# Development / test dependencies -- NOT installed by a deploy.
+#
+#   pip install -r requirements.txt -r requirements-dev.txt
+#   py -m pytest                     # 430 unit + API tests
+#   py tests/smoke_test.py           # 332 headless-browser checks + 26 screenshots
+#
+# After installing playwright, fetch the browser once:
+#   py -m playwright install chromium
+# ---------------------------------------------------------------------------
+-r requirements.txt
+
+# Unit and API tests:  py -m pytest
+pytest==9.1.1
+
+# Headless browser smoke test:  py tests/smoke_test.py
+playwright==1.63.0

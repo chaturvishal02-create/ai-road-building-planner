@@ -1,15 +1,18 @@
-# PROGRESS — v2 India rewrite + v2.1 route planner + v2.2 completion time + v3 hierarchy & building estimator
+# PROGRESS — v2 India rewrite + v2.1 route planner + v2.2 completion time + v3 hierarchy & building estimator + v3.2 deploy
 
 Run log for the India 2025–26 build, the route planner added on top of it, the completion-time /
-urban-terrain pass that followed, and the v3 pair of briefs: the four-level road-planning hierarchy
-with the brief's top-down formula, and the additive government-building estimator.
-Spec: `SPEC_INDIA.md` (§12 route planner, §13 hierarchy + planning formula + building module).
-v1 archived in `archive/thai-paper-version/`. Nothing here is under git, so "archived" means copied,
-not committed.
+urban-terrain pass that followed, the v3 pair of briefs (the four-level road-planning hierarchy with
+the brief's top-down formula, and the additive government-building estimator), and the v3.2 pass that
+makes the same code deployable with `gunicorn app:app`.
+Spec: `SPEC_INDIA.md` (§12 route planner, §13 hierarchy + planning formula + building module,
+F20 + README §15 deploy).
+v1 was copied to `archive/thai-paper-version/` before git was initialised (the repo's single history
+commit contains it), so "archived" there means preserved in the tree, not deleted.
 
-**Status: complete.** `py -m pytest` → 430 passed in ~15 s. `py tests/smoke_test.py` → 332 checks
+**Status: complete.** `py -m pytest` → 445 passed in ~15 s. `py tests/smoke_test.py` → 332 checks
 passed, 0 failed, 26 screenshots regenerated, no console errors. Dev server: `py -X utf8 app.py` →
-http://127.0.0.1:5000 (and `/building`).
+http://127.0.0.1:5000 (and `/building`), bound to `0.0.0.0` so a phone on the same Wi-Fi can open it
+too.
 
 ---
 
@@ -101,6 +104,13 @@ http://127.0.0.1:5000 (and `/building`).
       collectors refactored into `attach(page)` so the new tab is covered by the same rules
 - [x] Main-page canvases recounted: 13 Chart.js charts / 14 painted canvases (the planning split is
       the thirteenth chart)
+- [x] v3.2 `tests/test_deploy.py` (15) → pytest **445** (36 data layer + 37 model + 169 API + 83
+      routes + 63 planning + 42 building + 15 deploy). It holds a real `/stream` connection open on a
+      threaded HTTP server and measures four page loads plus a prediction against it; that is the
+      check that would fail the day someone sets `worker_class = "sync"`
+- [x] v3.2 re-run after the start-up and requirements change: pytest **445**, smoke **332/332**, 26 screenshots, zero
+      console errors — the browser behaviour is identical because only the import-time bootstrap and
+      the bind address changed
 
 ## Phase 4 — CRITIQUE / Phase 5 — FIX & RE-TEST
 
@@ -133,6 +143,10 @@ Every entry below is something a test or a screenshot caught, with what changed.
 | 23 | manual re-check after the engine edits | a stale `debug=False` server from the previous phase kept answering a valid `{"start":"Pune","end":"Nashik"}` with 400 "A route needs two cities" — the code was right, the process was old | server killed and restarted before any verification; every "the app is broken" report in this project has since been checked against a fresh process first |
 | 24 | **the user's own screen**: "route map not show" | the map was fine — tiles loaded, 63 markers painted, corridor drawn — but the whole `#routes` section sat at `opacity: 0`. `initReveal` used `IntersectionObserver` with `threshold: 0.08`, and that ratio is of the **section's own area**: at 500 px wide the planner section is 6 693 px tall, so 8 % of it is 535 px — more than the entire viewport, at any scroll position. The class could never be added. Every desktop-sized window clears it (1280×900 → 0.24, 1366×768 → 0.21, 960×720 → 0.13, 375×667 → 0.09) which is exactly why 328 green checks never saw it: the suite only ever loads the page at one tall-enough ratio, and the mobile pass *resizes* a page that had already revealed | reveal gate is now `threshold: 0, rootMargin: '0px 0px -12% 0px'` — fires on entering the viewport, so section height cannot out-run it. New phase `check_reveal_short_window` loads a **fresh** page at 500×513, walks all nine sections with the 0.55 s fade waited out, and asserts the map is visible with a 420 px canvas and painted tiles (screenshot `32-routes-500px.png`). Smoke test now 332 checks / 26 screenshots |
 | 25 | the same investigation | `.map-canvas .leaflet-container { background: transparent }` never matched anything — Leaflet puts `.leaflet-container` on the **same** element that carries `.map-canvas`, so unpkg's own `.leaflet-container { background: #ddd }` won on order and every map showed a flat grey frame before tiles arrived, which reads as "broken map" even when it is only slow | selector corrected to `.map-canvas.leaflet-container` (specificity 0,2,0) with `var(--surface-2)`, so the panel's own surface shows through in both themes |
+| 26 | v3.2, before any deploy file existed | `gunicorn app:app` **imports** `app.py`; `bootstrap()` lived only inside `main()`, which a WSGI server never calls. The process would have started cleanly, `/health` would report `ok: false`, and the first page would 500 on an empty `ModelService` — a deploy that looks like a code bug | `bootstrap()` moved to module level with the two start paths written out in the comment, `main()` no longer calls it, and `tests/test_deploy.py::test_importing_the_module_without_app_run_loads_both_models` now fails loudly if the call ever moves back |
+| 27 | v3.2, reading gunicorn's defaults | two more silent deploy-killers: its default bind is `127.0.0.1:8000` while a platform routes to the port it injects in `$PORT` (Render's documented default is 10000), and its default `sync` worker handles one request at a time — so the first visitor to open the dashboard's `/stream` would hold the only worker and freeze the site for everyone else | `gunicorn.conf.py` (auto-loaded from the working directory, so the Start Command stays exactly `gunicorn app:app`) binds `0.0.0.0:$PORT`, sets `worker_class = "gthread"` with 8 threads, and keeps `workers = 1` because `EventBroker` is in-process. Both choices are measured, not asserted: the config is parsed at 10000 and 20500, and the held-stream test proves page loads stay under a second |
+| 28 | v3.2, auditing what the repo would ship | `requirements.txt` installed pytest **and** Playwright on a 512 MB build box (Playwright then wants a browser download), and with no `.gitignore` in a repo that had none until then, the deploy copy carried 21 `.pyc` files, a literal `%TEMP%/` folder, `dev_server.log` and `.pytest_cache/` | runtime pins moved to `requirements.txt`, test tools to `requirements-dev.txt`, and a commented `.gitignore` added; the tracked junk needs one `git rm -r --cached` (see README §15.3) because ignore files do not un-track anything |
+| 29 | v3.2, **a live Render deploy log** | `bash: line 1: gunicorn: command not found`, then `Exited with status 127`. 127 is the shell reporting a missing program: Render installs from the **pushed** `requirements.txt`, and that commit still listed only the training libraries — every deploy fix so far lived in the working tree. `git show HEAD:requirements.txt \| grep -ci gunicorn` returned 0, and HEAD's `app.py` still called `bootstrap()` from `main()` | gunicorn 26.2.0 pinned in the file the build reads, Werkzeug named too because `app.py` imports `HTTPException` from it directly (Flask only guarantees `>=3.1.0`), and `tests/test_deploy.py` now parses every shipped module with `ast` and fails if any third-party import is undeclared, so "the build installs what the code imports" is a test rather than a hope. README §11 gained the exact 127 row and §15.2/§15.3 the `git show HEAD:` pre-flight. Nothing here changes a route or a number |
 
 ## Phase 6 — POLISH
 
@@ -157,6 +171,45 @@ Every entry below is something a test or a screenshot caught, with what changed.
 - [x] Honest labelling checked end-to-end: synthetic dataset disclosed in three places, route
       take-off labelled as assumptions, model cross-check labelled as extrapolation
 
+## Phase 7 — DEPLOY (v3.2, Render free tier)
+
+- [x] `app.py` start-up split documented and fixed: `bootstrap()` at import so a WSGI server that
+      never calls `main()` still serves; `host = os.environ.get("FLASK_HOST", "0.0.0.0")` and the
+      banner printing the bind, so a container or a phone on the same Wi-Fi can reach it; port still
+      from `$PORT` via `config.PORT`
+- [x] `requirements.txt` reduced to runtime pins (Flask, **gunicorn 26.2.0**, pandas, numpy,
+      scikit-learn 1.8.0, scipy, joblib, boto3 still commented out) and the reason the sklearn pin is
+      *load-time* rather than taste written next to it: `model/*.joblib` are pickles of 1.8.0's
+      classes. Test tools moved to `requirements-dev.txt`
+- [x] `gunicorn.conf.py` added — auto-loaded from the working directory (verified in gunicorn's own
+      `get_default_config_file()`), binds `0.0.0.0:$PORT`, `gthread` × 8 threads, 1 worker, 120 s
+      timeout, stdout logs, `preload_app = False`
+- [x] `Procfile` (`web: gunicorn app:app`), `.python-version` (`3.14`, the file Render reads),
+      `runtime.txt` (`python-3.14.3`, what this was built on; Render ignores it), `render.yaml`
+      blueprint with the two commands + `healthCheckPath: /health`, and `.gitignore`
+- [x] Wheel/interpreter check rather than guesswork: every pinned dependency publishes a
+      `manylinux_2_28` wheel for cp313 **and** cp314, gunicorn is `py3-none-any`, and Render's default
+      for instances created after 2026-02-11 is Python 3.14.3 — the same interpreter as here
+- [x] `tests/test_deploy.py` (15) written and green: WSGI import readiness, pages/static resolving
+      after `chdir`, requirements contents plus an `ast` audit of every third-party import in the shipped
+      code, sklearn pin matching the artifacts on disk, config parsed
+      at two `$PORT` values, Procfile/blueprint agreeing with the documented commands, and the
+      held-`/stream` concurrency measurement (4 page loads and a prediction, each well under 2 s,
+      with the prediction broadcast to the held connection)
+- [x] Memory read honestly: the running server with both pipelines loaded measures **172 MB working
+      set** on this Windows machine against the free tier's 512 MB — one worker, and the reason is
+      recorded next to the setting
+- [x] Verified / not verified stated plainly in README §15.4: gunicorn cannot start on Windows
+      (fork-based), so the Start Command is proven by its parsed config and the same WSGI callable
+      over a threaded HTTP server; the first Render build log closes that last gap
+- [x] Docs: README new §15 (deploy files, the four fixes, push commands and the `git show HEAD:` pre-flight,
+      free-tier behaviour), §1
+      Python floor from numpy's own metadata (3.12) and the dev-requirements line, §7 five new
+      environment rows, §10 the 445 count and the deploy-test bullet, §11 a deploy-side
+      troubleshooting table with the live 127 symptom, §13 viva Q16, §14 layout re-measured;
+      SPEC retitled v3.2 with F20,
+      §2 deploy files, §8 the gunicorn row marked done, §9 the deploy contract and 445, acceptance 19
+
 ---
 
 ## ACCEPTANCE CRITERIA (from SPEC_INDIA.md §10)
@@ -179,6 +232,7 @@ Every entry below is something a test or a screenshot caught, with what changed.
 - [x] 16. Location mode: four cascading levels per end from `GET /locations`, search resolves a village, ambiguous leaf names refused, placeholder provenance visible after a full selection, city mode unchanged
 - [x] 17. Planning panel: the brief's top-down total printed with its own multipliers, five material lines summing to it, and the gap to the take-off stated instead of averaged
 - [x] 18. `/building`: separate page + endpoint, `{cost, time_months, breakdown}` in ₹ lakh, seven work lines adding to the card, no risk percentage, `window.App` absent, and no pre-existing route or response modified
+- [~] 19. Deployable (v3.2): `gunicorn app:app` imports and serves every route with `$PORT` bound and `/stream` non-blocking — proven locally (445 pytest incl. 15 deploy checks). Marked partial, not done, until the first Render build log shows `Listening at: http://0.0.0.0:$PORT`, because gunicorn cannot run on Windows and that log is the only real confirmation
 
 ## Known open items (deliberate, not blockers)
 
@@ -204,3 +258,14 @@ Every entry below is something a test or a screenshot caught, with what changed.
 8. v3: `/building` is a rate table with no learned component and no probability, because the
    classifier's 10-column contract has no area/floors/quality column. Adding a regression target
    there means publishing a real building-cost dataset first, not inventing one.
+9. v3.2: the Render start command is verified by config parsing and a threaded WSGI server, not by
+   gunicorn itself — it is fork-based and cannot start on Windows. The first platform build log
+   closes that gap, and README §15.4 says so rather than implying a live deploy already happened.
+   That log has now been seen once, and it failed for a reason local tests could not see: the build
+   installs the **pushed** `requirements.txt`, which did not yet contain gunicorn (`Exited with
+   status 127`). The file is fixed and the import audit covers the whole class, but item 9 still
+   stands until a build log ends `Listening at: http://0.0.0.0:$PORT` — and it needs the commit and
+   the push, not just the working tree.
+10. v3.2: `.gitignore` exists only now, so 21 `.pyc` files, a literal `%TEMP%/` scratch folder,
+    `dev_server.log` and `.pytest_cache/` are still **tracked** from the repo's first commit. An
+    ignore file does not un-track anything; README §15.3 lists the `git rm -r --cached` that does.

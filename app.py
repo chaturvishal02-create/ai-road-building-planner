@@ -1380,8 +1380,17 @@ def bootstrap():
     planning_data.ensure_dataset(config.DATA_DIR, quiet=True)
     SERVICE.load(ref=RETRAIN_ACTIVE if os.path.exists(RETRAIN_ACTIVE) else None)
 
+
+# Load the models as soon as this module is imported, for every way of starting it:
+#   gunicorn app:app  -- a WSGI server imports the module and never calls main(), so
+#                       without this the first request would hit an empty ModelService
+#                       and every page would return a 500.
+#   python app.py     -- main() runs after the module body, so the banner below can
+#                       print real metrics without loading them a second time.
+bootstrap()
+
+
 def main():
-    bootstrap()
     meta, frame = SERVICE.meta, SERVICE.frame
     port = config.PORT
     knn, rf = meta["metrics"]["knn"], meta["metrics"]["rf"]
@@ -1393,7 +1402,7 @@ def main():
         TEAM["title"],
         "  by %s | Guide: %s | %s" % (" & ".join(TEAM["developers"]), TEAM["guide"],
                                        TEAM["institution"]),
-        "  Open http://127.0.0.1:%d in your browser" % port,
+        "  Open http://127.0.0.1:%d in your browser (bound to %s)" % (port, os.environ.get("FLASK_HOST", "0.0.0.0")),
         "  Dataset rows : %d (train %d / test %d)" % (meta["dataset"]["rows"],
                                                      meta["dataset"]["train_size"],
                                                      meta["dataset"]["test_size"]),
@@ -1407,9 +1416,12 @@ def main():
         "=" * 72,
     ]
     print("\n".join(banner))
+    # 0.0.0.0 so a PaaS (Render, Fly, a Docker container) can reach the port it injects via
+    # $PORT; on a laptop that also means the page is reachable from others on the same LAN.
     # debug stays off: the reloader would start the server twice and confuse the browser
     # test, and threaded=True lets the SSE stream hold one connection while others work.
-    app.run(host="127.0.0.1", port=port, debug=False, threaded=True)
+    host = os.environ.get("FLASK_HOST", "0.0.0.0")
+    app.run(host=host, port=port, debug=False, threaded=True)
 
 
 if __name__ == "__main__":
