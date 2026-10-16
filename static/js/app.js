@@ -204,22 +204,86 @@
   }
 
   function initNav() {
-    const links = $$('.nav-link');
+    const links = $$('#navbar .nav-link');
+    const sidebar = $('#navbar');
+    const toggle = $('#sidebar-toggle');
+    const close = $('#sidebar-close');
+    const backdrop = $('#sidebar-backdrop');
+    const title = $('#workspace-title');
+    const mobile = window.matchMedia('(max-width: 1023px)');
+
+    function setDrawer(open, restoreFocus = false) {
+      document.body.classList.toggle('sidebar-open', open);
+      sidebar.inert = mobile.matches && !open;
+      toggle.setAttribute('aria-expanded', String(open));
+      backdrop.hidden = !open;
+      if (open) close.focus();
+      else if (restoreFocus) toggle.focus();
+    }
+
+    function activate(id) {
+      links.forEach((link) => {
+        const active = link.getAttribute('href') === '#' + id;
+        link.classList.toggle('active', active);
+        if (active) {
+          link.setAttribute('aria-current', 'location');
+          title.textContent = link.textContent.trim();
+        } else {
+          link.removeAttribute('aria-current');
+        }
+      });
+    }
+
+    setDrawer(false);
+    mobile.addEventListener('change', () => {
+      const focusedInside = sidebar.contains(document.activeElement);
+      setDrawer(false, mobile.matches && focusedInside);
+    });
+    toggle.addEventListener('click', () => setDrawer(true));
+    close.addEventListener('click', () => setDrawer(false, true));
+    backdrop.addEventListener('click', () => setDrawer(false, true));
+    document.addEventListener('keydown', (event) => {
+      if (!document.body.classList.contains('sidebar-open')) return;
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        setDrawer(false, true);
+      } else if (event.key === 'Tab') {
+        const focusable = $$('a[href], button:not([disabled])', sidebar);
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    });
+    sidebar.addEventListener('click', (event) => {
+      const link = event.target.closest('a[href^="#"]');
+      if (!link) return;
+      const target = $(link.getAttribute('href'));
+      if (!target) return;
+      activate(target.id);
+      if (mobile.matches) {
+        setDrawer(false);
+        target.tabIndex = -1;
+        target.focus({ preventScroll: true });
+      }
+    });
+
     const sections = links
-      // Only in-page anchors are scroll-spied; a link to another page (/building) is
-      // not a selector, and querySelector would throw on it.
       .filter((link) => (link.getAttribute('href') || '').startsWith('#'))
       .map((link) => $(link.getAttribute('href')))
       .filter(Boolean);
+    activate((window.location.hash || '#home').slice(1));
     if (!('IntersectionObserver' in window) || !sections.length) return;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        links.forEach((link) => {
-          link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
-        });
+        if (entry.isIntersecting) activate(entry.target.id);
       });
-    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    }, { rootMargin: '-25% 0px -70% 0px', threshold: 0 });
     sections.forEach((section) => observer.observe(section));
   }
 

@@ -322,6 +322,20 @@ def check_sections(page) -> None:
     building_links = [href for href in nav if (href or "").endswith("/building")]
     check("navbar adds one link to the building page", len(building_links) == 1,
           "%d of %d links: %s" % (len(building_links), len(nav), building_links))
+    check("desktop sidebar is fixed and content clears it", page.evaluate("""() => {
+      const sidebar = document.getElementById('navbar');
+      return getComputedStyle(sidebar).position === 'fixed' && !sidebar.inert
+        && document.querySelector('.dashboard-workspace').getBoundingClientRect().left
+          >= sidebar.getBoundingClientRect().right;
+    }"""))
+    page.click('#navbar a[href="#predictor"]')
+    page.wait_for_timeout(900)
+    check("sidebar navigation updates active item and topbar", page.evaluate("""() =>
+      document.getElementById('workspace-title').textContent === 'Budget predictor'
+      && document.querySelector('#navbar a[href="#predictor"]').getAttribute('aria-current') === 'location'
+      && document.querySelectorAll('#navbar .nav-link.active').length === 1"""))
+    page.click('#navbar a[href="#home"]')
+    page.wait_for_timeout(900)
 
 
 def check_credits(page, body_text: str) -> None:
@@ -1723,6 +1737,49 @@ def check_small_screen(page) -> None:
     nav_links = page.evaluate(
         "() => document.querySelectorAll('#navbar nav a').length")
     check("navbar links survive the mobile layout", nav_links >= 6, f"links={nav_links}")
+    check("mobile sidebar starts hidden and inert", page.evaluate("""() => {
+      const sidebar = document.getElementById('navbar');
+      return sidebar.inert && getComputedStyle(sidebar).visibility === 'hidden'
+        && document.getElementById('sidebar-toggle').getAttribute('aria-expanded') === 'false';
+    }"""))
+    page.click("#sidebar-toggle")
+    check("mobile menu opens with keyboard focus inside", page.evaluate("""() => {
+      const sidebar = document.getElementById('navbar');
+      return !sidebar.inert && getComputedStyle(sidebar).visibility === 'visible'
+        && document.activeElement.id === 'sidebar-close'
+        && document.getElementById('sidebar-toggle').getAttribute('aria-expanded') === 'true';
+    }"""))
+    page.locator('#navbar a[href="#team"]').focus()
+    page.keyboard.press("Tab")
+    check("mobile drawer traps forward keyboard focus", page.evaluate("""() =>
+      document.activeElement === document.querySelector('#navbar .brand-link')"""))
+    page.keyboard.press("Shift+Tab")
+    check("mobile drawer traps backward keyboard focus", page.evaluate("""() =>
+      document.activeElement === document.querySelector('#navbar a[href="#team"]')"""))
+    page.keyboard.press("Escape")
+    check("Escape closes the drawer and restores focus", page.evaluate("""() =>
+      document.getElementById('navbar').inert
+      && document.activeElement.id === 'sidebar-toggle'
+      && !document.body.classList.contains('sidebar-open')"""))
+    page.click("#sidebar-toggle")
+    page.click('#navbar a[href="#predictor"]')
+    page.wait_for_timeout(900)
+    check("mobile navigation closes menu and focuses destination", page.evaluate("""() =>
+      document.getElementById('navbar').inert && document.activeElement.id === 'predictor'
+      && document.getElementById('workspace-title').textContent === 'Budget predictor'"""))
+    page.click("#sidebar-toggle")
+    page.mouse.click(350, 100)
+    check("backdrop closes the drawer", page.evaluate("""() =>
+      document.getElementById('navbar').inert && document.activeElement.id === 'sidebar-toggle'"""))
+    page.click("#sidebar-toggle")
+    page.set_viewport_size({"width": 1280, "height": 900})
+    check("desktop resize restores sidebar and releases scroll lock", page.evaluate("""() =>
+      !document.getElementById('navbar').inert
+      && getComputedStyle(document.getElementById('navbar')).visibility === 'visible'
+      && !document.body.classList.contains('sidebar-open')
+      && document.getElementById('sidebar-backdrop').hidden"""))
+    page.set_viewport_size({"width": 375, "height": 812})
+    page.wait_for_timeout(300)
 
 
 JS_WALK_REVEAL = """
